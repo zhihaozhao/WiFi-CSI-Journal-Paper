@@ -1,0 +1,53 @@
+# LaTeX generated files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.fdb_latexmk
+*.acn
+*.glo
+*.ist
+
+# Generated PDFs (keep source, ignore compiled PDFs)
+paper/*.pdf
+figures/*.pdf
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# OS files  
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# Backup files
+*~
+*.backup
+*.old
+
+# Archive files
+*.zip
+*.tar.gz
+
+# Very large reference PDFs (keep a references list instead)
+references/*.pdf
+
+# Journal submission temporary files
+submission_materials/draft_*.pdf
+submission_materials/temp_*
