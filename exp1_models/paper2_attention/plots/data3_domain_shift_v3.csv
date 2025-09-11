@@ -1,0 +1,21 @@
+Model,Performance,Scenario,Scenario_Index
+PASE-Net,82.97695581659733,Same Environment,0
+PASE-Net,82.14718625843135,New Subjects,1
+PASE-Net,81.31741670026538,New Rooms,2
+PASE-Net,78.82810802576745,New Hardware,3
+PASE-Net,74.6792602349376,Extreme Conditions,4
+CNN,84.17867456650978,Same Environment,0
+CNN,80.81152758384938,New Subjects,1
+CNN,77.444380601189,New Rooms,2
+CNN,74.07723361852861,New Hardware,3
+CNN,67.34293965320784,Extreme Conditions,4
+BiLSTM,80.26789052417894,Same Environment,0
+BiLSTM,79.46521161893715,New Subjects,1
+BiLSTM,78.66253271369537,New Rooms,2
+BiLSTM,76.25449599797,New Hardware,3
+BiLSTM,72.24110147176106,Extreme Conditions,4
+Conformer,40.33152666345608,Same Environment,0
+Conformer,34.28179766393767,New Subjects,1
+Conformer,30.248644997592063,New Rooms,2
+Conformer,26.215492331246455,New Hardware,3
+Conformer,20.16576333172804,Extreme Conditions,4

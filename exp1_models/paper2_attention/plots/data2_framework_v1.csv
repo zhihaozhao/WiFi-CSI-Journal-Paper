@@ -1,0 +1,17 @@
+model,model_name,noise_level,performance
+enhanced,PASE-Net,0%,0.9496474795735828
+enhanced,PASE-Net,5%,0.9499778274757288
+enhanced,PASE-Net,10%,0.9485753602776446
+enhanced,PASE-Net,15%+,0.0
+cnn,CNN,0%,0.9454247889411991
+cnn,CNN,5%,0.9467305545460908
+cnn,CNN,10%,0.9457647815040474
+cnn,CNN,15%+,0.0
+bilstm,BiLSTM,0%,0.923205692617014
+bilstm,BiLSTM,5%,0.9206842078140323
+bilstm,BiLSTM,10%,0.918635317763889
+bilstm,BiLSTM,15%+,0.0
+conformer_lite,Conformer,0%,0.9359374263907417
+conformer_lite,Conformer,5%,0.9379759867880131
+conformer_lite,Conformer,10%,0.9356598858789935
+conformer_lite,Conformer,15%+,0.0

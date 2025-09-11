@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "description": "Framework data extracted from D2 synthetic experiments for Figure 2",
+    "total_experiments": 540,
+    "models": [
+      "enhanced",
+      "cnn",
+      "bilstm",
+      "conformer_lite"
+    ],
+    "noise_levels": [
+      "0%",
+      "5%",
+      "10%",
+      "15%+"
+    ],
+    "extraction_script": "scripts/data2_framework_v1.py"
+  },
+  "performance_matrix": [
+    [
+      0.9496474795735828,
+      0.9499778274757288,
+      0.9485753602776446,
+      0.0
+    ],
+    [
+      0.9454247889411991,
+      0.9467305545460908,
+      0.9457647815040474,
+      0.0
+    ],
+    [
+      0.923205692617014,
+      0.9206842078140323,
+      0.918635317763889,
+      0.0
+    ],
+    [
+      0.9359374263907417,
+      0.9379759867880131,
+      0.9356598858789935,
+      0.0
+    ]
+  ],
+  "model_statistics": [
+    {
+      "model": "enhanced",
+      "model_name": "PASE-Net",
+      "performance_across_noise": [
+        0.9496474795735828,
+        0.9499778274757288,
+        0.9485753602776446,
+        0.0
+      ],
+      "avg_performance": 0.9494002224423187
+    },
+    {
+      "model": "cnn",
+      "model_name": "CNN",
+      "performance_across_noise": [
+        0.9454247889411991,
+        0.9467305545460908,
+        0.9457647815040474,
+        0.0
+      ],
+      "avg_performance": 0.9459733749971124
+    },
+    {
+      "model": "bilstm",
+      "model_name": "BiLSTM",
+      "performance_across_noise": [
+        0.923205692617014,
+        0.9206842078140323,
+        0.918635317763889,
+        0.0
+      ],
+      "avg_performance": 0.9208417393983117
+    },
+    {
+      "model": "conformer_lite",
+      "model_name": "Conformer",
+      "performance_across_noise": [
+        0.9359374263907417,
+        0.9379759867880131,
+        0.9356598858789935,
+        0.0
+      ],
+      "avg_performance": 0.9365244330192494
+    }
+  ],
+  "noise_categories": [
+    "0%",
+    "5%",
+    "10%",
+    "15%+"
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "extraction_date": "2025-09-10T22:08:45.848917",
+    "version": "v1",
+    "figure_id": "fig2_physics_guided_framework",
+    "data_source": "Synthetic CSI Data Generation Framework Specifications"
+  },
+  "signal_model_foundation": {
+    "csi_representation": "H(f,t) = A(f,t) * exp(j*Φ(f,t))",
+    "system_parameters": {
+      "N_tx": "transmit antennas",
+      "N_rx": "receive antennas",
+      "N_sc": "subcarriers",
+      "ofdm_structure": "multiple subcarriers"
+    }
+  },
+  "multipath_propagation": {
+    "model": "h(t) = Σ αᵢ(t)δ(t - τᵢ(t))",
+    "components": {
+      "alpha_i": "complex amplitude i-th path",
+      "tau_i": "delay i-th path",
+      "N_paths": "number of propagation paths"
+    },
+    "phenomena": [
+      "reflections",
+      "diffractions",
+      "scattering"
+    ],
+    "sources": [
+      "walls",
+      "furniture",
+      "objects"
+    ]
+  },
+  "human_body_interaction": {
+    "fresnel_reflection": {
+      "formula": "Γ = (√εᵣ - 1)/(√εᵣ + 1)",
+      "parameter": "εᵣ = relative permittivity human tissue"
+    },
+    "doppler_effect": {
+      "formula": "fₐ = (v·cos(θ)/c)·fᶜ",
+      "parameters": {
+        "v": "velocity",
+        "theta": "angle between velocity and signal path",
+        "c": "speed of light",
+        "f_c": "carrier frequency"
+      }
+    },
+    "mechanisms": [
+      "absorption",
+      "scattering",
+      "time_varying_perturbations"
+    ]
+  },
+  "environmental_modeling": {
+    "variations": {
+      "room_geometry": "parameterized dimensions",
+      "wall_materials": "material property modeling",
+      "furniture_placement": "randomized configurations",
+      "device_positions": "configurable locations"
+    },
+    "noise_model": "H_observed(f,t) = H_ideal(f,t) + N(f,t) + I(f,t)",
+    "noise_components": {
+      "N(f,t)": "thermal noise and hardware imperfections",
+      "I(f,t)": "co-channel interference patterns"
+    }
+  },
+  "parameterized_generation": {
+    "formula": "X_synth, y_synth = G(θ_activity, θ_env, θ_signal, θ_noise)",
+    "parameter_categories": {
+      "activity_parameters": [
+        "activity_type",
+        "duration",
+        "movement_patterns",
+        "num_subjects"
+      ],
+      "environmental_parameters": [
+        "room_dimensions",
+        "wall_materials",
+        "furniture_layout",
+        "device_positions"
+      ],
+      "signal_parameters": [
+        "carrier_frequency",
+        "bandwidth",
+        "antenna_configuration",
+        "transmission_power"
+      ],
+      "noise_parameters": [
+        "SNR_levels",
+        "interference_patterns",
+        "hardware_imperfections"
+      ],
+      "difficulty_parameters": [
+        "class_overlap",
+        "label_noise",
+        "environmental_variability"
+      ]
+    }
+  },
+  "multi_level_caching": {
+    "disk_caching": {
+      "format": ".pkl files",
+      "identifier": "MD5-based unique identifiers",
+      "purpose": "reuse across experiments"
+    },
+    "memory_caching": {
+      "policy": "LRU eviction",
+      "purpose": "accelerate data loading during training"
+    },
+    "performance_improvement": "reduces generation time from minutes to seconds"
+  },
+  "framework_validation": {
+    "sim2real_performance": {
+      "f1_score": "82.1% with 20% real data",
+      "efficiency_gain": "80% labeling cost reduction"
+    },
+    "edge_compatibility": "maintained computational efficiency",
+    "evaluation_protocols": 540
+  },
+  "generation_configurations": {
+    "time_steps": [
+      32,
+      64,
+      128
+    ],
+    "feature_dimensions": [
+      30,
+      52,
+      90
+    ],
+    "difficulty_levels": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "noise_parameters": {
+      "class_overlap": [
+        0.0,
+        0.4,
+        0.8
+      ],
+      "label_noise": [
+        0.0,
+        0.05,
+        0.1
+      ]
+    },
+    "environmental_variations": {
+      "burst_rates": [
+        0.0,
+        0.1,
+        0.2
+      ],
+      "gain_drift": "modeled"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+cohens_d,effect_size_interpretation,label_ratio,p_value,significant,strategy1,strategy2,t_statistic
+0.14076998860486264,negligible,1,0.8471676847710232,False,linear_probe,fine_tuning,0.1990788270601028
+-4.775114761340068,large,5,0.0001446034875127797,True,linear_probe,fine_tuning,-6.753032057375089
+-3.268757769128529,large,10,0.0017041404635132929,True,linear_probe,fine_tuning,-4.622721569213988
+-7.920490606245721,large,20,3.6173660982138914e-06,True,linear_probe,fine_tuning,-11.201265236001396
+-5.514364494998485,large,50,5.2446456171886905e-05,True,linear_probe,fine_tuning,-7.798489056695521

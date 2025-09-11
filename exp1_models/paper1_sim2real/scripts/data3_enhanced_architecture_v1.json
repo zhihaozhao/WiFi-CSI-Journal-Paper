@@ -1,0 +1,99 @@
+{
+  "metadata": {
+    "extraction_date": "2025-09-10T22:09:49.108190",
+    "version": "v1",
+    "figure_id": "fig3_enhanced_model",
+    "data_source": "Enhanced Attention Network Architecture Specifications",
+    "correction_note": "Physics correlation failure confirmed: r=0.000±0.000, not r=0.73 as previously claimed"
+  },
+  "model_rebranding": {
+    "old_name": "PASE-Net (Physics-informed Attention-based Squeeze-Excitation Network)",
+    "new_name": "Enhanced Attention Network (EAN) - Dual-Branch SE and Temporal Attention",
+    "reason": "Remove false physics claims while preserving attention mechanism research",
+    "experimental_evidence": "Multi-model analysis shows r=0.000±0.000 across all models"
+  },
+  "architecture_components": {
+    "total_parameters": 640713,
+    "attention_parameters": 411520,
+    "attention_percentage": 64.2,
+    "model_size_mb": 2.44,
+    "architecture_type": "CNN + SE + Temporal Attention"
+  },
+  "component_specifications": {
+    "depthwise_separable_conv": {
+      "formula": "x_conv = DepthwiseConv2D(x) + PointwiseConv2D(x)",
+      "purpose": "hierarchical spatial feature extraction",
+      "optimization": "memory-constrained environments"
+    },
+    "squeeze_excitation_modules": {
+      "formula": "x_SE = x_conv ⊗ SE(x_conv)",
+      "operation": "element-wise multiplication",
+      "purpose": "channel-wise attention",
+      "efficiency": "minimal computational overhead"
+    },
+    "temporal_self_attention": {
+      "global_avg_pooling": "x_temp = GAP(x_SE, dim=F)  // [B,C,T,F] → [B,C,T]",
+      "attention_formula": "Attention(Q,K,V) = softmax(QK^T/√d_k)V",
+      "multi_head": "MultiHeadAttention(x_temp, h=4)",
+      "heads": 4
+    }
+  },
+  "design_principles": {
+    "multi_scale_feature_learning": {
+      "technique": "CNN layers with depthwise separable convolutions",
+      "benefit": "hierarchical spatial features at different abstraction levels",
+      "optimization": "compact representations for memory-constrained environments"
+    },
+    "efficient_channel_attention": {
+      "mechanism": "SE modules",
+      "benefit": "selective emphasis on informative feature channels",
+      "efficiency": "minimal computational overhead",
+      "application": "WiFi CSI data where different frequency subcarriers have varying importance"
+    },
+    "temporal_dependency_modeling": {
+      "mechanism": "multi-head attention",
+      "benefit": "captures long-range temporal relationships",
+      "efficiency": "computational efficiency for real-time edge inference",
+      "advantage": "direct modeling without gradient vanishing issues"
+    }
+  },
+  "edge_optimization": {
+    "memory_footprint": "2.44MB",
+    "gpu_speedup": "64.1x (338.91ms CPU → 5.29ms GPU)",
+    "throughput": "607 samples/second",
+    "single_sample_latency": "5.3ms",
+    "deployment_status": "Production Ready"
+  },
+  "experimental_validation": {
+    "cross_domain_performance": {
+      "loso_f1": "83.0±0.1%",
+      "loro_f1": "83.0±0.1%",
+      "consistency": "identical performance across protocols",
+      "coefficient_variation": "<0.2%"
+    },
+    "attention_analysis": {
+      "se_attention_real": "extracted from 3 SE modules per Enhanced model",
+      "temporal_attention_patterns": "6 activities analysis",
+      "statistical_testing": "bootstrap confidence analysis framework",
+      "physics_correlation_reality": "r=0.000±0.000 across all models (NOT r=0.73)"
+    }
+  },
+  "corrected_interpretability": {
+    "attention_mechanisms": {
+      "se_channel_attention": "real patterns extracted from trained models",
+      "temporal_attention_dynamics": "activity-specific temporal focus",
+      "visualization": "2-subplot Figure 6: (a) SE Channel Attention, (b) Temporal Attention"
+    },
+    "removed_false_claims": {
+      "physics_correlation_subplot": "removed entirely from Figure 6c",
+      "false_correlation_value": "r=0.73, p<0.001 - EXPERIMENTALLY DISPROVEN",
+      "honest_reporting": "attention mechanisms without false physics claims"
+    }
+  },
+  "architectural_advantages": {
+    "domain_agnostic_learning": "learns invariant properties of human-signal interactions",
+    "cross_domain_robustness": "robust to domain-specific variations",
+    "computational_efficiency": "suitable for edge deployment scenarios",
+    "attention_effectiveness": "proven through systematic evaluation protocols"
+  }
+}

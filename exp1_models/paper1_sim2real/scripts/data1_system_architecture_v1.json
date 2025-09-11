@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "extraction_date": "2025-09-10T22:30:53.322511",
+    "version": "v1",
+    "figure_id": "fig1_system_architecture",
+    "data_source": "Enhanced Attention Network Architecture Specifications"
+  },
+  "synthetic_generation_components": {
+    "multipath_modeling": {
+      "technique": "Channel impulse response modeling",
+      "formula": "h(t) = Σ αᵢ(t)δ(t - τᵢ(t))",
+      "parameters": [
+        "complex_amplitude",
+        "propagation_delay"
+      ]
+    },
+    "human_interaction_modeling": {
+      "fresnel_reflection": "Γ = (√εᵣ - 1)/(√εᵣ + 1)",
+      "doppler_shift": "fₐ = (v·cos(θ)/c)·fᶜ",
+      "parameters": [
+        "velocity",
+        "angle",
+        "permittivity"
+      ]
+    },
+    "environmental_variations": {
+      "room_geometry": "parameterized",
+      "wall_materials": "modeled",
+      "furniture_placement": "randomized",
+      "device_positions": "configurable"
+    }
+  },
+  "enhanced_attention_network": {
+    "architecture_type": "CNN + SE + Temporal Attention",
+    "total_parameters": 640713,
+    "attention_parameters": 411520,
+    "attention_percentage": 64.2,
+    "components": [
+      "DepthwiseConv2D",
+      "PointwiseConv2D",
+      "Squeeze-and-Excitation",
+      "MultiHeadTemporalAttention"
+    ],
+    "optimization": "Edge deployment optimized"
+  },
+  "evaluation_protocols": {
+    "SRV": {
+      "configurations": 540,
+      "focus": "synthetic robustness"
+    },
+    "CDAE": {
+      "configurations": 40,
+      "focus": "cross-domain adaptation"
+    },
+    "STEA": {
+      "configurations": 56,
+      "focus": "sim2real efficiency"
+    },
+    "Edge_Analysis": {
+      "platform": "Xavier AGX 32G",
+      "focus": "deployment feasibility"
+    }
+  },
+  "edge_deployment": {
+    "platform": "Xavier AGX 32G",
+    "cpu": "ARM Cortex-A78AE",
+    "gpu": "NVIDIA Volta (512 CUDA cores)",
+    "memory": "32GB LPDDR4x",
+    "cuda_memory": "31.17GB",
+    "compute_capability": 7.2
+  },
+  "performance_metrics": {
+    "cross_domain_f1": "83.0±0.1%",
+    "loso_loro_consistency": "identical performance",
+    "label_efficiency": "82.1% F1 with 20% data",
+    "throughput": "607 samples/second",
+    "latency": "5.3ms",
+    "memory_footprint": "2.44MB"
+  }
+}

@@ -1,0 +1,5 @@
+Model,LOSO_F1_Mean,LOSO_F1_Std,LORO_F1_Mean,LORO_F1_Std,LOSO_CV,LORO_CV,Protocol_Distance,Domain_Agnostic
+Enhanced Attention Network,83.0,0.1,83.0,0.1,0.12,0.12,0.28,True
+CNN,84.2,2.5,79.6,9.7,2.97,12.19,3.45,False
+BiLSTM,80.3,2.2,78.9,4.4,2.74,5.58,0.23,False
+Conformer lite,40.3,38.6,84.1,4.0,95.78,4.76,4.56,False

@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "extraction_date": "2025-09-10T22:11:13.416198",
+    "version": "v1",
+    "figure_id": "fig4_experimental_protocols",
+    "data_source": "Systematic Evaluation Protocols Specifications"
+  },
+  "evaluation_protocols": {
+    "SRV": {
+      "name": "Synthetic Robustness Validation",
+      "configurations": 540,
+      "focus": "synthetic robustness across noise, class overlap, and difficulty conditions",
+      "parameters": {
+        "noise_levels": [
+          0.0,
+          0.4,
+          0.8
+        ],
+        "class_overlap": [
+          0.0,
+          0.4,
+          0.8
+        ],
+        "label_noise": [
+          0.0,
+          0.05,
+          0.1
+        ],
+        "difficulty_levels": [
+          "easy",
+          "medium",
+          "hard"
+        ]
+      }
+    },
+    "CDAE": {
+      "name": "Cross-Domain Adaptation Evaluation",
+      "configurations": 40,
+      "focus": "LOSO/LORO generalization validation",
+      "protocols": {
+        "LOSO": "Leave-One-Subject-Out (subject shift)",
+        "LORO": "Leave-One-Room-Out (environment shift)"
+      },
+      "objective": "precise attribution of performance variations to domain shift phenomena"
+    },
+    "STEA": {
+      "name": "Sim2Real Transfer Efficiency Assessment",
+      "configurations": 56,
+      "focus": "Sim2Real label efficiency quantification",
+      "efficiency_curve": {
+        "bootstrap_phase": "1% - synthetic pretraining vs zero-shot baseline",
+        "rapid_improvement": "5% - performance jumps to 78.0±1.6% F1",
+        "convergence_phase": "≥20% - performance stabilizes at 82.1±0.3% F1"
+      },
+      "target_performance": "82.1% F1 using only 20% labeled real data"
+    },
+    "Edge_Deployment_Analysis": {
+      "name": "Edge Deployment Characterization",
+      "platform": "Xavier AGX 32G",
+      "focus": "practical edge deployment feasibility",
+      "batch_sizes": [
+        1,
+        4,
+        8
+      ],
+      "metrics": [
+        "throughput",
+        "latency",
+        "memory optimization"
+      ]
+    }
+  },
+  "integrated_evaluation_framework": {
+    "total_configurations": 640,
+    "evaluation_dimensions": [
+      "accuracy",
+      "cross-domain robustness",
+      "label efficiency",
+      "computational efficiency",
+      "memory constraints",
+      "real-time inference"
+    ],
+    "hardware_platforms": [
+      "Xavier AGX 32G"
+    ],
+    "systematic_assessment": "from synthetic generation to practical deployment"
+  },
+  "benchmark_datasets": {
+    "SenseFi_datasets": {
+      "UT_HAR": {
+        "classes": 7,
+        "environment": "controlled indoor"
+      },
+      "NTU_Fi_HAR": {
+        "classes": 6,
+        "environment": "multiple room configurations"
+      },
+      "NTU_Fi_HumanID": {
+        "classes": 14,
+        "task": "person identification"
+      },
+      "Widar": {
+        "classes": 22,
+        "task": "fine-grained hand gesture recognition"
+      }
+    }
+  },
+  "model_architectures": {
+    "Enhanced_Attention_Network": "CNN + SE + Temporal Attention (proposed)",
+    "CNN": "convolutional neural network baseline",
+    "BiLSTM": "bidirectional LSTM temporal modeling",
+    "Conformer_lite": "lightweight Conformer architecture variant",
+    "parameter_alignment": "within ±10% for fair comparison"
+  },
+  "edge_hardware_configuration": {
+    "platform": "Xavier AGX 32G",
+    "cpu": "ARM Cortex-A78AE",
+    "gpu": "NVIDIA Volta GPU (512 CUDA cores)",
+    "memory": "32GB LPDDR4x",
+    "cuda_memory": "31.17GB",
+    "compute_capability": 7.2,
+    "deployment_environment": "realistic edge deployment"
+  },
+  "key_performance_targets": {
+    "cross_domain_consistency": "83.0±0.1% F1 across LOSO/LORO",
+    "label_efficiency": "82.1% F1 with 20% real data (80% cost reduction)",
+    "edge_throughput": "607 samples/second",
+    "edge_latency": "5.3ms single-sample",
+    "memory_footprint": "2.44MB",
+    "gpu_speedup": "64.1x acceleration"
+  }
+}

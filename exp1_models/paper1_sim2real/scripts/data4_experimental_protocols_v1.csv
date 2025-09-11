@@ -1,0 +1,46 @@
+Protocol_Category,Protocol_Name,Parameter,Value,Description
+evaluation_protocols,SRV,name,Synthetic Robustness Validation,Name
+evaluation_protocols,SRV,configurations,540,Configurations
+evaluation_protocols,SRV,focus,"synthetic robustness across noise, class overlap, and difficulty conditions",Focus
+evaluation_protocols,SRV,parameters,"{'noise_levels': [0.0, 0.4, 0.8], 'class_overlap': [0.0, 0.4, 0.8], 'label_noise': [0.0, 0.05, 0.1], 'difficulty_levels': ['easy', 'medium', 'hard']}",Parameters
+evaluation_protocols,CDAE,name,Cross-Domain Adaptation Evaluation,Name
+evaluation_protocols,CDAE,configurations,40,Configurations
+evaluation_protocols,CDAE,focus,LOSO/LORO generalization validation,Focus
+evaluation_protocols,CDAE,protocols,"{'LOSO': 'Leave-One-Subject-Out (subject shift)', 'LORO': 'Leave-One-Room-Out (environment shift)'}",Protocols
+evaluation_protocols,CDAE,objective,precise attribution of performance variations to domain shift phenomena,Objective
+evaluation_protocols,STEA,name,Sim2Real Transfer Efficiency Assessment,Name
+evaluation_protocols,STEA,configurations,56,Configurations
+evaluation_protocols,STEA,focus,Sim2Real label efficiency quantification,Focus
+evaluation_protocols,STEA,efficiency_curve,"{'bootstrap_phase': '1% - synthetic pretraining vs zero-shot baseline', 'rapid_improvement': '5% - performance jumps to 78.0±1.6% F1', 'convergence_phase': '≥20% - performance stabilizes at 82.1±0.3% F1'}",Efficiency Curve
+evaluation_protocols,STEA,target_performance,82.1% F1 using only 20% labeled real data,Target Performance
+evaluation_protocols,Edge_Deployment_Analysis,name,Edge Deployment Characterization,Name
+evaluation_protocols,Edge_Deployment_Analysis,platform,Xavier AGX 32G,Platform
+evaluation_protocols,Edge_Deployment_Analysis,focus,practical edge deployment feasibility,Focus
+evaluation_protocols,Edge_Deployment_Analysis,batch_sizes,"[1, 4, 8]",Batch Sizes
+evaluation_protocols,Edge_Deployment_Analysis,metrics,"['throughput', 'latency', 'memory optimization']",Metrics
+integrated_evaluation_framework,total_configurations,,640,
+integrated_evaluation_framework,evaluation_dimensions,,"['accuracy', 'cross-domain robustness', 'label efficiency', 'computational efficiency', 'memory constraints', 'real-time inference']",
+integrated_evaluation_framework,hardware_platforms,,['Xavier AGX 32G'],
+integrated_evaluation_framework,systematic_assessment,,from synthetic generation to practical deployment,
+benchmark_datasets,SenseFi_datasets,UT_HAR,"{'classes': 7, 'environment': 'controlled indoor'}",Ut Har
+benchmark_datasets,SenseFi_datasets,NTU_Fi_HAR,"{'classes': 6, 'environment': 'multiple room configurations'}",Ntu Fi Har
+benchmark_datasets,SenseFi_datasets,NTU_Fi_HumanID,"{'classes': 14, 'task': 'person identification'}",Ntu Fi Humanid
+benchmark_datasets,SenseFi_datasets,Widar,"{'classes': 22, 'task': 'fine-grained hand gesture recognition'}",Widar
+model_architectures,Enhanced_Attention_Network,,CNN + SE + Temporal Attention (proposed),
+model_architectures,CNN,,convolutional neural network baseline,
+model_architectures,BiLSTM,,bidirectional LSTM temporal modeling,
+model_architectures,Conformer_lite,,lightweight Conformer architecture variant,
+model_architectures,parameter_alignment,,within ±10% for fair comparison,
+edge_hardware_configuration,platform,,Xavier AGX 32G,
+edge_hardware_configuration,cpu,,ARM Cortex-A78AE,
+edge_hardware_configuration,gpu,,NVIDIA Volta GPU (512 CUDA cores),
+edge_hardware_configuration,memory,,32GB LPDDR4x,
+edge_hardware_configuration,cuda_memory,,31.17GB,
+edge_hardware_configuration,compute_capability,,7.2,
+edge_hardware_configuration,deployment_environment,,realistic edge deployment,
+key_performance_targets,cross_domain_consistency,,83.0±0.1% F1 across LOSO/LORO,
+key_performance_targets,label_efficiency,,82.1% F1 with 20% real data (80% cost reduction),
+key_performance_targets,edge_throughput,,607 samples/second,
+key_performance_targets,edge_latency,,5.3ms single-sample,
+key_performance_targets,memory_footprint,,2.44MB,
+key_performance_targets,gpu_speedup,,64.1x acceleration,

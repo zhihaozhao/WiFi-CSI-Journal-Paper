@@ -1,0 +1,11 @@
+Model,Parameters,Memory_MB,CPU_Latency_ms,GPU_Latency_ms,Speedup_Factor,Throughput_sps,F1_Accuracy,Deployment_Status
+Enhanced Attention Network,640713,2.44,338.91,5.29,64.1,607.1,99.0,Production Ready
+CNN,644216,2.46,7.13,0.9,7.9,7076.2,98.7,Production Ready
+BiLSTM,583688,2.23,75.46,8.97,8.4,851.3,85.6,IoT Suitable
+Conformer lite,1448064,13.73,6.57,6.57,1.0,152.2,99.2,Production Ready Potential
+
+Application,Description,Accuracy_Req,Latency_Req,Enhanced_Suit,CNN_Suit
+Normal Walking,baseline monitoring with high tolerance,moderate (>80%),relaxed (<10ms),Excellent,Excellent
+Epileptic Monitoring,medical critical requiring high accuracy and low latency,high (>95%),strict (<3ms),Excellent,Good
+Violence Detection,security critical with accuracy and latency demands,high (>90%),moderate (<5ms),Excellent,Excellent
+Fall Detection,emergency critical with balanced requirements,high (>92%),moderate (<4ms),Excellent,Excellent

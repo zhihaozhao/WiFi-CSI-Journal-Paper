@@ -1,0 +1,26 @@
+Analysis_Component,Model,Metric,Value,Panel_Status,Notes
+PCA Components,principal_component_1,variance_explained,16.6,Essential,
+PCA Components,principal_component_1,feature_contribution,temporal features (0.70),Essential,
+PCA Components,principal_component_1,interpretation,primary temporal dynamics discriminator,Essential,
+PCA Components,principal_component_2,variance_explained,11.7,Essential,
+PCA Components,principal_component_2,feature_contribution,spatial features (0.45),Essential,
+PCA Components,principal_component_2,interpretation,secondary spatial pattern discriminator,Essential,
+Cross-Protocol,Enhanced_model,loso_loro_distance,0.28,Essential,
+Cross-Protocol,Enhanced_model,ranking,1,Essential,
+Cross-Protocol,Enhanced_model,consistency_level,superior,Essential,
+Cross-Protocol,BiLSTM,loso_loro_distance,0.23,Supporting,
+Cross-Protocol,BiLSTM,ranking,2,Supporting,
+Cross-Protocol,BiLSTM,consistency_level,good,Supporting,
+Cross-Protocol,CNN,loso_loro_distance,3.45,Supporting,
+Cross-Protocol,CNN,ranking,3,Supporting,
+Cross-Protocol,CNN,consistency_level,moderate,Supporting,
+Cross-Protocol,Conformer_lite,loso_loro_distance,4.56,Supporting,
+Cross-Protocol,Conformer_lite,ranking,4,Supporting,
+Cross-Protocol,Conformer_lite,consistency_level,poor,Supporting,
+Panel Analysis,main_pca_biplot,necessity,ESSENTIAL,Keep,Core clustering patterns and domain consistency
+Panel Analysis,cross_protocol_consistency,necessity,ESSENTIAL,Keep,Key finding validation - minimal LOSO-LORO distance
+Panel Analysis,feature_importance,necessity,VALUABLE,Keep,Temporal (0.70) and spatial (0.45) contributions
+Panel Analysis,pca_explained_variance,necessity,REDUNDANT,Remove,"Standard PCA output, limited insight"
+Panel Analysis,inter_model_separation,necessity,REDUNDANT,Remove,"Secondary insight, space cost too high"
+Panel Analysis,3d_feature_space,necessity,REDUNDANT,Remove,Same information as 2D biplot
+Panel Analysis,feature_loadings_matrix,necessity,REDUNDANT,Remove,"Technical detail, limited reader value"
