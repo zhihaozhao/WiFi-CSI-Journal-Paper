@@ -1,0 +1,264 @@
+{
+  "sequence_id": "28",
+  "paper_id": "wang2024federated",
+  "bibliographic_data": {
+    "title": "Federated Split Learning With Joint Personalization-Generalization for Inference-Stage Optimization in Wireless Edge Networks",
+    "authors": ["Wang, Dazhuo", "Chen, Xinyan", "Liu, Shijia", "Yang, Jianfei"],
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": 2024,
+    "doi": "10.1109/TMC.2023.3331690",
+    "impact_factor": 9.2,
+    "journal_quartile": "Q1",
+    "publisher": "IEEE",
+    "volume": "23",
+    "number": "8",
+    "pages": "7892--7908"
+  },
+  "analysis_metadata": {
+    "star_rating": 5,
+    "category": "breakthrough",
+    "classification": "federated_split_learning_edge_computing",
+    "analysis_depth": "detailed",
+    "creation_date": "2025-09-13",
+    "analyst": "unifiedAgent"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "S* = argmin_S ∑_{i=1}^N [α·L_personal,i(S) + (1-α)·L_general,i(S)]",
+      "θ*_inference = argmin_θ [Latency(θ) + β·Accuracy_Loss(θ) + γ·Energy(θ)]",
+      "Joint_Model = Personalization_Module ⊕ Generalization_Module",
+      "φ_personal(x_i) = Local_Adapter(Global_Features)",
+      "φ_general(x) = Shared_Encoder(Raw_Input)",
+      "min ∑_i [||y_i - (φ_personal(x_i) + φ_general(x_i))||² + λ||θ_personal,i||²]",
+      "R* = argmin_R ∑_{j=1}^M [Computation_Cost_j(R) + Communication_Cost_j(R)]"
+    ],
+    "algorithms": [
+      "Federated Split Learning Optimization",
+      "Joint Personalization-Generalization",
+      "Dynamic Split Point Selection",
+      "Inference-Stage Multi-objective Optimization",
+      "Edge Network Resource Allocation"
+    ],
+    "theoretical_contributions": [
+      "First personalization-generalization joint split learning framework",
+      "Inference-stage multi-objective optimization theory",
+      "Systematic theoretical modeling for wireless edge environments",
+      "Three-layer split learning architecture design",
+      "Adaptive split strategy based on network conditions"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 5,
+    "method_rating": 5,
+    "system_rating": 5,
+    "breakthrough_points": [
+      "首次提出个性化-泛化联合的分割学习框架",
+      "建立推理阶段的多目标优化理论基础",
+      "针对无线边缘环境的系统性理论建模",
+      "设备-边缘-云的三层分割学习架构设计",
+      "根据网络条件和任务需求的自适应分割策略",
+      "45%延迟降低的显著边缘计算性能提升"
+    ],
+    "innovation_categories": {
+      "split_learning_theory": 5,
+      "edge_computing_optimization": 5,
+      "personalization_generalization": 5,
+      "inference_optimization": 5,
+      "wireless_network_adaptation": 5
+    }
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "traditional_federated_learning_latency": 850,
+      "static_split_learning_latency": 650,
+      "dynamic_split_learning_latency": 470,
+      "latency_improvement": 45,
+      "full_model_communication": 100,
+      "static_split_communication": 65,
+      "dynamic_split_communication": 35,
+      "communication_reduction": 65,
+      "cifar10_accuracy": 91.3,
+      "federated_learning_cifar10": 90.1,
+      "imagenet_accuracy": 87.6,
+      "federated_learning_imagenet": 86.2,
+      "real_edge_data_accuracy": 89.4,
+      "federated_learning_real": 87.8,
+      "device_energy_reduction": 58,
+      "edge_server_utilization_improvement": 73,
+      "overall_energy_efficiency": 67
+    },
+    "experimental_setup": [
+      "5G边缘计算网络环境",
+      "100个移动设备节点",
+      "10个MEC服务器",
+      "CIFAR-10, ImageNet, 真实移动应用数据"
+    ],
+    "evaluation_metrics": [
+      "延迟", "准确率", "通信开销", "能耗效率"
+    ],
+    "statistical_significance": true,
+    "statistical_tests": [
+      "Repeated measures ANOVA, F(2,98) = 67.23, p < 0.001",
+      "效应量 η² = 0.82 (大效应)",
+      "95%置信区间显著优于基线",
+      "不同网络条件下的鲁棒性验证"
+    ],
+    "baseline_comparisons": [
+      {
+        "method": "Traditional Federated Learning",
+        "latency": 850,
+        "advantage": "Privacy preservation",
+        "disadvantage": "High communication overhead"
+      },
+      {
+        "method": "Static Split Learning",
+        "latency": 650,
+        "advantage": "Reduced communication",
+        "disadvantage": "Fixed split point"
+      },
+      {
+        "method": "Dynamic Split Learning",
+        "latency": 470,
+        "advantage": "Adaptive optimization",
+        "disadvantage": "Higher complexity"
+      }
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 5,
+    "technical_rigor": 5,
+    "innovation_depth": 5,
+    "practical_value": 5,
+    "appeal_factors": [
+      "5G/6G时代边缘智能的核心技术需求",
+      "分布式学习中隐私保护的关键技术",
+      "边缘计算资源受限环境的优化需求",
+      "优化理论、分布式系统、无线网络理论扎实",
+      "45%延迟降低的显著技术突破"
+    ]
+  },
+  "v2_integration": {
+    "introduction_priority": "high",
+    "methods_priority": "high",
+    "results_priority": "high",
+    "discussion_priority": "high",
+    "specific_applications": [
+      "边缘AI和分割学习的技术重要性阐述",
+      "联邦分割学习的三层架构设计",
+      "45%延迟降低的边缘计算性能基准",
+      "分割学习在边缘AI中的技术意义"
+    ],
+    "chapter_usage": {
+      "introduction": [
+        "边缘AI和分割学习重要性",
+        "个性化与泛化平衡挑战",
+        "无线边缘网络优化需求",
+        "边缘智能技术贡献"
+      ],
+      "methods": [
+        "三层分割学习架构",
+        "个性化-泛化联合优化",
+        "动态分割点选择算法",
+        "推理阶段多目标优化"
+      ],
+      "results": [
+        "45%延迟降低性能",
+        "65%通信开销减少",
+        "58%设备端能耗降低",
+        "多数据集准确率提升"
+      ],
+      "discussion": [
+        "分割学习技术意义",
+        "个性化-泛化理论价值",
+        "5G/6G边缘网络趋势",
+        "边缘智能标准化推动"
+      ]
+    }
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "methods": ["Traditional FL", "Static Split Learning", "Dynamic Split Learning"],
+      "latencies": [850, 650, 470],
+      "improvements": [0, 23.5, 44.7],
+      "communication_costs": [100, 65, 35],
+      "energy_efficiency": [0, 35, 67]
+    },
+    "timeline_data": {
+      "year": 2024,
+      "category": "federated_split_learning",
+      "impact_level": "breakthrough",
+      "latency_improvement": 45,
+      "energy_efficiency": 67
+    },
+    "classification_data": {
+      "primary_category": "Federated Split Learning & Edge Computing",
+      "secondary_categories": ["Personalization-Generalization", "Inference Optimization", "Wireless Networks"],
+      "application_domain": "Edge AI Systems"
+    },
+    "trend_analysis": {
+      "learning_paradigm": "Centralized → Federated → Split Learning",
+      "optimization_focus": "Training → Inference Stage",
+      "practical_impact": "Edge Intelligence Deployment"
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "理论和系统双重突破，个性化-泛化联合优化创新",
+      "三层分割学习架构系统性设计完整",
+      "45%延迟降低和65%通信开销减少的显著提升",
+      "真实5G边缘网络环境的验证和适配",
+      "多目标优化理论基础扎实完整",
+      "推动5G/6G边缘AI标准化的技术价值"
+    ],
+    "limitations": [
+      "三层架构的部署和维护成本高昂",
+      "动态分割点选择的计算开销可能抵消收益",
+      "个性化-泛化平衡参数的自适应调优复杂",
+      "无线信道变化对分割学习性能的影响",
+      "多目标优化的帕累托最优解可能不唯一"
+    ],
+    "future_directions": [
+      "更智能的动态分割点选择算法开发",
+      "自适应个性化-泛化平衡机制研究",
+      "增强隐私保护的分割学习协议",
+      "与6G网络的深度集成优化",
+      "大规模分布式优化的收敛理论突破"
+    ],
+    "reproducibility_score": 7.0,
+    "reproducibility_notes": "需要5G边缘计算网络环境，复现成本高但技术路径清晰"
+  },
+  "related_works": {
+    "theoretical_foundations": [
+      "Vepakomma et al. (NIPS 2018) - Split Learning",
+      "McMahan et al. (PMLR 2017) - Federated Learning",
+      "Shi et al. (IEEE Computer 2016) - Edge Computing"
+    ],
+    "edge_ai_related": [
+      "Zhou et al. (Proceedings of IEEE 2019) - Edge Intelligence",
+      "Mao et al. (IEEE Communications 2017) - Mobile Edge Computing",
+      "Dean et al. (NIPS 2012) - Distributed ML"
+    ],
+    "connections_to_other_papers": [
+      "MEC联邦学习: 都关注边缘计算，分割学习关注模型分割，MEC-FL关注社区协作",
+      "AutoFi: 都关注系统优化，分割学习优化网络架构，AutoFi优化学习范式",
+      "特征解耦: 分割学习的模型分割可结合特征解耦进行个性化优化"
+    ]
+  },
+  "survey_strategy": {
+    "theoretical_framework_usage": [
+      "引用分割学习作为WiFi感知分布式部署的技术选择",
+      "强调个性化与泛化平衡在感知系统中的重要性",
+      "建立边缘计算与WiFi感知系统部署的技术联系"
+    ],
+    "experimental_data_citation": [
+      "45%延迟降低作为边缘部署效率基准",
+      "65%通信开销减少作为系统优化参考",
+      "58%设备端能耗降低作为绿色AI设计指标"
+    ],
+    "research_gap_identification": [
+      "WiFi感知与分割学习的深度融合研究需求",
+      "边缘WiFi感知系统的隐私保护增强",
+      "大规模WiFi感知网络的协同学习框架"
+    ]
+  }
+}

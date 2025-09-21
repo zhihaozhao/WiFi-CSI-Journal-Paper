@@ -1,0 +1,198 @@
+{
+  "paper_id": "001_AutoViT_2025",
+  "basic_info": {
+    "title": "AutoViT: Achieving Real-Time Vision Transformers on Mobile via Latency-aware Coarse-to-Fine Search",
+    "authors": [
+      "Zhenglun Kong",
+      "Dongkuan Xu",
+      "Zhengang Li",
+      "Peiyan Dong",
+      "Hao Tang",
+      "Yanzhi Wang",
+      "Subhabrata Mukherjee"
+    ],
+    "journal": "International Journal of Computer Vision",
+    "year": 2025,
+    "doi": "https://doi.org/10.1007/s11263-025-02480-w",
+    "institutions": [
+      "Northeastern University",
+      "North Carolina State University",
+      "Microsoft Corporation"
+    ]
+  },
+  "technical_innovation": {
+    "primary_contributions": [
+      "Hybrid CNN-Transformer search space design",
+      "Training-free latency prediction model",
+      "Coarse-to-fine architecture search strategy",
+      "Multi-size supernet training scheme"
+    ],
+    "innovation_scores": {
+      "algorithmic_novelty": 9.5,
+      "architectural_innovation": 9.0,
+      "optimization_breakthrough": 9.2,
+      "practical_impact": 9.5
+    },
+    "key_algorithms": [
+      {
+        "name": "Latency-aware NAS",
+        "description": "Hardware-aware neural architecture search with lookup table",
+        "mathematical_formulation": "L(m) = Σl_i·o_i(m) + Σt_j·d_j(m)"
+      },
+      {
+        "name": "Weight Inheritance Strategy",
+        "description": "Efficient supernet training with parameter sharing",
+        "mathematical_formulation": "W_i^l = W^l[: d_1^i, : d_2^i,..., : d_k^i]"
+      },
+      {
+        "name": "Coarse-to-Fine Search",
+        "description": "Two-stage architecture optimization",
+        "mathematical_formulation": "s* = arg max A(S(s, W*)) subject to L(s) ≤ L_max"
+      }
+    ]
+  },
+  "mathematical_framework": {
+    "optimization_objective": {
+      "primary": "max A(S(s, W*)) subject to L(s) ≤ L_max",
+      "joint": "min [L(s) + λ · C(s)]",
+      "constraints": ["latency_budget", "parameter_budget", "memory_constraint"]
+    },
+    "key_equations": [
+      {
+        "name": "Latency Modeling",
+        "equation": "L(m) = Σ(i=1 to No) l_i · o_i(m) + Σ(j=1 to Nd) t_j · d_j(m)",
+        "variables": {
+          "L(m)": "latency of module m",
+          "l_i, t_j": "latency coefficients",
+          "o_i(m)": "frequency of i-th operator",
+          "d_j(m)": "j-th design parameter"
+        }
+      },
+      {
+        "name": "Weight Sharing Efficiency",
+        "equation": "E = (1/N) Σ(n=1 to N) w_shared/w_total,n",
+        "variables": {
+          "E": "sharing efficiency metric",
+          "w_shared": "shared parameters",
+          "w_total,n": "total parameters of n-th block"
+        }
+      }
+    ],
+    "complexity_analysis": {
+      "search_space_reduction": "10^16 → 10^10",
+      "training_time": "12 hours",
+      "inference_latency": "10.2ms (AutoViT_XXS)"
+    }
+  },
+  "experimental_validation": {
+    "datasets": [
+      "ImageNet-1K",
+      "COCO-2017",
+      "CIFAR-10",
+      "CIFAR-100",
+      "Oxford Flowers",
+      "Stanford Cars"
+    ],
+    "performance_results": {
+      "AutoViT_XXS": {
+        "parameters": "1.8M",
+        "FLOPs": "0.3G",
+        "top1_accuracy": 71.3,
+        "latency_ms": 10.2
+      },
+      "AutoViT_XS": {
+        "parameters": "2.5M",
+        "FLOPs": "0.8G",
+        "top1_accuracy": 75.5,
+        "latency_ms": 19.3
+      },
+      "AutoViT_S": {
+        "parameters": "6.3M",
+        "FLOPs": "1.3G",
+        "top1_accuracy": 79.2,
+        "latency_ms": 27.9
+      }
+    },
+    "baseline_comparisons": [
+      {
+        "model": "MobileViTv3_XXS",
+        "accuracy": 71.0,
+        "latency": 12.5,
+        "improvement": "0.3% accuracy, 2.3ms faster"
+      },
+      {
+        "model": "EfficientFormer-L1",
+        "accuracy": 79.2,
+        "latency": 28.0,
+        "improvement": "same accuracy, slightly faster"
+      }
+    ],
+    "ablation_studies": [
+      {
+        "component": "Knowledge Distillation",
+        "finding": "Hard distillation improves 0.4% over soft distillation"
+      },
+      {
+        "component": "Supernet Number",
+        "finding": "Single supernet reduces accuracy by 6.0%"
+      },
+      {
+        "component": "Search Strategy",
+        "finding": "Coarse-to-fine reduces search time to 12 hours"
+      }
+    ]
+  },
+  "impact_assessment": {
+    "academic_impact": {
+      "citation_potential": "high",
+      "influence_on_field": "significant breakthrough in mobile AI",
+      "novelty_rating": 9.5
+    },
+    "practical_applications": [
+      "Real-time mobile image classification",
+      "Edge device deployment",
+      "IoT visual processing",
+      "Autonomous systems"
+    ],
+    "limitations": [
+      "Hardware-specific lookup table requirements",
+      "Limited to predefined architectural components",
+      "Generalization to new tasks requires validation"
+    ]
+  },
+  "dfhar_relevance": {
+    "direct_applicability": 7.5,
+    "transferable_techniques": [
+      "Latency-aware architecture search",
+      "Hybrid CNN-Transformer design",
+      "Mobile optimization strategies",
+      "Real-time deployment methods"
+    ],
+    "potential_adaptations": [
+      "CSI signal processing with hybrid architectures",
+      "Real-time HAR system optimization",
+      "Edge device WiFi sensing",
+      "Resource-constrained activity recognition"
+    ]
+  },
+  "quality_metrics": {
+    "innovation_score": 9.5,
+    "technical_depth": 9.0,
+    "experimental_rigor": 9.2,
+    "reproducibility": 9.5,
+    "writing_quality": 9.0,
+    "overall_rating": 9.2,
+    "recommendation_level": "highly_recommended"
+  },
+  "citation_info": {
+    "bibtex": "@article{kong2025autovit,\n  title={AutoViT: Achieving Real-Time Vision Transformers on Mobile via Latency-aware Coarse-to-Fine Search},\n  author={Kong, Zhenglun and Xu, Dongkuan and Li, Zhengang and Dong, Peiyan and Tang, Hao and Wang, Yanzhi and Mukherjee, Subhabrata},\n  journal={International Journal of Computer Vision},\n  year={2025},\n  doi={10.1007/s11263-025-02480-w}\n}",
+    "keywords": [
+      "Vision Transformer",
+      "Neural Architecture Search",
+      "Mobile AI",
+      "Latency Optimization",
+      "Edge Computing",
+      "Real-time Inference"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "paper_id": "033",
+  "title": "WiFi based Multi-User Gesture Recognition",
+  "authors": ["Raghav H. Venkatnarayan", "Shakir Mahmood", "Muhammad Shahzad"],
+  "publication_year": 2021,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "star_rating": 4,
+  "technical_category": "Multi-User Gesture Recognition",
+  "research_focus": "Concurrent Multi-User Activity Sensing",
+
+  "key_metrics": {
+    "two_user_accuracy": 95.6,
+    "eight_user_accuracy": 90.1,
+    "max_users_supported": 8,
+    "gesture_types": 6,
+    "virtual_sample_generation_effectiveness": 85.0,
+    "frequency_pattern_uniqueness": 98.0,
+    "cfr_power_model_accuracy": 92.0
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "First WiFi system supporting 2-8 simultaneous user gesture recognition",
+    "mathematical_model": "CFR power multi-user extension model with frequency pattern analysis",
+    "key_insights": [
+      "Frequency pattern uniqueness for each gesture combination",
+      "Frequency count changes with moving user count",
+      "Primary frequency independence across users"
+    ],
+    "virtual_sample_generation": "Automated training data augmentation technique",
+    "theoretical_breakthrough": "Multi-user motion mathematical modeling"
+  },
+
+  "experimental_setup": {
+    "max_users": 8,
+    "gesture_types": 6,
+    "environments": 3,
+    "hardware": "Commercial WiFi devices with CSI extraction",
+    "validation_method": "Multi-user concurrent gesture evaluation",
+    "data_collection": "Systematic multi-user combination testing"
+  },
+
+  "performance_comparison": {
+    "two_user_performance": 95.6,
+    "eight_user_performance": 90.1,
+    "baseline_wisee": "Only 60% accuracy for 2 gestures",
+    "improvement_over_single_user": "Maintains >90% accuracy across all user counts",
+    "frequency_analysis_accuracy": 98.0
+  },
+
+  "reproducibility": {
+    "score": 7.5,
+    "mathematical_model": "complete CFR power equations",
+    "multi_user_setup": "detailed concurrent user configuration",
+    "virtual_sample_method": "clear data augmentation technique",
+    "missing_elements": ["source code", "multi-user dataset availability"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "First scalable multi-user WiFi gesture recognition system",
+    "practical_significance": "Enables real-world multi-user interactive applications",
+    "technical_advancement": "Breakthrough in concurrent user activity sensing",
+    "citation_importance": "High - foundational work for multi-user sensing"
+  },
+
+  "limitations": [
+    "Limited to 6 gesture types",
+    "Performance degradation with increasing users (95.6% to 90.1%)",
+    "Indoor environment evaluation only",
+    "Requires sophisticated frequency analysis for real-time deployment"
+  ],
+
+  "future_directions": [
+    "Extended gesture vocabulary support",
+    "Real-time optimization for 8+ users",
+    "Cross-environment multi-user validation",
+    "Integration with user identification systems",
+    "Advanced virtual sample generation techniques",
+    "Scalability beyond 8 users",
+    "Energy-efficient multi-user processing"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Multi-User Recognition Systems",
+      "Concurrent Activity Sensing",
+      "Mathematical Modeling Advances",
+      "Virtual Sample Generation Techniques"
+    ],
+    "citation_context": "Multi-user gesture recognition benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "source_language": "Chinese",
+    "extracted_from": "033_WiFi_Based_Multi_User_Gesture_Recognition_20250916.md",
+    "analysis_completeness": "comprehensive data extraction",
+    "validation_level": "4-star analysis protocol"
+  }
+}

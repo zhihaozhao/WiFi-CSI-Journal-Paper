@@ -1,0 +1,55 @@
+{
+  "paper_id": "",
+  "citation_key": "",
+  "title": "",
+  "authors": [],
+  "publication_info": {
+    "journal": "",
+    "conference": "",
+    "year": 0,
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "publisher": ""
+  },
+  "quality_metrics": {
+    "impact_factor": 0.0,
+    "journal_ranking": "",
+    "citation_count": 0,
+    "verification_status": "",
+    "authenticity_check": "pending"
+  },
+  "research_content": {
+    "research_domain": "",
+    "methodology": "",
+    "key_contributions": [],
+    "experimental_setup": "",
+    "datasets_used": [],
+    "performance_metrics": {},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 0,
+    "wifi_csi_focus": true,
+    "technical_depth": 0,
+    "novelty_score": 0,
+    "chapter_mapping": [],
+    "priority_level": 0
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": [],
+    "mathematical_models": [],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": [],
+    "proposed_solutions": [],
+    "research_gaps": [],
+    "potential_experiments": []
+  },
+  "notes": "",
+  "extraction_date": "",
+  "last_updated": ""
+}

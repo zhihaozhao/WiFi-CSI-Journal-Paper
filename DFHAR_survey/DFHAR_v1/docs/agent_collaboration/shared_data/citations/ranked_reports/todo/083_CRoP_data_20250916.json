@@ -1,0 +1,86 @@
+{
+  "paper_id": "63",
+  "title": "CRoP: Context-wise Robust Static Human-Sensing Personalization",
+  "authors": ["Sawinder Kaur", "Avery Gump", "Yi Xiao", "Jingyu Xin", "Harshit Sharma", "Nina R Benway", "Jonathan L Preston", "Asif Salekin"],
+  "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+  "year": 2025,
+  "doi": "10.1145/3729483",
+  "impact_factor": "High (ACM IMWUT top-tier)",
+  "star_rating": 5,
+  "technical_innovation": {
+    "algorithmic_contributions": [
+      "Adaptive pruning strategy with user-specific tolerance",
+      "Model mixing framework for parameter restoration",
+      "Context-aware static personalization approach"
+    ],
+    "mathematical_framework": {
+      "optimization_objective": "argmin_θ Σ ℓ(M^G_θ, d) subject to generalization constraints",
+      "toleratedprune_algorithm": "Iterative pruning with accuracy tolerance τ",
+      "gradient_inner_product": "GIP analysis for generalizability assessment"
+    },
+    "novelty_score": 95
+  },
+  "experimental_validation": {
+    "datasets": ["PERCEPT-R", "WIDAR", "ExtraSensory", "Stress-sensing"],
+    "evaluation_metrics": {
+      "personalization_gain": 35.23,
+      "generalization_improvement": 7.78,
+      "baseline_improvements": {
+        "SHOT": 9.18,
+        "PackNet": 9.17
+      }
+    },
+    "statistical_rigor": {
+      "multiple_seeds": true,
+      "cross_validation": "Person-disjoint",
+      "significance_testing": true
+    }
+  },
+  "computational_efficiency": {
+    "training_time_range": [2.34, 17.68],
+    "memory_usage_mb": [288, 2881],
+    "inference_overhead": "minimal"
+  },
+  "editorial_appeal": {
+    "importance": 5,
+    "technical_rigor": 4,
+    "innovation": 5,
+    "reproducibility": 4,
+    "overall_score": 4.5
+  },
+  "dfhar_relevance": {
+    "wifi_csi_applications": [
+      "Context-aware WiFi sensing personalization",
+      "Cross-environment adaptation strategies",
+      "User-specific model adaptation for DFHAR"
+    ],
+    "integration_priority": "high",
+    "practical_impact": "substantial"
+  },
+  "plotting_data": {
+    "performance_metrics": {
+      "personalization_improvement": 35.23,
+      "generalization_gain": 7.78,
+      "computational_efficiency": "high"
+    },
+    "comparison_baselines": [
+      {"method": "SHOT", "improvement": 9.18},
+      {"method": "PackNet", "improvement": 9.17},
+      {"method": "Generic", "improvement": 35.23}
+    ]
+  },
+  "critical_assessment": {
+    "strengths": [
+      "Novel context-wise personalization framework",
+      "Comprehensive multi-domain evaluation",
+      "Significant performance improvements",
+      "Theoretical justification via GIP analysis"
+    ],
+    "limitations": [
+      "Limited architecture diversity in evaluation",
+      "Manual context annotation requirements",
+      "Inter-user generalizability not addressed"
+    ],
+    "impact_potential": "high"
+  }
+}

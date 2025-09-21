@@ -1,0 +1,96 @@
+{
+  "paper_id": "038",
+  "title": "WiGRUNT: WiFi-enabled Gesture Recognition Using Dual-attention Network",
+  "authors": ["Yu Gu", "Xiang Zhang", "Yantong Wang", "Meng Wang", "Zhi Liu", "Jianhua Li", "Mianxiong Dong"],
+  "publication_year": 2022,
+  "venue": "IEEE Transactions on Human-Machine Systems",
+  "star_rating": 4,
+  "technical_category": "Deep Learning Architecture",
+  "research_focus": "WiFi Gesture Recognition",
+
+  "key_metrics": {
+    "in_domain_accuracy": 99.67,
+    "cross_location_accuracy": 96.0,
+    "cross_orientation_accuracy": 92.6,
+    "cross_environment_accuracy": 93.15,
+    "inference_time_ms": 50,
+    "dataset_samples": 15375
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "Dual-Attention CSI Network (DACN)",
+    "attention_mechanisms": [
+      "Temporal-Spatial Attention Module A (pixel-level)",
+      "Temporal-Spatial Attention Module B (channel-level)"
+    ],
+    "denoising_method": "CSI-Ratio method for phase offset elimination",
+    "visualization_technique": "4D CSI tensor to time-series images",
+    "architecture_backbone": "ResNet18 with transfer learning"
+  },
+
+  "experimental_setup": {
+    "dataset": "Widar3",
+    "participants": 16,
+    "gestures": 9,
+    "environments": 3,
+    "spatial_configurations": 25,
+    "validation_method": "5-fold cross-validation",
+    "hardware": "NVIDIA GTX 1080 Ti"
+  },
+
+  "performance_comparison": {
+    "improvement_over_baseline": 5.75,
+    "baseline_method": "WiHF",
+    "state_of_art_ranking": 1,
+    "comparative_methods": 6
+  },
+
+  "reproducibility": {
+    "score": 7.5,
+    "code_available": true,
+    "dataset_public": true,
+    "implementation_details": "complete",
+    "missing_elements": ["some training hyperparameters"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "First dual-attention mechanism for WiFi gesture recognition",
+    "technical_advancement": "Eliminates handcrafted feature engineering",
+    "practical_significance": "Real-time deployment capability",
+    "citation_importance": "High - establishes new standard for attention-based WiFi sensing"
+  },
+
+  "limitations": [
+    "CSI data quality dependency",
+    "Multi-antenna requirement for optimal performance",
+    "Limited to predefined gesture set",
+    "Cross-device generalization challenges"
+  ],
+
+  "future_directions": [
+    "Multi-user gesture recognition",
+    "Transformer architecture integration",
+    "Real-time optimization",
+    "Cross-device generalization",
+    "Multi-scale attention mechanisms",
+    "Multi-modal fusion approaches"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Technical Foundations - Attention Mechanisms",
+      "Performance Benchmarking",
+      "Cross-Domain Analysis",
+      "Future Research Directions"
+    ],
+    "citation_context": "Attention-based architectures benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "agents_involved": ["literature-analuzerAgent", "experimentAgent", "technicalAgent"],
+    "analysis_completeness": "comprehensive",
+    "validation_level": "4-star analysis protocol"
+  }
+}

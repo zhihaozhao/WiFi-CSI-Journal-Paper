@@ -1,0 +1,145 @@
+{
+  "paper_id": 89,
+  "title": "SoK Paper",
+  "key": "paper2024",
+  "importance_level": "3-star",
+  "priority_score": 6,
+  "generated_date": "2025-09-14 23:29:30",
+  "source_reports": 1,
+  "merged_data": {
+    "058": {
+      "paper_id": 89,
+      "title": "SoK Paper: Power Side-Channel Malware Detection",
+      "authors": [
+        "Alexander Cathis",
+        "Ge Li",
+        "Shijia Wei",
+        "Michael Orshansky",
+        "Mohit Tiwari",
+        "Andreas Gerstlauer"
+      ],
+      "venue": "HASP '24",
+      "year": 2024,
+      "relevance_to_wifi_har": "Limited - Power-based malware detection in embedded systems",
+      "technical_approach": "Systematization of power side-channel detectors with ensemble one-class classification",
+      "key_contributions": [
+        "Comprehensive taxonomy of 23 power-based malware detection works",
+        "Identification of three research gaps: parallel evaluation, ML formulation, public datasets",
+        "Novel ensemble detector using mode-specific one-class classifiers",
+        "Public dataset release for multi-core embedded malware detection"
+      ],
+      "cross_domain_applicability": {
+        "ensemble_methods": "High - Mode-specific classifier combinations applicable to multi-activity HAR",
+        "evaluation_framework": "High - Comprehensive testing across all operating conditions",
+        "feature_engineering": "Medium - Statistical features applicable to CSI analysis",
+        "ml_formulation_critique": "High - Critical assessment of appropriate ML approaches"
+      },
+      "stability_analysis": {
+        "single_task_performance": "Good - Existing methods effective in controlled environments",
+        "multi_task_degradation": "Significant - Performance loss in concurrent execution scenarios",
+        "noise_handling": "Addressed through preprocessing and ensemble approaches",
+        "worst_case_robustness": "ROC-AUC > 0.80 with proposed ensemble method"
+      },
+      "practical_deployment": {
+        "scalability": "Limited - Performance decreases with system complexity",
+        "real_time_capability": "Feasible - 2 KHz sampling rate with lightweight classifiers",
+        "hardware_requirements": "Moderate - Current sensor and embedded computing platform"
+      },
+      "verification_status": {
+        "citations_verified": true,
+        "technical_accuracy": "High",
+        "reproducibility": "Good - Public dataset and implementation details provided"
+      },
+      "plotting_data": {
+        "categories": [
+          "Power Analysis",
+          "Malware Detection",
+          "Embedded Systems",
+          "Side-Channel",
+          "Security"
+        ],
+        "performance_metrics": {
+          "single_core_roc_auc": [
+            0.85,
+            0.9,
+            0.88,
+            0.92,
+            0.87
+          ],
+          "multi_core_roc_auc": [
+            0.65,
+            0.7,
+            0.68,
+            0.72,
+            0.69
+          ],
+          "ensemble_roc_auc": [
+            0.9,
+            0.92,
+            0.91,
+            0.94,
+            0.9
+          ]
+        },
+        "research_gaps": {
+          "parallel_evaluation": 85,
+          "ml_formulation": 70,
+          "public_datasets": 90
+        },
+        "device_complexity": {
+          "MCU": 8,
+          "Mobile": 9,
+          "Desktop": 6
+        }
+      },
+      "cross_domain_insights": [
+        "Mode-specific classifier training applicable to activity-specific HAR models",
+        "Ensemble approaches could enhance multi-person activity recognition",
+        "Systematic evaluation framework valuable for WiFi HAR validation",
+        "Statistical feature engineering techniques applicable to CSI analysis"
+      ]
+    }
+  },
+  "plotting_data": {
+    "categories": [
+      "Power Analysis",
+      "Malware Detection",
+      "Embedded Systems",
+      "Side-Channel",
+      "Security"
+    ],
+    "performance_metrics": {
+      "single_core_roc_auc": [
+        0.85,
+        0.9,
+        0.88,
+        0.92,
+        0.87
+      ],
+      "multi_core_roc_auc": [
+        0.65,
+        0.7,
+        0.68,
+        0.72,
+        0.69
+      ],
+      "ensemble_roc_auc": [
+        0.9,
+        0.92,
+        0.91,
+        0.94,
+        0.9
+      ]
+    },
+    "research_gaps": {
+      "parallel_evaluation": 85,
+      "ml_formulation": 70,
+      "public_datasets": 90
+    },
+    "device_complexity": {
+      "MCU": 8,
+      "Mobile": 9,
+      "Desktop": 6
+    }
+  }
+}

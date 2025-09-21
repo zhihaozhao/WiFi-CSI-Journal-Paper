@@ -1,0 +1,126 @@
+{
+    "paper_id": "013",
+    "analysis_date": "2025-09-16",
+    "title": "LSTM-CNN network for human activity recognition using WiFi CSI data",
+    "authors": ["Shunuo Shang", "Qingyao Luo", "Jinjin Zhao", "Ran Xue", "Weihao Sun", "Nan Bao"],
+    "venue": "Journal of Physics: Conference Series",
+    "year": 2021,
+    "doi": "10.1088/1742-6596/1883/1/012139",
+    "publisher": "IOP Publishing",
+    "publication_type": "Conference Paper",
+    "access_type": "Open Access",
+
+    "technical_innovation": {
+        "primary_innovation": "Hybrid LSTM-CNN Architecture for WiFi CSI-based Human Activity Recognition",
+        "innovation_type": "Algorithmic Architecture Innovation",
+        "novelty_score": 3.5,
+        "technical_depth": 3.5,
+        "key_contributions": [
+            "First LSTM-CNN hybrid approach for WiFi CSI-based HAR",
+            "Systematic multi-channel CSI processing analysis",
+            "Comprehensive performance comparison with baseline methods"
+        ]
+    },
+
+    "algorithmic_details": {
+        "architecture": "LSTM-CNN Hybrid",
+        "lstm_hidden_units": 28,
+        "cnn_kernels": 5,
+        "kernel_size": "30×28",
+        "input_channels": {
+            "two_channel": "Signal amplitude product and phase differences",
+            "four_channel": "Signal amplitudes from two antennas plus amplitude product and phase difference"
+        },
+        "sequence_length": 400,
+        "batch_size": 10,
+        "learning_rate": 0.001,
+        "training_epochs": "50-70"
+    },
+
+    "experimental_validation": {
+        "dataset_size": 2800,
+        "activity_classes": 5,
+        "activities": ["standing", "sitting", "falling", "standing up", "stepping"],
+        "participants": 5,
+        "environment": "Indoor classroom",
+        "frequency_band": "5GHz",
+
+        "performance_metrics": {
+            "binary_classification": {
+                "accuracy": 94.97,
+                "loss": 0.1380,
+                "precision": 91.49,
+                "recall": 91.55,
+                "f1_score": 91.52
+            },
+            "multi_classification": {
+                "accuracy": 94.14,
+                "loss": 0.1269,
+                "precision": 91.03,
+                "recall": 83.81,
+                "f1_score": 87.10
+            }
+        },
+
+        "baseline_comparisons": {
+            "LSTM": {
+                "binary_accuracy": 89.84,
+                "multi_accuracy": 82.72
+            },
+            "KNN": {
+                "binary_accuracy": 84.29,
+                "multi_accuracy": 74.13
+            },
+            "SVM": {
+                "binary_accuracy": 77.01,
+                "multi_accuracy": 71.33
+            }
+        }
+    },
+
+    "quality_assessment": {
+        "overall_technical_quality": 3.5,
+        "scientific_rigor": 3.0,
+        "reproducibility_score": 3.0,
+        "innovation_score": 3.5,
+        "methodology_score": 3.0,
+        "impact_potential": 3.5
+    },
+
+    "strengths": [
+        "Novel hybrid architecture for WiFi CSI-based HAR",
+        "Effective temporal-spatial feature fusion strategy",
+        "Comprehensive experimental comparison",
+        "Clear mathematical formulation and architecture description",
+        "Significant performance improvements over baselines"
+    ],
+
+    "limitations": [
+        "Limited architectural exploration and depth",
+        "Small-scale experimental validation",
+        "Single-environment testing constraints",
+        "Missing advanced deep learning techniques",
+        "Insufficient statistical rigor in evaluation"
+    ],
+
+    "recommendation": {
+        "include_in_survey": true,
+        "priority_level": "Medium-High",
+        "survey_category": "Deep Learning Approaches → Hybrid Architectures",
+        "secondary_category": "Signal Processing → Multi-Channel CSI Processing"
+    },
+
+    "research_impact": {
+        "breakthrough_level": "Incremental Innovation",
+        "field_advancement": "Establishes foundation for future hybrid architecture development",
+        "performance_improvement": "+5.13% accuracy over best baseline",
+        "practical_applications": ["Healthcare monitoring", "Smart home systems", "Security systems"]
+    },
+
+    "future_directions": [
+        "Advanced hybrid architectures with attention mechanisms",
+        "Multi-modal integration with additional sensor modalities",
+        "Real-time processing optimization for edge computing",
+        "Cross-domain adaptation and transfer learning approaches"
+    ]
+}

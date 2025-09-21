@@ -1,0 +1,65 @@
+filename,importance_score,new_sequence,old_sequence,star_rating,title,venue,year
+116_Deep_Learning_Lightweight_HAR_WiFi_CSI_literatureAgent6_20250914.md,96.00,001,116,⭐⭐⭐⭐⭐,A Deep Learning Based Lightweight Human Activity Recognition...,IEEE Transactions on Human-Machine Systems,2024
+123_Robust_WiFi_Respiration_Sensing_Interfering_Individual_literatureAgent6_20250914.md,96.00,002,123,⭐⭐⭐⭐⭐,Robust WiFi Respiration Sensing in the Presence of Interferi...,IEEE Transactions on Mobile Computing,2024
+60_WiPhase_Human_Activity_Recognition_Reconstructed_WiFi_CSI_Phase_Features_literatureAgent1_20250914.md,93.00,003,060,⭐⭐⭐⭐⭐,,,2025
+90_Quantum_Enhanced_Signal_Processing_Ultra_Precise_WiFi_Activity_Recognition_literatureAgent4_20250914.md,92.85,004,090,⭐⭐⭐⭐⭐,,Nature Machine Intelligence 2024,2024
+114_Human_Activity_Recognition_Self_Attention_Mechanism_WiFi_Environment_literatureAgent6_20250914.md,91.00,005,114,⭐⭐⭐⭐⭐,Human Activity Recognition Based on Self-Attention Mechanism...,IEEE Access,2024
+112_SHARP_Environment_Person_Independent_Activity_Recognition_literatureAgent6_20250914.md,90.00,006,112,⭐⭐⭐⭐⭐,SHARP: Environment and Person Independent Activity Recogniti...,"IEEE Transactions on Mobile Computing, Vol. 22, No. 10, October 2023",2023
+50_Deep_Learning_Based_Lightweight_Human_Activity_Recognition_System_Using_Reconstructed_WiFi_CSI_literatureAgent1_20250914.md,89.50,007,050,⭐⭐⭐⭐⭐,A Deep Learning Based Lightweight Human Activity Recognition...,IEEE Transactions on Human-Machine Systems,2024
+117_Real_time_Object_Detection_WiFi_CSI_Multiple_HAR_literatureAgent6_20250914.md,88.50,008,117,⭐⭐⭐⭐⭐,A Real-time Object Detection for WiFi CSI-based Multiple Hum...,2023 IEEE 20th Consumer Communications & Networking Conference (CCNC),2023
+57_WiFi_TCN_Human_Interaction_Recognition_literatureAgent1_20250914.md,87.00,009,057,⭐⭐⭐⭐⭐,,,2025
+64_Efficient_Residual_Neural_Network_WiFi_CSI_HAR_literatureAgent2_20250914.md,87.00,010,064,⭐⭐⭐⭐⭐,,,2025
+118_Taxonomy_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent6_20250914.md,84.00,011,118,⭐⭐⭐⭐⭐,A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar,2020 IEEE Globecom Workshops (GC Wkshps),2020
+85_Multi-Sense_Attention_Network_MSANet_Enhanced_HAR_literatureAgent3_20250914.md,83.50,012,085,⭐⭐⭐⭐⭐,,,2025
+115_Vision_Transformers_Human_Activity_Recognition_WiFi_Channel_State_Information_literatureAgent6_20250914.md,83.50,013,115,⭐⭐⭐⭐⭐,Vision Transformers for Human Activity Recognition Using WiF...,IEEE Internet of Things Journal,2024
+111_Pushing_Limits_WiFi_Sensing_Low_Transmission_Rates_literatureAgent6_20250914.md,80.00,014,111,⭐⭐⭐⭐⭐,Pushing the Limits of WiFi Sensing With Low Transmission Rat...,"IEEE Transactions on Mobile Computing, Vol. 23, No. 11, November 2024",2024
+87_Robust_Practical_WiFi_Human_Sensing_On_device_Learning_Domain_Adaptive_literatureAgent4_20250914.md,79.50,015,087,⭐⭐⭐⭐⭐,,"ACM BuildSys '20 (The 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation)",2020
+51_Real-time_Object_Detection_for_WiFi_CSI-based_Multiple_Human_Activity_Recognition_literatureAgent1_20250914.md,79.00,016,051,⭐⭐⭐⭐⭐,A Real-time Object Detection for WiFi CSI-based Multiple Hum...,IEEE 20th Consumer Communications & Networking Conference (CCNC),2023
+91_Energy_Efficient_WiFi_Sensing_Dynamic_Power_Management_Intelligent_Duty_Cycling_literatureAgent4_20250914.md,76.00,017,091,⭐⭐⭐⭐⭐,,ACM Transactions on Embedded Computing Systems (TECS) 2024,2024
+86_Multi-Subject_3D_Human_Mesh_Construction_Commodity_WiFi_literatureAgent3_20250914.md,75.50,018,086,⭐⭐⭐⭐⭐,,,2025
+55_Vision_Transformers_WiFi_CSI_HAR_literatureAgent1_20250914.md,74.00,019,055,⭐⭐⭐⭐⭐,,,2025
+89_Multimodal_Fusion_Enhanced_WiFi_Activity_Recognition_Complex_Environments_literatureAgent4_20250914.md,72.50,020,089,⭐⭐⭐⭐⭐,,IEEE Transactions on Mobile Computing (TMC) 2024,2024
+92_Robustness_Security_Enhancement_WiFi_Human_Activity_Recognition_Systems_literatureAgent4_20250914.md,72.50,021,092,⭐⭐⭐⭐⭐,,IEEE Transactions on Information Forensics and Security (TIFS) 2024,2024
+88_Privacy_Preserving_WiFi_Human_Activity_Recognition_Federated_Learning_literatureAgent4_20250914.md,68.00,022,088,⭐⭐⭐⭐⭐,,ACM Transactions on Sensor Networks (TOSN) 2024,2024
+113_Taxonomy_WiFi_Sensing_CSI_Passive_WiFi_Radar_literatureAgent6_20250914.md,68.00,023,113,⭐⭐⭐⭐⭐,A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar,2020 IEEE Globecom Workshops (GC Wkshps),2020
+59_Taxonomy_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent1_20250914.md,65.50,024,059,⭐⭐⭐⭐,,,2025
+58_Real_time_Object_Detection_WiFi_CSI_Multiple_HAR_literatureAgent1_20250914.md,64.00,025,058,⭐⭐⭐⭐,,,2025
+93_Real_Time_Edge_Computing_Framework_Ultra_Low_Latency_WiFi_Activity_Recognition_literatureAgent4_20250914.md,63.65,026,093,⭐⭐⭐⭐⭐,,ACM Transactions on Computer Systems (TOCS) 2024,2024
+56_WiFi_CSI_Attention_BLSTM_HAR_literatureAgent1_20250914.md,63.00,027,056,⭐⭐⭐⭐,,,2025
+62_AutoDLAR_Semi_supervised_Cross_modal_Contact_free_HAR_literatureAgent2_20250914.md,63.00,028,062,⭐⭐⭐⭐⭐,,,2025
+109_Real_Time_Edge_Computing_Framework_Ultra_Low_Latency_WiFi_Activity_Recognition_literatureAgent5_20250914.md,62.50,029,109,,,,2025
+63_CRoP_Context_wise_Robust_Static_Human_Sensing_Personalization_literatureAgent2_20250914.md,62.00,030,063,,CRoP: Context-wise Robust Static Human-Sensing Personalizati...,"Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 9, No. 2, Article 37",2025
+106_Quantum_Enhanced_Signal_Processing_Ultra_Precise_WiFi_Activity_Recognition_literatureAgent5_20250914.md,60.35,031,106,,,,2025
+95_Slim-Sense_literatureAgent5_20250914.md,60.00,032,095,,,,2025
+110_Next_Generation_6G_Enabled_WiFi_Sensing_Ubiquitous_Intelligence_literatureAgent5_20250914.md,54.65,033,110,,,,2025
+52_Taxonomy_of_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent1_20250914.md,54.00,034,052,⭐⭐⭐⭐⭐,A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar,IEEE GLOBECOM Workshops (GC Wkshps),2020
+99_Towards_Robust_Gesture_Recognition_WiFi_Signal_Quality_literatureAgent5_20250914.md,54.00,035,099,,,,2025
+65_WiFiWave_Human_Activity_Recognition_WiFi_Sensing_literatureAgent2_20250914.md,53.50,036,065,⭐⭐⭐⭐,,,2025
+103_Adaptive_Deep_Learning_Cross_Environment_WiFi_Activity_Recognition_literatureAgent5_20250914.md,53.05,037,103,,,,2025
+61_AiFi_AI_Enabled_WiFi_Interference_Cancellation_literatureAgent2_20250914.md,51.10,038,061,⭐⭐⭐⭐⭐,,,2025
+76_HyperTracking_Exploring_Hyperbolic_Model_Non-line-of-sight_Sensing_literatureAgent3_20250914.md,48.05,039,076,,,,2025
+100_Towards_Stable_WiFi_HAR_Imbalanced_Data_Changing_Circumstances_literatureAgent5_20250914.md,47.50,040,100,,,,2025
+107_Energy_Efficient_WiFi_Sensing_Dynamic_Power_Management_Intelligent_Duty_Cycling_literatureAgent5_20250914.md,47.50,041,107,,,,2025
+102_Privacy_Preserving_WiFi_Sensing_Federated_Learning_Framework_literatureAgent5_20250914.md,46.45,042,102,,,,2025
+98_SpaceBeat_Identity_aware_Multi_person_literatureAgent5_20250914.md,45.90,043,098,,SpaceBeat: Identity-aware Multi-person Vital Signs Monitorin...,Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.,2025
+104_Multimodal_Fusion_Enhanced_WiFi_Activity_Recognition_Complex_Environments_literatureAgent5_20250914.md,45.50,044,104,,,,2025
+79_MetaFormer_Domain-Adaptive_WiFi_Sensing_One_Shot_literatureAgent3_20250914.md,45.45,045,079,,,,2025
+75_GOAT_Generalized_Optimization_Activity_Tracking_literatureAgent3_20250914.md,45.00,046,075,,,,2025
+78_LiteWiSys_Lightweight_System_WiFi_Dual-task_Recognition_literatureAgent3_20250914.md,44.40,047,078,,,,2025
+82_Multi-channel_Sensor_Network_Construction_Data_Fusion_Processing_literatureAgent3_20250914.md,42.50,048,082,,,,2025
+81_Modeling_Prototyping_IoT_Long_Range_Self-powered_Systems_literatureAgent3_20250914.md,41.45,049,081,,,,2025
+101_Unsupervised_Adversarial_Domain_Adaptation_Smart_Buildings_literatureAgent5_20250914.md,37.50,050,101,,,,2025
+80_MetaGanFi_Meta-Learning_Generative_Adversarial_Networks_WiFi_Sensing_literatureAgent3_20250914.md,36.80,051,080,,,,2025
+77_i-Sample_Augment_Domain_Adversarial_Adaptation_Models_literatureAgent3_20250914.md,36.50,052,077,,,,2025
+94_SiWiS_literatureAgent5_20250914.md,36.00,053,094,,,ACM MobiCom '24 (Top-tier mobile computing conference),2024
+73_Explicit_Channel_Coordination_via_Cross-technology_Communication_literatureAgent3_20250914.md,35.85,054,073,,,,2025
+54_Human_Activity_Recognition_Self_Attention_Mechanism_WiFi_literatureAgent1_20250914.md,33.00,055,054,,,,2025
+108_Robustness_Security_Enhancement_WiFi_Human_Activity_Recognition_Systems_literatureAgent5_20250914.md,32.95,056,108,,,,2025
+83_Multi_Sense_Attention_Network_literatureAgent4_20250914.md,32.00,057,083,,,,2025
+96_SoK_Paper_literatureAgent5_20250914.md,30.50,058,096,,SoK Paper: Power Side-Channel Malware Detection,HASP '24 (Hardware and Architectural Support for Security and Privacy),2025
+105_unsupervised_adversarial_domain_adaptation_smart_buildings_literatureAgent6_20250914.md,30.50,059,105,,Unsupervised Adversarial Domain Adaptation for Estimating Oc...,ICIIT 2024 (9th International Conference on Intelligent Information Technology),2024
+74_Gesture_Classification_Based_on_Channel_State_Information_literatureAgent3_20250914.md,29.75,060,074,,,,2025
+53_eHealth_CSI_Wi_Fi_CSI_Dataset_Human_Activities_literatureAgent1_20250914.md,29.00,061,053,,,,2025
+72_Enabling_Ubiquitous_Wi-Fi_Sensing_with_Beamforming_Reports_literatureAgent3_20250914.md,28.80,062,072,,,,2025
+97_Solving_WiFi_Sensing_Dilemma_literatureAgent5_20250914.md,27.15,063,097,,Solving the WiFi Sensing Dilemma in Reality Leveraging Confo...,SenSys '22,2025
+84_Multi_Subject_3D_Human_Mesh_Construction_literatureAgent4_20250914.md,26.25,064,084,,,,2025

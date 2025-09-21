@@ -1,0 +1,24 @@
+{
+  "paper_number": 11,
+  "pdf_file": "D:\\workspace_PHD\\WiFi-CSI-Project\\Journal-Paper\\DFHAR_survey\\DFHAR_v1\\docs\\refs\\external\\Leveraging_Transfer_Learning_in_Multiple_Human_Activity_Recognition_Using_WiFi_Signal.pdf",
+  "pdf_name": "Leveraging_Transfer_Learning_in_Multiple_Human_Activity_Recognition_Using_WiFi_Signal.pdf",
+  "safe_name": "Leveraging_Transfer_Learning_in_Multiple_Human_Activity_Reco",
+  "file_size_mb": 2.0198097229003906,
+  "technical_focus": "WiFi CSI-based Human Activity Recognition",
+  "segments": [
+    {
+      "part": 1,
+      "sections": "Abstract + Introduction + Methodology",
+      "expected_content": "Problem, approach, technical details",
+      "output_file": "044_011_Leveraging_Transfer_Learning_in_Multiple_Human_Activity_Reco_front_half_20250916.md"
+    },
+    {
+      "part": 2,
+      "sections": "Results + Discussion + Conclusion",
+      "expected_content": "Experiments, results, analysis, conclusion",
+      "output_file": "044_011_Leveraging_Transfer_Learning_in_Multiple_Human_Activity_Reco_back_half_20250916.md"
+    }
+  ],
+  "total_parts": 2,
+  "analysis_strategy": "simplified"
+}

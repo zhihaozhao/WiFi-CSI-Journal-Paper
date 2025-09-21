@@ -1,0 +1,165 @@
+{
+  "sequence_number": 50,
+  "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+  "authors": ["Xingcan Chen", "Yi Zou", "Chenglin Li", "Wendong Xiao"],
+  "venue": "IEEE Transactions on Human-Machine Systems",
+  "year": 2024,
+  "volume": "54",
+  "issue": "1",
+  "pages": "68-78",
+  "doi": "10.1109/THMS.2023.3348694",
+  "paper_type": "Full Research Paper",
+  "domain": "Device-Free Human Activity Recognition (DFHAR), WiFi CSI, Deep Learning",
+  "star_rating": 5,
+  "rating_justification": "Top-tier IEEE journal, comprehensive lightweight system, superior cross-domain performance, novel dual CSI reconstruction methodology",
+
+  "innovation_scores": {
+    "algorithmic_innovation": 9,
+    "system_architecture": 9,
+    "cross_domain_generalization": 10,
+    "computational_efficiency": 9,
+    "mathematical_rigor": 8
+  },
+
+  "technical_contributions": [
+    "Wisor-DL lightweight HAR system architecture",
+    "Dual CSI reconstruction framework (sparse + tensor decomposition)",
+    "GTCN-RC with gated temporal convolutions and residual connections",
+    "Dendrite network integration replacing traditional dense layers",
+    "Superior cross-domain generalization with 0.5% accuracy degradation"
+  ],
+
+  "key_algorithms": [
+    "Sparse signal representation algorithm",
+    "CSI tensor construction and canonical polyadic (CP) decomposition",
+    "Gated Temporal Convolutional Network with Residual Connections (GTCN-RC)",
+    "Dendrite Network (DD) for final classification",
+    "Dynamic Time Warping (DTW) for waveform matching"
+  ],
+
+  "performance_metrics": {
+    "dataset_1_accuracy": 0.9844,
+    "dataset_2_accuracy": 0.9800,
+    "dataset_3_accuracy": 0.9757,
+    "cross_domain_degradation": 0.005,
+    "training_time_seconds": 1857.44,
+    "testing_time_ms": 2.81,
+    "model_parameters": "16.43M",
+    "computational_complexity": "0.83 GMac"
+  },
+
+  "datasets": [
+    {
+      "name": "Dataset 1",
+      "activities": 6,
+      "volunteers": 6,
+      "samples_per_activity": 120,
+      "activities_list": ["Lie down", "Fall", "Walk", "Run", "Sit down", "Stand up"]
+    },
+    {
+      "name": "Dataset 2 (Office)",
+      "environment": "Office room (4400mm × 2650mm)",
+      "activities": 6,
+      "volunteers": 8,
+      "samples_per_activity": 800,
+      "activities_list": ["Jump", "Stoop", "Wave hand", "Fall", "Sit down", "Stand up"]
+    },
+    {
+      "name": "Dataset 3 (Laboratory)",
+      "environment": "Laboratory room (4400mm × 3600mm)",
+      "activities": 6,
+      "volunteers": 8,
+      "samples_per_activity": 800,
+      "activities_list": ["Jump", "Stoop", "Wave hand", "Fall", "Sit down", "Stand up"]
+    }
+  ],
+
+  "mathematical_framework": {
+    "csi_model": "Y(f,t) = H(f,t) × X(f,t) + n(f,t)",
+    "multipath_model": "Hi = Σ(q=1 to N) Rq · e^(-j2πfτq) · e^(-j2πΔft)",
+    "tensor_decomposition": "η ≈ Σ(r=1 to 2R) xr ◦ yr ◦ zr",
+    "uniqueness_condition": "pX + pY + pZ ≥ 2R + 2"
+  },
+
+  "strengths": [
+    "Comprehensive dual-pathway CSI reconstruction",
+    "Superior cross-domain generalization (0.5% degradation)",
+    "Mathematical rigor with uniqueness proofs",
+    "Real-time performance capability (2.81ms)",
+    "Extensive multi-dataset experimental validation",
+    "Lightweight architecture suitable for edge deployment"
+  ],
+
+  "limitations": [
+    "Limited to single-person activity recognition",
+    "No support for background network traffic",
+    "Limited activity types (six activities)",
+    "Long-term stability evaluation needed"
+  ],
+
+  "survey_relevance": {
+    "signal_processing_innovation": "High",
+    "deep_learning_architecture": "High",
+    "cross_domain_adaptation": "Exceptional",
+    "system_integration": "High",
+    "practical_applicability": "High"
+  },
+
+  "comparison_baselines": [
+    "CNN",
+    "LSTM",
+    "ABLSTM",
+    "THAT (two-stream CNN)",
+    "Siamese (CNN + BiLSTM)",
+    "HAR-SAnet (signal adapted CNN)"
+  ],
+
+  "future_research_directions": [
+    "Multi-person activity recognition",
+    "Background traffic tolerance",
+    "Complex activity recognition",
+    "Federated learning integration",
+    "Multi-modal sensing fusion",
+    "Dynamic activity adaptation"
+  ],
+
+  "plotting_data": {
+    "performance_comparison": {
+      "methods": ["CNN", "LSTM", "ABLSTM", "THAT", "Siamese", "HAR-SAnet", "Wisor-DL"],
+      "accuracy_dataset1": [0.9032, 0.9358, 0.9755, 0.9808, 0.9825, 0.9836, 0.9844],
+      "cross_domain_degradation": [0.15, 0.15, 0.08, 0.03, 0.04, 0.02, 0.005]
+    },
+    "computational_complexity": {
+      "methods": ["CNN", "LSTM", "ABLSTM", "THAT", "Siamese", "HAR-SAnet", "Wisor-DL"],
+      "parameters_M": [5.32, 11.28, 32.44, 27.14, 37.56, 20.67, 16.43],
+      "complexity_GMac": [0.26, 0.52, 2.24, 1.68, 2.83, 1.15, 0.83]
+    },
+    "training_efficiency": {
+      "methods": ["CNN", "LSTM", "ABLSTM", "THAT", "Siamese", "HAR-SAnet", "Wisor-DL"],
+      "training_time_s": [1528.32, 5412.68, 12316.52, 3372.72, 14532.14, 2707.96, 1857.44],
+      "testing_time_ms": [2.67, 10.46, 16.34, 3.69, 17.12, 3.28, 2.81]
+    }
+  },
+
+  "key_equations": [
+    "CSI Phase Difference: Δ∠Hmi = Δ∠Hi + ΔP + ΔE",
+    "CP Decomposition: η(1) ≈ X(Z ⊙ Y)^T",
+    "Optimization: X = η(1)(Z ⊙ Y)(Z^T Z * Y^T Y)†",
+    "GTCN Output: tanh(Conv1D(input)) ⊙ σ(Conv1D(input))"
+  ],
+
+  "impact_assessment": {
+    "immediate_impact": "High - practical lightweight HAR solution",
+    "long_term_significance": "High - foundation for dual-pathway signal reconstruction",
+    "reproducibility": "High - complete system implementation provided",
+    "citation_potential": "Very High - top journal with superior performance"
+  },
+
+  "agent_metadata": {
+    "analyzed_by": "literatureAgent1",
+    "analysis_date": "2025-09-14",
+    "analysis_depth": "Comprehensive",
+    "confidence_level": "High",
+    "word_count": 1489
+  }
+}

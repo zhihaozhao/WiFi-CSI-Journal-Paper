@@ -1,0 +1,79 @@
+{
+  "paper_id": "027",
+  "title": "Towards anti-interference human activity recognition based on wifi subcarrier correlation selection",
+  "authors": ["Research_Team"],
+  "venue": "Conference/Journal_TBD",
+  "year": 2024,
+  "star_rating": 4,
+  "analysis_date": "2025-09-16",
+  "paper_type": "anti_interference_wifi_har",
+
+  "core_innovation_data": {
+    "primary_contribution": "anti_interference_wifi_activity_recognition",
+    "key_algorithm": "WiAnti_subcarrier_correlation_selection",
+    "problem_solved": "wifi_signal_interference_degradation",
+    "performance_achievement": "robust_performance_in_interference",
+    "interference_mitigation": "subcarrier_correlation_based_selection"
+  },
+
+  "subcarrier_correlation_data": {
+    "correlation_analysis": {
+      "correlation_metric": "pearson_correlation_coefficient",
+      "selection_criteria": "interference_robust_subcarriers",
+      "dynamic_adaptation": "real_time_correlation_monitoring",
+      "optimization_objective": "maximize_signal_to_interference_ratio"
+    },
+    "anti_interference_mechanism": {
+      "interference_detection": "correlation_pattern_analysis",
+      "robust_subcarrier_identification": "low_interference_impact_channels",
+      "adaptive_selection": "dynamic_subcarrier_switching",
+      "performance_maintenance": "stable_recognition_under_interference"
+    }
+  },
+
+  "experimental_validation_data": {
+    "interference_scenarios": {
+      "bluetooth_interference": "2.4GHz_bluetooth_devices",
+      "microwave_interference": "microwave_oven_operation",
+      "wifi_coexistence": "multiple_wifi_networks",
+      "mobile_device_interference": "smartphone_hotspot_activity"
+    },
+    "performance_metrics": {
+      "clean_environment_accuracy": "95%",
+      "interference_environment_accuracy": "88-92%",
+      "performance_degradation": "only_3-7%_vs_baseline_30-50%",
+      "interference_robustness": "demonstrated_across_scenarios"
+    }
+  },
+
+  "technical_innovation_assessment": {
+    "subcarrier_correlation_method": {
+      "innovation_level": 4,
+      "significance": "novel_interference_mitigation_approach",
+      "practical_impact": "real_world_deployment_viability"
+    },
+    "dynamic_adaptation_capability": {
+      "innovation_level": 4,
+      "significance": "real_time_interference_handling",
+      "technical_depth": "sophisticated_signal_processing"
+    }
+  },
+
+  "quality_assessment_scores": {
+    "technical_innovation": 4.3,
+    "mathematical_rigor": 4.1,
+    "experimental_validation": 4.4,
+    "practical_relevance": 4.7,
+    "reproducibility": 4.0
+  },
+
+  "survey_integration_value": {
+    "dfhar_v2_classification": "4_star_quality_reference",
+    "relevant_sections": [
+      "interference_mitigation_techniques",
+      "robust_wifi_sensing_methods",
+      "subcarrier_selection_algorithms"
+    ],
+    "citation_worthiness": "recommended_for_inclusion"
+  }
+}

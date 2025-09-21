@@ -1,0 +1,211 @@
+{
+  "paper_id": "015",
+  "timestamp": "2025-09-16",
+  "data_agent": "v2_data_extraction_agent",
+
+  "paper_metadata": {
+    "title": "Multiple Kernel Representation Learning for WiFi-based Human Activity Recognition",
+    "authors": [
+      "Han Zou",
+      "Yuxun Zhou",
+      "Jianfei Yang",
+      "Weixi Gu",
+      "Lihua Xie",
+      "Costas Spanos"
+    ],
+    "affiliations": [
+      "Department of Electrical Engineering and Computer Sciences, University of California, Berkeley, USA",
+      "School of Electrical and Electronics Engineering, Nanyang Technological University, Singapore",
+      "Tsinghua-Berkeley Shenzhen Institute, Tsinghua University, China"
+    ],
+    "venue": "2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA)",
+    "year": 2017,
+    "pages": "268-274",
+    "doi": "10.1109/ICMLA.2017.0-148",
+    "isbn": "0-7695-6321-X/17/31.00",
+    "publisher": "IEEE",
+    "citation_format": "H. Zou et al., \"Multiple Kernel Representation Learning for WiFi-based Human Activity Recognition,\" 2017 16th IEEE International Conference on Machine Learning and Applications (ICMLA), 2017, pp. 268-274."
+  },
+
+  "technical_innovation_data": {
+    "core_contribution": "Multiple Kernel Representation Learning (MKRL) framework for WiFi CSI-based human activity recognition",
+    "key_innovations": [
+      {
+        "innovation": "Multi-domain knowledge extraction",
+        "description": "Extracts patterns from time, frequency, wavelet, and shape domains",
+        "technical_details": {
+          "time_domain": "Mean, variance, skewness, kurtosis, total variation statistics",
+          "frequency_domain": "FFT magnitude components capturing periodical patterns",
+          "wavelet_domain": "7 different mother wavelets for discrete wavelet transformation",
+          "shape_domain": "Normalized correlation, dynamic time warping distance, signal tendency index"
+        }
+      },
+      {
+        "innovation": "Automatic Hilbert Space Representation Learning (auto-HSRL)",
+        "description": "Automated kernel string representation learning with greedy algorithm",
+        "technical_details": {
+          "kernel_types": ["Gaussian RBF", "Rational quadratic", "Linear", "Periodic", "White noise"],
+          "string_kernel_operations": "Multiplication (AND) and addition (OR) operations",
+          "optimization_metric": "Hilbert-Schmidt Independence Criterion (HSIC)",
+          "greedy_performance_guarantee": "HSIC(Sg) >= (1-1/e+λ_HSIC)·HSIC(S*)"
+        }
+      },
+      {
+        "innovation": "Multi-view kernel learning information fusion",
+        "description": "Combines representations from diverse domains via multiple kernel learning",
+        "technical_details": {
+          "fusion_method": "Regularized empirical risk minimization over combined Hilbert space",
+          "optimization_problem": "Convex MKL with gradient-based solving",
+          "kernel_combination": "Weighted combination of domain-specific kernels"
+        }
+      }
+    ],
+    "algorithmic_complexity": {
+      "auto_HSRL_complexity": "Linear with respect to number of base kernels and pattern dimensions",
+      "HSIC_estimator_error": "O(m^-1) where m is sample size",
+      "computational_efficiency": "Efficient greedy algorithm with theoretical performance guarantees"
+    }
+  },
+
+  "experimental_data": {
+    "dataset_specifications": {
+      "environments": [
+        {
+          "type": "Conference room",
+          "size": "5m × 7m",
+          "tx_rx_distance": "3 meters",
+          "antenna_height": "1.5 meters"
+        },
+        {
+          "type": "Office zone",
+          "size": "5.6m × 9m",
+          "tx_rx_distance": "3 meters",
+          "antenna_height": "1.5 meters"
+        },
+        {
+          "type": "1-bedroom apartment",
+          "size": "7.5m × 8m",
+          "tx_rx_distance": "3 meters",
+          "antenna_height": "1.5 meters"
+        }
+      ],
+      "participants": {
+        "total_count": 10,
+        "demographics": "5 male and 5 female graduate students"
+      },
+      "activities": ["sitting", "standing", "walking", "running"],
+      "data_collection": {
+        "training_samples": "21,000 per activity per volunteer",
+        "testing_samples": "21,000 per activity collected over different days",
+        "total_samples_per_environment": "168,000 samples"
+      }
+    },
+    "system_configuration": {
+      "hardware": "Two TPLINK N750 wireless routers",
+      "firmware": "Custom CSI OpenWrt version",
+      "frequency_band": "5 GHz",
+      "channel_bandwidth": "40 MHz",
+      "subcarriers": "114 subcarriers (vs 30 in Intel 5300 NIC)",
+      "antenna_configuration": "1 TX antenna, 3 RX antennas",
+      "transmission_rate": "700 packets/s",
+      "csi_streams": "1 × 3 × 114 = 342 CSI streams per time instant"
+    },
+    "performance_results": {
+      "overall_accuracy": {
+        "mkrl_accuracy": 0.982,
+        "accuracy_percentage": "98.2%"
+      },
+      "per_activity_tpr": {
+        "sitting": 0.969,
+        "standing": 0.984,
+        "walking": 0.989,
+        "running": 0.989
+      },
+      "comparative_performance": {
+        "e_eyes_tpr": 0.905,
+        "carm_tpr": 0.937,
+        "mkrl_tpr": 0.981,
+        "improvement_over_e_eyes": 0.078,
+        "improvement_over_carm": 0.046
+      },
+      "false_positive_rates": {
+        "mkrl_overall_fpr": 0.017,
+        "e_eyes_fpr": 0.095,
+        "carm_fpr": 0.063,
+        "fpr_reduction_vs_e_eyes": 0.82,
+        "fpr_reduction_vs_carm": 0.73
+      },
+      "sampling_rate_impact": {
+        "100_packets_per_sec": 0.799,
+        "700_packets_per_sec": 0.982,
+        "improvement": 0.186
+      }
+    },
+    "statistical_validation": {
+      "cross_validation": "Average cross-validation accuracy across all four activities",
+      "temporal_robustness": "Testing samples collected on different days from training",
+      "environmental_robustness": "Validated across three different indoor environments",
+      "confusion_matrix_available": true,
+      "statistical_significance": "Demonstrated through comparative analysis with state-of-the-art methods"
+    }
+  },
+
+  "academic_value_quantification": {
+    "literature_quality_scores": {
+      "innovation_score": 15,
+      "journal_score": 18,
+      "experiment_score": 10,
+      "citation_score": 5,
+      "total_score": 13.9,
+      "ranking_position": 130
+    },
+    "star_rating": 3,
+    "impact_assessment": {
+      "technical_novelty": "High - First work to combine multi-domain knowledge extraction with automatic kernel representation learning for WiFi HAR",
+      "methodological_contribution": "Significant - Novel MKRL framework with theoretical guarantees",
+      "experimental_rigor": "Good - Multi-environment validation with comparative analysis",
+      "practical_applicability": "High - Uses commodity WiFi routers, 98.2% accuracy"
+    },
+    "dfhar_field_contribution": {
+      "domain_knowledge_extraction": "Comprehensive approach covering time, frequency, wavelet, and shape domains",
+      "automation_advancement": "Eliminates need for manual feature engineering through auto-HSRL",
+      "kernel_learning_innovation": "First application of string kernels and HSIC optimization to WiFi sensing",
+      "multi_view_fusion": "Systematic information fusion via multiple kernel learning"
+    },
+    "research_influence_indicators": {
+      "theoretical_foundation": "Strong mathematical foundation with Hilbert space theory and kernel methods",
+      "algorithmic_innovation": "Novel greedy algorithm with performance guarantees",
+      "experimental_validation": "Comprehensive evaluation across multiple environments and activities",
+      "practical_impact": "Demonstrated real-world applicability for smart building applications"
+    },
+    "citation_potential": {
+      "estimated_influence": "Medium-High",
+      "key_cite_worthy_contributions": [
+        "MKRL framework design",
+        "Auto-HSRL algorithm with theoretical guarantees",
+        "Multi-domain knowledge extraction methodology",
+        "Comprehensive WiFi CSI activity recognition evaluation"
+      ],
+      "target_research_communities": [
+        "WiFi sensing and CSI-based recognition",
+        "Multiple kernel learning and representation learning",
+        "Human activity recognition",
+        "Smart building and IoT applications"
+      ]
+    }
+  },
+
+  "data_extraction_metadata": {
+    "extraction_completeness": "Complete - Full paper content analyzed",
+    "data_verification_status": "Verified - All numerical results extracted from paper figures and tables",
+    "missing_information": [],
+    "data_quality_assessment": "High - All performance metrics, experimental setup, and technical details accurately captured",
+    "extraction_challenges": "None - Paper provides comprehensive technical and experimental details",
+    "additional_notes": [
+      "Paper provides detailed mathematical framework for MKRL",
+      "Comprehensive experimental evaluation with multiple baselines",
+      "Strong theoretical foundation with performance guarantees",
+      "Practical implementation details for commodity WiFi routers"
+    ]
+  }
+}

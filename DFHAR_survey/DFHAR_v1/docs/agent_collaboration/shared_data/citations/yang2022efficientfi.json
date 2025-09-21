@@ -1,0 +1,72 @@
+{
+  "paper_id": "yang2022efficientfi",
+  "citation_key": "yang2022efficientfi",
+  "title": "EfficientFi: Toward Large-Scale Lightweight WiFi Sensing via CSI Compression",
+  "authors": ["Yang, Jianfei", "Chen, Xinyan", "Zou, Han", "Wang, Dazhuo", "Xu, Qianwen", "Xie, Lihua"],
+  "publication_info": {
+    "journal": "IEEE Internet of Things Journal",
+    "conference": "",
+    "year": 2022,
+    "volume": "9",
+    "pages": "13086-13095",
+    "doi": "10.1109/JIOT.2021.3139958",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 10.6,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified IoTJ 2022",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "WiFi CSI Compression and Efficiency",
+    "methodology": "CSI compression framework with deep learning",
+    "key_contributions": [
+      "1784× compression ratio achievement",
+      ">98% HAR accuracy maintenance",
+      "Large-scale deployment feasibility",
+      "Bandwidth optimization for IoT applications"
+    ],
+    "experimental_setup": "CSI compression with performance validation",
+    "datasets_used": ["Large-scale WiFi CSI datasets"],
+    "performance_metrics": {"compression_ratio": "1784x", "accuracy": ">98%"},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 5,
+    "chapter_mapping": ["compression", "efficiency", "scalability", "iot_applications"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["CSI compression algorithm", "Efficient sensing framework"],
+    "mathematical_models": [],
+    "experimental_results": {"compression_ratio": 1784, "accuracy_maintained": 0.98}
+  },
+  "future_directions": {
+    "identified_challenges": ["Large-scale deployment", "Bandwidth limitations", "Real-time processing"],
+    "proposed_solutions": ["Advanced compression techniques", "Efficient architectures"],
+    "research_gaps": ["Cross-environment compression validation", "Dynamic compression adaptation"],
+    "potential_experiments": ["Adaptive compression", "Multi-environment validation", "Real-time deployment"]
+  },
+  "journal_specific_analysis": {
+    "pattern_recognition_relevance": 9,
+    "mathematical_rigor": 9,
+    "experimental_standard": 8,
+    "novelty_contribution": 9,
+    "reproducibility": true
+  },
+  "target_journal_fit": {
+    "pattern_recognition": 0.9,
+    "ieee_sensors": 0.8,
+    "computer_networks": 0.7
+  },
+  "notes": "Breakthrough work on CSI compression - critical for practical DFHAR deployment and scalability analysis. HIGH Pattern Recognition fit due to strong mathematical foundations in compression theory and optimization algorithms.",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

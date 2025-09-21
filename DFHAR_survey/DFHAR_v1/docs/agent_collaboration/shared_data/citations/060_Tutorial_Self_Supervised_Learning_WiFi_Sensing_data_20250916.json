@@ -1,0 +1,140 @@
+{
+  "paper_id": "060",
+  "title": "A Tutorial-cum-Survey on Self-Supervised Learning for Wi-Fi Sensing: Trends, Challenges, and Outlook",
+  "authors": [
+    "Ahmed Y. Radwan",
+    "Mustafa Yildirim",
+    "Navid Hasanzadeh",
+    "Hina Tabassum",
+    "Shahrokh Valaee"
+  ],
+  "venue": "arXiv preprint",
+  "year": 2025,
+  "citation_key": "radwan2025tutorial",
+  "doi": "arXiv:2506.12052",
+  "paper_type": "tutorial_survey",
+  "star_rating": 5,
+  "algorithmic_innovations": [
+    {
+      "innovation_type": "methodological_framework",
+      "name": "SSL Framework for Wi-Fi Sensing",
+      "description": "Comprehensive self-supervised learning framework specifically adapted for Wi-Fi CSI sensing applications",
+      "technical_contribution": "Mathematical formulation of contrastive and non-contrastive SSL methods for CSI data",
+      "novelty_score": 5,
+      "impact_assessment": "foundational_tutorial"
+    },
+    {
+      "innovation_type": "evaluation_protocol",
+      "name": "Few-Shot Learning Evaluation Framework",
+      "description": "Standardized 5-shot and 10-shot evaluation protocol for SSL in Wi-Fi sensing",
+      "technical_contribution": "Systematic evaluation methodology with cross-domain transfer learning assessment",
+      "novelty_score": 4,
+      "impact_assessment": "methodological_standard"
+    },
+    {
+      "innovation_type": "signal_processing",
+      "name": "CSI-Specific SSL Adaptations",
+      "description": "Environment-aware contrastive learning and Doppler-aware augmentation strategies",
+      "technical_contribution": "Novel data augmentation and consistency learning for CSI signals",
+      "novelty_score": 4,
+      "impact_assessment": "practical_improvement"
+    }
+  ],
+  "technical_breakthroughs": [
+    {
+      "breakthrough_type": "paradigm_shift",
+      "area": "learning_paradigm",
+      "description": "First comprehensive tutorial establishing SSL as viable alternative to supervised learning in Wi-Fi sensing",
+      "significance": "high",
+      "mathematical_modeling": {
+        "contrastive_loss": "L_InfoNCE = -log(exp(sim(z_i, z_j^+)/τ) / Σ_k exp(sim(z_i, z_k)/τ))",
+        "non_contrastive_loss": "L_BYOL = ||sg(z_θ') - q_ξ(z_θ)||²₂",
+        "environmental_consistency": "L_env = ||f(CSI_t1) - f(CSI_t2)||²"
+      }
+    },
+    {
+      "breakthrough_type": "data_efficiency",
+      "area": "label_requirement",
+      "description": "Demonstrated 10-20x reduction in labeled data requirements while maintaining performance",
+      "significance": "high",
+      "performance_metrics": {
+        "label_reduction": "80-90%",
+        "performance_retention": "95-98%",
+        "cross_domain_transfer": "70.65% of supervised performance"
+      }
+    }
+  ],
+  "experimental_validation": {
+    "datasets": ["WiMANS", "UT-HAR", "SignFi"],
+    "ssl_methods_evaluated": ["SimCLR", "VICReg", "Barlow Twins", "SimSiam"],
+    "evaluation_scenarios": ["few_shot_learning", "cross_domain_transfer"],
+    "performance_results": {
+      "WiMANS_10shot": {
+        "SimCLR": 56.64,
+        "VICReg": 56.40,
+        "Barlow_Twins": 55.43,
+        "supervised_baseline": 56.47
+      },
+      "SignFi_10shot": {
+        "SimCLR": 95.47,
+        "Barlow_Twins": 92.81,
+        "supervised_baseline": 95.58
+      },
+      "transfer_learning_SignFi_to_WiMANS": {
+        "SimCLR_10shot": 39.87,
+        "VICReg_10shot": 39.70,
+        "performance_ratio": 70.65
+      }
+    },
+    "computational_analysis": {
+      "training_complexity": "moderate",
+      "inference_efficiency": "high",
+      "memory_requirements": "scalable",
+      "edge_deployment": "feasible"
+    }
+  },
+  "mathematical_frameworks": {
+    "ssl_theory": {
+      "contrastive_methods": ["SimCLR", "MoCo", "SwAV"],
+      "non_contrastive_methods": ["BYOL", "Barlow Twins", "VICReg", "SimSiam"],
+      "masked_modeling": ["MAE", "SimMIM"]
+    },
+    "csi_processing": {
+      "preprocessing_techniques": ["outlier_removal", "phase_offset_compensation", "dimension_reduction"],
+      "signal_transforms": ["FFT", "STFT", "Wavelet", "MiniRocket"],
+      "augmentation_strategies": ["gaussian_noise", "random_masking", "temporal_shifts"]
+    }
+  },
+  "innovation_assessment": {
+    "theoretical_novelty": 4,
+    "practical_impact": 5,
+    "experimental_rigor": 5,
+    "reproducibility": 5,
+    "scalability": 4
+  },
+  "limitations": [
+    "Limited novel algorithmic development (primarily applies existing SSL methods)",
+    "Dataset scope limited to three datasets",
+    "Transfer learning performance gap compared to supervised methods",
+    "Limited large-scale multi-environment validation"
+  ],
+  "future_directions": [
+    "Development of Wi-Fi specific SSL algorithms",
+    "Large-scale multi-environment evaluation",
+    "Real-time edge deployment optimization",
+    "Privacy-preserving SSL frameworks",
+    "Multi-modal SSL integration"
+  ],
+  "paper_significance": {
+    "research_impact": "foundational",
+    "industry_relevance": "high",
+    "technical_maturity": "emerging",
+    "adoption_potential": "high"
+  },
+  "dfhar_survey_integration": {
+    "section_relevance": ["self_supervised_learning", "evaluation_methods", "technical_foundations"],
+    "citation_priority": "primary_reference",
+    "contribution_type": "foundational_framework",
+    "integration_strategy": "comprehensive_ssl_section_foundation"
+  }
+}

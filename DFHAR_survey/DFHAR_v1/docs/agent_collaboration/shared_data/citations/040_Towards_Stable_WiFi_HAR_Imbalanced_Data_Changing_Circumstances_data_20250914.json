@@ -1,0 +1,118 @@
+{
+  "sequence_number": 100,
+  "title": "Towards Stable WiFi-based HAR from Imbalanced Data and Changing Circumstances",
+  "authors": ["Youquan Wang", "Zhipeng Zhou", "Shuai Wang", "Xianjun Deng", "Wei Xi", "Wei Gong"],
+  "venue": "ACM Transactions on Sensor Networks",
+  "publication_year": 2025,
+  "doi": "10.1145/3757321",
+  "paper_type": "Full Research Paper",
+  "domain": ["WiFi HAR", "Imbalanced Learning", "Domain Adaptation", "Optimization"],
+
+  "rating": {
+    "stars": 4,
+    "justification": "High-impact research addressing fundamental challenges in WiFi HAR through novel optimization framework, published in top-tier journal, demonstrates significant performance improvements with theoretical rigor"
+  },
+
+  "technical_innovations": {
+    "algorithmic": "Class Region Flattening (CRF) framework with class-conditional flat minima search",
+    "mathematical": "Perturbative PAC-Bayesian Generalization Theory extension for wireless sensing",
+    "system": "Selective flattening strategy (CRF-S) with similarity-based gradient selection",
+    "optimization": "Unified approach to imbalanced learning and domain adaptation through geometric optimization"
+  },
+
+  "mathematical_framework": {
+    "signal_model": "L_overall = L_erm(w_tmp) + α * L_flat(w_tmp)",
+    "perturbation_theory": "ε*_c = η * ρ_c * ∇_w_tmp L^c_erm(w_tmp) / ||∇_w_tmp L^c_erm(w_tmp)||_2",
+    "similarity_measure": "Sim(g^c, ḡ) = (g^c * ḡ) / ||g^c * ḡ||",
+    "convergence": "First-order Taylor approximation with error bound |R_2| ≤ 5 × 10^-15"
+  },
+
+  "experimental_validation": {
+    "environments": 6,
+    "experiments": 13,
+    "imbalance_ratios": [10, 50, 100],
+    "baseline_models": ["CNN", "DANN", "TOSS"],
+    "improvements": {
+      "CNN": {"CRF": "1.24%", "CRF-S": "3.5%"},
+      "DANN": {"CRF": "1.65%", "CRF-S": "3.55%"},
+      "TOSS": {"CRF": "9.25%", "CRF-S": "11.37%"}
+    }
+  },
+
+  "performance_metrics": {
+    "accuracy_improvement": "Up to 11.37% for TOSS model",
+    "cross_domain_robustness": "Consistent across 6 diverse environments",
+    "imbalance_handling": "Effective across ratios 10-100",
+    "computational_overhead": "15-20% training time increase"
+  },
+
+  "practical_implementation": {
+    "hardware": "Intel 5300 NIC with commodity WiFi hardware",
+    "software": "PyTorch implementation with Adam optimizer",
+    "processing": "Hampel filtering, PCA dimensionality reduction, STFT analysis",
+    "deployment": "Adaptive hyperparameter selection for diverse environments"
+  },
+
+  "innovation_analysis": {
+    "novelty_score": 9.2,
+    "theoretical_rigor": 9.0,
+    "practical_impact": 8.8,
+    "experimental_completeness": 9.5,
+    "reproducibility": 9.0
+  },
+
+  "research_significance": {
+    "theoretical_contribution": "First unified framework for imbalanced learning and domain adaptation in WiFi HAR",
+    "practical_impact": "Addresses critical barriers to commercial WiFi sensing deployment",
+    "methodological_innovation": "Class-conditional optimization paradigm for wireless sensing",
+    "industry_relevance": "Direct applicability to smart home, healthcare, industrial monitoring"
+  },
+
+  "limitations": {
+    "computational_cost": "Dual gradient computations increase training overhead",
+    "hyperparameter_sensitivity": "Requires careful tuning of multiple parameters",
+    "activity_complexity": "Evaluation limited to basic indoor activities",
+    "environmental_scope": "Primarily controlled indoor scenarios"
+  },
+
+  "future_directions": [
+    "Higher-order perturbation methods for advanced optimization",
+    "Multi-modal integration across sensing modalities",
+    "Online adaptation mechanisms for dynamic environments",
+    "Federated learning integration for distributed deployments",
+    "Edge computing optimization strategies"
+  ],
+
+  "plotting_data": {
+    "performance_comparison": {
+      "models": ["CNN", "DANN", "TOSS"],
+      "baseline_accuracy": [60.66, 60.93, 57.70],
+      "crf_accuracy": [62.92, 62.58, 66.95],
+      "crf_s_accuracy": [64.16, 64.48, 69.07]
+    },
+    "imbalance_robustness": {
+      "ratios": [10, 50, 100],
+      "cnn_improvement": [3.5, 3.02, 8.4],
+      "dann_improvement": [5.9, 5.68, 4.61],
+      "toss_improvement": [15.97, 14.19, 16.4]
+    },
+    "computational_overhead": {
+      "models": ["CNN", "DANN", "TOSS"],
+      "training_time_increase": [15.8, 18.2, 20.1]
+    }
+  },
+
+  "v2_integration_priority": {
+    "introduction": "High - Novel optimization paradigm for WiFi HAR challenges",
+    "methodology": "Critical - Class-conditional flattening framework",
+    "results": "High - Comprehensive performance improvements across models",
+    "discussion": "Medium - Implications for practical deployment strategies"
+  },
+
+  "editorial_appeal": {
+    "importance": "High - Addresses fundamental deployment barriers in WiFi sensing",
+    "rigor": "High - Strong theoretical foundation with comprehensive experimental validation",
+    "innovation": "High - First unified approach to dual challenges in WiFi HAR",
+    "impact": "High - Direct relevance to commercial sensing applications"
+  }
+}

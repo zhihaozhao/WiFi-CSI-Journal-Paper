@@ -1,0 +1,98 @@
+{
+  "paper_id": "040",
+  "title": "WiWave: WiFi-based Human Activity Recognition Using the Wavelet Integrated CNN",
+  "authors": ["Yaowen Mei", "Kunlin Wei", "Xinkai Li", "Zuomin Wang", "Chuanlong Wu"],
+  "publication_year": 2021,
+  "venue": "IEEE/CIC International Conference on Communications in China (ICCC Workshops)",
+  "star_rating": 4,
+  "technical_category": "Wavelet-Neural Network Integration",
+  "research_focus": "Signal Processing Innovation",
+
+  "key_metrics": {
+    "overall_accuracy": 94.87,
+    "training_data_ratio": 20,
+    "testing_data_ratio": 80,
+    "activity_count": 10,
+    "participant_count": 4,
+    "environment_count": 5,
+    "total_samples": 1920,
+    "samples_per_activity_per_person": 48
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "Wavelet-integrated CNN replacing traditional pooling operations",
+    "dwt_implementation": "2D Discrete Wavelet Transform layers with symmetric filters",
+    "mathematical_framework": "Comprehensive CSI signal modeling with wavelet decomposition",
+    "network_architecture": "3 Conv + 3 DWT + 2 FC layers",
+    "signal_processing": "Time-frequency characteristic preservation through wavelet analysis",
+    "optimal_wavelet": "Haar wavelet function for symmetric signal properties"
+  },
+
+  "experimental_setup": {
+    "environments": 5,
+    "activities": 10,
+    "participants": 4,
+    "hardware": "Intel 5300 NIC with 802.11n protocol",
+    "input_dimensions": "800x270 CSI matrices",
+    "validation_method": "Cross-environment testing",
+    "wavelet_functions_tested": 5
+  },
+
+  "performance_comparison": {
+    "accuracy_improvement": "Significant over traditional CNN pooling operations",
+    "svm_pca_superiority": "Outperforms conventional machine learning approaches",
+    "small_sample_performance": "Maintains high accuracy with limited training data",
+    "cross_environment_consistency": "Robust performance across 5 indoor scenarios"
+  },
+
+  "reproducibility": {
+    "score": 7.2,
+    "implementation_details": "comprehensive architectural specifications",
+    "mathematical_formulations": "complete DWT equations and parameters",
+    "hardware_setup": "detailed Intel 5300 configuration",
+    "missing_elements": ["source code availability", "cross-dataset validation"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "First wavelet-neural network integration in WiFi sensing",
+    "signal_processing_advancement": "Addresses pooling operation limitations",
+    "technical_breakthrough": "Superior small-sample learning capabilities",
+    "citation_importance": "High - algorithmic innovation in signal processing"
+  },
+
+  "limitations": [
+    "Limited scalability analysis (4 participants, 5 environments)",
+    "Wavelet function selection dependency",
+    "Increased computational complexity over pooling operations",
+    "Limited cross-dataset validation scope"
+  ],
+
+  "future_directions": [
+    "Advanced multi-scale wavelet integration",
+    "Real-time optimization for edge deployment",
+    "Cross-environment validation expansion",
+    "Participant scalability evaluation",
+    "Hybrid wavelet-transformer architectures",
+    "Adaptive wavelet selection mechanisms",
+    "Federated wavelet learning",
+    "Multi-modal wavelet fusion"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Signal Processing Innovation",
+      "CNN Architecture Evolution",
+      "Multi-Environment Validation",
+      "Mathematical Framework Development"
+    ],
+    "citation_context": "Wavelet-neural network integration benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "agents_involved": ["literature-analuzerAgent", "experimentAgent", "technicalAgent"],
+    "analysis_completeness": "comprehensive",
+    "validation_level": "4-star analysis protocol"
+  }
+}

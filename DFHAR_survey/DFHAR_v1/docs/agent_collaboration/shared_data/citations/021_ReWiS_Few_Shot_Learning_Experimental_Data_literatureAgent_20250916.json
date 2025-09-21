@@ -1,0 +1,203 @@
+{
+  "paper_id": "021",
+  "title": "ReWiS: Reliable Wi-Fi Sensing Through Few-Shot Multi-Antenna Multi-Receiver CSI Learning",
+  "authors": ["Niloofar Bahadori", "Jonathan Ashdown", "Francesco Restuccia"],
+  "affiliations": [
+    "Institute for the Wireless Internet of Things, Northeastern University",
+    "Air Force Research Laboratory"
+  ],
+  "publication_info": {
+    "type": "arXiv preprint",
+    "arxiv_id": "arXiv:2201.00869v2",
+    "date": "April 19, 2022",
+    "venue": "arXiv",
+    "doi": null
+  },
+  "technical_innovations": {
+    "core_algorithms": [
+      {
+        "name": "Prototypical Networks for CSI Sensing",
+        "description": "First application of ProtoNets to WiFi CSI sensing, replacing MatNet approaches",
+        "innovation_level": "significant_advance",
+        "performance_gain": "35% accuracy improvement over CNN baselines"
+      },
+      {
+        "name": "Multi-Diversity Framework",
+        "description": "Systematic exploitation of spatial (micro/macro), temporal, and frequency diversity",
+        "innovation_level": "paradigm_shift",
+        "performance_gain": "40% improvement over single-antenna approaches"
+      },
+      {
+        "name": "SVD-based Dimensionality Reduction",
+        "description": "Novel SVD preprocessing maintaining subcarrier structure while reducing complexity",
+        "innovation_level": "incremental_improvement",
+        "performance_gain": "80% reduction in input size"
+      }
+    ],
+    "mathematical_models": [
+      {
+        "name": "Prototype Computation",
+        "formula": "pk = (1/|Dk|) * Σ fθ(si) for (si,yk) ∈ Dk",
+        "description": "Class prototype calculation in embedding space"
+      },
+      {
+        "name": "SVD Decomposition",
+        "formula": "H'r = HrT × V where HrT = UΣV^T",
+        "description": "Dimensionality reduction preserving subcarrier resolution"
+      },
+      {
+        "name": "Loss Function",
+        "formula": "L(Qe) = -1/|Qe| Σ log(exp(-||fθ(qi) - pk||²) / Σ exp(-||fθ(qi) - pk'||²))",
+        "description": "ProtoNet training loss with Euclidean distance metric"
+      }
+    ]
+  },
+  "few_shot_learning": {
+    "approach": "Prototypical Networks",
+    "training_paradigm": "K-way-N-shot learning",
+    "configuration": {
+      "K_classes": 4,
+      "N_shots": 5,
+      "training_tasks": "episodic_sampling"
+    },
+    "advantages": [
+      "Reduced data collection requirements",
+      "Rapid environment adaptation",
+      "Elimination of application-specific feature extraction",
+      "Simpler architecture than MatNet approaches"
+    ],
+    "embedding_function": {
+      "architecture": "CNN with 4 convolutional blocks",
+      "features": "64 filters, 3x3 convolution, batch normalization, ReLU, 2x2 max-pooling",
+      "optimizer": "SGD with Adam",
+      "learning_rate": "10^-3, halved every 2000 episodes"
+    }
+  },
+  "experimental_setup": {
+    "hardware": {
+      "csi_extraction_tool": "Nexmon CSI",
+      "routers": "Asus RT-AC86U (3 units)",
+      "access_point": "Netgear R7800 with Qualcomm Atheros chipset",
+      "client": "Off-the-shelf laptop",
+      "antennas_per_router": 4,
+      "spatial_streams": 1
+    },
+    "data_collection": {
+      "frequency_band": "5GHz",
+      "bandwidth_options": ["20MHz (52 subcarriers)", "80MHz (242 subcarriers)"],
+      "sampling_rate": "100 Hz",
+      "traffic_generation": "1 Mbit/s UDP packets via iperf3",
+      "window_size": "300 samples (3 seconds)",
+      "activities": ["empty_room", "walking", "jumping", "standing"],
+      "subjects": 2,
+      "environments": 3,
+      "duration_per_activity": "180 seconds",
+      "repetitions": 10,
+      "interval_between_measurements": "2 hours minimum"
+    },
+    "environments": [
+      {
+        "id": "E1",
+        "type": "Office area",
+        "role": "Source environment (training)"
+      },
+      {
+        "id": "E2",
+        "type": "Meeting room",
+        "role": "Target environment (testing)"
+      },
+      {
+        "id": "E3",
+        "type": "Classroom",
+        "role": "Target environment (testing)"
+      }
+    ]
+  },
+  "performance_metrics": {
+    "cross_environment_accuracy": {
+      "E2": "99.25%",
+      "E3": "98.85%"
+    },
+    "improvement_over_baselines": {
+      "vs_cnn": "35% better accuracy",
+      "vs_single_antenna": "40% improvement",
+      "generalization_robustness": "<10% drop vs >45% for CNN"
+    },
+    "diversity_component_impact": {
+      "micro_diversity_1_to_4_antennas": "12-16% improvement",
+      "macro_diversity_1_to_3_receivers": "14-38% improvement",
+      "subcarrier_resolution_20_to_80MHz": "19% improvement",
+      "time_diversity_window_size": "35% improvement"
+    },
+    "f1_scores": {
+      "E2_3rx_4ant": "0.9085",
+      "E3_3rx_4ant": "0.9925"
+    }
+  },
+  "datasets": {
+    "size": "60GB",
+    "public_availability": "Yes - https://github.com/niloobah/ReWiS",
+    "data_format": "Multi-antenna multi-receiver CSI matrices",
+    "preprocessing": "SVD-based dimensionality reduction to 242x242 correlation matrices",
+    "train_test_split": "70% training, 30% testing in source environment E1"
+  },
+  "reliability_mechanisms": [
+    {
+      "name": "Spatial Diversity",
+      "description": "Multiple antennas and receivers to combat fading",
+      "technical_details": "Independent propagation paths reduce deep fade probability"
+    },
+    {
+      "name": "Temporal Diversity",
+      "description": "Multiple CSI measurements over time",
+      "technical_details": "Sliding window aggregation counteracts channel variations"
+    },
+    {
+      "name": "CSI Data Alignment",
+      "description": "Synchronization across antennas and receivers",
+      "technical_details": "WiFi sequence number-based macro alignment"
+    },
+    {
+      "name": "Normalization",
+      "description": "Mean amplitude normalization across subcarriers",
+      "technical_details": "Removes unwanted amplification and noise effects"
+    }
+  ],
+  "technical_limitations": [
+    "Indoor environment validation only",
+    "Limited to 4 activity classes",
+    "Computational overhead from SVD processing",
+    "Requires initial few-shot calibration in target environment",
+    "Static network topology assumption"
+  ],
+  "innovation_assessment": {
+    "algorithmic_innovation_level": "significant_advance",
+    "technical_breakthrough_level": "high_impact",
+    "novelty_score": 9.2,
+    "technical_rigor_score": 9.5,
+    "practical_applicability_score": 9.0,
+    "reproducibility_score": 9.8
+  },
+  "key_contributions": [
+    "First successful integration of few-shot learning with WiFi CSI sensing",
+    "Systematic multi-diversity framework for robust CSI collection",
+    "Novel SVD-based preprocessing maintaining CSI structure",
+    "Comprehensive cross-environment validation",
+    "Public release of large-scale multi-environment CSI dataset",
+    "Practical implementation with off-the-shelf hardware"
+  ],
+  "future_research_directions": [
+    "Extension to more complex activity recognition scenarios",
+    "Multiple human subject detection and tracking",
+    "Outdoor environment validation",
+    "Real-time implementation optimization",
+    "Integration with other sensing modalities"
+  ],
+  "citation_info": {
+    "bibtex_key": "bahadori2022rewis",
+    "relevance_to_dfhar": "high",
+    "quality_rating": "excellent",
+    "experimental_validation": "comprehensive",
+    "reproducibility": "fully_reproducible"
+  }
+}

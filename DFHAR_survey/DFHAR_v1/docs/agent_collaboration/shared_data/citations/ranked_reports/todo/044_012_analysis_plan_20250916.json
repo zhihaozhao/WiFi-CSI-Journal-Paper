@@ -1,0 +1,24 @@
+{
+  "paper_number": 12,
+  "pdf_file": "D:\\workspace_PHD\\WiFi-CSI-Project\\Journal-Paper\\DFHAR_survey\\DFHAR_v1\\docs\\refs\\external\\Litehar lightweight human activity recognition from wifi signals with random convolution kernels.pdf",
+  "pdf_name": "Litehar lightweight human activity recognition from wifi signals with random convolution kernels.pdf",
+  "safe_name": "Litehar_lightweight_human_activity_recognition_from_wifi_sig",
+  "file_size_mb": 0.5207080841064453,
+  "technical_focus": "WiFi CSI-based Human Activity Recognition",
+  "segments": [
+    {
+      "part": 1,
+      "sections": "Abstract + Introduction + Methodology",
+      "expected_content": "Problem, approach, technical details",
+      "output_file": "044_012_Litehar_lightweight_human_activity_recognition_from_wifi_sig_front_half_20250916.md"
+    },
+    {
+      "part": 2,
+      "sections": "Results + Discussion + Conclusion",
+      "expected_content": "Experiments, results, analysis, conclusion",
+      "output_file": "044_012_Litehar_lightweight_human_activity_recognition_from_wifi_sig_back_half_20250916.md"
+    }
+  ],
+  "total_parts": 2,
+  "analysis_strategy": "simplified"
+}

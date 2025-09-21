@@ -1,0 +1,24 @@
+{
+  "paper_number": 10,
+  "pdf_file": "D:\\workspace_PHD\\WiFi-CSI-Project\\Journal-Paper\\DFHAR_survey\\DFHAR_v1\\docs\\refs\\external\\Joint_Adversarial_Domain_Adaptation_for_Resilient_WiFi-Enabled_Device-Free_Gesture_Recognition.pdf",
+  "pdf_name": "Joint_Adversarial_Domain_Adaptation_for_Resilient_WiFi-Enabled_Device-Free_Gesture_Recognition.pdf",
+  "safe_name": "Joint_Adversarial_Domain_Adaptation_for_Resilient_WiFi_Enabl",
+  "file_size_mb": 0.6436147689819336,
+  "technical_focus": "WiFi CSI-based Human Activity Recognition",
+  "segments": [
+    {
+      "part": 1,
+      "sections": "Abstract + Introduction + Methodology",
+      "expected_content": "Problem, approach, technical details",
+      "output_file": "044_010_Joint_Adversarial_Domain_Adaptation_for_Resilient_WiFi_Enabl_front_half_20250916.md"
+    },
+    {
+      "part": 2,
+      "sections": "Results + Discussion + Conclusion",
+      "expected_content": "Experiments, results, analysis, conclusion",
+      "output_file": "044_010_Joint_Adversarial_Domain_Adaptation_for_Resilient_WiFi_Enabl_back_half_20250916.md"
+    }
+  ],
+  "total_parts": 2,
+  "analysis_strategy": "simplified"
+}

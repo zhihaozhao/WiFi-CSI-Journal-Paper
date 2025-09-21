@@ -1,0 +1,123 @@
+{
+  "paper_info": {
+    "sequence_number": 64,
+    "title": "Efficient Residual Neural Network for Human Activity Recognition using WiFi CSI Signals",
+    "authors": ["Narit Hnoohom", "Sakorn Mekruksavanich", "Thanaruk Theeramunkong", "Anuchit Jitpattanakul"],
+    "venue": "ICIEI 2024 (ACM Conference)",
+    "year": 2024,
+    "doi": "10.1145/3664934.3664950",
+    "venue_quality": "ACM International Conference",
+    "star_rating": 5
+  },
+  "technical_analysis": {
+    "innovation_type": "architectural_breakthrough",
+    "primary_contribution": "CSI-ResNeXt deep residual network architecture",
+    "mathematical_framework": {
+      "residual_learning": "H(x) = F(x) + x with skip connections",
+      "multi_kernel_blocks": "1×3, 1×5, 1×7 convolutional kernels",
+      "feature_extraction": "1-D Conv → BatchNorm → ELU → MaxPool pipeline",
+      "classification": "Global Average Pooling + SoftMax + Cross-Entropy Loss"
+    },
+    "algorithmic_innovations": [
+      "Domain-specific residual architecture for CSI signals",
+      "Multi-kernel block design for multi-scale temporal features",
+      "Parameter-efficient deep learning with 28,519 parameters",
+      "PCA-based denoising for CSI preprocessing",
+      "Fixed-window segmentation for temporal standardization"
+    ]
+  },
+  "experimental_validation": {
+    "dataset": "CSI-HAR public dataset",
+    "activities": ["walking", "running", "sitting", "lying", "standing", "bending", "falling"],
+    "sample_size": 4000,
+    "participants": 3,
+    "environment": "home_environment",
+    "validation_method": "5-fold cross-validation",
+    "metrics": {
+      "accuracy": 98.60,
+      "accuracy_std": 1.02,
+      "precision": 98.63,
+      "precision_std": 1.05,
+      "recall": 98.52,
+      "recall_std": 1.09,
+      "f1_score": 98.53,
+      "f1_std": 1.11
+    }
+  },
+  "performance_analysis": {
+    "parameter_efficiency": {
+      "csi_resnext": 28519,
+      "cnn": 1040231,
+      "lstm": 203807,
+      "bilstm": 407607,
+      "gru": 153807,
+      "bigru": 307607
+    },
+    "accuracy_comparison": {
+      "csi_resnext": 98.60,
+      "cnn": 95.19,
+      "lstm": 92.68,
+      "bilstm": 93.78,
+      "gru": 95.19,
+      "bigru": 96.39
+    },
+    "improvement_over_sota": 3.60,
+    "convergence_epochs": 100,
+    "activity_specific_accuracy": {
+      "walking": 100.0,
+      "running": 100.0,
+      "standing": 99.0,
+      "bending": 97.1,
+      "falling": 96.2,
+      "lying": 97.0,
+      "sitting": 97.0
+    }
+  },
+  "technical_quality": {
+    "theoretical_rigor": 5,
+    "experimental_completeness": 5,
+    "reproducibility": 4,
+    "innovation_level": 5,
+    "practical_applicability": 5
+  },
+  "significance_metrics": {
+    "algorithmic_breakthrough": true,
+    "parameter_efficiency_advance": true,
+    "sota_performance": true,
+    "practical_deployment_ready": true,
+    "domain_specific_optimization": true
+  },
+  "limitations": [
+    "Limited to controlled home environments",
+    "Seven basic activity categories only",
+    "Reduced performance in non-line-of-sight conditions",
+    "Single-user focus without multi-user capability"
+  ],
+  "future_work": [
+    "Multi-user activity recognition",
+    "Cross-domain generalization techniques",
+    "Real-time optimization for edge devices",
+    "Extension to complex activity repertoires"
+  ],
+  "dfhar_relevance": {
+    "core_contribution": "Breakthrough residual architecture for WiFi CSI-based HAR",
+    "practical_impact": "Edge-deployable model with exceptional efficiency",
+    "research_influence": "New paradigm for parameter-efficient DFHAR architectures",
+    "integration_priority": "high"
+  },
+  "plotting_data": {
+    "accuracy_trend": [98.60],
+    "parameter_efficiency": [28519, 1040231, 203807, 407607, 153807, 307607],
+    "model_names": ["CSI-ResNeXt", "CNN", "LSTM", "BiLSTM", "GRU", "BiGRU"],
+    "performance_comparison": [98.60, 95.19, 92.68, 93.78, 95.19, 96.39],
+    "activity_performance": {
+      "activities": ["walking", "running", "standing", "bending", "falling", "lying", "sitting"],
+      "accuracies": [100.0, 100.0, 99.0, 97.1, 96.2, 97.0, 97.0]
+    },
+    "training_characteristics": {
+      "epochs": 100,
+      "convergence_point": 100,
+      "final_accuracy": 98.60
+    }
+  }
+}

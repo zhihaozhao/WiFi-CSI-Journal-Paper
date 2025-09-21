@@ -1,0 +1,158 @@
+{
+  "paper_id": "116",
+  "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+  "authors": ["Xingcan Chen", "Yi Zou", "Chenglin Li", "Wendong Xiao"],
+  "journal": "IEEE Transactions on Human-Machine Systems",
+  "year": "2024",
+  "volume": "54",
+  "number": "1",
+  "pages": "68-78",
+  "doi": "10.1109/THMS.2023.3348694",
+
+  "experimental_data": {
+    "datasets": [
+      {
+        "name": "Public Dataset",
+        "source": "https://github.com/ermongroup/Wifi_Activity_Recognition",
+        "participants": 6,
+        "activities": 6,
+        "samples_total": 720,
+        "sampling_frequency": "1 kHz",
+        "window_size": "2 seconds",
+        "hardware": "Intel 5300 NIC"
+      },
+      {
+        "name": "Office Dataset",
+        "environment": "4400mm × 2650mm office room",
+        "participants": 8,
+        "activities": 6,
+        "samples_total": 4800,
+        "sampling_frequency": "500 Hz",
+        "window_size": "4 seconds sliding window",
+        "tx_rx_distance": "3.5m line-of-sight",
+        "hardware": "Commercial WiFi router + Intel 5300 NIC"
+      },
+      {
+        "name": "Laboratory Dataset",
+        "environment": "4400mm × 3600mm laboratory room",
+        "participants": 8,
+        "activities": 6,
+        "samples_total": 4800,
+        "sampling_frequency": "500 Hz",
+        "window_size": "4 seconds sliding window",
+        "tx_rx_distance": "2.5m line-of-sight",
+        "hardware": "Commercial WiFi router + Intel 5300 NIC"
+      }
+    ],
+
+    "activities": [
+      "Dataset 1: Lie down, Fall, Walk, Run, Sit down, Stand up",
+      "Dataset 2&3: Jump, Stoop, Wave hand, Fall, Sit down, Stand up"
+    ],
+
+    "methodology": {
+      "system_name": "Wisor-DL",
+      "signal_processing": [
+        "PCA and low-pass filtering",
+        "Sparse signal representation (10 from 30 subcarriers)",
+        "CSI tensor construction with Hankel matrices",
+        "Canonical Polyadic (CP) decomposition",
+        "CSI phase difference calculation"
+      ],
+      "architecture": {
+        "feature_extraction": "GTCN-RC (Gated Temporal Convolutional Network with Residual Connections)",
+        "classifier": "Dendrite Network (DD)",
+        "innovation": "Dual-path reconstruction + lightweight design"
+      },
+      "training_params": {
+        "optimizer": "ADAM",
+        "learning_rate": 0.0001,
+        "weight_decay": 0.001,
+        "max_epochs": 50,
+        "initialization": "Xavier with gain=1",
+        "validation": "10-fold cross-validation"
+      }
+    },
+
+    "performance_results": {
+      "recognition_accuracy": {
+        "dataset_1": 98.44,
+        "dataset_2": 98.00,
+        "dataset_3": 97.57
+      },
+      "cross_domain_accuracy": {
+        "dataset_2_to_3": 97.76,
+        "dataset_3_to_2": 97.57,
+        "degradation": "< 0.5%"
+      },
+      "computational_efficiency": {
+        "training_time_seconds": 1857.44,
+        "testing_time_ms": 2.81,
+        "parameters": "16.43M",
+        "computational_cost": "0.83 GMac"
+      },
+      "baseline_comparison": {
+        "CNN": 89.32,
+        "LSTM": 95.47,
+        "ABLSTM": 97.55,
+        "THAT": 98.08,
+        "Siamese": 98.25,
+        "HAR_SAnet": 98.36,
+        "Wisor_DL": 98.44
+      }
+    },
+
+    "experimental_quality": {
+      "overall_score": 8.7,
+      "dataset_quality": 8.5,
+      "experimental_design": 9.0,
+      "performance_metrics": 9.2,
+      "statistical_methodology": 8.8,
+      "reproducibility": 7.5,
+      "technical_innovation": 9.0
+    },
+
+    "strengths": [
+      "Multiple datasets with different environments",
+      "Comprehensive baseline comparison",
+      "Strong cross-domain generalization results",
+      "Real-time performance capability",
+      "Novel architectural contributions",
+      "Proper statistical validation with 10-fold CV"
+    ],
+
+    "limitations": [
+      "Limited participant diversity (6-8 people)",
+      "Only line-of-sight conditions tested",
+      "Missing source code availability",
+      "No statistical significance tests",
+      "Hardware dependency on Intel 5300 NIC",
+      "Limited activity scope (6 basic activities)"
+    ],
+
+    "reproducibility_assessment": {
+      "score": 7.5,
+      "available_info": [
+        "Detailed architecture descriptions",
+        "Complete hyperparameter specifications",
+        "Dataset collection protocols",
+        "Hardware specifications",
+        "Performance comparison methodology"
+      ],
+      "missing_info": [
+        "Source code implementation",
+        "Trained model weights",
+        "Random seeds",
+        "Specific CP decomposition implementation",
+        "Exact preprocessing parameters"
+      ]
+    }
+  },
+
+  "analysis_metadata": {
+    "analyzed_by": "experimentAgent1",
+    "analysis_date": "2025-09-14",
+    "analysis_focus": "Experimental methodology and reproducibility",
+    "confidence_level": "High - comprehensive experimental section available"
+  }
+}

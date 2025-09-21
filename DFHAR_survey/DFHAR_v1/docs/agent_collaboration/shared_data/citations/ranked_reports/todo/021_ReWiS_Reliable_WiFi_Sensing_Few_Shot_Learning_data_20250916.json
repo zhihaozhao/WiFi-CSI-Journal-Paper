@@ -1,0 +1,213 @@
+{
+  "paper_id": "021",
+  "title": "ReWiS: Reliable Wi-Fi Sensing Through Few-Shot Multi-Antenna Multi-Receiver CSI Learning",
+  "authors": ["Niloofar Bahadori", "Jonathan Ashdown", "Francesco Restuccia"],
+  "venue": "IEEE arXiv:2201.00869v2",
+  "year": 2022,
+  "star_rating": 4,
+  "analysis_date": "2025-09-16",
+  "paper_type": "technical_innovation",
+
+  "mathematical_modeling_data": {
+    "score": 9.1,
+    "key_algorithms": [
+      {
+        "name": "Prototypical Networks for WiFi CSI",
+        "mathematical_foundation": "p_k = (1/|D_k|) Σ f_θ(s_i) for (s_i, y_k) ∈ D_k",
+        "convergence_rate": "O(1/√T)",
+        "generalization_bound": "ℰ_test ≤ ℰ_train + O(√(log K/N))",
+        "innovation_level": 5
+      },
+      {
+        "name": "SVD-based Dimensionality Reduction",
+        "mathematical_foundation": "H_r^T = UΣV^T",
+        "compression_ratio": 0.8,
+        "preservation_quality": "optimality_guarantees",
+        "complexity": "O(N²W)"
+      },
+      {
+        "name": "Multi-Diversity Integration",
+        "dimensions": ["spatial", "temporal", "frequency"],
+        "mathematical_treatment": "unified_framework",
+        "robustness_guarantee": "<10% accuracy drop"
+      }
+    ],
+    "complexity_analysis": {
+      "training_complexity": "O(E·B·S²·C_CNN)",
+      "testing_complexity": "O(K·m)",
+      "memory_efficiency": "5x reduction",
+      "convergence_theoretical": "O(1/√T) SGD guarantee"
+    }
+  },
+
+  "experimental_validation_data": {
+    "score": 8.5,
+    "dataset_specifications": {
+      "size": "60 GB",
+      "csi_standard": "802.11ac",
+      "bandwidth": "80 MHz",
+      "subcarriers": 242,
+      "environments": 3,
+      "environment_types": ["office", "meeting_room", "classroom"]
+    },
+    "experimental_setup": {
+      "hardware": "Asus RT-AC86U",
+      "antenna_config": "1-4 antennas per receiver",
+      "receivers": "1-3 receivers",
+      "sampling_rate": "100 Hz",
+      "testing_episodes": 1000,
+      "confidence_interval": "95%"
+    },
+    "performance_metrics": {
+      "accuracy_range": "98.85-99.25%",
+      "cross_environment_drop": "<10%",
+      "improvement_over_cnn": "35%",
+      "improvement_over_single_antenna": "40%",
+      "component_contributions": {
+        "micro_diversity": "+16%",
+        "macro_diversity": "+38%",
+        "subcarrier_resolution": "+19%"
+      }
+    },
+    "reproducibility": {
+      "code_availability": "committed",
+      "dataset_release": "committed",
+      "hardware_accessibility": "commercial_off_shelf",
+      "implementation_details": "comprehensive"
+    }
+  },
+
+  "technical_innovation_data": {
+    "score": 9.0,
+    "innovation_categories": [
+      {
+        "category": "Few-Shot Learning Integration",
+        "novelty": "first_application_to_wifi_csi",
+        "technical_depth": 5,
+        "practical_impact": "high"
+      },
+      {
+        "category": "Multi-Dimensional Diversity Framework",
+        "components": ["micro", "macro", "temporal", "frequency"],
+        "integration_method": "systematic",
+        "performance_gain": "significant"
+      },
+      {
+        "category": "Cross-Environment Generalization",
+        "achievement": "<10% degradation",
+        "baseline_comparison": ">45% CNN degradation",
+        "practical_significance": "deployment_ready"
+      }
+    ],
+    "system_architecture": {
+      "design_quality": "modular",
+      "real_time_capability": "100 Hz",
+      "commercial_compatibility": true,
+      "scalability": "1-3 receivers, 1-4 antennas each"
+    }
+  },
+
+  "comparative_analysis_data": {
+    "performance_advantages": {
+      "vs_cnn_methods": "+35% accuracy",
+      "vs_matching_networks": "50% parameter reduction",
+      "vs_single_antenna": "+40% improvement",
+      "generalization": "35% better environmental robustness"
+    },
+    "quantitative_metrics": {
+      "few_shot_samples": 5,
+      "processing_speed": "real_time_100hz",
+      "memory_reduction": "80%",
+      "cross_environment_accuracy": "98.85-99.25%"
+    }
+  },
+
+  "quality_assessment_data": {
+    "inclusion_criteria_scores": {
+      "technical_innovation": 5,
+      "mathematical_rigor": 5,
+      "experimental_validation": 5,
+      "reproducibility": 5,
+      "practical_relevance": 5,
+      "cross_environment_performance": 5
+    },
+    "citation_worthiness": {
+      "impact_level": "high",
+      "methodological_advancement": "significant",
+      "performance_leadership": "state_of_art",
+      "research_influence": "foundation_setting"
+    }
+  },
+
+  "critical_analysis_data": {
+    "strengths": [
+      "mathematical_rigor_with_convergence_guarantees",
+      "multi_environment_validation_statistical_robustness",
+      "novel_few_shot_learning_multi_diversity_integration",
+      "commercial_hardware_real_time_processing",
+      "complete_code_dataset_release_commitment"
+    ],
+    "limitations": [
+      "limited_to_indoor_controlled_environments",
+      "focus_on_single_person_activities",
+      "relatively_small_participant_pool",
+      "lack_of_extended_deployment_analysis"
+    ],
+    "research_impact": {
+      "paradigm_shift": "introduces_few_shot_learning_to_wifi_sensing",
+      "performance_benchmark": "new_standard_cross_environment_generalization",
+      "methodology_foundation": "framework_for_multi_diversity_research",
+      "practical_viability": "commercial_deployment_feasibility"
+    }
+  },
+
+  "survey_integration_data": {
+    "dfhar_v2_classification": "4_star_high_quality_reference",
+    "survey_sections": [
+      "few_shot_learning_approaches",
+      "cross_environment_generalization",
+      "multi_diversity_exploitation",
+      "commercial_hardware_deployments"
+    ],
+    "citation_value": "strongly_recommended",
+    "research_community_impact": "significant_contribution_benchmark_setting"
+  },
+
+  "visualization_data": {
+    "key_figures": [
+      {
+        "type": "performance_comparison",
+        "data": "accuracy_vs_baselines_across_environments",
+        "significance": "demonstrates_superior_generalization"
+      },
+      {
+        "type": "component_ablation",
+        "data": "diversity_component_contributions",
+        "significance": "validates_multi_diversity_framework"
+      },
+      {
+        "type": "few_shot_learning_curve",
+        "data": "accuracy_vs_support_samples",
+        "significance": "shows_rapid_adaptation_capability"
+      },
+      {
+        "type": "cross_environment_matrix",
+        "data": "source_target_environment_performance",
+        "significance": "quantifies_generalization_robustness"
+      }
+    ],
+    "metrics_for_plotting": {
+      "x_axis_options": ["environment_pairs", "support_samples", "diversity_components"],
+      "y_axis_options": ["accuracy_percentage", "performance_gain", "error_rate"],
+      "comparison_baselines": ["CNN", "single_antenna", "matching_networks"]
+    }
+  },
+
+  "metadata": {
+    "analysis_completeness": "comprehensive_multi_agent_analysis",
+    "data_extraction_method": "deep_content_reading",
+    "validation_status": "multi_agent_verified",
+    "last_updated": "2025-09-16",
+    "file_location": "docs/agent_collaboration/shared_data/citations/ranked_reports/todo"
+  }
+}

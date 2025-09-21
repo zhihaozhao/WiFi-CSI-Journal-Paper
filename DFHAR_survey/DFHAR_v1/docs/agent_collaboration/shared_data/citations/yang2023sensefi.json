@@ -1,0 +1,60 @@
+{
+  "paper_id": "yang2023sensefi",
+  "citation_key": "yang2023sensefi",
+  "title": "SenseFi: A library and benchmark on deep-learning-empowered WiFi human sensing",
+  "authors": ["Yang, Jianfei", "Chen, Xinyan", "Zou, Han", "Lu, Chris Xiaoxuan", "Wang, Dazhuo", "Sun, Sumei", "Xie, Lihua"],
+  "publication_info": {
+    "journal": "Patterns",
+    "conference": "",
+    "year": 2023,
+    "volume": "4",
+    "pages": "100703",
+    "doi": "10.1016/j.patter.2023.100703",
+    "publisher": "Cell Press"
+  },
+  "quality_metrics": {
+    "impact_factor": 0.0,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified via Cell Press - SJR: 1.527",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "WiFi CSI Deep Learning Benchmark",
+    "methodology": "Comprehensive benchmark framework with PyTorch implementation",
+    "key_contributions": [
+      "First comprehensive benchmark for WiFi CSI human sensing",
+      "Open-source PyTorch implementation",
+      "Evaluation of 11 models on 4 datasets",
+      "Standardized evaluation protocol"
+    ],
+    "experimental_setup": "Multi-model evaluation across standardized datasets",
+    "datasets_used": ["Multiple WiFi CSI datasets"],
+    "performance_metrics": {"models_evaluated": 11, "datasets_used": 4},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 5,
+    "chapter_mapping": ["benchmarking", "deep_learning", "evaluation_metrics", "standardization"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Benchmark evaluation framework", "Multi-model comparison"],
+    "mathematical_models": [],
+    "experimental_results": {"github": "github.com/xyanchen/WiFi-CSI-Sensing-Benchmark"}
+  },
+  "future_directions": {
+    "identified_challenges": ["Standardization of WiFi CSI evaluation"],
+    "proposed_solutions": ["Unified benchmark framework"],
+    "research_gaps": ["Limited cross-domain evaluation"],
+    "potential_experiments": ["Extended benchmark with new models", "Cross-environment validation"]
+  },
+  "notes": "Foundational benchmark framework - critical reference for establishing evaluation standards in DFHAR survey",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

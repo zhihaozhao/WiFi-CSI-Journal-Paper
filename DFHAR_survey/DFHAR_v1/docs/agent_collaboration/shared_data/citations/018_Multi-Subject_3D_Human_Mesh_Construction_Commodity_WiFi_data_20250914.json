@@ -1,0 +1,308 @@
+{
+  "sequence_number": 86,
+  "title": "Multi-Subject 3D Human Mesh Construction Using Commodity WiFi",
+  "authors": [
+    "Yichao Wang",
+    "Yili Ren",
+    "Jie Yang"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+  "venue_type": "ACM Journal",
+  "doi": "10.1145/3643504",
+  "publication_date": "March 2024",
+  "volume": 8,
+  "issue": 1,
+  "article_number": 23,
+  "pages": 25,
+  "category": "Multi-Subject WiFi Sensing & 3D Human Mesh Construction",
+
+  "basic_info": {
+    "paper_type": "Journal Article",
+    "publisher": "ACM",
+    "language": "English",
+    "open_access": false,
+    "corresponding_author": "Jie Yang"
+  },
+
+  "technical_keywords": [
+    "WiFi Sensing",
+    "3D Human Mesh",
+    "Multi-subject Scenarios",
+    "Channel State Information (CSI)",
+    "Deep Learning",
+    "Angle of Arrival (AoA)",
+    "Angle of Departure (AoD)",
+    "Time of Flight (ToF)",
+    "SMPL Model",
+    "Commodity WiFi"
+  ],
+
+  "innovation_analysis": {
+    "theoretical_contribution": {
+      "score": 5,
+      "description": "Paradigm shift from single to multi-subject 3D mesh construction using commodity WiFi",
+      "mathematical_framework": [
+        "4D spatial information extraction: P(θ,φ,ω,τ) = 1/(A^H E_N E_N^H A)",
+        "2D AoA estimation: Φ_x = e^(-j2πd/λ sin(φ) cos(θ))",
+        "AoD integration: Ψ(ω) = e^(-j2πfd sin(ω)/c)",
+        "ToF enhancement: Ω(τ) = e^(-j2πf_δτ/c)",
+        "Static reflection subtraction: F_r = F_c - Σa_i F_i",
+        "Loss optimization: L_SMPL = λ_J L_p + λ_V L_s"
+      ]
+    },
+    "methodological_innovation": {
+      "score": 5,
+      "description": "Comprehensive multi-subject separation with 4D spatial information and deep learning mesh construction",
+      "key_methods": [
+        "L-shaped antenna array for 2D AoA estimation",
+        "Multi-dimensional signal resolvability enhancement",
+        "Indirect reflection removal using propagation path analysis",
+        "Dynamic tracking for near-far problem solution",
+        "YOLACT-based subject detection",
+        "CNN-GRU-Attention mesh construction framework",
+        "Five-region body deformation analysis",
+        "SMPL model integration"
+      ]
+    },
+    "system_innovation": {
+      "score": 5,
+      "description": "Complete end-to-end multi-subject 3D mesh construction system with commodity WiFi devices",
+      "implementation_details": [
+        "Dell LATITUDE laptops with Intel 5300 NICs",
+        "L-shaped 9-antenna receiver array",
+        "3-antenna linear transmitter array",
+        "40MHz bandwidth, 1000 packets/second",
+        "ResNet feature extractor + GRU + Self-attention",
+        "PyTorch implementation on NVIDIA RTX 3090"
+      ]
+    }
+  },
+
+  "experimental_validation": {
+    "datasets": [
+      {
+        "name": "Multi-Subject 3D Mesh Dataset",
+        "subjects": 14,
+        "environments": ["Classroom", "Laboratory", "Conference Room"],
+        "activities": [
+          "Walking back and forth",
+          "Walking in circles",
+          "Walking with random arm motions",
+          "Sitting and standing",
+          "Torso rotation",
+          "Random arm motions"
+        ],
+        "scenarios": ["Two subjects", "Three subjects"],
+        "conditions": ["Occluded", "Unoccluded", "Various distances"],
+        "data_scale": "90 million WiFi CSI packets"
+      }
+    ],
+
+    "performance_metrics": {
+      "two_subjects": {
+        "PVE": 4.01,
+        "MPJPE": 3.51,
+        "PA_MPJPE": 1.90
+      },
+      "three_subjects": {
+        "PVE": 5.39,
+        "MPJPE": 4.65,
+        "PA_MPJPE": 2.43
+      }
+    },
+
+    "robustness_analysis": {
+      "unseen_subjects": {
+        "two_subjects": {"PVE": 5.16, "MPJPE": 4.61, "PA_MPJPE": 2.26},
+        "three_subjects": {"PVE": 6.90, "MPJPE": 6.01, "PA_MPJPE": 2.73}
+      },
+      "unseen_environments": {
+        "two_subjects": {"PVE": 4.51, "MPJPE": 3.98, "PA_MPJPE": 2.04},
+        "three_subjects": {"PVE": 6.30, "MPJPE": 5.61, "PA_MPJPE": 2.46}
+      },
+      "occluded_scenarios": {
+        "two_subjects": {"PVE": 6.49, "MPJPE": 5.84, "PA_MPJPE": 2.49},
+        "three_subjects": {"PVE": 8.24, "MPJPE": 7.03, "PA_MPJPE": 3.12}
+      }
+    },
+
+    "distance_impact": {
+      "sensing_distance": {
+        "2m": {"PVE": 3.86, "MPJPE": 3.23, "PA_MPJPE": 1.75},
+        "4m": {"PVE": 4.41, "MPJPE": 3.79, "PA_MPJPE": 2.10},
+        "6m": {"PVE": 4.96, "MPJPE": 3.95, "PA_MPJPE": 2.23}
+      },
+      "subject_separation": {
+        "10cm": {"PVE": 5.68, "MPJPE": 4.72, "PA_MPJPE": 2.41},
+        "50cm": {"PVE": 4.68, "MPJPE": 3.92, "PA_MPJPE": 2.21},
+        "100cm": {"PVE": 4.12, "MPJPE": 3.57, "PA_MPJPE": 2.02}
+      },
+      "device_distance": {
+        "50cm": {"PVE": 4.25, "MPJPE": 3.81, "PA_MPJPE": 2.12},
+        "100cm": {"PVE": 4.12, "MPJPE": 3.57, "PA_MPJPE": 2.02},
+        "300cm": {"PVE": 5.13, "MPJPE": 4.26, "PA_MPJPE": 2.43},
+        "500cm": {"PVE": 6.58, "MPJPE": 5.29, "PA_MPJPE": 2.97}
+      }
+    },
+
+    "baseline_comparison": {
+      "Baseline_A_azimuth_tof": {"PVE": 9.93, "MPJPE": 8.91, "PA_MPJPE": 4.45},
+      "Baseline_B_azimuth_aod_tof": {"PVE": 6.29, "MPJPE": 5.62, "PA_MPJPE": 2.76},
+      "Baseline_C_2d_aoa_tof": {"PVE": 4.93, "MPJPE": 4.05, "PA_MPJPE": 2.37},
+      "MultiMesh_full_4d": {"PVE": 4.01, "MPJPE": 3.51, "PA_MPJPE": 1.90}
+    },
+
+    "spatial_accuracy": {
+      "AoA_estimation_error_80th_percentile": "10.2°",
+      "ToF_estimation_error_80th_percentile": "4.1ns",
+      "subject_detection_AP": 0.710,
+      "subject_detection_AP@70": 0.868
+    }
+  },
+
+  "star_rating": {
+    "overall_rating": 5,
+    "criteria_scores": {
+      "theoretical_rigor": 5,
+      "methodological_innovation": 5,
+      "experimental_validation": 5,
+      "practical_applicability": 5,
+      "reproducibility": 4,
+      "impact_potential": 5
+    },
+    "justification": "Five-star rating due to paradigm-shifting achievement in multi-subject 3D mesh construction, comprehensive mathematical framework, extensive experimental validation across diverse scenarios, and superior performance enabling real-world deployment."
+  },
+
+  "editorial_appeal": {
+    "importance_score": 5,
+    "rigor_score": 5,
+    "innovation_score": 5,
+    "value_score": 5,
+    "appeal_summary": "Exceptional editorial appeal through paradigm-shifting multi-subject sensing capabilities, comprehensive mathematical framework, extensive experimental validation, and superior practical applicability for smart home and IoT environments.",
+    "target_venues": [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "IEEE Transactions on Mobile Computing",
+      "ACM Transactions on Sensor Networks",
+      "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+      "IEEE Internet of Things Journal"
+    ]
+  },
+
+  "v2_survey_integration": {
+    "introduction_priority": 5,
+    "methods_priority": 5,
+    "results_priority": 5,
+    "discussion_priority": 5,
+    "integration_notes": [
+      "Essential for multi-subject sensing taxonomy in DFHAR survey",
+      "Provides comprehensive 4D spatial information extraction framework",
+      "Contributes benchmark performance data for multi-subject scenarios",
+      "Establishes practical deployment guidelines for ambient intelligence"
+    ]
+  },
+
+  "plotting_data": {
+    "performance_comparison": {
+      "methods": ["Baseline A", "Baseline B", "Baseline C", "MultiMesh"],
+      "PVE_values": [9.93, 6.29, 4.93, 4.01],
+      "MPJPE_values": [8.91, 5.62, 4.05, 3.51],
+      "improvement_percentages": [0, 36.7, 49.6, 59.6]
+    },
+    "distance_impact": {
+      "sensing_distances": [2, 4, 6],
+      "PVE_values": [3.86, 4.41, 4.96],
+      "subject_separations": [10, 50, 100],
+      "separation_PVE": [5.68, 4.68, 4.12]
+    },
+    "resolvability_improvement": {
+      "distances_cm": [20, 40, 60, 80, 100],
+      "azimuth_elevation_prob": [0.79, 0.59, 0.42, 0.27, 0.15],
+      "with_aod_prob": [0.66, 0.36, 0.19, 0.10, 0.058],
+      "full_4d_prob": [0.53, 0.19, 0.044, 0.0091, 0.00005]
+    },
+    "robustness_analysis": {
+      "scenarios": ["Standard", "Unseen Subjects", "Unseen Environments", "Occluded"],
+      "two_subject_PVE": [4.01, 5.16, 4.51, 6.49],
+      "three_subject_PVE": [5.39, 6.90, 6.30, 8.24]
+    }
+  },
+
+  "citations_and_references": {
+    "reference_count": 44,
+    "self_citations": 3,
+    "key_related_works": [
+      "Wi-Mesh (2022) - Single-subject WiFi mesh construction",
+      "RF-Avatar (2019) - FMCW radar-based mesh construction",
+      "mmMesh (2021) - mmWave radar mesh construction",
+      "SpotFi (2015) - WiFi-based indoor localization",
+      "SMPL (2015) - Skinned multi-person linear model"
+    ],
+    "verification_status": "verified_through_doi_and_acm_database"
+  },
+
+  "limitations_and_future_work": {
+    "identified_limitations": [
+      "Performance degradation in heavily crowded scenarios with full overlap",
+      "Large pet interference requiring additional discrimination mechanisms",
+      "Computational complexity for real-time edge device deployment",
+      "Limited evaluation in outdoor environments"
+    ],
+    "suggested_improvements": [
+      "Enhanced antenna arrays for improved signal resolvability",
+      "Gait pattern analysis for biological entity discrimination",
+      "Optimization for resource-constrained edge devices",
+      "Extended evaluation across broader environmental conditions"
+    ],
+    "future_directions": [
+      "Integration with next-generation WiFi devices",
+      "Cross-domain validation in diverse deployment scenarios",
+      "Privacy-preserving mesh construction techniques",
+      "Real-time optimization for mobile and IoT applications"
+    ]
+  },
+
+  "reproducibility_assessment": {
+    "code_availability": false,
+    "data_availability": false,
+    "implementation_details": "comprehensive",
+    "parameter_completeness": "complete",
+    "hardware_specifications": "detailed",
+    "reproducibility_score": 4.0,
+    "notes": "Detailed mathematical formulations and experimental procedures provided, though source code and datasets not explicitly made available"
+  },
+
+  "research_contribution_summary": {
+    "primary_contribution": "First successful multi-subject 3D human mesh construction using commodity WiFi devices",
+    "secondary_contributions": [
+      "Four-dimensional spatial information extraction framework",
+      "Comprehensive solution to indirect reflection and near-far problems",
+      "Deep learning-based mesh construction with regional body analysis",
+      "Extensive robustness evaluation across diverse challenging scenarios",
+      "Superior performance over computer vision approaches in challenging conditions"
+    ],
+    "impact_assessment": "Paradigm-shifting impact through enabling multi-subject ambient intelligence applications with commodity WiFi infrastructure"
+  },
+
+  "technical_specifications": {
+    "hardware_requirements": {
+      "transmitter": "3-antenna linear array, 40MHz WiFi",
+      "receiver": "9-antenna L-shaped array with Intel 5300 NICs",
+      "antenna_spacing": "2.8cm (half wavelength)",
+      "packet_rate": "1000 packets/second"
+    },
+    "software_requirements": {
+      "deep_learning_framework": "PyTorch",
+      "feature_extractor": "ResNet",
+      "temporal_model": "2-layer GRU with 2048 hidden states",
+      "attention_mechanism": "Self-attention with FC layers",
+      "mesh_model": "SMPL for final 3D representation"
+    },
+    "performance_requirements": {
+      "real_time_processing": "Capable",
+      "multi_subject_capacity": "2-3 subjects validated",
+      "sensing_range": "Up to 6m effective range",
+      "accuracy_target": "4cm average vertex error"
+    }
+  }
+}

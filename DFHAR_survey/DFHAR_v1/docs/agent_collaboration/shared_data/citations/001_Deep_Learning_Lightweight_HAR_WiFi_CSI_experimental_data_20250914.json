@@ -1,0 +1,191 @@
+{
+  "paper_id": "116",
+  "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+  "authors": ["Xingcan Chen", "Yi Zou", "Chenglin Li", "Wendong Xiao"],
+  "publication": "IEEE Transactions on Human-Machine Systems",
+  "year": 2024,
+  "volume": "54",
+  "issue": "1",
+  "doi": "10.1109/THMS.2023.3348694",
+  "analysis_date": "2025-09-14",
+  "analysis_agent": "experimentAgent1",
+
+  "experimental_scores": {
+    "dataset_quality": 9.0,
+    "model_architecture": 8.0,
+    "results_analysis": 8.0,
+    "experimental_design": 8.0,
+    "reproducibility": 7.0,
+    "discussion_quality": 8.0,
+    "overall_score": 8.2
+  },
+
+  "dataset_analysis": {
+    "total_datasets": 3,
+    "dataset_1": {
+      "type": "benchmark",
+      "participants": 6,
+      "activities": 6,
+      "samples_per_activity": 20,
+      "sampling_rate": "1 kHz",
+      "window_size": "2 seconds",
+      "hardware": "Intel 5300 NIC"
+    },
+    "dataset_2": {
+      "type": "office_environment",
+      "environment_size": "4400mm × 2650mm",
+      "participants": 8,
+      "activities": 6,
+      "samples_per_activity": 100,
+      "sampling_rate": "500 Hz",
+      "window_size": "4 seconds",
+      "tx_rx_distance": "3.5m"
+    },
+    "dataset_3": {
+      "type": "laboratory_environment",
+      "environment_size": "4400mm × 3600mm",
+      "participants": 8,
+      "activities": 6,
+      "samples_per_activity": 100,
+      "sampling_rate": "500 Hz",
+      "window_size": "4 seconds",
+      "tx_rx_distance": "2.5m"
+    },
+    "data_quality_assessment": {
+      "strengths": [
+        "Multi-environment validation",
+        "Consistent hardware setup",
+        "Adequate sample sizes",
+        "Cross-domain validation design"
+      ],
+      "limitations": [
+        "Limited participant diversity",
+        "Single hardware platform",
+        "No multi-person scenarios",
+        "Controlled environments only"
+      ]
+    }
+  },
+
+  "model_architecture": {
+    "system_name": "Wisor-DL",
+    "main_components": [
+      "CSI Denoising (PCA + Low-pass filtering)",
+      "Sparse Signal Representation",
+      "CSI Tensor Construction and Decomposition",
+      "Gated Temporal Convolutional Network with Residual Connections (GTCN-RC)",
+      "Dendrite Network (DD)"
+    ],
+    "innovations": [
+      "Dual CSI reconstruction pathways",
+      "Novel tensor decomposition approach",
+      "Gated temporal convolution with residual connections",
+      "Dendrite network for lightweight classification"
+    ],
+    "technical_details": {
+      "tensor_decomposition": "Canonical Polyadic (CP) with uniqueness guarantee",
+      "subcarrier_reduction": "30 → 10 subcarriers based on phase variance",
+      "tensor_dimensions": "O×Q = 300×300, K = 599",
+      "gating_mechanism": "tanh + sigmoid activation functions"
+    }
+  },
+
+  "performance_results": {
+    "recognition_accuracy": {
+      "dataset_1": 98.44,
+      "wisor_dl_vs_baselines": {
+        "CNN": 91.32,
+        "LSTM": 93.58,
+        "ABLSTM": 97.55,
+        "THAT": 98.08,
+        "Siamese": 98.25,
+        "HAR_SAnet": 98.36,
+        "Wisor_DL": 98.44
+      }
+    },
+    "efficiency_metrics": {
+      "training_time_seconds": 1857.44,
+      "testing_time_ms": 2.81,
+      "model_parameters_millions": 16.43,
+      "computational_complexity_gmac": 0.83,
+      "real_time_capability": true
+    },
+    "cross_domain_performance": {
+      "wisor_dl_degradation": 0.5,
+      "baseline_degradation_range": [2, 15],
+      "generalization_quality": "excellent"
+    }
+  },
+
+  "experimental_methodology": {
+    "validation_protocol": "10-fold cross-validation",
+    "comparison_baselines": 6,
+    "ablation_study": "comprehensive",
+    "statistical_testing": "average over 10 runs",
+    "hardware": {
+      "gpu": "NVIDIA GeForce RTX3090",
+      "cpu": "Intel i9-10900K 3.70 GHz"
+    },
+    "training_settings": {
+      "optimizer": "ADAM",
+      "learning_rate": 0.0001,
+      "weight_decay": 0.001,
+      "initialization": "Xavier",
+      "max_epochs": 50
+    }
+  },
+
+  "ablation_study_results": {
+    "csi_phase_difference_vs_amplitude": "improved_stability",
+    "sparse_representation_contribution": "+5-7% cross-domain performance",
+    "tensor_decomposition_contribution": "+2-3% generalization",
+    "gtcn_rc_vs_tcn": "superior_temporal_learning",
+    "dendrite_vs_dense": "faster_convergence (6th vs 25th epoch)"
+  },
+
+  "reproducibility_assessment": {
+    "code_availability": false,
+    "implementation_details": "partial",
+    "hardware_specifications": "complete",
+    "hyperparameters": "specified",
+    "data_preprocessing": "mostly_specified",
+    "reproducibility_score": 7.0,
+    "missing_elements": [
+      "Public code repository",
+      "Complete network architectures",
+      "Detailed preprocessing steps",
+      "Exact environmental configurations"
+    ]
+  },
+
+  "strengths": [
+    "Comprehensive multi-dataset validation",
+    "Novel integration of tensor methods with gated networks",
+    "Strong cross-domain generalization",
+    "Lightweight design with real-time capability",
+    "Thorough ablation studies",
+    "Mathematical rigor in tensor decomposition"
+  ],
+
+  "limitations": [
+    "Single-person activity limitation",
+    "Controlled environment constraints",
+    "Limited code availability",
+    "Hardware platform dependency",
+    "Background traffic interference not addressed"
+  ],
+
+  "significance": {
+    "technical_contribution": "High - Novel lightweight architecture with strong performance",
+    "practical_impact": "High - Real-time capable system with cross-domain robustness",
+    "research_advancement": "Significant advancement in WiFi CSI-based HAR systems"
+  },
+
+  "future_work_recommendations": [
+    "Multi-person activity recognition",
+    "Background traffic robustness",
+    "Real-time edge deployment optimization",
+    "Open-source implementation release",
+    "Extended real-world environment evaluation"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "paper_id": "chen2024wiphase",
+  "citation_key": "chen2024wiphase",
+  "title": "WiPhase: A Human Activity Recognition Approach by Fusing of Reconstructed WiFi CSI Phase Features",
+  "authors": ["Chen, Xingcan", "Li, Chenglin", "Jiang, Chengpeng", "Meng, Wei", "Xiao, Wendong"],
+  "publication_info": {
+    "journal": "IEEE Transactions on Mobile Computing",
+    "conference": "",
+    "year": 2024,
+    "volume": "24",
+    "pages": "394-406",
+    "doi": "10.1109/TMC.2024.3461672",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 9.2,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified via IEEE Xplore",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "WiFi CSI Human Activity Recognition",
+    "methodology": "CSI phase feature reconstruction and fusion",
+    "key_contributions": [
+      "Novel approach to CSI sub-carrier correlation for improved HAR efficiency",
+      "Phase feature reconstruction methodology",
+      "Enhanced recognition accuracy through feature fusion"
+    ],
+    "experimental_setup": "WiFi CSI signal processing with phase reconstruction",
+    "datasets_used": [],
+    "performance_metrics": {},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 4,
+    "novelty_score": 4,
+    "chapter_mapping": ["signal_processing", "feature_extraction", "phase_analysis"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Phase reconstruction algorithm", "Feature fusion method"],
+    "mathematical_models": [],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": ["CSI sub-carrier correlation optimization"],
+    "proposed_solutions": ["Advanced phase reconstruction techniques"],
+    "research_gaps": ["Limited cross-environment validation"],
+    "potential_experiments": ["Multi-environment phase analysis", "Real-time implementation"]
+  },
+  "notes": "High-impact 2024 publication in top-tier journal addressing CSI phase processing - directly relevant to DFHAR survey framework",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

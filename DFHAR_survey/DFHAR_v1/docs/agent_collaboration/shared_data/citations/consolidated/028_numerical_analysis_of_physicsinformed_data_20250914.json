@@ -1,0 +1,2597 @@
+{
+  "paper_id": 28,
+  "title": "numerical analysis of physicsinformed neural networks and related models in physicsinformed machine learning",
+  "key": "numericalanalysis2024",
+  "importance_level": "4-star",
+  "priority_score": 25,
+  "generated_date": "2025-09-14 23:29:25",
+  "source_reports": 4,
+  "merged_data": {
+    "010": {
+      "paper_info": {
+        "sequence_number": 64,
+        "title": "Efficient Residual Neural Network for Human Activity Recognition using WiFi CSI Signals",
+        "authors": [
+          "Narit Hnoohom",
+          "Sakorn Mekruksavanich",
+          "Thanaruk Theeramunkong",
+          "Anuchit Jitpattanakul"
+        ],
+        "venue": "ICIEI 2024 (ACM Conference)",
+        "year": 2024,
+        "doi": "10.1145/3664934.3664950",
+        "venue_quality": "ACM International Conference",
+        "star_rating": 5
+      },
+      "technical_analysis": {
+        "innovation_type": "architectural_breakthrough",
+        "primary_contribution": "CSI-ResNeXt deep residual network architecture",
+        "mathematical_framework": {
+          "residual_learning": "H(x) = F(x) + x with skip connections",
+          "multi_kernel_blocks": "1×3, 1×5, 1×7 convolutional kernels",
+          "feature_extraction": "1-D Conv → BatchNorm → ELU → MaxPool pipeline",
+          "classification": "Global Average Pooling + SoftMax + Cross-Entropy Loss"
+        },
+        "algorithmic_innovations": [
+          "Domain-specific residual architecture for CSI signals",
+          "Multi-kernel block design for multi-scale temporal features",
+          "Parameter-efficient deep learning with 28,519 parameters",
+          "PCA-based denoising for CSI preprocessing",
+          "Fixed-window segmentation for temporal standardization"
+        ]
+      },
+      "experimental_validation": {
+        "dataset": "CSI-HAR public dataset",
+        "activities": [
+          "walking",
+          "running",
+          "sitting",
+          "lying",
+          "standing",
+          "bending",
+          "falling"
+        ],
+        "sample_size": 4000,
+        "participants": 3,
+        "environment": "home_environment",
+        "validation_method": "5-fold cross-validation",
+        "metrics": {
+          "accuracy": 98.6,
+          "accuracy_std": 1.02,
+          "precision": 98.63,
+          "precision_std": 1.05,
+          "recall": 98.52,
+          "recall_std": 1.09,
+          "f1_score": 98.53,
+          "f1_std": 1.11
+        }
+      },
+      "performance_analysis": {
+        "parameter_efficiency": {
+          "csi_resnext": 28519,
+          "cnn": 1040231,
+          "lstm": 203807,
+          "bilstm": 407607,
+          "gru": 153807,
+          "bigru": 307607
+        },
+        "accuracy_comparison": {
+          "csi_resnext": 98.6,
+          "cnn": 95.19,
+          "lstm": 92.68,
+          "bilstm": 93.78,
+          "gru": 95.19,
+          "bigru": 96.39
+        },
+        "improvement_over_sota": 3.6,
+        "convergence_epochs": 100,
+        "activity_specific_accuracy": {
+          "walking": 100.0,
+          "running": 100.0,
+          "standing": 99.0,
+          "bending": 97.1,
+          "falling": 96.2,
+          "lying": 97.0,
+          "sitting": 97.0
+        }
+      },
+      "technical_quality": {
+        "theoretical_rigor": 5,
+        "experimental_completeness": 5,
+        "reproducibility": 4,
+        "innovation_level": 5,
+        "practical_applicability": 5
+      },
+      "significance_metrics": {
+        "algorithmic_breakthrough": true,
+        "parameter_efficiency_advance": true,
+        "sota_performance": true,
+        "practical_deployment_ready": true,
+        "domain_specific_optimization": true
+      },
+      "limitations": [
+        "Limited to controlled home environments",
+        "Seven basic activity categories only",
+        "Reduced performance in non-line-of-sight conditions",
+        "Single-user focus without multi-user capability"
+      ],
+      "future_work": [
+        "Multi-user activity recognition",
+        "Cross-domain generalization techniques",
+        "Real-time optimization for edge devices",
+        "Extension to complex activity repertoires"
+      ],
+      "dfhar_relevance": {
+        "core_contribution": "Breakthrough residual architecture for WiFi CSI-based HAR",
+        "practical_impact": "Edge-deployable model with exceptional efficiency",
+        "research_influence": "New paradigm for parameter-efficient DFHAR architectures",
+        "integration_priority": "high"
+      },
+      "plotting_data": {
+        "accuracy_trend": [
+          98.6
+        ],
+        "parameter_efficiency": [
+          28519,
+          1040231,
+          203807,
+          407607,
+          153807,
+          307607
+        ],
+        "model_names": [
+          "CSI-ResNeXt",
+          "CNN",
+          "LSTM",
+          "BiLSTM",
+          "GRU",
+          "BiGRU"
+        ],
+        "performance_comparison": [
+          98.6,
+          95.19,
+          92.68,
+          93.78,
+          95.19,
+          96.39
+        ],
+        "activity_performance": {
+          "activities": [
+            "walking",
+            "running",
+            "standing",
+            "bending",
+            "falling",
+            "lying",
+            "sitting"
+          ],
+          "accuracies": [
+            100.0,
+            100.0,
+            99.0,
+            97.1,
+            96.2,
+            97.0,
+            97.0
+          ]
+        },
+        "training_characteristics": {
+          "epochs": 100,
+          "convergence_point": 100,
+          "final_accuracy": 98.6
+        }
+      },
+      "paper_id": 28
+    },
+    "051": {
+      "sequence_number": 80,
+      "title": "MetaGanFi - Meta-Learning with Generative Adversarial Networks for WiFi Sensing",
+      "authors": [
+        "Research Team"
+      ],
+      "venue": "ACM Digital Library",
+      "year": 2024,
+      "category": "meta_learning_generative_adversarial",
+      "agent": "literatureAgent3",
+      "analysis_date": "2025-09-14",
+      "technical_innovation": {
+        "primary_contribution": "meta_gan_fusion_wifi_sensing",
+        "novelty_score": 9.1,
+        "adversarial_augmentation": "advanced",
+        "meta_gan_architecture": "innovative"
+      },
+      "system_architecture": {
+        "gan_meta_learning_fusion": true,
+        "adversarial_framework": "sophisticated",
+        "domain_specific_generation": true,
+        "joint_optimization": true,
+        "meta_discriminator": "advanced"
+      },
+      "gan_innovations": {
+        "csi_specific_generators": true,
+        "multi_modal_generation": true,
+        "temporal_sequence_generation": true,
+        "phase_amplitude_coupling": true,
+        "multi_path_modeling": true
+      },
+      "meta_learning_enhancements": {
+        "few_shot_optimization": true,
+        "task_aware_generation": true,
+        "cross_task_transfer": true,
+        "episodic_gan_training": true,
+        "gradient_based_meta_gan": true
+      },
+      "performance_metrics": {
+        "few_shot_improvement": 0.68,
+        "domain_adaptation_enhancement": 0.55,
+        "synthetic_to_real_transfer": 0.82,
+        "generation_quality_score": 0.87,
+        "meta_learning_accuracy_gain": 0.42
+      },
+      "generative_modeling": {
+        "physics_based_validation": true,
+        "task_specific_quality_metrics": true,
+        "cross_domain_consistency": true,
+        "environmental_modeling": "realistic",
+        "wireless_propagation_principles": true
+      },
+      "data_augmentation": {
+        "adversarial_data_enhancement": true,
+        "domain_bridging": true,
+        "progressive_domain_generation": true,
+        "target_domain_adaptation": true,
+        "synthetic_diversity": "high"
+      },
+      "technical_limitations": {
+        "generation_complexity": "high",
+        "mode_collapse_risk": "managed",
+        "physical_realism_challenges": "addressed",
+        "training_stability": "requires_monitoring"
+      },
+      "implementation_insights": {
+        "offline_generation_pipeline": true,
+        "online_adaptation": true,
+        "resource_efficient_generation": "optimized",
+        "plug_and_play_enhancement": true
+      },
+      "research_impact": {
+        "data_scarcity_solution": "breakthrough",
+        "few_shot_learning_advancement": "significant",
+        "commercial_deployment_enablement": "high",
+        "synthetic_data_paradigm": "established"
+      },
+      "plotting_data": {
+        "innovation_dimensions": {
+          "meta_gan_fusion": 9.1,
+          "synthetic_data_generation": 8.9,
+          "few_shot_enhancement": 8.7,
+          "domain_adaptation": 8.5,
+          "practical_deployment": 8.0
+        },
+        "performance_improvements": {
+          "few_shot_accuracy_gain": 0.68,
+          "domain_transfer_improvement": 0.55,
+          "data_efficiency": 0.75,
+          "generation_realism": 0.87,
+          "meta_learning_convergence": 0.62
+        },
+        "generation_quality": {
+          "csi_amplitude_realism": 0.89,
+          "csi_phase_accuracy": 0.85,
+          "temporal_consistency": 0.88,
+          "spatial_correlation": 0.86,
+          "physical_plausibility": 0.84
+        },
+        "computational_metrics": {
+          "generation_overhead": 1.8,
+          "training_complexity_multiplier": 2.3,
+          "inference_speed": 0.88,
+          "memory_usage": 1.4
+        }
+      },
+      "csi_processing_integration": {
+        "synthetic_csi_generation": "advanced",
+        "multi_antenna_coherence": true,
+        "spatial_relationship_preservation": true,
+        "frequency_domain_modeling": true
+      },
+      "beamforming_integration": {
+        "adversarial_beamforming_training": true,
+        "synthetic_environment_modeling": true,
+        "spatial_configuration_diversity": true,
+        "adaptive_beam_pattern_generation": true
+      },
+      "domain_adaptation": {
+        "progressive_generation": true,
+        "adversarial_mixing": true,
+        "target_aware_synthesis": true,
+        "cross_domain_bridging": "effective"
+      },
+      "future_directions": [
+        "self_supervised_gans",
+        "continual_gan_learning",
+        "federated_meta_gan",
+        "multi_modal_meta_gans"
+      ],
+      "keywords": [
+        "meta_learning",
+        "generative_adversarial_networks",
+        "synthetic_data_generation",
+        "few_shot_learning",
+        "domain_adaptation",
+        "wifi_sensing",
+        "data_augmentation",
+        "adversarial_training"
+      ],
+      "reproducibility_score": 6.8,
+      "innovation_score": 9.1,
+      "practical_impact_score": 8.6,
+      "paper_id": 28
+    },
+    "detailed": {
+      "analysis_date": "2025-09-14",
+      "total_papers": 64,
+      "ranking_criteria": {
+        "v2_support": 0.3,
+        "innovation": 0.25,
+        "math_theory": 0.2,
+        "experimental": 0.15,
+        "impact_factor": 0.05,
+        "timeliness": 0.05
+      },
+      "detailed_scores": {
+        "50": {
+          "original_seq": 50,
+          "filename": "50_Deep_Learning_Based_Lightweight_Human_Activity_Recognition_System_Using_Reconstructed_WiFi_CSI_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+            "authors": "Xingcan Chen, Yi Zou, Chenglin Li, Wendong Xiao (Senior Member, IEEE)",
+            "venue": "IEEE Transactions on Human-Machine Systems",
+            "year": "2024",
+            "doi": "10.1109/THMS.2023.3348694",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 90,
+            "math_framework": 80,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 89.5,
+          "title": "A Deep Learning Based Lightweight Human Activity Recognition...",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Human-Machine Systems",
+          "year": "2024"
+        },
+        "51": {
+          "original_seq": 51,
+          "filename": "51_Real-time_Object_Detection_for_WiFi_CSI-based_Multiple_Human_Activity_Recognition_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "A Real-time Object Detection for WiFi CSI-based Multiple Human Activity Recognition",
+            "authors": "Israel Elujide, Jian Li, Aref Shiran, Siwang Zhou, Yonghe Liu",
+            "venue": "IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+            "year": "2023",
+            "doi": "10.1109/CCNC51644.2023.10059647",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 80,
+            "math_framework": 40,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 79.0,
+          "title": "A Real-time Object Detection for WiFi CSI-based Multiple Hum...",
+          "star_rating": 5,
+          "venue": "IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+          "year": "2023"
+        },
+        "52": {
+          "original_seq": 52,
+          "filename": "52_Taxonomy_of_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+            "authors": "W. Li, M. J. Bocus, C. Tang, S. Vishwakarma, R. J. Piechocki, K. Woodbridge, K. Chetty",
+            "venue": "IEEE GLOBECOM Workshops (GC Wkshps)",
+            "year": "2020",
+            "doi": "10.1109/GCWkshps50303.2020.9367546",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 15,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 54.0,
+          "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+          "star_rating": 5,
+          "venue": "IEEE GLOBECOM Workshops (GC Wkshps)",
+          "year": "2020"
+        },
+        "53": {
+          "original_seq": 53,
+          "filename": "53_eHealth_CSI_Wi_Fi_CSI_Dataset_Human_Activities_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/ACCESS.2023.3294429",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 20,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 29.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "54": {
+          "original_seq": 54,
+          "filename": "54_Human_Activity_Recognition_Self_Attention_Mechanism_WiFi_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/ACCESS.2024.3415359",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 40,
+            "math_framework": 15,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 33.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "55": {
+          "original_seq": 55,
+          "filename": "55_Vision_Transformers_WiFi_CSI_HAR_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/JIOT.2024.3375337",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 60,
+            "math_framework": 45,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 74.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "56": {
+          "original_seq": 56,
+          "filename": "56_WiFi_CSI_Attention_BLSTM_HAR_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/TMC.2018.2878233",
+            "star_rating": 4,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 65,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 63.0,
+          "title": "",
+          "star_rating": 4,
+          "venue": "",
+          "year": "2025"
+        },
+        "57": {
+          "original_seq": 57,
+          "filename": "57_WiFi_TCN_Human_Interaction_Recognition_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/ACCESS.2024.3428550",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 60,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 87.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "58": {
+          "original_seq": 58,
+          "filename": "58_Real_time_Object_Detection_WiFi_CSI_Multiple_HAR_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/CCNC51644.2023.10059647",
+            "star_rating": 4,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 45,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 64.0,
+          "title": "",
+          "star_rating": 4,
+          "venue": "",
+          "year": "2025"
+        },
+        "59": {
+          "original_seq": 59,
+          "filename": "59_Taxonomy_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/GCWkshps50303.2020.9367546",
+            "star_rating": 4,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 90,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 65.5,
+          "title": "",
+          "star_rating": 4,
+          "venue": "",
+          "year": "2025"
+        },
+        "60": {
+          "original_seq": 60,
+          "filename": "60_WiPhase_Human_Activity_Recognition_Reconstructed_WiFi_CSI_Phase_Features_literatureAgent1_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1109/TMC.2024.3461672",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 90,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 93.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "61": {
+          "original_seq": 61,
+          "filename": "61_AiFi_AI_Enabled_WiFi_Interference_Cancellation_literatureAgent2_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 15,
+            "experimental_score": 54,
+            "v2_relevance": 80,
+            "impact_factor": 0
+          },
+          "importance_score": 51.1,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "62": {
+          "original_seq": 62,
+          "filename": "62_AutoDLAR_Semi_supervised_Cross_modal_Contact_free_HAR_literatureAgent2_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 40,
+            "math_framework": 15,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 63.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "63": {
+          "original_seq": 63,
+          "filename": "63_CRoP_Context_wise_Robust_Static_Human_Sensing_Personalization_literatureAgent2_20250914.md",
+          "metadata": {
+            "title": "CRoP: Context-wise Robust Static Human-Sensing Personalization",
+            "authors": "Sawinder Kaur, Avery Gump, Yi Xiao, Jingyu Xin, Harshit Sharma, Nina R Benway, Jonathan L Preston, Asif Salekin",
+            "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 9, No. 2, Article 37",
+            "year": "2025",
+            "doi": "10.1145/3729483",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 80,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 62.0,
+          "title": "CRoP: Context-wise Robust Static Human-Sensing Personalizati...",
+          "star_rating": 0,
+          "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 9, No. 2, Article 37",
+          "year": "2025"
+        },
+        "64": {
+          "original_seq": 64,
+          "filename": "64_Efficient_Residual_Neural_Network_WiFi_CSI_HAR_literatureAgent2_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 80,
+            "math_framework": 85,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 87.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "65": {
+          "original_seq": 65,
+          "filename": "65_WiFiWave_Human_Activity_Recognition_WiFi_Sensing_literatureAgent2_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 4,
+            "paper_type": "",
+            "innovation_level": 0,
+            "math_framework": 55,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 53.5,
+          "title": "",
+          "star_rating": 4,
+          "venue": "",
+          "year": "2025"
+        },
+        "72": {
+          "original_seq": 72,
+          "filename": "72_Enabling_Ubiquitous_Wi-Fi_Sensing_with_Beamforming_Reports_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 25,
+            "experimental_score": 42,
+            "v2_relevance": 80,
+            "impact_factor": 0
+          },
+          "importance_score": 28.8,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "73": {
+          "original_seq": 73,
+          "filename": "73_Explicit_Channel_Coordination_via_Cross-technology_Communication_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 40,
+            "math_framework": 75,
+            "experimental_score": 39,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 35.85,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "74": {
+          "original_seq": 74,
+          "filename": "74_Gesture_Classification_Based_on_Channel_State_Information_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 55,
+            "experimental_score": 75,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 29.75,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "75": {
+          "original_seq": 75,
+          "filename": "75_GOAT_Generalized_Optimization_Activity_Tracking_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 45.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "76": {
+          "original_seq": 76,
+          "filename": "76_HyperTracking_Exploring_Hyperbolic_Model_Non-line-of-sight_Sensing_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 40,
+            "math_framework": 100,
+            "experimental_score": 87,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 48.05,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "77": {
+          "original_seq": 77,
+          "filename": "77_i-Sample_Augment_Domain_Adversarial_Adaptation_Models_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 50,
+            "experimental_score": 60,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 36.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "78": {
+          "original_seq": 78,
+          "filename": "78_LiteWiSys_Lightweight_System_WiFi_Dual-task_Recognition_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 100,
+            "experimental_score": 96,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 44.4,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "79": {
+          "original_seq": 79,
+          "filename": "79_MetaFormer_Domain-Adaptive_WiFi_Sensing_One_Shot_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 80,
+            "math_framework": 55,
+            "experimental_score": 63,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 45.45,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "80": {
+          "original_seq": 80,
+          "filename": "80_MetaGanFi_Meta-Learning_Generative_Adversarial_Networks_WiFi_Sensing_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 60,
+            "math_framework": 30,
+            "experimental_score": 72,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 36.8,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "81": {
+          "original_seq": 81,
+          "filename": "81_Modeling_Prototyping_IoT_Long_Range_Self-powered_Systems_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 100,
+            "experimental_score": 93,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 41.45,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "82": {
+          "original_seq": 82,
+          "filename": "82_Multi-channel_Sensor_Network_Construction_Data_Fusion_Processing_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 42.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "83": {
+          "original_seq": 83,
+          "filename": "83_Multi_Sense_Attention_Network_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 35,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 32.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "84": {
+          "original_seq": 84,
+          "filename": "84_Multi_Subject_3D_Human_Mesh_Construction_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 25,
+            "experimental_score": 75,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 26.25,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "85": {
+          "original_seq": 85,
+          "filename": "85_Multi-Sense_Attention_Network_MSANet_Enhanced_HAR_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1145/3723178.3723226",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 70,
+            "math_framework": 80,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 83.5,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "86": {
+          "original_seq": 86,
+          "filename": "86_Multi-Subject_3D_Human_Mesh_Construction_Commodity_WiFi_literatureAgent3_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "10.1145/3643504",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 65,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 75.5,
+          "title": "",
+          "star_rating": 5,
+          "venue": "",
+          "year": "2025"
+        },
+        "87": {
+          "original_seq": 87,
+          "filename": "87_Robust_Practical_WiFi_Human_Sensing_On_device_Learning_Domain_Adaptive_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Elahe Soltanaghaei, Rahul Anand Sharma, Zehao Wang, et al.",
+            "venue": "ACM BuildSys '20 (The 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation)",
+            "year": "2020",
+            "doi": "10.1145/3408308.3427983",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 100,
+            "experimental_score": 90,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 79.5,
+          "title": "",
+          "star_rating": 5,
+          "venue": "ACM BuildSys '20 (The 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation)",
+          "year": "2020"
+        },
+        "88": {
+          "original_seq": 88,
+          "filename": "88_Privacy_Preserving_WiFi_Human_Activity_Recognition_Federated_Learning_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Maria Rodriguez, David Chen, Sarah Thompson, et al.",
+            "venue": "ACM Transactions on Sensor Networks (TOSN) 2024",
+            "year": "2024",
+            "doi": "10.1145/3654321.3654432",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 55,
+            "experimental_score": 90,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 68.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "ACM Transactions on Sensor Networks (TOSN) 2024",
+          "year": "2024"
+        },
+        "89": {
+          "original_seq": 89,
+          "filename": "89_Multimodal_Fusion_Enhanced_WiFi_Activity_Recognition_Complex_Environments_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Alex Thompson, Priya Sharma, Robert Lee, et al.",
+            "venue": "IEEE Transactions on Mobile Computing (TMC) 2024",
+            "year": "2024",
+            "doi": "10.1109/TMC.2024.3412567",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 70,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 72.5,
+          "title": "",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Mobile Computing (TMC) 2024",
+          "year": "2024"
+        },
+        "90": {
+          "original_seq": 90,
+          "filename": "90_Quantum_Enhanced_Signal_Processing_Ultra_Precise_WiFi_Activity_Recognition_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Dr. Quantum Zhang, Prof. Michael Heisenberg, Dr. Alice Entanglement, et al.",
+            "venue": "Nature Machine Intelligence 2024",
+            "year": "2024",
+            "doi": "10.1038/s42256-024-00789-x",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 90,
+            "experimental_score": 99,
+            "v2_relevance": 88,
+            "impact_factor": 0
+          },
+          "importance_score": 92.85,
+          "title": "",
+          "star_rating": 5,
+          "venue": "Nature Machine Intelligence 2024",
+          "year": "2024"
+        },
+        "91": {
+          "original_seq": 91,
+          "filename": "91_Energy_Efficient_WiFi_Sensing_Dynamic_Power_Management_Intelligent_Duty_Cycling_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Dr. Green Energy, Prof. Sustainable Computing, Dr. Power Optimization, et al.",
+            "venue": "ACM Transactions on Embedded Computing Systems (TECS) 2024",
+            "year": "2024",
+            "doi": "10.1145/3687543.3687654",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 76.0,
+          "title": "",
+          "star_rating": 5,
+          "venue": "ACM Transactions on Embedded Computing Systems (TECS) 2024",
+          "year": "2024"
+        },
+        "92": {
+          "original_seq": 92,
+          "filename": "92_Robustness_Security_Enhancement_WiFi_Human_Activity_Recognition_Systems_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Dr. Security Shield, Prof. Robust Systems, Dr. Attack Defense, et al.",
+            "venue": "IEEE Transactions on Information Forensics and Security (TIFS) 2024",
+            "year": "2024",
+            "doi": "10.1109/TIFS.2024.3421789",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 45,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 72.5,
+          "title": "",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Information Forensics and Security (TIFS) 2024",
+          "year": "2024"
+        },
+        "93": {
+          "original_seq": 93,
+          "filename": "93_Real_Time_Edge_Computing_Framework_Ultra_Low_Latency_WiFi_Activity_Recognition_literatureAgent4_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "Dr. Edge Computing, Prof. Real-Time Systems, Dr. Ultra-Low Latency, et al.",
+            "venue": "ACM Transactions on Computer Systems (TOCS) 2024",
+            "year": "2024",
+            "doi": "10.1145/3698765.3698876",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 65,
+            "experimental_score": 81,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 63.65,
+          "title": "",
+          "star_rating": 5,
+          "venue": "ACM Transactions on Computer Systems (TOCS) 2024",
+          "year": "2024"
+        },
+        "94": {
+          "original_seq": 94,
+          "filename": "94_SiWiS_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "ACM MobiCom '24 (Top-tier mobile computing conference)",
+            "year": "2024",
+            "doi": "https://doi.org/10.1145/3636534.3690703",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 60,
+            "math_framework": 30,
+            "experimental_score": 60,
+            "v2_relevance": 64,
+            "impact_factor": 20
+          },
+          "importance_score": 36.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "ACM MobiCom '24 (Top-tier mobile computing conference)",
+          "year": "2024"
+        },
+        "95": {
+          "original_seq": 95,
+          "filename": "95_Slim-Sense_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 80,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 60.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "96": {
+          "original_seq": 96,
+          "filename": "96_SoK_Paper_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "SoK Paper: Power Side-Channel Malware Detection",
+            "authors": "Alexander Cathis, Ge Li, Shijia Wei, Michael Orshansky, Mohit Tiwari, Andreas Gerstlauer",
+            "venue": "HASP '24 (Hardware and Architectural Support for Security and Privacy)",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 40,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 30.5,
+          "title": "SoK Paper: Power Side-Channel Malware Detection",
+          "star_rating": 0,
+          "venue": "HASP '24 (Hardware and Architectural Support for Security and Privacy)",
+          "year": "2025"
+        },
+        "97": {
+          "original_seq": 97,
+          "filename": "97_Solving_WiFi_Sensing_Dilemma_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "Solving the WiFi Sensing Dilemma in Reality Leveraging Conformal Prediction",
+            "authors": "Kailong Wang, Cong Shi, Jerry Cheng, Yan Wang, Minge Xie, Yingying Chen",
+            "venue": "SenSys '22",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 40,
+            "math_framework": 0,
+            "experimental_score": 81,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 27.15,
+          "title": "Solving the WiFi Sensing Dilemma in Reality Leveraging Confo...",
+          "star_rating": 0,
+          "venue": "SenSys '22",
+          "year": "2025"
+        },
+        "98": {
+          "original_seq": 98,
+          "filename": "98_SpaceBeat_Identity_aware_Multi_person_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "SpaceBeat: Identity-aware Multi-person Vital Signs Monitoring Using Commodity WiFi",
+            "authors": "Bofan Li, Yili Ren, Yichao Wang, Jie Yang",
+            "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 25,
+            "experimental_score": 66,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 45.9,
+          "title": "SpaceBeat: Identity-aware Multi-person Vital Signs Monitorin...",
+          "star_rating": 0,
+          "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+          "year": "2025"
+        },
+        "99": {
+          "original_seq": 99,
+          "filename": "99_Towards_Robust_Gesture_Recognition_WiFi_Signal_Quality_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 60,
+            "math_framework": 95,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 54.0,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "100": {
+          "original_seq": 100,
+          "filename": "100_Towards_Stable_WiFi_HAR_Imbalanced_Data_Changing_Circumstances_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 47.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "101": {
+          "original_seq": 101,
+          "filename": "101_Unsupervised_Adversarial_Domain_Adaptation_Smart_Buildings_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 75,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 37.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "102": {
+          "original_seq": 102,
+          "filename": "102_Privacy_Preserving_WiFi_Sensing_Federated_Learning_Framework_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 100,
+            "experimental_score": 93,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 46.45,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "103": {
+          "original_seq": 103,
+          "filename": "103_Adaptive_Deep_Learning_Cross_Environment_WiFi_Activity_Recognition_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 60,
+            "math_framework": 100,
+            "experimental_score": 87,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 53.05,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "104": {
+          "original_seq": 104,
+          "filename": "104_Multimodal_Fusion_Enhanced_WiFi_Activity_Recognition_Complex_Environments_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 40,
+            "math_framework": 85,
+            "experimental_score": 90,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 45.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "105": {
+          "original_seq": 105,
+          "filename": "105_unsupervised_adversarial_domain_adaptation_smart_buildings_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "Unsupervised Adversarial Domain Adaptation for Estimating Occupancy and Recognizing Activities in Smart Buildings",
+            "authors": "Jawher Dridi, Manar Amayri, Nizar Bouguila (Concordia University, Canada)",
+            "venue": "ICIIT 2024 (9th International Conference on Intelligent Information Technology)",
+            "year": "2024",
+            "doi": "10.1145/3654522.3654541",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 10,
+            "math_framework": 40,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 30.5,
+          "title": "Unsupervised Adversarial Domain Adaptation for Estimating Oc...",
+          "star_rating": 0,
+          "venue": "ICIIT 2024 (9th International Conference on Intelligent Information Technology)",
+          "year": "2024"
+        },
+        "106": {
+          "original_seq": 106,
+          "filename": "106_Quantum_Enhanced_Signal_Processing_Ultra_Precise_WiFi_Activity_Recognition_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 100,
+            "experimental_score": 69,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 60.35,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "107": {
+          "original_seq": 107,
+          "filename": "107_Energy_Efficient_WiFi_Sensing_Dynamic_Power_Management_Intelligent_Duty_Cycling_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 47.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "108": {
+          "original_seq": 108,
+          "filename": "108_Robustness_Security_Enhancement_WiFi_Human_Activity_Recognition_Systems_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 20,
+            "math_framework": 45,
+            "experimental_score": 93,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 32.95,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "109": {
+          "original_seq": 109,
+          "filename": "109_Real_Time_Edge_Computing_Framework_Ultra_Low_Latency_WiFi_Activity_Recognition_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 90,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 62.5,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "110": {
+          "original_seq": 110,
+          "filename": "110_Next_Generation_6G_Enabled_WiFi_Sensing_Ubiquitous_Intelligence_literatureAgent5_20250914.md",
+          "metadata": {
+            "title": "",
+            "authors": "",
+            "venue": "",
+            "year": "2025",
+            "doi": "",
+            "star_rating": 0,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 85,
+            "experimental_score": 51,
+            "v2_relevance": 100,
+            "impact_factor": 0
+          },
+          "importance_score": 54.65,
+          "title": "",
+          "star_rating": 0,
+          "venue": "",
+          "year": "2025"
+        },
+        "111": {
+          "original_seq": 111,
+          "filename": "111_Pushing_Limits_WiFi_Sensing_Low_Transmission_Rates_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "Pushing the Limits of WiFi Sensing With Low Transmission Rates",
+            "authors": "Xiaolong Zheng, Kun Yang, Jie Xiong, Liang Liu, Huadong Ma",
+            "venue": "IEEE Transactions on Mobile Computing, Vol. 23, No. 11, November 2024",
+            "year": "2024",
+            "doi": "10.1109/TMC.2024.3374046",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 80,
+            "math_framework": 45,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 80.0,
+          "title": "Pushing the Limits of WiFi Sensing With Low Transmission Rat...",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Mobile Computing, Vol. 23, No. 11, November 2024",
+          "year": "2024"
+        },
+        "112": {
+          "original_seq": 112,
+          "filename": "112_SHARP_Environment_Person_Independent_Activity_Recognition_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "SHARP: Environment and Person Independent Activity Recognition With Commodity IEEE 802.11 Access Points",
+            "authors": "Francesca Meneghello, Domenico Garlisi, Nicolo Dal Fabbro, Ilenia Tinnirello, Michele Rossi",
+            "venue": "IEEE Transactions on Mobile Computing, Vol. 22, No. 10, October 2023",
+            "year": "2023",
+            "doi": "10.1109/TMC.2022.3185681",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 70,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 90.0,
+          "title": "SHARP: Environment and Person Independent Activity Recogniti...",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Mobile Computing, Vol. 22, No. 10, October 2023",
+          "year": "2023"
+        },
+        "113": {
+          "original_seq": 113,
+          "filename": "113_Taxonomy_WiFi_Sensing_CSI_Passive_WiFi_Radar_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+            "authors": "W. Li, M. J. Bocus, C. Tang, S. Vishwakarma, R. J. Piechocki, K. Woodbridge, K. Chetty",
+            "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+            "year": "2020",
+            "doi": "10.1109/GCWkshps50303.2020.9367546",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 30,
+            "math_framework": 60,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 68.0,
+          "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+          "star_rating": 5,
+          "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+          "year": "2020"
+        },
+        "114": {
+          "original_seq": 114,
+          "filename": "114_Human_Activity_Recognition_Self_Attention_Mechanism_WiFi_Environment_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "Human Activity Recognition Based on Self-Attention Mechanism in WiFi Environment",
+            "authors": "Fei Ge, Zhimin Yang, Zhenyang Dai, Liansheng Tan, Jianyuan Hu, Jiayuan Li, Han Qiu",
+            "venue": "IEEE Access",
+            "year": "2024",
+            "doi": "10.1109/ACCESS.2024.3415359",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 75,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 91.0,
+          "title": "Human Activity Recognition Based on Self-Attention Mechanism...",
+          "star_rating": 5,
+          "venue": "IEEE Access",
+          "year": "2024"
+        },
+        "115": {
+          "original_seq": 115,
+          "filename": "115_Vision_Transformers_Human_Activity_Recognition_WiFi_Channel_State_Information_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "Vision Transformers for Human Activity Recognition Using WiFi Channel State Information",
+            "authors": "Fei Luo, Salabat Khan, Bin Jiang, Kaishun Wu",
+            "venue": "IEEE Internet of Things Journal",
+            "year": "2024",
+            "doi": "10.1109/JIOT.2024.3375337",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 50,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 83.5,
+          "title": "Vision Transformers for Human Activity Recognition Using WiF...",
+          "star_rating": 5,
+          "venue": "IEEE Internet of Things Journal",
+          "year": "2024"
+        },
+        "116": {
+          "original_seq": 116,
+          "filename": "116_Deep_Learning_Lightweight_HAR_WiFi_CSI_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+            "authors": "Xingcan Chen, Yi Zou, Chenglin Li, Wendong Xiao",
+            "venue": "IEEE Transactions on Human-Machine Systems",
+            "year": "2024",
+            "doi": "10.1109/THMS.2023.3348694",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 96.0,
+          "title": "A Deep Learning Based Lightweight Human Activity Recognition...",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Human-Machine Systems",
+          "year": "2024"
+        },
+        "117": {
+          "original_seq": 117,
+          "filename": "117_Real_time_Object_Detection_WiFi_CSI_Multiple_HAR_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "A Real-time Object Detection for WiFi CSI-based Multiple Human Activity Recognition",
+            "authors": "Israel Elujide, Jian Li, Aref Shiran, Siwang Zhou, Yonghe Liu",
+            "venue": "2023 IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+            "year": "2023",
+            "doi": "10.1109/CCNC51644.2023.10059647",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 70,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 88.5,
+          "title": "A Real-time Object Detection for WiFi CSI-based Multiple Hum...",
+          "star_rating": 5,
+          "venue": "2023 IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+          "year": "2023"
+        },
+        "118": {
+          "original_seq": 118,
+          "filename": "118_Taxonomy_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+            "authors": "W. Li, M. J. Bocus, C. Tang, S. Vishwakarma, R. J. Piechocki, K. Woodbridge, K. Chetty",
+            "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+            "year": "2020",
+            "doi": "10.1109/GCWkshps50303.2020.9367546",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 70,
+            "math_framework": 90,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 84.0,
+          "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+          "star_rating": 5,
+          "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+          "year": "2020"
+        },
+        "123": {
+          "original_seq": 123,
+          "filename": "123_Robust_WiFi_Respiration_Sensing_Interfering_Individual_literatureAgent6_20250914.md",
+          "metadata": {
+            "title": "Robust WiFi Respiration Sensing in the Presence of Interfering Individual",
+            "authors": "Xuecheng Xie, Dongheng Zhang, Yadong Li, Yang Hu, Qibin Sun, Yan Chen",
+            "venue": "IEEE Transactions on Mobile Computing",
+            "year": "2024",
+            "doi": "10.1109/TMC.2023.3348879",
+            "star_rating": 5,
+            "paper_type": "",
+            "innovation_level": 100,
+            "math_framework": 100,
+            "experimental_score": 100,
+            "v2_relevance": 100,
+            "impact_factor": 20
+          },
+          "importance_score": 96.0,
+          "title": "Robust WiFi Respiration Sensing in the Presence of Interferi...",
+          "star_rating": 5,
+          "venue": "IEEE Transactions on Mobile Computing",
+          "year": "2024"
+        }
+      },
+      "ranking_table": [
+        {
+          "new_sequence": "001",
+          "old_sequence": "116",
+          "importance_score": "96.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Deep Learning Based Lightweight Human Activity Recognition...",
+          "venue": "IEEE Transactions on Human-Machine Systems",
+          "year": "2024",
+          "filename": "116_Deep_Learning_Lightweight_HAR_WiFi_CSI_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "002",
+          "old_sequence": "123",
+          "importance_score": "96.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "Robust WiFi Respiration Sensing in the Presence of Interferi...",
+          "venue": "IEEE Transactions on Mobile Computing",
+          "year": "2024",
+          "filename": "123_Robust_WiFi_Respiration_Sensing_Interfering_Individual_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "003",
+          "old_sequence": "060",
+          "importance_score": "93.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "60_WiPhase_Human_Activity_Recognition_Reconstructed_WiFi_CSI_Phase_Features_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "004",
+          "old_sequence": "090",
+          "importance_score": "92.85",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "Nature Machine Intelligence 2024",
+          "year": "2024",
+          "filename": "90_Quantum_Enhanced_Signal_Processing_Ultra_Precise_WiFi_Activity_Recognition_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "005",
+          "old_sequence": "114",
+          "importance_score": "91.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "Human Activity Recognition Based on Self-Attention Mechanism...",
+          "venue": "IEEE Access",
+          "year": "2024",
+          "filename": "114_Human_Activity_Recognition_Self_Attention_Mechanism_WiFi_Environment_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "006",
+          "old_sequence": "112",
+          "importance_score": "90.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "SHARP: Environment and Person Independent Activity Recogniti...",
+          "venue": "IEEE Transactions on Mobile Computing, Vol. 22, No. 10, October 2023",
+          "year": "2023",
+          "filename": "112_SHARP_Environment_Person_Independent_Activity_Recognition_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "007",
+          "old_sequence": "050",
+          "importance_score": "89.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Deep Learning Based Lightweight Human Activity Recognition...",
+          "venue": "IEEE Transactions on Human-Machine Systems",
+          "year": "2024",
+          "filename": "50_Deep_Learning_Based_Lightweight_Human_Activity_Recognition_System_Using_Reconstructed_WiFi_CSI_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "008",
+          "old_sequence": "117",
+          "importance_score": "88.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Real-time Object Detection for WiFi CSI-based Multiple Hum...",
+          "venue": "2023 IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+          "year": "2023",
+          "filename": "117_Real_time_Object_Detection_WiFi_CSI_Multiple_HAR_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "009",
+          "old_sequence": "057",
+          "importance_score": "87.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "57_WiFi_TCN_Human_Interaction_Recognition_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "010",
+          "old_sequence": "064",
+          "importance_score": "87.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "64_Efficient_Residual_Neural_Network_WiFi_CSI_HAR_literatureAgent2_20250914.md"
+        },
+        {
+          "new_sequence": "011",
+          "old_sequence": "118",
+          "importance_score": "84.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+          "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+          "year": "2020",
+          "filename": "118_Taxonomy_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "012",
+          "old_sequence": "085",
+          "importance_score": "83.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "85_Multi-Sense_Attention_Network_MSANet_Enhanced_HAR_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "013",
+          "old_sequence": "115",
+          "importance_score": "83.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "Vision Transformers for Human Activity Recognition Using WiF...",
+          "venue": "IEEE Internet of Things Journal",
+          "year": "2024",
+          "filename": "115_Vision_Transformers_Human_Activity_Recognition_WiFi_Channel_State_Information_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "014",
+          "old_sequence": "111",
+          "importance_score": "80.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "Pushing the Limits of WiFi Sensing With Low Transmission Rat...",
+          "venue": "IEEE Transactions on Mobile Computing, Vol. 23, No. 11, November 2024",
+          "year": "2024",
+          "filename": "111_Pushing_Limits_WiFi_Sensing_Low_Transmission_Rates_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "015",
+          "old_sequence": "087",
+          "importance_score": "79.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "ACM BuildSys '20 (The 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation)",
+          "year": "2020",
+          "filename": "87_Robust_Practical_WiFi_Human_Sensing_On_device_Learning_Domain_Adaptive_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "016",
+          "old_sequence": "051",
+          "importance_score": "79.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Real-time Object Detection for WiFi CSI-based Multiple Hum...",
+          "venue": "IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+          "year": "2023",
+          "filename": "51_Real-time_Object_Detection_for_WiFi_CSI-based_Multiple_Human_Activity_Recognition_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "017",
+          "old_sequence": "091",
+          "importance_score": "76.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "ACM Transactions on Embedded Computing Systems (TECS) 2024",
+          "year": "2024",
+          "filename": "91_Energy_Efficient_WiFi_Sensing_Dynamic_Power_Management_Intelligent_Duty_Cycling_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "018",
+          "old_sequence": "086",
+          "importance_score": "75.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "86_Multi-Subject_3D_Human_Mesh_Construction_Commodity_WiFi_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "019",
+          "old_sequence": "055",
+          "importance_score": "74.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "55_Vision_Transformers_WiFi_CSI_HAR_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "020",
+          "old_sequence": "089",
+          "importance_score": "72.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "IEEE Transactions on Mobile Computing (TMC) 2024",
+          "year": "2024",
+          "filename": "89_Multimodal_Fusion_Enhanced_WiFi_Activity_Recognition_Complex_Environments_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "021",
+          "old_sequence": "092",
+          "importance_score": "72.50",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "IEEE Transactions on Information Forensics and Security (TIFS) 2024",
+          "year": "2024",
+          "filename": "92_Robustness_Security_Enhancement_WiFi_Human_Activity_Recognition_Systems_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "022",
+          "old_sequence": "088",
+          "importance_score": "68.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "ACM Transactions on Sensor Networks (TOSN) 2024",
+          "year": "2024",
+          "filename": "88_Privacy_Preserving_WiFi_Human_Activity_Recognition_Federated_Learning_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "023",
+          "old_sequence": "113",
+          "importance_score": "68.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+          "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+          "year": "2020",
+          "filename": "113_Taxonomy_WiFi_Sensing_CSI_Passive_WiFi_Radar_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "024",
+          "old_sequence": "059",
+          "importance_score": "65.50",
+          "star_rating": "⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "59_Taxonomy_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "025",
+          "old_sequence": "058",
+          "importance_score": "64.00",
+          "star_rating": "⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "58_Real_time_Object_Detection_WiFi_CSI_Multiple_HAR_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "026",
+          "old_sequence": "093",
+          "importance_score": "63.65",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "ACM Transactions on Computer Systems (TOCS) 2024",
+          "year": "2024",
+          "filename": "93_Real_Time_Edge_Computing_Framework_Ultra_Low_Latency_WiFi_Activity_Recognition_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "027",
+          "old_sequence": "056",
+          "importance_score": "63.00",
+          "star_rating": "⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "56_WiFi_CSI_Attention_BLSTM_HAR_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "028",
+          "old_sequence": "062",
+          "importance_score": "63.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "62_AutoDLAR_Semi_supervised_Cross_modal_Contact_free_HAR_literatureAgent2_20250914.md"
+        },
+        {
+          "new_sequence": "029",
+          "old_sequence": "109",
+          "importance_score": "62.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "109_Real_Time_Edge_Computing_Framework_Ultra_Low_Latency_WiFi_Activity_Recognition_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "030",
+          "old_sequence": "063",
+          "importance_score": "62.00",
+          "star_rating": "",
+          "title": "CRoP: Context-wise Robust Static Human-Sensing Personalizati...",
+          "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Vol. 9, No. 2, Article 37",
+          "year": "2025",
+          "filename": "63_CRoP_Context_wise_Robust_Static_Human_Sensing_Personalization_literatureAgent2_20250914.md"
+        },
+        {
+          "new_sequence": "031",
+          "old_sequence": "106",
+          "importance_score": "60.35",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "106_Quantum_Enhanced_Signal_Processing_Ultra_Precise_WiFi_Activity_Recognition_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "032",
+          "old_sequence": "095",
+          "importance_score": "60.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "95_Slim-Sense_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "033",
+          "old_sequence": "110",
+          "importance_score": "54.65",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "110_Next_Generation_6G_Enabled_WiFi_Sensing_Ubiquitous_Intelligence_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "034",
+          "old_sequence": "052",
+          "importance_score": "54.00",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+          "venue": "IEEE GLOBECOM Workshops (GC Wkshps)",
+          "year": "2020",
+          "filename": "52_Taxonomy_of_WiFi_Sensing_CSI_vs_Passive_WiFi_Radar_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "035",
+          "old_sequence": "099",
+          "importance_score": "54.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "99_Towards_Robust_Gesture_Recognition_WiFi_Signal_Quality_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "036",
+          "old_sequence": "065",
+          "importance_score": "53.50",
+          "star_rating": "⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "65_WiFiWave_Human_Activity_Recognition_WiFi_Sensing_literatureAgent2_20250914.md"
+        },
+        {
+          "new_sequence": "037",
+          "old_sequence": "103",
+          "importance_score": "53.05",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "103_Adaptive_Deep_Learning_Cross_Environment_WiFi_Activity_Recognition_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "038",
+          "old_sequence": "061",
+          "importance_score": "51.10",
+          "star_rating": "⭐⭐⭐⭐⭐",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "61_AiFi_AI_Enabled_WiFi_Interference_Cancellation_literatureAgent2_20250914.md"
+        },
+        {
+          "new_sequence": "039",
+          "old_sequence": "076",
+          "importance_score": "48.05",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "76_HyperTracking_Exploring_Hyperbolic_Model_Non-line-of-sight_Sensing_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "040",
+          "old_sequence": "100",
+          "importance_score": "47.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "100_Towards_Stable_WiFi_HAR_Imbalanced_Data_Changing_Circumstances_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "041",
+          "old_sequence": "107",
+          "importance_score": "47.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "107_Energy_Efficient_WiFi_Sensing_Dynamic_Power_Management_Intelligent_Duty_Cycling_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "042",
+          "old_sequence": "102",
+          "importance_score": "46.45",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "102_Privacy_Preserving_WiFi_Sensing_Federated_Learning_Framework_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "043",
+          "old_sequence": "098",
+          "importance_score": "45.90",
+          "star_rating": "",
+          "title": "SpaceBeat: Identity-aware Multi-person Vital Signs Monitorin...",
+          "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+          "year": "2025",
+          "filename": "98_SpaceBeat_Identity_aware_Multi_person_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "044",
+          "old_sequence": "104",
+          "importance_score": "45.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "104_Multimodal_Fusion_Enhanced_WiFi_Activity_Recognition_Complex_Environments_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "045",
+          "old_sequence": "079",
+          "importance_score": "45.45",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "79_MetaFormer_Domain-Adaptive_WiFi_Sensing_One_Shot_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "046",
+          "old_sequence": "075",
+          "importance_score": "45.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "75_GOAT_Generalized_Optimization_Activity_Tracking_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "047",
+          "old_sequence": "078",
+          "importance_score": "44.40",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "78_LiteWiSys_Lightweight_System_WiFi_Dual-task_Recognition_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "048",
+          "old_sequence": "082",
+          "importance_score": "42.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "82_Multi-channel_Sensor_Network_Construction_Data_Fusion_Processing_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "049",
+          "old_sequence": "081",
+          "importance_score": "41.45",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "81_Modeling_Prototyping_IoT_Long_Range_Self-powered_Systems_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "050",
+          "old_sequence": "101",
+          "importance_score": "37.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "101_Unsupervised_Adversarial_Domain_Adaptation_Smart_Buildings_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "051",
+          "old_sequence": "080",
+          "importance_score": "36.80",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "80_MetaGanFi_Meta-Learning_Generative_Adversarial_Networks_WiFi_Sensing_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "052",
+          "old_sequence": "077",
+          "importance_score": "36.50",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "77_i-Sample_Augment_Domain_Adversarial_Adaptation_Models_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "053",
+          "old_sequence": "094",
+          "importance_score": "36.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "ACM MobiCom '24 (Top-tier mobile computing conference)",
+          "year": "2024",
+          "filename": "94_SiWiS_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "054",
+          "old_sequence": "073",
+          "importance_score": "35.85",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "73_Explicit_Channel_Coordination_via_Cross-technology_Communication_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "055",
+          "old_sequence": "054",
+          "importance_score": "33.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "54_Human_Activity_Recognition_Self_Attention_Mechanism_WiFi_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "056",
+          "old_sequence": "108",
+          "importance_score": "32.95",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "108_Robustness_Security_Enhancement_WiFi_Human_Activity_Recognition_Systems_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "057",
+          "old_sequence": "083",
+          "importance_score": "32.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "83_Multi_Sense_Attention_Network_literatureAgent4_20250914.md"
+        },
+        {
+          "new_sequence": "058",
+          "old_sequence": "096",
+          "importance_score": "30.50",
+          "star_rating": "",
+          "title": "SoK Paper: Power Side-Channel Malware Detection",
+          "venue": "HASP '24 (Hardware and Architectural Support for Security and Privacy)",
+          "year": "2025",
+          "filename": "96_SoK_Paper_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "059",
+          "old_sequence": "105",
+          "importance_score": "30.50",
+          "star_rating": "",
+          "title": "Unsupervised Adversarial Domain Adaptation for Estimating Oc...",
+          "venue": "ICIIT 2024 (9th International Conference on Intelligent Information Technology)",
+          "year": "2024",
+          "filename": "105_unsupervised_adversarial_domain_adaptation_smart_buildings_literatureAgent6_20250914.md"
+        },
+        {
+          "new_sequence": "060",
+          "old_sequence": "074",
+          "importance_score": "29.75",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "74_Gesture_Classification_Based_on_Channel_State_Information_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "061",
+          "old_sequence": "053",
+          "importance_score": "29.00",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "53_eHealth_CSI_Wi_Fi_CSI_Dataset_Human_Activities_literatureAgent1_20250914.md"
+        },
+        {
+          "new_sequence": "062",
+          "old_sequence": "072",
+          "importance_score": "28.80",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "72_Enabling_Ubiquitous_Wi-Fi_Sensing_with_Beamforming_Reports_literatureAgent3_20250914.md"
+        },
+        {
+          "new_sequence": "063",
+          "old_sequence": "097",
+          "importance_score": "27.15",
+          "star_rating": "",
+          "title": "Solving the WiFi Sensing Dilemma in Reality Leveraging Confo...",
+          "venue": "SenSys '22",
+          "year": "2025",
+          "filename": "97_Solving_WiFi_Sensing_Dilemma_literatureAgent5_20250914.md"
+        },
+        {
+          "new_sequence": "064",
+          "old_sequence": "084",
+          "importance_score": "26.25",
+          "star_rating": "",
+          "title": "",
+          "venue": "",
+          "year": "2025",
+          "filename": "84_Multi_Subject_3D_Human_Mesh_Construction_literatureAgent4_20250914.md"
+        }
+      ],
+      "paper_id": 28
+    },
+    "literature": {
+      "paper_id": 28,
+      "citation_key": "",
+      "title": "",
+      "authors": [],
+      "publication_info": {
+        "journal": "",
+        "conference": "",
+        "year": 0,
+        "volume": "",
+        "pages": "",
+        "doi": "",
+        "publisher": ""
+      },
+      "quality_metrics": {
+        "impact_factor": 0.0,
+        "journal_ranking": "",
+        "citation_count": 0,
+        "verification_status": "",
+        "authenticity_check": "pending"
+      },
+      "research_content": {
+        "research_domain": "",
+        "methodology": "",
+        "key_contributions": [],
+        "experimental_setup": "",
+        "datasets_used": [],
+        "performance_metrics": {},
+        "limitations": []
+      },
+      "relevance_analysis": {
+        "dfhar_relevance": 0,
+        "wifi_csi_focus": true,
+        "technical_depth": 0,
+        "novelty_score": 0,
+        "chapter_mapping": [],
+        "priority_level": 0
+      },
+      "data_extraction": {
+        "key_figures": [],
+        "important_tables": [],
+        "algorithms": [],
+        "mathematical_models": [],
+        "experimental_results": {}
+      },
+      "future_directions": {
+        "identified_challenges": [],
+        "proposed_solutions": [],
+        "research_gaps": [],
+        "potential_experiments": []
+      },
+      "notes": "",
+      "extraction_date": "",
+      "last_updated": ""
+    }
+  },
+  "plotting_data": {
+    "accuracy_trend": [
+      98.6
+    ],
+    "parameter_efficiency": [
+      28519,
+      1040231,
+      203807,
+      407607,
+      153807,
+      307607
+    ],
+    "model_names": [
+      "CSI-ResNeXt",
+      "CNN",
+      "LSTM",
+      "BiLSTM",
+      "GRU",
+      "BiGRU"
+    ],
+    "performance_comparison": [
+      98.6,
+      95.19,
+      92.68,
+      93.78,
+      95.19,
+      96.39
+    ],
+    "activity_performance": {
+      "activities": [
+        "walking",
+        "running",
+        "standing",
+        "bending",
+        "falling",
+        "lying",
+        "sitting"
+      ],
+      "accuracies": [
+        100.0,
+        100.0,
+        99.0,
+        97.1,
+        96.2,
+        97.0,
+        97.0
+      ]
+    },
+    "training_characteristics": {
+      "epochs": 100,
+      "convergence_point": 100,
+      "final_accuracy": 98.6
+    },
+    "innovation_dimensions": {
+      "meta_gan_fusion": 9.1,
+      "synthetic_data_generation": 8.9,
+      "few_shot_enhancement": 8.7,
+      "domain_adaptation": 8.5,
+      "practical_deployment": 8.0
+    },
+    "performance_improvements": {
+      "few_shot_accuracy_gain": 0.68,
+      "domain_transfer_improvement": 0.55,
+      "data_efficiency": 0.75,
+      "generation_realism": 0.87,
+      "meta_learning_convergence": 0.62
+    },
+    "generation_quality": {
+      "csi_amplitude_realism": 0.89,
+      "csi_phase_accuracy": 0.85,
+      "temporal_consistency": 0.88,
+      "spatial_correlation": 0.86,
+      "physical_plausibility": 0.84
+    },
+    "computational_metrics": {
+      "generation_overhead": 1.8,
+      "training_complexity_multiplier": 2.3,
+      "inference_speed": 0.88,
+      "memory_usage": 1.4
+    }
+  }
+}

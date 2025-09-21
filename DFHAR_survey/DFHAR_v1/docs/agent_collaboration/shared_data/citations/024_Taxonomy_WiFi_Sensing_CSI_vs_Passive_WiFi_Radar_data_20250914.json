@@ -1,0 +1,153 @@
+{
+  "sequence_number": 59,
+  "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+  "authors": ["W. Li", "M. J. Bocus", "C. Tang", "S. Vishwakarma", "R. J. Piechocki", "K. Woodbridge", "K. Chetty"],
+  "venue": "IEEE Globecom Workshops",
+  "publication_year": 2020,
+  "doi": "10.1109/GCWkshps50303.2020.9367546",
+  "paper_type": "Workshop Paper",
+  "domain": ["System Taxonomy", "Comparative Analysis", "CSI vs PWR", "Geometric Sensitivity"],
+
+  "rating": {
+    "stars": 4,
+    "justification": "High-value research providing first comprehensive comparative analysis between CSI and PWR systems, establishes taxonomic framework with geometric sensitivity analysis and concurrent experimental validation"
+  },
+
+  "technical_innovations": {
+    "algorithmic": "First systematic comparative framework between CSI and PWR systems with concurrent implementation",
+    "mathematical": "Unified mathematical framework integrating communication-based and radar-based WiFi sensing approaches",
+    "system": "Geometric sensitivity analysis across LoS, bistatic, and monostatic configurations",
+    "methodological": "Taxonomic classification framework for WiFi sensing system selection and optimization"
+  },
+
+  "mathematical_framework": {
+    "ofdm_signal": "x(t) = (1/√N) Σ(n=1 to N) aₙe^(j2πnt/Ts)",
+    "received_signal": "y(t) = Σₚ Aₚe^(j2πfdt) x(t - τ) + n(t)",
+    "csi_calculation": "H(fc,t) = Y(fc,t)/X(fc,t)",
+    "cross_ambiguity_function": "CAF(τ,fd) = ∫₀^Tᵢ x(t)y*(t-τ)e^(j2πfdt)dt",
+    "stft_spectrogram": "X(t,k) = Σ(n=-∞ to ∞) x[n]w[n-t]e^(-jkn)",
+    "cfar_threshold": "Λ = (1/Nτ·Nfd) Σᵢ Σⱼ CAF(τᵢ,fdⱼ)"
+  },
+
+  "experimental_validation": {
+    "hardware_platforms": {
+      "csi_system": "Intel 5300 NIC with preamble-based channel estimation",
+      "pwr_system": "USRP-2921 SDR with Cross Ambiguity Function processing"
+    },
+    "experimental_setup": {
+      "monitoring_area": "3m × 3m with furniture and computers",
+      "subjects": 5,
+      "activities": 6,
+      "layouts": 3,
+      "total_samples": 1122,
+      "positions_tested": 9
+    },
+    "activities": ["Walking", "Sitting", "Standing from Chair", "Laying Down", "Standing from Floor", "Picking Up"],
+    "geometric_configurations": ["LoS (180°)", "Bistatic (90°)", "Monostatic (<45°)"]
+  },
+
+  "performance_metrics": {
+    "geometric_performance": {
+      "csi_los_accuracy": "90.0%",
+      "csi_bistatic_accuracy": "70.0%",
+      "csi_monostatic_accuracy": "62.0%",
+      "pwr_los_accuracy": "60.0%",
+      "pwr_bistatic_accuracy": "70.0%",
+      "pwr_monostatic_accuracy": "91.3%"
+    },
+    "overall_accuracy": {
+      "csi_combined": "67.3%",
+      "pwr_combined": "66.7%",
+      "walking_activity": ">90% both systems",
+      "picking_activity": ">70% both systems"
+    },
+    "system_advantages": {
+      "csi_optimal": "Line-of-Sight configurations",
+      "pwr_optimal": "Bistatic and monostatic configurations",
+      "complementary_coverage": "Different geometric sensitivities"
+    }
+  },
+
+  "practical_implementation": {
+    "csi_processing": "Offline processing with DWT, PCA, STFT pipeline",
+    "pwr_processing": "Real-time processing with CAF, CLEAN, CFAR algorithms",
+    "signal_utilization": {
+      "csi": "Preamble sequences only, fine-grained subcarrier analysis",
+      "pwr": "Entire WiFi signal including data and gaps"
+    },
+    "computational_complexity": {
+      "csi": "High due to 90k complex values per second processing",
+      "pwr": "Low-complexity CAF with real-time capability"
+    }
+  },
+
+  "innovation_analysis": {
+    "novelty_score": 8.5,
+    "theoretical_rigor": 8.0,
+    "practical_impact": 8.5,
+    "experimental_completeness": 8.0,
+    "reproducibility": 8.0
+  },
+
+  "research_significance": {
+    "theoretical_contribution": "First comprehensive taxonomic framework comparing fundamental WiFi sensing approaches",
+    "practical_impact": "Critical guidance for system selection based on geometric constraints and deployment requirements",
+    "methodological_innovation": "Concurrent system implementation enabling direct performance comparison under identical conditions",
+    "industry_relevance": "Essential insights for commercial WiFi sensing system design and deployment optimization"
+  },
+
+  "limitations": {
+    "activity_scope": "Limited to six basic activities without complex multi-person scenarios",
+    "environment_constraint": "Single controlled laboratory environment testing",
+    "hardware_dependency": "Results specific to Intel 5300 and USRP-2921 platforms",
+    "processing_optimization": "Limited exploration of advanced processing techniques for performance improvement",
+    "hybrid_analysis": "Insufficient investigation of integrated CSI-PWR system potential"
+  },
+
+  "future_directions": [
+    "Multi-environment validation across diverse deployment scenarios",
+    "Advanced activity recognition with complex multi-person activities",
+    "Hybrid system development leveraging complementary CSI-PWR strengths",
+    "Real-time CSI processing optimization for practical deployment",
+    "Scalability analysis for increased sensing area and user density",
+    "Integration with other sensing modalities for enhanced coverage"
+  ],
+
+  "plotting_data": {
+    "geometric_performance": {
+      "layouts": ["LoS (Layout 1)", "Bistatic (Layout 2)", "Monostatic (Layout 3)"],
+      "csi_accuracy": [90.0, 70.0, 62.0],
+      "pwr_accuracy": [60.0, 70.0, 91.3],
+      "geometric_angles": [180, 90, 45]
+    },
+    "activity_performance": {
+      "activities": ["Walking", "Sitting", "Standing Chair", "Laying", "Standing Floor", "Picking"],
+      "csi_accuracy": [94.0, 67.0, 45.0, 77.0, 50.0, 71.0],
+      "pwr_accuracy": [91.0, 52.0, 65.0, 48.0, 67.0, 77.0]
+    },
+    "system_characteristics": {
+      "features": ["Signal Utilization", "Processing Complexity", "Real-time", "Direction Info", "Subcarrier Analysis"],
+      "csi_scores": [30, 80, 60, 20, 100],
+      "pwr_scores": [100, 70, 90, 100, 0]
+    },
+    "comparative_analysis": {
+      "overall_accuracy": [67.3, 66.7],
+      "system_types": ["CSI", "PWR"],
+      "optimal_scenarios": ["LoS", "Bistatic/Monostatic"]
+    }
+  },
+
+  "v2_integration_priority": {
+    "introduction": "Critical - First taxonomic framework for WiFi sensing system classification",
+    "methodology": "High - Geometric sensitivity analysis and concurrent implementation methodology",
+    "results": "High - Comprehensive comparative performance data across configurations",
+    "discussion": "Critical - System selection guidance and hybrid approach potential"
+  },
+
+  "editorial_appeal": {
+    "importance": "High - Addresses fundamental gap in WiFi sensing system understanding",
+    "rigor": "Good - Systematic experimental validation with mathematical framework",
+    "innovation": "High - First comprehensive comparative analysis with taxonomic classification",
+    "impact": "High - Critical guidance for system design and deployment optimization"
+  }
+}

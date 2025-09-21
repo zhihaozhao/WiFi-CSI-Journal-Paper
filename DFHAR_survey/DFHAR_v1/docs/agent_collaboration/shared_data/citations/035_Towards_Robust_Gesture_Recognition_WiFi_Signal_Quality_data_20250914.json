@@ -1,0 +1,177 @@
+{
+  "sequence_number": 99,
+  "title": "Towards Robust Gesture Recognition by Characterizing the Sensing Quality of WiFi Signals",
+  "authors": ["Ruiyang Gao", "Wenwei Li", "Yaxiong Xie", "Enze Yi", "Leye Wang", "Dan Wu", "Daqing Zhang"],
+  "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+  "year": 2022,
+  "volume": "6",
+  "number": "1",
+  "article": "Article 11",
+  "pages": "26 pages",
+  "doi": "10.1145/3517241",
+  "paper_type": "Full Research Paper",
+  "domain": "WiFi Gesture Recognition, Signal Quality Analysis, Cross-Domain Robustness",
+
+  "ratings": {
+    "overall_rating": 5,
+    "innovation_rating": 5,
+    "technical_depth": 5,
+    "experimental_rigor": 5,
+    "practical_impact": 5,
+    "theoretical_contribution": 5
+  },
+
+  "innovation_contributions": {
+    "primary_innovations": [
+      "Error of Dynamic Phase index (EDP-index) for signal quality quantification",
+      "Quality-oriented signal processing framework (DPSense)",
+      "Mathematical model linking gesture signals with ambient noise",
+      "Multi-carrier signal enhancement for valid signal segments",
+      "Motion speculation techniques for invalid signal segments"
+    ],
+    "technical_novelty": "High - First work to systematically address heterogeneous sensing quality within gestures",
+    "algorithmic_advances": [
+      "EDP-index calculation: EDP = (n-1)(Δθ)²/Σ(Δθᵢ - Δθ)²",
+      "Quality-aware signal classification and processing",
+      "Multi-carrier alignment for gesture signal amplification",
+      "Adaptive threshold selection for environmental adaptation"
+    ]
+  },
+
+  "mathematical_framework": {
+    "csi_model": "H(f,t) = Hs(f) + A(f,t)e^(-j2πl(t)/λ) + E(f,t)",
+    "sensing_quality": "η(t) = (Δθ(t) - Δφ(t))/Δφ(t)",
+    "quality_variance": "D(η(t)) = D(Δθ(t))/[E(Δθ(t))]²",
+    "ambient_noise_model": "Zero-mean, isotropic bi-variate normal distribution",
+    "theoretical_guarantees": "Convergence analysis for EDP-index calculation"
+  },
+
+  "experimental_performance": {
+    "recognition_accuracy": {
+      "average_accuracy": "94%+",
+      "gesture_set_s1": "97.2%",
+      "gesture_set_s2": "96.8%",
+      "gesture_set_s3": "94.7%"
+    },
+    "improvement_over_baselines": {
+      "wifinger_improvement": "70%",
+      "fingerdraw_improvement": "9.7%",
+      "wigesture_improvement": "7.2%"
+    },
+    "cross_domain_performance": {
+      "location_robustness": "11.5% improvement over FingerDraw",
+      "orientation_robustness": "17.8% improvement over FingerDraw",
+      "cross_environment_stability": "Minimal performance degradation"
+    },
+    "user_diversity": {
+      "tested_users": 12,
+      "age_range": "19-40 years",
+      "average_user_accuracy": "96.4%"
+    }
+  },
+
+  "system_characteristics": {
+    "hardware_requirements": "Intel 5300 NIC cards, commodity WiFi devices",
+    "processing_time": "0.4s for 1s CSI data at 400Hz",
+    "real_time_capability": true,
+    "deployment_complexity": "Two-pair transceiver configuration",
+    "environmental_adaptivity": "Adaptive threshold selection and quality assessment"
+  },
+
+  "datasets_used": [
+    {
+      "name": "Gesture Set S1 (Basic)",
+      "gestures": 6,
+      "description": "Basic directional gestures",
+      "samples_per_gesture": 50
+    },
+    {
+      "name": "Gesture Set S2 (Digits)",
+      "gestures": 10,
+      "description": "Digit gestures 0-9",
+      "samples_per_gesture": 50
+    },
+    {
+      "name": "Gesture Set S3 (Symbols)",
+      "gestures": 6,
+      "description": "Mathematical symbols",
+      "samples_per_gesture": 50
+    }
+  ],
+
+  "limitations": [
+    "Single-user gesture recognition only",
+    "Performance degrades with extreme electromagnetic interference",
+    "Computational overhead compared to simple processing approaches",
+    "Requires environment-specific threshold tuning",
+    "Limited validation with highly complex multi-stroke gestures"
+  ],
+
+  "strengths": [
+    "Novel theoretical framework for signal quality characterization",
+    "Exceptional cross-domain generalization performance",
+    "Comprehensive mathematical modeling and analysis",
+    "Practical implementation on commodity hardware",
+    "Robust performance across diverse environments and users",
+    "Significant improvements over state-of-the-art methods"
+  ],
+
+  "future_directions": [
+    "Multi-user gesture recognition extension",
+    "Deep learning integration for end-to-end optimization",
+    "Advanced noise modeling for challenging environments",
+    "Edge computing optimization for distributed processing",
+    "Multi-modal sensing fusion applications"
+  ],
+
+  "reproducibility": {
+    "code_availability": false,
+    "dataset_availability": false,
+    "implementation_details": "Comprehensive methodology provided",
+    "parameter_specifications": "Detailed algorithm parameters included",
+    "experimental_setup": "Complete hardware and software configuration described"
+  },
+
+  "plotting_data": {
+    "performance_comparison": {
+      "methods": ["WiFinger", "FingerDraw", "WiGesture", "DPSense-FingerDraw", "DPSense-WiGesture"],
+      "accuracy_unfixed": [25, 85, 88, 94.7, 95.2],
+      "accuracy_fixed_location": [30, 82, 87, 99.8, 94.5],
+      "accuracy_fixed_orientation": [28, 83, 89, 94.5, 95.0]
+    },
+    "gesture_set_performance": {
+      "sets": ["S1 (Basic)", "S2 (Digits)", "S3 (Symbols)"],
+      "accuracies": [97.2, 96.8, 94.7]
+    },
+    "environmental_robustness": {
+      "environments": ["Office", "Living Room", "Meeting Room", "Meeting Room-2"],
+      "accuracies": [96.5, 96.2, 96.8, 96.1]
+    }
+  },
+
+  "v2_integration_priority": {
+    "introduction_relevance": "High - Fundamental quality characterization approach",
+    "methodology_relevance": "High - Novel signal processing framework",
+    "results_relevance": "High - Superior cross-domain performance demonstration",
+    "discussion_relevance": "High - Theoretical foundations and practical implications"
+  },
+
+  "citation_info": {
+    "highly_cited": true,
+    "seminal_work": true,
+    "field_impact": "High - Introduces new paradigm for WiFi sensing quality assessment",
+    "practical_applications": "Smart homes, automotive interfaces, human-computer interaction"
+  },
+
+  "technical_keywords": [
+    "WiFi gesture recognition",
+    "signal quality assessment",
+    "EDP-index",
+    "cross-domain robustness",
+    "ambient noise modeling",
+    "multi-carrier processing",
+    "CSI phase analysis",
+    "location-independent recognition",
+    "quality-oriented signal processing"
+  ]
+}

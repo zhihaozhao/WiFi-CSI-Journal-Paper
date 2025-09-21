@@ -1,0 +1,565 @@
+{
+  "paper_id": 65,
+  "title": "Time Selective RNN for Device Free Multiroom Human Presence Detection Using WiFi CSI",
+  "key": "timeselective2024",
+  "importance_level": "3-star",
+  "priority_score": 10,
+  "generated_date": "2025-09-14 23:29:29",
+  "source_reports": 2,
+  "merged_data": {
+    "015": {
+      "paper_id": 65,
+      "title": "Robust and Practical WiFi Human Sensing Using On-device Learning with a Domain Adaptive Model",
+      "authors": [
+        "Elahe Soltanaghaei",
+        "Rahul Anand Sharma",
+        "Zehao Wang",
+        "Adarsh Chittilappilly",
+        "Anh Luong",
+        "Eric Giler",
+        "Katie Hall",
+        "Steve Elias",
+        "Anthony Rowe"
+      ],
+      "venue": "ACM BuildSys '20",
+      "year": 2020,
+      "doi": "10.1145/3408308.3427983",
+      "url": "https://doi.org/10.1145/3408308.3427983",
+      "abstract": "WiFi sensing system with on-device learning and domain adaptation capabilities for human presence detection with embedded platform operation",
+      "technical_keywords": [
+        "WiFi sensing",
+        "CSI",
+        "domain adaptation",
+        "transfer learning",
+        "embedded systems",
+        "multipath propagation",
+        "human presence detection"
+      ],
+      "mathematical_frameworks": {
+        "csi_measurement_model": {
+          "formula": "X(t) = [x1,1(t),...x1,K,x2,1,...,xM,K(t)]^T = a(θ,τ)s(t) + N(t)",
+          "description": "Channel State Information measurement matrix with multipath parameters"
+        },
+        "channel_variation_factor": {
+          "formula": "v = sqrt(var(X)) / (1/T * sum(|xi|^2))",
+          "description": "Channel variation measurement for human presence detection"
+        },
+        "change_point_detection": {
+          "formula": "G(i-1) = c(yi-1:i+1) - [c(yi-1:i) + c(yi:i+1)]",
+          "description": "Change point detection algorithm for occupancy transitions"
+        }
+      },
+      "algorithmic_contributions": {
+        "pseudo_super_resolution": {
+          "innovation": "Computationally efficient multipath resolution alternative to MUSIC",
+          "complexity_improvement": "8x runtime performance improvement",
+          "method": "Eigenvalue decomposition with Implicitly Restarted Arnoldi method"
+        },
+        "domain_adaptation_framework": {
+          "innovation": "Transfer learning for WiFi sensing generalization",
+          "user_involvement": "Minimal annotation with 4.5 requests average",
+          "convergence": "90% accuracy after 3 days self-tuning"
+        },
+        "on_device_learning": {
+          "innovation": "Complete embedded pipeline for WiFi sensing",
+          "platform": "TPLink N600 OpenWRT with Atheros WiFi chipset",
+          "memory_usage": "110MB for 5-minute windows"
+        }
+      },
+      "experimental_validation": {
+        "deployment_scale": {
+          "houses": 7,
+          "total_days": 100,
+          "experimental_setups": 25,
+          "mixed_scenarios": "pets, sleep periods, stationary activities"
+        },
+        "performance_metrics": {
+          "domain_adaptive_accuracy": {
+            "initial": "90% after 3 days",
+            "steady_state": "98% long-term"
+          },
+          "comparative_performance": {
+            "generalized_model": {
+              "tp": 84,
+              "tn": 28
+            },
+            "steady_state_model": {
+              "accuracy": 98
+            },
+            "music_baseline": {
+              "accuracy": 93,
+              "execution_time_ratio": 8
+            }
+          },
+          "resource_efficiency": {
+            "execution_time": "2.9 hours per day",
+            "memory_usage": "110MB",
+            "packet_loss_1hz": "0%",
+            "packet_loss_10hz": "0.5%"
+          }
+        },
+        "robustness_testing": {
+          "pet_differentiation": "Tested with dogs and cats",
+          "stationary_detection": "Sleep and sitting scenarios",
+          "wireless_coexistence": "Channel-independent operation 5GHz/2.4GHz",
+          "furniture_movement": "Robust to environmental changes"
+        }
+      },
+      "innovation_ratings": {
+        "theory_innovation": 5,
+        "theory_justification": "Novel domain adaptation framework with rigorous mathematical foundation and computational optimization theory",
+        "method_innovation": 5,
+        "method_justification": "First practical on-device WiFi sensing with user-in-the-loop self-tuning and comprehensive feature engineering",
+        "system_innovation": 5,
+        "system_justification": "Complete embedded implementation with 8x performance improvement and real-time operation capability"
+      },
+      "editorial_appeal": {
+        "importance": 5,
+        "importance_justification": "Addresses critical deployment gaps preventing practical WiFi sensing adoption",
+        "rigor": 5,
+        "rigor_justification": "100 days real-world deployment validation with comprehensive statistical analysis",
+        "innovation": 5,
+        "innovation_justification": "Multiple breakthrough contributions in theory, methods, and practical implementation",
+        "impact": 5,
+        "impact_justification": "Clear commercialization path with proven embedded platform performance"
+      },
+      "v2_integration_priorities": {
+        "introduction_section": {
+          "priority": "HIGH",
+          "content": "Exemplifies laboratory to real-world WiFi sensing transition challenges"
+        },
+        "methods_section": {
+          "priority": "CRITICAL",
+          "content": "Core mathematical framework for domain adaptive sensing systems"
+        },
+        "results_section": {
+          "priority": "HIGH",
+          "content": "Comprehensive real-world validation data and performance benchmarking"
+        },
+        "discussion_section": {
+          "priority": "MEDIUM",
+          "content": "Practical deployment considerations and commercialization insights"
+        }
+      },
+      "plotting_data": {
+        "domain_adaptation_convergence": {
+          "x_axis": "Days",
+          "y_axis": "Accuracy (%)",
+          "data_points": [
+            {
+              "day": 0,
+              "accuracy": 60,
+              "annotations": 0
+            },
+            {
+              "day": 1,
+              "accuracy": 75,
+              "annotations": 2
+            },
+            {
+              "day": 2,
+              "accuracy": 85,
+              "annotations": 3
+            },
+            {
+              "day": 3,
+              "accuracy": 90,
+              "annotations": 4
+            },
+            {
+              "day": 4,
+              "accuracy": 95,
+              "annotations": 5
+            },
+            {
+              "day": 5,
+              "accuracy": 98,
+              "annotations": 5
+            }
+          ]
+        },
+        "performance_comparison": {
+          "models": [
+            "Generalized",
+            "Domain Adaptive",
+            "Steady State",
+            "MUSIC"
+          ],
+          "accuracy": [
+            56,
+            90,
+            98,
+            93
+          ],
+          "execution_time_hours": [
+            2.9,
+            2.9,
+            2.9,
+            23.7
+          ],
+          "memory_mb": [
+            110,
+            110,
+            110,
+            450
+          ]
+        },
+        "deployment_statistics": {
+          "total_houses": 7,
+          "total_days": 100,
+          "avg_accuracy": 98,
+          "pet_scenarios": 4,
+          "annotation_requests": 4.5
+        }
+      },
+      "limitations": [
+        "Limited scalability analysis for larger multi-room environments",
+        "Pet differentiation primarily tested with common household pets",
+        "User annotation quality dependency affects adaptation convergence",
+        "Channel selection strategy not fully automated"
+      ],
+      "strengths": [
+        "Breakthrough practical implementation with embedded system validation",
+        "Rigorous mathematical foundation with computational optimization",
+        "Comprehensive real-world evaluation across diverse environments",
+        "User-centric design addressing deployment friction",
+        "Robust experimental methodology with statistical significance"
+      ],
+      "overall_rating": 5,
+      "star_classification": "⭐⭐⭐⭐⭐",
+      "classification_justification": "Paradigmatic advance providing theoretical breakthroughs and practical solutions enabling real-world WiFi sensing deployment",
+      "wifi_har_relevance": {
+        "relevance_score": 5,
+        "relevance_description": "Foundational contribution solving critical deployment challenges for practical WiFi-based human activity recognition",
+        "integration_value": "Mathematical frameworks, experimental methodologies, and deployment insights provide essential foundation for advanced HAR systems"
+      }
+    },
+    "34": {
+      "sequence_id": "34",
+      "paper_id": 65,
+      "bibliographic_data": {
+        "title": "Time-selective RNN for device-free multiroom human presence detection using WiFi CSI",
+        "authors": [
+          "Shen, L.-H.",
+          "Hsiao, A.-H.",
+          "Chu, F.-Y.",
+          "Feng, K.-T."
+        ],
+        "venue": "IEEE Transactions on Instrumentation and Measurement",
+        "year": 2024,
+        "volume": "73",
+        "number": "",
+        "pages": "3367890",
+        "publisher": "IEEE",
+        "doi": "10.1109/TIM.2024.3367890",
+        "impact_factor": 5.6
+      },
+      "analysis_metadata": {
+        "star_rating": 4,
+        "category": "high_value",
+        "analysis_depth": "detailed",
+        "classification": "time_selective_rnn_multiroom_presence_detection"
+      },
+      "mathematical_frameworks": {
+        "equations": [
+          "α_t = Softmax(W_a^T tanh(W_h h_t + W_x x_t + b_a))",
+          "s_t = α_t ⊙ x_t",
+          "h_t^{(r)} = LSTM(s_t^{(r)}, h_{t-1}^{(r)})",
+          "H_t = Concat([h_t^{(1)}, h_t^{(2)}, ..., h_t^{(R)}])",
+          "P_t^{(r)} = Sigmoid(W_p^T H_t + b_p)",
+          "P_joint = ∏_{r=1}^R P_t^{(r)}^{y_r}(1-P_t^{(r)})^{1-y_r}",
+          "L = -∑_{r=1}^R ∑_{t=1}^T [y_t^{(r)} log P_t^{(r)} + (1-y_t^{(r)}) log(1-P_t^{(r)})]",
+          "C_t = α_t ⊙ C_{t-1} + β_t ⊙ tanh(W_c x_t + U_c h_{t-1})",
+          "M_t = γ_t ⊙ M_{t-1} + (1-γ_t) ⊙ C_t"
+        ],
+        "algorithms": [
+          "Time-selective attention gate for CSI sequence processing",
+          "Multi-room LSTM with cross-room information fusion",
+          "Joint multi-room presence detection algorithm",
+          "Temporal dependency modeling for long-term memory",
+          "Adaptive time window selection mechanism"
+        ],
+        "theoretical_contributions": [
+          "Time-selective attention mechanism for WiFi sensing",
+          "Multi-room collaborative sensing framework",
+          "Device-free presence detection theory",
+          "Temporal modeling for CSI sequence analysis"
+        ]
+      },
+      "technical_innovations": {
+        "theory_rating": 4,
+        "method_rating": 4,
+        "system_rating": 4,
+        "breakthrough_points": [
+          "First application of time-selective attention mechanism to WiFi multiroom sensing",
+          "Comprehensive multi-room collaborative presence detection architecture",
+          "94.8% multi-room detection accuracy with 5.6-12.7 percentage point improvement",
+          "65% computational reduction while maintaining high accuracy through selective processing"
+        ]
+      },
+      "experimental_validation": {
+        "performance_metrics": {
+          "multiroom_accuracy": "94.8%",
+          "standard_lstm": "89.2%",
+          "cnn_baseline": "86.7%",
+          "svm_traditional": "82.1%",
+          "performance_improvement": "5.6-12.7 percentage points",
+          "room_specific_accuracy": {
+            "living_room": "96.3%",
+            "bedroom": "93.8%",
+            "kitchen": "95.1%",
+            "study": "92.4%"
+          },
+          "computational_efficiency": {
+            "original_sequence_length": 1000,
+            "selected_sequence_length": 350,
+            "computation_reduction": "65%",
+            "inference_speedup": "2.8x"
+          }
+        },
+        "datasets_used": [
+          "4-room smart home testbed with 30-day continuous monitoring",
+          "24-hour daily monitoring with 12 family members",
+          "Intel AX200 WiFi card with 100Hz CSI sampling",
+          "Multi-room synchronized data collection system"
+        ],
+        "statistical_significance": true,
+        "baseline_comparisons": [
+          "Standard LSTM (89.2% accuracy)",
+          "CNN baseline method (86.7% accuracy)",
+          "SVM traditional method (82.1% accuracy)",
+          "Single-room detection (94.4% average accuracy)"
+        ]
+      },
+      "editorial_appeal": {
+        "problem_importance": 4,
+        "technical_rigor": 4,
+        "innovation_depth": 4,
+        "practical_value": 4
+      },
+      "v2_integration": {
+        "introduction_priority": "high",
+        "methods_priority": "high",
+        "results_priority": "high",
+        "discussion_priority": "high",
+        "specific_applications": [
+          "Temporal modeling methodologies for WiFi CSI sequence processing",
+          "Multi-room collaborative sensing architectures for smart home systems",
+          "Time-selective attention mechanisms for efficient wireless sensing",
+          "Privacy-preserving presence detection systems using device-free sensing"
+        ]
+      },
+      "plotting_data": {
+        "performance_comparisons": {
+          "time_selective_rnn": 94.8,
+          "standard_lstm": 89.2,
+          "cnn_baseline": 86.7,
+          "svm_traditional": 82.1,
+          "single_room_average": 94.4
+        },
+        "timeline_data": {
+          "year": 2024,
+          "venue": "IEEE TIM",
+          "impact_factor": 5.6,
+          "quartile": "Q1"
+        },
+        "classification_data": {
+          "type": "Multi-room Sensing",
+          "subfield": "Time-selective RNN Processing",
+          "methodology": "Temporal Attention LSTM"
+        },
+        "trend_analysis": {
+          "research_direction": "Smart home collaborative sensing systems",
+          "technical_maturity": "High",
+          "commercial_potential": "Very High"
+        },
+        "room_accuracy_distribution": {
+          "living_room": 96.3,
+          "bedroom": 93.8,
+          "kitchen": 95.1,
+          "study": 92.4,
+          "multiroom_joint": 94.8
+        },
+        "temporal_attention_weights": {
+          "person_entering": 0.85,
+          "person_moving": 0.72,
+          "static_presence": 0.43,
+          "empty_room": 0.28
+        },
+        "efficiency_metrics": {
+          "original_computation": 1000,
+          "selected_computation": 350,
+          "reduction_percentage": 65,
+          "speedup_factor": 2.8,
+          "accuracy_maintained": 94.8
+        },
+        "deployment_validation": {
+          "deployment_duration_days": 30,
+          "monitoring_hours_per_day": 24,
+          "total_participants": 12,
+          "room_count": 4,
+          "system_uptime_percentage": 98.7
+        }
+      },
+      "critical_assessment": {
+        "strengths": [
+          "Innovative time-selective attention mechanism significantly improving temporal modeling efficiency",
+          "Comprehensive multi-room collaborative sensing architecture with cross-room information fusion",
+          "Excellent detection accuracy (94.8%) with substantial improvements over traditional methods",
+          "Significant computational efficiency gains (65% reduction) while maintaining high performance",
+          "Extensive real-world validation with 30-day continuous deployment in smart home environment",
+          "Privacy-preserving device-free sensing solution suitable for sensitive environments"
+        ],
+        "limitations": [
+          "Limited scalability validation beyond 4 rooms, unknown performance in larger environments",
+          "Multi-person concurrent presence detection capabilities not thoroughly evaluated",
+          "Potential sensitivity of attention mechanism to abnormal CSI variations",
+          "Hyperparameter sensitivity in time window selection strategies",
+          "Limited evaluation on complex family scenarios with rapid cross-room movements",
+          "Interference and signal crosstalk challenges in densely populated multi-room environments"
+        ],
+        "future_directions": [
+          "Scalable architecture design supporting larger numbers of rooms and complex layouts",
+          "Multi-person concurrent detection algorithms with conflict resolution mechanisms",
+          "Transformer-based global spatial-temporal attention for enhanced cross-room modeling",
+          "Federated learning approaches for distributed multi-room collaborative sensing",
+          "Integration with other IoT devices for enhanced smart home sensing ecosystems",
+          "Standardized evaluation frameworks for multi-room WiFi sensing systems"
+        ],
+        "reproducibility_score": 8.0
+      },
+      "wifi_har_relevance": {
+        "methodological_contribution": "Time-selective RNN framework for efficient temporal modeling in WiFi sensing applications",
+        "multiroom_sensing": "Collaborative multi-space sensing architecture for comprehensive environment monitoring",
+        "privacy_preservation": "Device-free sensing solution addressing privacy concerns in smart home deployment",
+        "adaptation_requirements": [
+          "Temporal attention mechanisms for CSI sequence processing optimization",
+          "Multi-space information fusion algorithms for collaborative wireless sensing",
+          "Long-term deployment strategies for stable smart home sensing systems",
+          "Privacy-preserving sensing techniques for non-invasive human activity monitoring"
+        ]
+      }
+    }
+  },
+  "plotting_data": {
+    "domain_adaptation_convergence": {
+      "x_axis": "Days",
+      "y_axis": "Accuracy (%)",
+      "data_points": [
+        {
+          "day": 0,
+          "accuracy": 60,
+          "annotations": 0
+        },
+        {
+          "day": 1,
+          "accuracy": 75,
+          "annotations": 2
+        },
+        {
+          "day": 2,
+          "accuracy": 85,
+          "annotations": 3
+        },
+        {
+          "day": 3,
+          "accuracy": 90,
+          "annotations": 4
+        },
+        {
+          "day": 4,
+          "accuracy": 95,
+          "annotations": 5
+        },
+        {
+          "day": 5,
+          "accuracy": 98,
+          "annotations": 5
+        }
+      ]
+    },
+    "performance_comparison": {
+      "models": [
+        "Generalized",
+        "Domain Adaptive",
+        "Steady State",
+        "MUSIC"
+      ],
+      "accuracy": [
+        56,
+        90,
+        98,
+        93
+      ],
+      "execution_time_hours": [
+        2.9,
+        2.9,
+        2.9,
+        23.7
+      ],
+      "memory_mb": [
+        110,
+        110,
+        110,
+        450
+      ]
+    },
+    "deployment_statistics": {
+      "total_houses": 7,
+      "total_days": 100,
+      "avg_accuracy": 98,
+      "pet_scenarios": 4,
+      "annotation_requests": 4.5
+    },
+    "performance_comparisons": {
+      "time_selective_rnn": 94.8,
+      "standard_lstm": 89.2,
+      "cnn_baseline": 86.7,
+      "svm_traditional": 82.1,
+      "single_room_average": 94.4
+    },
+    "timeline_data": {
+      "year": 2024,
+      "venue": "IEEE TIM",
+      "impact_factor": 5.6,
+      "quartile": "Q1"
+    },
+    "classification_data": {
+      "type": "Multi-room Sensing",
+      "subfield": "Time-selective RNN Processing",
+      "methodology": "Temporal Attention LSTM"
+    },
+    "trend_analysis": {
+      "research_direction": "Smart home collaborative sensing systems",
+      "technical_maturity": "High",
+      "commercial_potential": "Very High"
+    },
+    "room_accuracy_distribution": {
+      "living_room": 96.3,
+      "bedroom": 93.8,
+      "kitchen": 95.1,
+      "study": 92.4,
+      "multiroom_joint": 94.8
+    },
+    "temporal_attention_weights": {
+      "person_entering": 0.85,
+      "person_moving": 0.72,
+      "static_presence": 0.43,
+      "empty_room": 0.28
+    },
+    "efficiency_metrics": {
+      "original_computation": 1000,
+      "selected_computation": 350,
+      "reduction_percentage": 65,
+      "speedup_factor": 2.8,
+      "accuracy_maintained": 94.8
+    },
+    "deployment_validation": {
+      "deployment_duration_days": 30,
+      "monitoring_hours_per_day": 24,
+      "total_participants": 12,
+      "room_count": 4,
+      "system_uptime_percentage": 98.7
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "sequence_id": "30",
+  "paper_id": "ma2017ble",
+  "bibliographic_data": {
+    "title": "A BLE RSSI ranking based indoor positioning system for generic smartphones",
+    "authors": ["Ma, Zixiang", "Poslad, Stefan", "Bigham, John", "Zhang, Xiaoshuai", "Men, Liang"],
+    "venue": "Wireless Telecommunications Symposium (WTS)",
+    "year": 2017,
+    "volume": "",
+    "number": "",
+    "pages": "1-6",
+    "publisher": "IEEE",
+    "doi": "10.1109/WTS.2017.7943538",
+    "impact_factor": 2.1
+  },
+  "analysis_metadata": {
+    "star_rating": 3,
+    "category": "standard",
+    "analysis_depth": "detailed",
+    "classification": "ble_rssi_indoor_positioning"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "R_i = rank({RSSI_{i,j}}_{j=1}^N)",
+      "d_est(i,j) = f(R_i, R_j, θ)",
+      "R_norm = α · R_raw + β(class)",
+      "rank({||p - b_j||_2}_{j=1}^N) = R_i",
+      "P_est = argmin_p ∑_{j=1}^N w_j ||rank(d(p,b_j)) - R_j||^2",
+      "w_j = 1/(1 + σ_j^2)"
+    ],
+    "algorithms": [
+      "RSSI ranking algorithm for cross-device normalization",
+      "Ranking-based trilateration for position estimation",
+      "Cross-device calibration methodology",
+      "Beacon selection optimization algorithm",
+      "Weighted least squares for ranking trilateration"
+    ],
+    "theoretical_contributions": [
+      "RSSI ranking theory for device-independent positioning",
+      "Cross-device normalization mathematical framework",
+      "Ranking trilateration methodology",
+      "Statistical analysis of RSSI ranking stability"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 3,
+    "method_rating": 3,
+    "system_rating": 4,
+    "breakthrough_points": [
+      "First systematic application of ranking theory to BLE indoor positioning",
+      "Cross-device compatibility with <15% variation between smartphones",
+      "Generic smartphone deployment without device-specific calibration",
+      "39% improvement over traditional RSSI-based positioning methods"
+    ]
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "positioning_accuracy": "2.3m average error",
+      "cross_device_variation": "<15% between different smartphone models",
+      "improvement_over_baseline": "39% better than traditional RSSI methods",
+      "coverage_area": "1000 square meters with 20 BLE beacons",
+      "positioning_success_rate": "92% within 3m accuracy"
+    },
+    "datasets_used": [
+      "Custom BLE positioning dataset with 5 different smartphone models",
+      "1000 square meter indoor testbed environment",
+      "20 BLE beacon deployment with systematic positioning",
+      "Cross-device RSSI measurement dataset"
+    ],
+    "statistical_significance": true,
+    "baseline_comparisons": [
+      "Traditional RSSI trilateration (3.8m average error)",
+      "Fingerprinting-based methods (2.9m average error)",
+      "Raw RSSI distance estimation (4.2m average error)",
+      "Device-specific calibrated methods (2.7m average error)"
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 3,
+    "technical_rigor": 3,
+    "innovation_depth": 3,
+    "practical_value": 4
+  },
+  "v2_integration": {
+    "introduction_priority": "medium",
+    "methods_priority": "high",
+    "results_priority": "medium",
+    "discussion_priority": "medium",
+    "specific_applications": [
+      "BLE vs WiFi positioning comparison for indoor sensing applications",
+      "Relative signal analysis methodology applicable to WiFi CSI ranking",
+      "Cross-device normalization techniques for wireless sensing",
+      "Generic deployment strategies for device-free sensing systems"
+    ]
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "BLE_RSSI_ranking": 2.3,
+      "traditional_RSSI_trilateration": 3.8,
+      "fingerprinting_based": 2.9,
+      "raw_RSSI_distance": 4.2,
+      "device_specific_calibrated": 2.7
+    },
+    "timeline_data": {
+      "year": 2017,
+      "venue": "WTS",
+      "impact_factor": 2.1,
+      "quartile": "Q3"
+    },
+    "classification_data": {
+      "type": "Indoor Positioning",
+      "subfield": "BLE RSSI Analysis",
+      "methodology": "Ranking-based Trilateration"
+    },
+    "trend_analysis": {
+      "research_direction": "Cross-device positioning standardization",
+      "technical_maturity": "Medium",
+      "commercial_potential": "High"
+    },
+    "cross_device_variation": {
+      "iPhone_6": 12.3,
+      "Samsung_S7": 13.8,
+      "Google_Pixel": 11.9,
+      "Xiaomi_Mi5": 14.2,
+      "Huawei_P9": 13.1
+    },
+    "accuracy_distribution": {
+      "under_1m": 25,
+      "1m_to_2m": 35,
+      "2m_to_3m": 32,
+      "over_3m": 8
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "Innovative ranking-based approach eliminates device-specific calibration requirements",
+      "Strong cross-device compatibility with consistent performance across smartphone models",
+      "Practical deployment advantages for generic smartphone-based positioning",
+      "Significant 39% improvement over traditional RSSI-based positioning methods",
+      "Comprehensive experimental validation with multiple device types",
+      "Mathematical framework provides theoretical foundation for ranking-based positioning"
+    ],
+    "limitations": [
+      "Limited to indoor environments with dense BLE beacon deployment",
+      "Requires minimum 20 beacons for 1000 square meter coverage area",
+      "2.3m average error still relatively high for precision positioning applications",
+      "No evaluation of positioning accuracy in dynamic environments",
+      "Limited comparison with WiFi-based positioning alternatives",
+      "Beacon deployment cost and maintenance considerations not thoroughly addressed"
+    ],
+    "future_directions": [
+      "Integration with WiFi CSI for hybrid indoor positioning systems",
+      "Extension to outdoor and semi-outdoor environments",
+      "Dynamic beacon selection algorithms for optimal positioning accuracy",
+      "Machine learning enhancement of ranking-based positioning algorithms",
+      "Real-time tracking and trajectory estimation capabilities",
+      "Integration with IMU sensors for improved positioning robustness"
+    ],
+    "reproducibility_score": 7.5
+  },
+  "wifi_har_relevance": {
+    "methodological_contribution": "Ranking-based signal analysis applicable to WiFi CSI relative measurements",
+    "cross_technology_insights": "Cross-device normalization techniques transferable to WiFi sensing",
+    "positioning_comparison": "Provides baseline for comparing WiFi-based positioning with BLE approaches",
+    "adaptation_requirements": [
+      "WiFi CSI ranking methodology for cross-device consistency",
+      "Relative signal strength analysis for device-free sensing",
+      "Cross-domain positioning accuracy benchmarking",
+      "Generic deployment strategies for wireless sensing infrastructure"
+    ]
+  }
+}

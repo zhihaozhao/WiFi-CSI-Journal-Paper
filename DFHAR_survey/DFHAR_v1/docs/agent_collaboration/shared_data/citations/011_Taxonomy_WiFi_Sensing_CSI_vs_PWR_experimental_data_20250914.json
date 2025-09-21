@@ -1,0 +1,209 @@
+{
+  "paper_id": "118",
+  "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+  "authors": ["W. Li", "M. J. Bocus", "C. Tang", "S. Vishwakarma", "R. J. Piechocki", "K. Woodbridge", "K. Chetty"],
+  "publication": "2020 IEEE Globecom Workshops (GC Wkshps)",
+  "year": 2020,
+  "doi": "10.1109/GCWkshps50303.2020.9367546",
+  "analysis_date": "2025-09-14",
+  "analysis_agent": "experimentAgent1",
+
+  "experimental_scores": {
+    "dataset_quality": 6.0,
+    "model_architecture": 7.0,
+    "results_analysis": 5.0,
+    "experimental_design": 7.0,
+    "reproducibility": 6.0,
+    "discussion_quality": 8.0,
+    "overall_score": 6.5
+  },
+
+  "dataset_analysis": {
+    "participants": 5,
+    "age_groups": "different age groups (no specific details)",
+    "total_samples": 1122,
+    "activities": [
+      "walking",
+      "sitting",
+      "standing from chair",
+      "laying down",
+      "standing from floor",
+      "picking up small items from floor"
+    ],
+    "data_collection": {
+      "window_length": "4 seconds (sliding window)",
+      "monitoring_area": "3m × 3m",
+      "measurement_positions": 9,
+      "position_separation": "1.5m",
+      "frequency_band": "2.4 GHz",
+      "different_channels": "systems on separate channels to avoid interference"
+    },
+    "geometric_layouts": [
+      {
+        "layout_1": "forward scatter (line-of-sight, ~180°)",
+        "description": "transmitter-object-receiver alignment around 180 degrees"
+      },
+      {
+        "layout_2": "bistatic configuration (~90°)",
+        "description": "transmitter-object-receiver around 90 degrees"
+      },
+      {
+        "layout_3": "monostatic configuration (<45°)",
+        "description": "transmitter-object-receiver less than 45 degrees"
+      }
+    ]
+  },
+
+  "system_architectures": {
+    "csi_system": {
+      "hardware": "Intel 5300 NIC",
+      "packet_rate": "1 kHz",
+      "antenna_config": "1×3×30 (1 tx, 3 rx, 30 subcarriers)",
+      "data_volume": "90k complex values per second",
+      "processing_pipeline": [
+        "Raw CSI data collection from WiFi preambles",
+        "Denoising with Discrete Wavelet Transform (DWT)",
+        "Median filtering for transient removal",
+        "Principal Component Analysis (PCA) dimension reduction",
+        "Short-Time Fourier Transform (STFT) for spectrograms"
+      ],
+      "pca_components": "5 (discarded first component due to static noise)"
+    },
+    "pwr_system": {
+      "hardware": "USRP-2921 Software-Defined Radio",
+      "signal_capture": "entire WiFi signal (no packet knowledge)",
+      "processing_pipeline": [
+        "Raw WiFi signal capture",
+        "Cross Ambiguity Function (CAF) for range-Doppler surface",
+        "CLEAN algorithm for direct signal interference suppression",
+        "Constant False Alarm Rate (CFAR) for noise reduction"
+      ],
+      "integration_time": "1 second (enables direction detection)"
+    }
+  },
+
+  "performance_results": {
+    "overall_accuracy": {
+      "csi_system": 67.3,
+      "pwr_system": 66.7
+    },
+    "per_activity_performance": {
+      "walking": ">90% (both systems)",
+      "picking_up": ">70% (both systems)",
+      "other_activities": "relatively low accuracy (varies by system and layout)"
+    },
+    "layout_specific_performance": {
+      "csi_system": {
+        "best_layout": "Layout 1 (LoS) - 90% accuracy",
+        "worst_layout": "Layout 3 (Monostatic) - 62% accuracy",
+        "layout_2_accuracy": "~70%"
+      },
+      "pwr_system": {
+        "best_layout": "Layout 3 (Monostatic) - 91.3% accuracy",
+        "worst_layout": "Layout 1 (LoS) - 60% accuracy",
+        "layout_2_accuracy": "~70%"
+      }
+    },
+    "classifier": "Simple 2D CNN (1 conv + 1 max-pool + 2 FC layers)"
+  },
+
+  "experimental_methodology": {
+    "data_collection_approach": "simultaneous synchronized measurements",
+    "data_split": "80% training, 20% testing (randomly selected)",
+    "evaluation_metrics": [
+      "Overall accuracy",
+      "Confusion matrices",
+      "Per-layout accuracy analysis",
+      "Per-activity performance"
+    ],
+    "cross_validation": "not explicitly mentioned",
+    "statistical_testing": "none reported"
+  },
+
+  "key_findings": {
+    "system_differences": {
+      "csi_characteristics": [
+        "Uses only WiFi preamble signals",
+        "Operates at subcarrier level with fine-grained features",
+        "Better performance in Line-of-Sight configurations",
+        "Cannot determine movement direction (short integration time)",
+        "Results in 90k complex values per second"
+      ],
+      "pwr_characteristics": [
+        "Uses entire WiFi signal including time gaps",
+        "Treats OFDM signal as single entity",
+        "Better performance in monostatic configurations",
+        "Can determine velocity and direction (longer integration time)",
+        "No knowledge of WiFi packet structure"
+      ]
+    },
+    "geometric_dependencies": {
+      "csi_optimal": "forward scatter (line-of-sight) layouts",
+      "pwr_optimal": "monostatic (close angle) layouts",
+      "layout_impact": "significant performance variation across geometries"
+    },
+    "doppler_signatures": {
+      "csi_spectrograms": "strong pulse across entire frequency, similar signatures",
+      "pwr_spectrograms": "varied profiles resembling sinusoidal waves, layout-dependent"
+    }
+  },
+
+  "technical_contributions": {
+    "novel_aspects": [
+      "First comprehensive comparison between CSI and PWR systems",
+      "Simultaneous synchronized data collection methodology",
+      "Systematic analysis of geometric configuration impact",
+      "Comparative Doppler signature analysis across systems"
+    ],
+    "mathematical_formulations": {
+      "ofdm_signal": "x(t) = 1/√N Σ aₙe^(j2π/Tₛ)nt",
+      "received_signal": "y(t) = Σ Aₚe^(j2πfdt)x(t-τ) + n(t)",
+      "csi_calculation": "H(fc,t) = Y(fc,t)/X(fc,t)",
+      "caf_equation": "CAF(τ,fd) = ∫ x(t)y*(t-τ)e^(j2πfd)dt"
+    }
+  },
+
+  "reproducibility_assessment": {
+    "hardware_specifications": "complete",
+    "signal_processing_details": "comprehensive mathematical descriptions",
+    "experimental_setup": "well documented",
+    "code_availability": false,
+    "data_availability": false,
+    "classifier_details": "insufficient",
+    "hyperparameters": "not provided",
+    "reproducibility_score": 6.0
+  },
+
+  "strengths": [
+    "Novel and important comparative study",
+    "Rigorous simultaneous data collection methodology",
+    "Comprehensive geometric configuration analysis",
+    "Detailed signal processing documentation",
+    "Clear identification of complementary system strengths",
+    "Practical insights for system selection and design"
+  ],
+
+  "limitations": [
+    "Small dataset scale (1,122 samples) inadequate for robust deep learning",
+    "Simple CNN classifier doesn't fully exploit system capabilities",
+    "Single environment testing limits generalizability",
+    "No statistical significance testing or confidence intervals",
+    "Low overall accuracy compared to typical HAR standards",
+    "Missing fusion system implementation despite identified potential"
+  ],
+
+  "significance": {
+    "technical_contribution": "High - First comprehensive CSI vs PWR comparison with important insights",
+    "practical_impact": "Moderate - Provides guidance for system selection but limited by experimental scale",
+    "research_advancement": "Establishes foundation for understanding WiFi sensing system trade-offs"
+  },
+
+  "future_work_recommendations": [
+    "Large-scale dataset collection across multiple environments",
+    "Implementation of advanced deep learning architectures",
+    "Development and evaluation of CSI-PWR fusion systems",
+    "Cross-domain validation across different hardware platforms",
+    "Proper statistical analysis with significance testing",
+    "Multi-channel spatially distributed receiver systems"
+  ]
+}

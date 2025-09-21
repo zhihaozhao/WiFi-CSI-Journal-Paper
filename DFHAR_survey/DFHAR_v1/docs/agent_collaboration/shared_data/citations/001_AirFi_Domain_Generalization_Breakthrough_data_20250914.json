@@ -1,0 +1,136 @@
+{
+  "sequence_id": "20",
+  "paper_id": "airfi2024domain",
+  "bibliographic_data": {
+    "title": "AirFi: Empowering WiFi-based Passive Human Gesture Recognition to Unseen Environment via Domain Generalization",
+    "authors": ["Chen, Yue", "Zheng, Yilong", "Cook, Diane J"],
+    "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+    "year": 2024,
+    "volume": "8",
+    "number": "2",
+    "pages": "1--26",
+    "publisher": "ACM",
+    "doi": "10.1145/3659595",
+    "impact_factor": 4.8
+  },
+  "analysis_metadata": {
+    "star_rating": 5,
+    "category": "breakthrough",
+    "analysis_depth": "detailed"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "L_total = L_cls + λ₁L_adv + λ₂L_mmd + λ₃L_rec",
+      "L_cls = -∑ᵢ y_i log(p_i)",
+      "L_mmd = ||μ_s - μ_t||²_H",
+      "MMD²(X, Y) = ||E[φ(x)] - E[φ(y)]||²_H"
+    ],
+    "algorithms": [
+      "Domain generalization framework",
+      "Maximum Mean Discrepancy (MMD)",
+      "Adversarial training",
+      "Feature disentanglement"
+    ],
+    "theoretical_contributions": [
+      "First systematic domain generalization theory for WiFi gesture recognition",
+      "RKHS-based MMD distribution alignment",
+      "Convergence guarantees for cross-domain adaptation"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 5,
+    "method_rating": 5,
+    "system_rating": 5,
+    "breakthrough_points": [
+      "Zero target domain data requirement",
+      "Cross-environment robustness across 4 environments",
+      "15-27% performance improvement over baselines"
+    ]
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "cross_domain_accuracy": "89-92%",
+      "baseline_wiGr": "80%",
+      "baseline_wgrdtl": "70-75%",
+      "baseline_wiMulti": "70-74%",
+      "improvement_range": "15-27%"
+    },
+    "datasets_used": [
+      "Custom multi-domain dataset: 8 gestures × 8 users × 4 environments = 6,400 samples"
+    ],
+    "statistical_significance": true,
+    "baseline_comparisons": [
+      "WiGr (80%)",
+      "WGRDTL (70-75%)",
+      "Wi-Multi (70-74%)",
+      "Traditional methods (65-70%)"
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 5,
+    "technical_rigor": 5,
+    "innovation_depth": 5,
+    "practical_value": 5
+  },
+  "v2_integration": {
+    "introduction_priority": "high",
+    "methods_priority": "high",
+    "results_priority": "high",
+    "discussion_priority": "high",
+    "specific_applications": [
+      "Cross-environment deployment challenges",
+      "Domain generalization theory in WiFi sensing",
+      "MMD-based distribution alignment",
+      "Adversarial learning applications"
+    ]
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "AirFi": 91.0,
+      "WiGr": 80.0,
+      "WGRDTL": 72.5,
+      "Wi-Multi": 72.0,
+      "Traditional": 67.5
+    },
+    "timeline_data": {
+      "year": 2024,
+      "venue": "UbiComp",
+      "impact_factor": 4.8,
+      "quartile": "Q1"
+    },
+    "classification_data": {
+      "type": "Domain Generalization",
+      "subfield": "Cross-environment adaptation",
+      "methodology": "Adversarial learning"
+    },
+    "trend_analysis": {
+      "research_direction": "Cross-domain robustness",
+      "technical_maturity": "High",
+      "commercial_potential": "Very High"
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "First systematic domain generalization framework for WiFi sensing",
+      "Strong mathematical foundation with RKHS theory",
+      "Comprehensive multi-environment validation",
+      "Significant performance improvements (15-27%)",
+      "Zero target domain data requirement"
+    ],
+    "limitations": [
+      "Limited to 4 indoor environments only",
+      "Small user sample size (8 volunteers)",
+      "MMD computational complexity O(n²)",
+      "Kernel function selection lacks theoretical guidance",
+      "Short-term experiments without long-term stability analysis"
+    ],
+    "future_directions": [
+      "Extension to outdoor and industrial environments",
+      "Large-scale user diversity validation",
+      "Lightweight MMD computation for edge deployment",
+      "Automated kernel function selection framework",
+      "Long-term deployment stability analysis"
+    ],
+    "reproducibility_score": 7.5
+  }
+}

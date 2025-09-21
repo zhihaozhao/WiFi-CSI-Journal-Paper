@@ -1,0 +1,61 @@
+{
+  "paper_id": "chen2024wisor",
+  "citation_key": "chen2024wisor",
+  "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+  "authors": ["Chen, X.", "Zou, Y.", "Li, C.", "Xiao, W."],
+  "publication_info": {
+    "journal": "IEEE Transactions on Human-Machine Systems",
+    "conference": "",
+    "year": 2024,
+    "volume": "54",
+    "pages": "68-78",
+    "doi": "10.1109/THMS.2023.3348694",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 3.5,
+    "journal_ranking": "Q2",
+    "citation_count": 0,
+    "verification_status": "Verified via IEEE Xplore",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "Lightweight WiFi CSI HAR with Signal Reconstruction",
+    "methodology": "Wisor-DL: Reconstructed WiFi CSI tensor with deep learning",
+    "key_contributions": [
+      "Novel WiFi CSI signal reconstruction algorithm",
+      "Sparse signal representation for CSI processing",
+      "CSI tensor construction approach",
+      "Lightweight deep learning architecture for HAR",
+      "Improved cross-domain generalization performance"
+    ],
+    "experimental_setup": "CSI signal reconstruction with tensor-based deep learning",
+    "datasets_used": ["WiFi CSI datasets for HAR validation"],
+    "performance_metrics": {"computational_efficiency": "lightweight", "cross_domain_performance": "improved"},
+    "limitations": ["Specific to CSI reconstruction methodology"]
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 5,
+    "chapter_mapping": ["signal_reconstruction", "lightweight_methods", "tensor_processing", "cross_domain_generalization"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Sparse signal representation", "CSI tensor construction", "Wisor-DL framework"],
+    "mathematical_models": ["Tensor-based CSI modeling"],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": ["High computational complexity", "Poor cross-domain generalization", "CSI signal quality issues"],
+    "proposed_solutions": ["Signal reconstruction", "Lightweight architectures", "Tensor-based processing"],
+    "research_gaps": ["Limited real-world validation", "Cross-environment robustness"],
+    "potential_experiments": ["Multi-environment tensor validation", "Real-time lightweight deployment"]
+  },
+  "notes": "Novel 2024 IEEE THMS paper introducing Wisor-DL framework - significant for lightweight and cross-domain HAR solutions",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

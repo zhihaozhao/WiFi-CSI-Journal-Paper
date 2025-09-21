@@ -1,0 +1,104 @@
+{
+  "paper_id": "039",
+  "title": "Wi-Multi: A Three-Phase System for Multiple Human Activity Recognition With Commercial WiFi Devices",
+  "authors": ["Jie Zhang", "Zhanyong Tang", "Meng Li", "Dingyi Fang", "Petteri Nurmi", "Zheng Wang"],
+  "publication_year": 2019,
+  "venue": "IEEE Transactions on Mobile Computing",
+  "star_rating": 4,
+  "technical_category": "Adaptive Multi-Algorithm System",
+  "research_focus": "Multi-User Activity Recognition",
+
+  "key_metrics": {
+    "single_user_accuracy": 94.2,
+    "two_user_accuracy": 91.8,
+    "three_user_accuracy": 87.6,
+    "phase1_dtw_accuracy": 78.3,
+    "phase2_svm_accuracy": 85.7,
+    "phase3_lstm_accuracy": 94.2,
+    "recognition_latency_ms": 1000,
+    "max_users_supported": 3
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "Sample-Size Adaptive Three-Phase System",
+    "phase_algorithms": [
+      "DTW-based classification (small samples <50)",
+      "SVM with feature extraction (medium samples 50-200)",
+      "LSTM deep learning (large samples >200)"
+    ],
+    "multi_user_capability": "Simultaneous 1-3 user activity recognition",
+    "adaptive_selection": "Automatic algorithm selection based on data availability",
+    "signal_processing": "CSI amplitude/phase extraction with noise filtering"
+  },
+
+  "experimental_setup": {
+    "participants": 10,
+    "activities": 9,
+    "multi_user_scenarios": 3,
+    "environments": 2,
+    "hardware": "Intel 5300 NIC with 3x3 MIMO",
+    "validation_method": "10-fold cross-validation",
+    "data_collection_duration": "6 weeks"
+  },
+
+  "performance_comparison": {
+    "multi_user_degradation": {
+      "two_users": 2.4,
+      "three_users": 6.6
+    },
+    "baseline_methods_compared": 5,
+    "performance_improvement": "Consistent across all phases",
+    "state_of_art_ranking": "Superior to existing multi-user methods"
+  },
+
+  "reproducibility": {
+    "score": 6.8,
+    "implementation_details": "comprehensive",
+    "algorithm_specifications": "clear",
+    "hardware_requirements": "standard Intel 5300",
+    "missing_elements": ["source code", "dataset access"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "First adaptive approach addressing data scarcity in WiFi HAR",
+    "practical_significance": "Solves training data requirement challenges",
+    "multi_user_breakthrough": "Pioneering simultaneous multi-user recognition",
+    "citation_importance": "High - foundational work for adaptive multi-user systems"
+  },
+
+  "limitations": [
+    "Limited to maximum 3 simultaneous users",
+    "Indoor controlled environment evaluation only",
+    "Increased system complexity with three algorithms",
+    "Still requires substantial data for optimal Phase 3 performance"
+  ],
+
+  "future_directions": [
+    "Extended multi-user support beyond 3 users",
+    "Cross-environment validation",
+    "Real-time optimization",
+    "Advanced signal separation techniques",
+    "Federated learning integration",
+    "Transfer learning enhancement",
+    "Edge computing optimization",
+    "Privacy-preserving recognition"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Practical Deployment Solutions",
+      "Multi-User Recognition Systems",
+      "Adaptive Algorithm Architectures",
+      "Real-World Implementation Challenges"
+    ],
+    "citation_context": "Adaptive multi-user recognition benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "agents_involved": ["literature-analuzerAgent", "experimentAgent", "technicalAgent"],
+    "analysis_completeness": "comprehensive",
+    "validation_level": "4-star analysis protocol"
+  }
+}

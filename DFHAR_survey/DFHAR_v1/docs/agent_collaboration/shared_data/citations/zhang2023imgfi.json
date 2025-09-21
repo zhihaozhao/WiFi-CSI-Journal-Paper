@@ -1,0 +1,60 @@
+{
+  "paper_id": "zhang2023imgfi",
+  "citation_key": "zhang2023imgfi",
+  "title": "ImgFi: A High Accuracy and Lightweight Human Activity Recognition Framework Using CSI Image",
+  "authors": ["Zhang, Changsheng", "Jiao, Wanguo"],
+  "publication_info": {
+    "journal": "IEEE Sensors Journal",
+    "conference": "",
+    "year": 2023,
+    "volume": "23",
+    "pages": "21966-21977",
+    "doi": "10.1109/JSEN.2023.3296445",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 4.3,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified via IEEE Xplore",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "WiFi CSI Image-based HAR",
+    "methodology": "Novel CSI-to-image conversion for gesture recognition",
+    "key_contributions": [
+      "CSI-to-image conversion methodology",
+      "Lightweight framework design",
+      "High accuracy gesture recognition",
+      "Dataset availability for community use"
+    ],
+    "experimental_setup": "CSI signal to image conversion with CNN processing",
+    "datasets_used": ["Custom gesture dataset - DOI 10.21227/wfp1-s562"],
+    "performance_metrics": {"accuracy": "high", "computational_efficiency": "lightweight"},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 4,
+    "novelty_score": 5,
+    "chapter_mapping": ["signal_processing", "image_conversion", "lightweight_methods", "gesture_recognition"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["CSI-to-image conversion", "Lightweight CNN framework"],
+    "mathematical_models": [],
+    "experimental_results": {"dataset_doi": "10.21227/wfp1-s562"}
+  },
+  "future_directions": {
+    "identified_challenges": ["CSI data visualization", "Computational efficiency"],
+    "proposed_solutions": ["Image-based processing", "Lightweight architectures"],
+    "research_gaps": ["Limited to gesture recognition", "Single-environment validation"],
+    "potential_experiments": ["Multi-activity image conversion", "Cross-environment validation"]
+  },
+  "notes": "Novel approach with available dataset - important for methodology innovation and reproducibility in DFHAR survey",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

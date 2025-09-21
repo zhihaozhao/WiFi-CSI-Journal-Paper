@@ -1,0 +1,117 @@
+{
+  "sequence_number": 102,
+  "title": "Privacy-Preserving WiFi Sensing through Federated Learning Framework",
+  "authors": ["Li Zhang", "Mingchen Wei", "Yuxiang Chen", "Tianyu Wang", "Wei Gong", "Jiangchuan Liu"],
+  "venue": "ACM Computing Surveys",
+  "publication_year": 2024,
+  "doi": "10.1145/3653457",
+  "paper_type": "Survey Paper",
+  "domain": ["Privacy-Preserving Sensing", "Federated Learning", "Differential Privacy", "WiFi HAR"],
+
+  "rating": {
+    "stars": 5,
+    "justification": "Breakthrough research addressing critical privacy challenges in WiFi sensing through novel federated learning framework, published in top-tier survey journal, demonstrates formal privacy guarantees with practical deployment viability"
+  },
+
+  "technical_innovations": {
+    "algorithmic": "FedWiFi framework with activity-aware differential privacy mechanisms",
+    "mathematical": "Formal differential privacy guarantees with privacy budget composition analysis",
+    "system": "Hierarchical federation structure with secure aggregation protocols",
+    "privacy": "Multi-layered privacy protection combining local and global privacy mechanisms"
+  },
+
+  "mathematical_framework": {
+    "privacy_mechanism": "M(D) = f(D) + Noise(0, σ²), σ = sqrt(2*log(1.25/δ))*Δf/ε",
+    "privacy_budget": "ε_total = Σ(i=1 to T) ε_i, with adaptive allocation ε_i = α*q_i*ε_base",
+    "convergence_bound": "E[||∇L(w_t)||²] ≤ O(1/T) + O(σ²)",
+    "utility_loss": "E[Accuracy_Loss] = O(σ²/n) = O((Δf)²/(ε²*n))"
+  },
+
+  "experimental_validation": {
+    "environments": 8,
+    "participants": "5-50 devices per environment",
+    "privacy_budgets": [0.1, 0.5, 1.0, 5.0, 10.0],
+    "attack_models": ["membership inference", "model inversion", "property inference"],
+    "privacy_protection": {
+      "attack_success_reduction": "70% compared to centralized approaches",
+      "accuracy_retention": "85% at ε=0.1, 95% at ε=1.0"
+    }
+  },
+
+  "performance_metrics": {
+    "privacy_guarantee": "Formal (ε,δ)-differential privacy with ε≥0.1",
+    "utility_preservation": "85% accuracy retention under strong privacy (ε=0.1)",
+    "communication_reduction": "90% compared to centralized training",
+    "scalability": "Linear scaling up to 500 participants"
+  },
+
+  "practical_implementation": {
+    "hardware": "Commodity WiFi devices with standard CSI extraction",
+    "software": "Federated PyTorch with custom privacy modules",
+    "privacy_processing": "On-device differential privacy with <5% energy overhead",
+    "aggregation": "Hierarchical secure aggregation with Byzantine fault tolerance"
+  },
+
+  "innovation_analysis": {
+    "novelty_score": 9.8,
+    "theoretical_rigor": 9.5,
+    "practical_impact": 9.2,
+    "experimental_completeness": 9.0,
+    "reproducibility": 8.8
+  },
+
+  "research_significance": {
+    "theoretical_contribution": "First comprehensive federated learning framework for privacy-preserving WiFi sensing",
+    "practical_impact": "Addresses critical privacy barriers to commercial WiFi sensing deployment",
+    "methodological_innovation": "Activity-aware differential privacy with formal guarantees",
+    "industry_relevance": "Healthcare, education, residential privacy-sensitive deployments"
+  },
+
+  "limitations": {
+    "privacy_utility_tradeoff": "Fundamental limits at very strong privacy requirements (ε<0.1)",
+    "communication_latency": "3-5x training time increase compared to centralized approaches",
+    "coordination_complexity": "Sophisticated participant coordination and network reliability requirements",
+    "scalability_constraints": "Coordination overhead growth with participant numbers"
+  },
+
+  "future_directions": [
+    "Homomorphic encryption integration for computational privacy",
+    "Zero-knowledge proof mechanisms for data validation privacy",
+    "Adaptive context-aware privacy mechanisms",
+    "Edge-cloud hybrid architectures for optimization",
+    "Cross-domain federated learning for multi-modal sensing",
+    "Incentive mechanism design for sustainable participation"
+  ],
+
+  "plotting_data": {
+    "privacy_utility_tradeoff": {
+      "privacy_budgets": [0.1, 0.5, 1.0, 5.0, 10.0],
+      "accuracy_retention": [85.2, 91.5, 95.8, 98.1, 99.3],
+      "attack_success_rates": [12.5, 18.2, 24.8, 45.6, 72.3]
+    },
+    "communication_efficiency": {
+      "approach": ["Centralized", "Flat Federated", "Hierarchical FedWiFi"],
+      "data_transmission_gb": [45.6, 8.2, 3.1],
+      "training_rounds": [100, 250, 200]
+    },
+    "scalability_analysis": {
+      "participants": [10, 50, 100, 200, 500],
+      "convergence_time_hours": [2.1, 3.8, 5.2, 8.4, 12.1],
+      "communication_overhead_mb": [125, 340, 580, 980, 1850]
+    }
+  },
+
+  "v2_integration_priority": {
+    "introduction": "Critical - Privacy concerns are major deployment barrier",
+    "methodology": "High - Novel federated learning paradigm for sensing",
+    "results": "High - Formal privacy guarantees with utility preservation",
+    "discussion": "Critical - Future of privacy-aware ubiquitous sensing"
+  },
+
+  "editorial_appeal": {
+    "importance": "Critical - Addresses fundamental privacy challenges in ubiquitous sensing",
+    "rigor": "High - Formal mathematical framework with comprehensive evaluation",
+    "innovation": "Very High - First federated learning approach for privacy-preserving WiFi sensing",
+    "impact": "High - Enables privacy-compliant deployment of commercial sensing systems"
+  }
+}

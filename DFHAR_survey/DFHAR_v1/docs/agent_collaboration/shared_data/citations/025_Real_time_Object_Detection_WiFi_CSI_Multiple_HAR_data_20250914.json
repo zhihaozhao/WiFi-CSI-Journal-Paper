@@ -1,0 +1,140 @@
+{
+  "sequence_number": 58,
+  "title": "A Real-time Object Detection for WiFi CSI-based Multiple Human Activity Recognition",
+  "authors": ["Israel Elujide", "Jian Li", "Aref Shiran", "Siwang Zhou", "Yonghe Liu"],
+  "venue": "IEEE CCNC",
+  "publication_year": 2023,
+  "doi": "10.1109/CCNC51644.2023.10059647",
+  "paper_type": "Conference Paper",
+  "domain": ["Real-time Processing", "Object Detection", "Multiple Activity Recognition", "WiFi CSI"],
+
+  "rating": {
+    "stars": 4,
+    "justification": "High-value research addressing critical real-time processing gap in WiFi sensing, first object detection approach for streaming CSI data, demonstrates practical deployment capabilities with acceptable accuracy trade-offs"
+  },
+
+  "technical_innovations": {
+    "algorithmic": "First real-time object detection framework for streaming WiFi CSI data using Mask R-CNN",
+    "mathematical": "Integration of continuous wavelet transform with deep learning object detection for time-frequency analysis",
+    "system": "Real-time streaming CSI processing architecture with sliding window analysis",
+    "practical": "Multiple activity instance segmentation in continuous streams without pre-segmentation"
+  },
+
+  "mathematical_framework": {
+    "csi_modeling": "y = Hx + n, H = [h₁, h₂, ..., h_{Nsc}]",
+    "cwt_transform": "CWT(t,ω) = (ω/ω₀)^{1/2} ∫ s(t')Ψ*[ω/ω₀(t' - t)] dt'",
+    "bbox_regression": "ĝₓ = p_w d_x(p) + p_x, ĝ_w = p_w exp(d_w(p))",
+    "loss_function": "L = L_{cls} + L_{bbox} + L_{mask}",
+    "regression_loss": "L_{reg} = arg min Σᵢ (tᵢ - dᵢ(p))² + λ||ŵ||²"
+  },
+
+  "experimental_validation": {
+    "setup": "Intel NIC5300, TP-Link AC1750, 2.4GHz, 80 packets/second",
+    "activities": ["Walking", "Running", "Hand Waving"],
+    "data_split": "70% training, 15% validation, 15% test",
+    "evaluation_metrics": ["Average Precision (AP)", "mAP", "IoU", "Instance Segmentation"],
+    "processing_mode": "Real-time streaming with sliding window"
+  },
+
+  "performance_metrics": {
+    "single_activity_accuracy": {
+      "walking_ap50": "100%",
+      "running_ap50": "99.55%",
+      "walking_average_ap": "60.34%",
+      "running_average_ap": "73.65%"
+    },
+    "multiple_activity_accuracy": {
+      "overall_ap50": "96.94%",
+      "overall_ap75": "62.99%",
+      "overall_average_ap": "58.05%",
+      "instance_segmentation": "90.73%"
+    },
+    "realtime_performance": {
+      "classification_accuracy": "93.80%",
+      "processing_latency": "Real-time streaming",
+      "accuracy_tradeoff": "5-7% decrease vs offline methods"
+    }
+  },
+
+  "practical_implementation": {
+    "hardware": "Commercial WiFi devices (Intel NIC5300, TP-Link AC1750)",
+    "software": "PyTorch implementation with Google Colab TPU",
+    "processing": "Real-time streaming with sliding window CSI capture",
+    "deployment": "Consumer WiFi infrastructure compatible"
+  },
+
+  "innovation_analysis": {
+    "novelty_score": 8.5,
+    "theoretical_rigor": 8.0,
+    "practical_impact": 9.0,
+    "experimental_completeness": 7.5,
+    "reproducibility": 7.5
+  },
+
+  "research_significance": {
+    "theoretical_contribution": "First integration of computer vision object detection with real-time WiFi CSI processing",
+    "practical_impact": "Addresses critical deployment barrier for WiFi sensing systems through real-time processing capability",
+    "methodological_innovation": "Streaming CSI analysis with concurrent multiple activity recognition and instance segmentation",
+    "industry_relevance": "Direct applicability to smart home systems, security applications, and consumer IoT devices"
+  },
+
+  "limitations": {
+    "activity_scope": "Limited to three basic activities in evaluation",
+    "environment_testing": "Single controlled environment without cross-domain validation",
+    "accuracy_tradeoff": "5-7% accuracy reduction compared to offline processing methods",
+    "scalability": "Insufficient analysis of performance with larger number of concurrent activities",
+    "latency_analysis": "Limited real-time processing latency characterization"
+  },
+
+  "future_directions": [
+    "Cross-environment real-time adaptation for diverse deployment scenarios",
+    "Extended activity vocabulary and complexity for comprehensive recognition",
+    "Multi-user simultaneous activity recognition with user separation",
+    "Real-time processing optimization for improved accuracy-latency trade-offs",
+    "Edge computing deployment with resource constraint optimization",
+    "Integration with other sensing modalities for enhanced real-time recognition"
+  ],
+
+  "plotting_data": {
+    "single_activity_performance": {
+      "activities": ["Walking", "Running"],
+      "ap50_validation": [100, 99.55],
+      "ap75_validation": [60.30, 87.45],
+      "ap_average_validation": [60.34, 73.65],
+      "ap50_test": [99.96, 100],
+      "ap75_test": [81.84, 72.95],
+      "ap_average_test": [63.00, 66.55]
+    },
+    "multiple_activity_performance": {
+      "activities": ["Hand Wave", "Walking", "Running", "No Activity"],
+      "map_validation": [59.90, 61.34, 47.34, 63.60],
+      "map_test": [73.37, 62.77, 53.27, 69.25],
+      "overall_metrics": [96.94, 62.99, 58.05]
+    },
+    "realtime_vs_offline": {
+      "comparison_activities": ["Walking", "Running", "Multiple"],
+      "realtime_accuracy": [92.9, 94.8, 93.7],
+      "offline_accuracy": [100, 100, 99.4],
+      "accuracy_decrease": [7.1, 5.2, 5.7]
+    },
+    "object_detection_metrics": {
+      "iou_thresholds": [0.5, 0.75, "0.5-0.95"],
+      "multiple_activity_ap": [96.94, 62.99, 58.05],
+      "processing_components": ["Feature Extraction", "RPN", "RoIAlign", "Classification", "Segmentation"]
+    }
+  },
+
+  "v2_integration_priority": {
+    "introduction": "High - First real-time processing framework addressing deployment barriers",
+    "methodology": "Critical - Object detection approach for streaming CSI analysis",
+    "results": "High - Real-time performance benchmarks and accuracy trade-offs",
+    "discussion": "Critical - Practical deployment considerations and real-world applicability"
+  },
+
+  "editorial_appeal": {
+    "importance": "High - Addresses critical gap between research and practical deployment",
+    "rigor": "Good - Solid experimental validation with real-time processing demonstration",
+    "innovation": "High - First object detection approach for real-time WiFi CSI stream processing",
+    "impact": "High - Enables practical deployment of WiFi sensing in real-world scenarios"
+  }
+}

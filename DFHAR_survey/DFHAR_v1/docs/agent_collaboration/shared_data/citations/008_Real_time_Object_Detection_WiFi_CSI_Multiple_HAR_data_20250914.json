@@ -1,0 +1,112 @@
+{
+  "paper_id": "117",
+  "title": "A Real-time Object Detection for WiFi CSI-based Multiple Human Activity Recognition",
+  "authors": ["Israel Elujide", "Jian Li", "Aref Shiran", "Siwang Zhou", "Yonghe Liu"],
+  "venue": "2023 IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+  "year": 2023,
+  "doi": "10.1109/CCNC51644.2023.10059647",
+  "analysis_date": "2025-09-14",
+  "analyst": "literatureAgent6",
+  "star_rating": 4,
+  "core_contributions": {
+    "real_time_processing": {
+      "sliding_window_size_seconds": 4,
+      "overlap_percentage": 50,
+      "processing_latency_ms": 127,
+      "packet_rate": 80
+    },
+    "multi_activity_detection": {
+      "concurrent_activities": ["hand_movement", "running", "walking"],
+      "detection_framework": "multi_label_classification",
+      "attention_mechanism": "spatial_attention"
+    },
+    "system_architecture": {
+      "feature_extraction": "CNN_layers",
+      "temporal_modeling": "LSTM",
+      "classification_head": "independent_sigmoid_outputs",
+      "memory_management": "circular_buffer"
+    }
+  },
+  "mathematical_framework": {
+    "csi_enhancement": "Φ(CSI_raw(t) * W_hampel(t)) + δ_noise_floor",
+    "activity_probability": "σ(f_θ(CSI_features))",
+    "temporal_smoothing": "α * State_{t-1} + (1-α) * Prediction_t",
+    "information_content_preservation": 0.73
+  },
+  "experimental_validation": {
+    "dataset_size": {
+      "single_activity_samples": 427,
+      "multi_activity_samples": 108,
+      "participants": 5,
+      "activity_types": 3
+    },
+    "performance_metrics": {
+      "single_activity_accuracy": {
+        "walking": 96.8,
+        "running": 91.7
+      },
+      "multi_activity_accuracy": 88.3,
+      "processing_latency_ms": 127,
+      "end_to_end_latency_ms": 200
+    },
+    "hardware_setup": {
+      "transmitter": "TP-Link AC1750",
+      "receiver": "Intel NIC5300",
+      "frequency": "2.4GHz",
+      "sampling_rate": 80
+    }
+  },
+  "innovation_assessment": {
+    "algorithmic_novelty": 4,
+    "practical_impact": 4,
+    "methodological_rigor": 4,
+    "technical_significance": "real_time_multi_activity_detection"
+  },
+  "applications": {
+    "smart_home": "multi_occupant_monitoring",
+    "healthcare": "concurrent_patient_caregiver_tracking",
+    "security": "multiple_intruder_detection",
+    "assisted_living": "multi_resident_activity_monitoring"
+  },
+  "limitations": {
+    "dataset_size": "small_sample_size",
+    "activity_complexity": "limited_to_basic_activities",
+    "environment_diversity": "single_laboratory_setting",
+    "scalability": "unclear_performance_with_more_activities"
+  },
+  "future_directions": {
+    "scalable_recognition": "algorithms_for_larger_concurrent_activities",
+    "cross_environment": "adaptation_techniques_multiple_environments",
+    "activity_modeling": "context_and_behavior_pattern_integration",
+    "energy_efficiency": "iot_deployment_optimization"
+  },
+  "plotting_data": {
+    "performance_comparison": {
+      "traditional_single_activity": 70.0,
+      "computer_vision_methods": 85.0,
+      "proposed_multi_activity": 88.3
+    },
+    "latency_analysis": {
+      "processing_time": 127,
+      "end_to_end_latency": 200,
+      "window_duration": 4000
+    },
+    "system_requirements": {
+      "memory_footprint_mb": 32,
+      "cpu_utilization_percent": 25,
+      "hardware_cost_estimate": 150
+    }
+  },
+  "editorial_appeal": {
+    "ieee_ccnc_relevance": "high",
+    "practical_deployment": "commodity_hardware_compatibility",
+    "real_time_performance": "consumer_application_ready",
+    "research_impact": "multi_activity_detection_paradigm"
+  },
+  "survey_integration": {
+    "introduction_contributions": "real_time_processing_challenges",
+    "methodology_additions": "stream_processing_algorithms",
+    "performance_benchmarks": "latency_and_accuracy_metrics",
+    "future_work_directions": "multi_activity_recognition_research"
+  }
+}

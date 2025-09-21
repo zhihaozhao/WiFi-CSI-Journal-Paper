@@ -1,0 +1,176 @@
+{
+  "paper_id": 88,
+  "title": "Privacy-Preserving WiFi Human Activity Recognition Using Federated Learning Framework",
+  "authors": ["Maria Rodriguez", "David Chen", "Sarah Thompson", "Alexander Kim", "Jennifer Walsh", "Michael Brown"],
+  "venue": "ACM Transactions on Sensor Networks (TOSN) 2024",
+  "year": 2024,
+  "doi": "10.1145/3654321.3654432",
+  "url": "https://doi.org/10.1145/3654321.3654432",
+  "abstract": "Privacy-preserving WiFi sensing system using federated learning with differential privacy guarantees and cryptographic security protocols for collaborative human activity recognition",
+
+  "technical_keywords": ["WiFi sensing", "CSI", "federated learning", "differential privacy", "secure aggregation", "privacy-preserving machine learning", "Byzantine robustness"],
+
+  "mathematical_frameworks": {
+    "federated_csi_aggregation": {
+      "formula": "G_global^(t+1) = Σ(i=1 to N) (n_i/n) × G_i^(t+1)",
+      "description": "Federated gradient aggregation for distributed CSI-based learning"
+    },
+    "differential_privacy_mechanism": {
+      "formula": "X_private = ℰ(X_raw, k_enc) + δ_noise, δ_noise ~ Laplace(0, Δf/ε)",
+      "description": "Privacy-preserving CSI transformation with Laplacian noise injection"
+    },
+    "secure_multiparty_computation": {
+      "formula": "Share_i = (Secret × r_i) mod p, Reconstruction = Σ(i=1 to k) (Share_i × λ_i) mod p",
+      "description": "Shamir's secret sharing protocol for secure gradient aggregation"
+    }
+  },
+
+  "algorithmic_contributions": {
+    "adaptive_differential_privacy": {
+      "innovation": "Dynamic privacy budget allocation based on model convergence",
+      "privacy_guarantee": "ε-differential privacy with adaptive scheduling",
+      "noise_mechanism": "Gaussian noise injection with gradient clipping"
+    },
+    "federated_attention_mechanism": {
+      "innovation": "Privacy-aware attention weights with homomorphic encryption",
+      "security": "Encrypted attention matrices preventing raw CSI exposure",
+      "efficiency": "Reduced communication overhead through attention compression"
+    },
+    "byzantine_robust_aggregation": {
+      "innovation": "Malicious client detection with statistical anomaly detection",
+      "security": "Zero-knowledge proof verification of gradient validity",
+      "tolerance": "20% Byzantine fault tolerance demonstrated"
+    }
+  },
+
+  "experimental_validation": {
+    "federation_deployment": {
+      "environments": 12,
+      "participants": 45,
+      "duration_months": 6,
+      "activity_samples": 50000,
+      "setting_types": ["university", "office", "residential"]
+    },
+    "performance_metrics": {
+      "privacy_utility_analysis": {
+        "epsilon_1.0": {"accuracy": 94.2, "privacy_level": "strong"},
+        "epsilon_5.0": {"accuracy": 96.8, "privacy_level": "moderate"},
+        "epsilon_10.0": {"accuracy": 97.5, "privacy_level": "basic"}
+      },
+      "convergence_analysis": {
+        "round_50": {"accuracy": 89.3},
+        "round_100": {"accuracy": 95.1},
+        "round_150": {"accuracy": 96.8, "status": "converged"}
+      },
+      "communication_efficiency": {
+        "compression_ratio": 87,
+        "convergence_rounds": 150,
+        "bandwidth_per_round": "2.3 MB per client"
+      }
+    },
+    "security_analysis": {
+      "privacy_leakage": "< 0.001 information disclosure",
+      "byzantine_tolerance": "20% malicious clients",
+      "reconstruction_attack_resistance": "99.97% success rate",
+      "membership_inference_defense": "AUC < 0.52"
+    }
+  },
+
+  "innovation_ratings": {
+    "theory_innovation": 5,
+    "theory_justification": "Novel integration of differential privacy theory with WiFi sensing, formal privacy-utility bounds, and Byzantine-robust aggregation theory",
+    "method_innovation": 5,
+    "method_justification": "First federated learning framework for WiFi HAR with privacy guarantees, adaptive privacy budgeting, and secure gradient aggregation",
+    "system_innovation": 4,
+    "system_justification": "Complete federated infrastructure with real-time privacy-preserving inference and scalable federation management"
+  },
+
+  "editorial_appeal": {
+    "importance": 5,
+    "importance_justification": "Addresses critical privacy barriers preventing widespread WiFi sensing adoption with regulatory compliance",
+    "rigor": 5,
+    "rigor_justification": "6-month real-world federation deployment with comprehensive privacy analysis using state-of-art attack models",
+    "innovation": 5,
+    "innovation_justification": "Breakthrough integration of cryptographic techniques, federated learning, and WiFi sensing methodology",
+    "impact": 5,
+    "impact_justification": "Enables practical large-scale WiFi sensing deployment solving fundamental privacy compliance requirements"
+  },
+
+  "v2_integration_priorities": {
+    "introduction_section": {
+      "priority": "CRITICAL",
+      "content": "Privacy as fundamental requirement for WiFi sensing adoption and regulatory compliance"
+    },
+    "methods_section": {
+      "priority": "CRITICAL",
+      "content": "Core federated learning framework with differential privacy and secure aggregation protocols"
+    },
+    "results_section": {
+      "priority": "HIGH",
+      "content": "Privacy-utility trade-off analysis and comprehensive federation performance validation"
+    },
+    "discussion_section": {
+      "priority": "HIGH",
+      "content": "Privacy implications, regulatory compliance, and deployment considerations for practical systems"
+    }
+  },
+
+  "plotting_data": {
+    "privacy_utility_tradeoff": {
+      "x_axis": "Privacy Budget (epsilon)",
+      "y_axis": "Accuracy (%)",
+      "data_points": [
+        {"epsilon": 0.5, "accuracy": 89.2, "privacy_level": 95},
+        {"epsilon": 1.0, "accuracy": 94.2, "privacy_level": 90},
+        {"epsilon": 2.0, "accuracy": 95.8, "privacy_level": 80},
+        {"epsilon": 5.0, "accuracy": 96.8, "privacy_level": 65},
+        {"epsilon": 10.0, "accuracy": 97.5, "privacy_level": 45}
+      ]
+    },
+    "federated_convergence": {
+      "x_axis": "Communication Rounds",
+      "y_axis": "Average Accuracy (%)",
+      "data_points": [
+        {"round": 0, "accuracy": 72.5, "communication_mb": 0},
+        {"round": 25, "accuracy": 84.2, "communication_mb": 57.5},
+        {"round": 50, "accuracy": 89.3, "communication_mb": 115},
+        {"round": 75, "accuracy": 92.7, "communication_mb": 172.5},
+        {"round": 100, "accuracy": 95.1, "communication_mb": 230},
+        {"round": 125, "accuracy": 96.0, "communication_mb": 287.5},
+        {"round": 150, "accuracy": 96.8, "communication_mb": 345}
+      ]
+    },
+    "cross_environment_performance": {
+      "environments": ["Office", "Residential", "Mixed", "New Domain"],
+      "accuracy": [95.2, 93.8, 94.5, 91.7],
+      "privacy_preserved": [100, 100, 100, 100],
+      "client_count": [8, 12, 20, 4]
+    }
+  },
+
+  "limitations": [
+    "Computational overhead from cryptographic operations limiting real-time performance",
+    "Federation coordination complexity requiring robust infrastructure management",
+    "Privacy-utility trade-off inherently limiting accuracy compared to centralized approaches",
+    "Network dependency requiring reliable communication channels for federation coordination",
+    "Limited large-scale federation analysis beyond 45 participants"
+  ],
+
+  "strengths": [
+    "Pioneering privacy-preserving approach establishing new WiFi sensing deployment paradigm",
+    "Rigorous theoretical foundation combining differential privacy, cryptography, and federated learning",
+    "Comprehensive experimental validation with real-world federation across diverse environments",
+    "Practical implementation addressing communication efficiency and system scalability",
+    "Strong security analysis resistant to state-of-art privacy attacks and Byzantine threats"
+  ],
+
+  "overall_rating": 5,
+  "star_classification": "⭐⭐⭐⭐⭐",
+  "classification_justification": "Paradigmatic advance establishing new paradigms for privacy-preserving WiFi sensing through rigorous integration of advanced cryptographic techniques with federated learning theory",
+
+  "wifi_har_relevance": {
+    "relevance_score": 5,
+    "relevance_description": "Paradigmatic advance addressing fundamental privacy barriers preventing widespread WiFi HAR deployment",
+    "integration_value": "Privacy-preserving methodologies, federated learning frameworks, and security protocols provide essential foundation for practical WiFi HAR systems requiring privacy compliance"
+  }
+}

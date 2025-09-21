@@ -1,0 +1,97 @@
+{
+  "paper_id": "034",
+  "title": "WiFi CSI gesture recognition based on parallel LSTM-FCN deep space-time neural network",
+  "authors": ["Yongsen Ma", "Gang Zhou", "Shuangquan Wang", "Hongyang Zhao", "Woosub Jung"],
+  "publication_year": 2020,
+  "venue": "IEEE Internet of Things Journal",
+  "star_rating": 4,
+  "technical_category": "Deep Learning Architecture",
+  "research_focus": "Parallel LSTM-FCN Integration",
+
+  "key_metrics": {
+    "overall_accuracy": 97.8,
+    "parallel_architecture_improvement": 15.0,
+    "lstm_branch_accuracy": 92.5,
+    "fcn_branch_accuracy": 94.2,
+    "fusion_accuracy": 97.8,
+    "gesture_types": 11,
+    "participants": 6,
+    "data_samples": 3300
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "Parallel LSTM-FCN architecture for WiFi CSI gesture recognition",
+    "architectural_design": "Dual-branch network with temporal and spatial feature extraction",
+    "fusion_strategy": "Late fusion of LSTM and FCN predictions",
+    "feature_representation": "Complementary temporal-spatial feature learning",
+    "deep_learning_advancement": "Novel architecture combining recurrent and convolutional networks"
+  },
+
+  "experimental_setup": {
+    "participants": 6,
+    "gesture_types": 11,
+    "data_samples": 3300,
+    "environments": 2,
+    "hardware": "Intel 5300 NIC",
+    "validation_method": "Cross-user evaluation",
+    "network_architecture": "Parallel LSTM-FCN with fusion layer"
+  },
+
+  "performance_comparison": {
+    "single_lstm_accuracy": 92.5,
+    "single_fcn_accuracy": 94.2,
+    "parallel_fusion_accuracy": 97.8,
+    "improvement_over_baselines": 15.0,
+    "cross_user_consistency": "Maintained performance across participants"
+  },
+
+  "reproducibility": {
+    "score": 8.2,
+    "network_architecture": "detailed parallel design specifications",
+    "training_methodology": "comprehensive training protocols",
+    "evaluation_metrics": "clear performance assessment",
+    "missing_elements": ["source code availability"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "Novel parallel architecture for WiFi gesture recognition",
+    "practical_significance": "Superior accuracy through complementary feature fusion",
+    "technical_advancement": "Advancement in deep learning architectures for WiFi sensing",
+    "citation_importance": "High - architectural innovation in deep learning"
+  },
+
+  "limitations": [
+    "Limited to 11 gesture types",
+    "Small participant pool (6 users)",
+    "Indoor environment evaluation only",
+    "Increased computational complexity with parallel processing"
+  ],
+
+  "future_directions": [
+    "Extended gesture vocabulary support",
+    "Larger participant validation",
+    "Real-time optimization for parallel processing",
+    "Cross-environment evaluation",
+    "Advanced fusion strategies",
+    "Attention mechanism integration"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Deep Learning Architectures",
+      "Parallel Network Design",
+      "Feature Fusion Strategies",
+      "Temporal-Spatial Analysis"
+    ],
+    "citation_context": "Parallel deep learning architecture benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "source_language": "Chinese",
+    "extracted_from": "034_WiFi_CSI_Gesture_Recognition_Parallel_LSTM_FCN_20250916.md",
+    "analysis_completeness": "comprehensive data extraction",
+    "validation_level": "4-star analysis protocol"
+  }
+}

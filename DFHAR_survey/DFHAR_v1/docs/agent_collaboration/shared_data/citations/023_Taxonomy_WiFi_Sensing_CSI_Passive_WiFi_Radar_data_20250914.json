@@ -1,0 +1,233 @@
+{
+  "paper_id": "113",
+  "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+  "authors": ["W. Li", "M. J. Bocus", "C. Tang", "S. Vishwakarma", "R. J. Piechocki", "K. Woodbridge", "K. Chetty"],
+  "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+  "year": 2020,
+  "doi": "10.1109/GCWkshps50303.2020.9367546",
+  "isbn": "978-1-7281-7307-8",
+  "impact_factor": "N/A - Workshop Paper",
+  "star_rating": 4,
+  "classification": "High-Value Paper",
+
+  "technical_contributions": {
+    "taxonomic_framework": {
+      "description": "First comprehensive comparative study between CSI and PWR systems",
+      "novelty_score": 5,
+      "impact": "Establishes foundational understanding of two distinct WiFi sensing paradigms"
+    },
+    "dual_system_methodology": {
+      "description": "Simultaneous CSI and PWR measurement framework with synchronized data collection",
+      "novelty_score": 4,
+      "key_features": ["Synchronized measurements", "Comparative analysis", "Multi-layout validation"]
+    },
+    "geometric_sensitivity_analysis": {
+      "description": "Comprehensive evaluation across LoS, bistatic, and monostatic configurations",
+      "novelty_score": 4,
+      "performance_insights": "CSI optimal in LoS (90%), PWR optimal in monostatic (91.3%)"
+    },
+    "advanced_signal_processing": {
+      "description": "Optimized processing pipelines for both CSI and PWR approaches",
+      "novelty_score": 3,
+      "efficiency": "90% complexity reduction through PCA dimension reduction"
+    }
+  },
+
+  "mathematical_framework": {
+    "ofdm_signal_model": {
+      "transmitted_signal": "x(t) = (1/√N) Σ(n=1 to N) an*e^(j2π(n/Ts)t)",
+      "received_signal": "y(t) = Σp Ap*e^(j2πfdt)*x(t-τ) + n(t)",
+      "csi_calculation": "H(fc,t) = Y(fc,t)/X(fc,t)"
+    },
+    "csi_processing_pipeline": {
+      "dwt_denoising": "Multi-level wavelet decomposition with adaptive thresholding",
+      "pca_reduction": "90k → 5 components (90% complexity reduction)",
+      "stft_generation": "X(t,k) = Σ(n=-∞ to ∞) x[n]w[n-t]e^(-jkn)"
+    },
+    "pwr_processing_pipeline": {
+      "cross_ambiguity_function": "CAF(τ,fd) = ∫[0 to Ti] x(t)y*(t-τ)e^(j2πfdt)dt",
+      "clean_algorithm": "CAFk(τ̂,f̂d) = CAFk(τ,fd) - αk*CAFself(τ-Tk,fd)",
+      "cfar_threshold": "Λ = (1/(Nτ·Nfd)) ΣΣ CAF(τi,fdj)"
+    }
+  },
+
+  "experimental_validation": {
+    "dataset_characteristics": {
+      "participants": 5,
+      "age_groups": "Diverse age ranges",
+      "activities": 6,
+      "activity_list": ["walking", "sitting", "standing from chair", "laying down", "standing from floor", "picking up"],
+      "total_samples": 1122,
+      "monitoring_area": "3m × 3m",
+      "testing_positions": 9,
+      "position_separation": "1.5m",
+      "window_length": "4 seconds"
+    },
+    "layout_configurations": {
+      "layout_1_los": {
+        "geometry": "Forward scatter (Line-of-Sight)",
+        "transmitter_target_receiver_angle": "~180°",
+        "csi_accuracy": "90%",
+        "pwr_accuracy": "60%"
+      },
+      "layout_2_bistatic": {
+        "geometry": "Bistatic configuration",
+        "transmitter_target_receiver_angle": "~90°",
+        "csi_accuracy": "~70%",
+        "pwr_accuracy": "~70%"
+      },
+      "layout_3_monostatic": {
+        "geometry": "Monostatic configuration",
+        "transmitter_target_receiver_angle": "<45°",
+        "csi_accuracy": "62%",
+        "pwr_accuracy": "91.3%"
+      }
+    },
+    "hardware_setup": {
+      "csi_system": "Intel 5300 Network Interface Card",
+      "pwr_system": "USRP-2921 Software-Defined Radio",
+      "frequency_band": "2.4 GHz",
+      "channel_separation": "Different channels to avoid interference",
+      "csi_packet_rate": "1 kHz pinging rate",
+      "pwr_operation": "Receive-only mode"
+    }
+  },
+
+  "performance_metrics": {
+    "overall_accuracy": {
+      "csi_system": "67.3%",
+      "pwr_system": "66.7%",
+      "combined_performance": "Similar overall performance with complementary strengths"
+    },
+    "activity_specific_performance": {
+      "walking": {
+        "csi_accuracy": ">90%",
+        "pwr_accuracy": ">90%",
+        "reason": "Highest Doppler frequency signatures"
+      },
+      "picking_up": {
+        "csi_accuracy": ">70%",
+        "pwr_accuracy": ">70%",
+        "reason": "Complex multi-phase movement patterns"
+      },
+      "static_transitions": {
+        "performance": "Moderate",
+        "challenge": "Subtle Doppler signatures in sitting/standing transitions"
+      }
+    },
+    "geometric_sensitivity": {
+      "csi_los_advantage": "Optimal channel estimation in direct path",
+      "pwr_nlos_advantage": "Superior bistatic and monostatic performance",
+      "complementary_coverage": "CSI + PWR fusion potential for robust sensing"
+    }
+  },
+
+  "innovation_assessment": {
+    "novelty_score": 4,
+    "theoretical_rigor": 4,
+    "practical_impact": 5,
+    "reproducibility": 4,
+    "significance": 4,
+    "overall_score": 4.2,
+
+    "breakthrough_aspects": [
+      "First comprehensive CSI vs PWR comparative study",
+      "Simultaneous dual-system measurement methodology",
+      "Geometric layout optimization framework",
+      "Taxonomic foundation for WiFi sensing research",
+      "Clear deployment guidance for system selection"
+    ]
+  },
+
+  "limitations": [
+    "Limited to six basic activities; complex gestures unexplored",
+    "Single-user scenarios only; multi-person sensing not addressed",
+    "Indoor environment focus; outdoor validation needed",
+    "Hardware-specific implementation (Intel 5300, USRP-2921)",
+    "No real-time processing optimization analysis"
+  ],
+
+  "strengths": [
+    "Foundational taxonomic contribution to WiFi sensing",
+    "Comprehensive multi-layout geometric validation",
+    "Simultaneous comparative measurement methodology",
+    "Clear practical deployment guidance",
+    "Complementary system performance characterization",
+    "Advanced signal processing pipeline optimization"
+  ],
+
+  "future_directions": [
+    "Multi-person spatial separation techniques",
+    "Complex gesture recognition integration",
+    "Cross-environment generalization studies",
+    "Real-time edge computing implementation",
+    "Hybrid CSI-PWR fusion architectures",
+    "Integration with upcoming IEEE 802.11bf standards"
+  ],
+
+  "reproducibility": {
+    "code_availability": false,
+    "dataset_availability": false,
+    "implementation_details": "Comprehensive methodology provided",
+    "parameter_specifications": "Detailed processing pipeline parameters",
+    "experimental_setup": "Complete hardware and geometric configuration described"
+  },
+
+  "plotting_data": {
+    "layout_performance_comparison": {
+      "layouts": ["Layout 1 (LoS)", "Layout 2 (Bistatic)", "Layout 3 (Monostatic)"],
+      "csi_accuracy": [90, 70, 62],
+      "pwr_accuracy": [60, 70, 91.3],
+      "combined_accuracy": [67.3, 66.7, 67.3]
+    },
+    "activity_recognition_performance": {
+      "activities": ["Walking", "Sitting", "Standing from Chair", "Laying", "Standing from Floor", "Picking Up"],
+      "csi_accuracy": [94, 67, 45, 77, 50, 71],
+      "pwr_accuracy": [91, 52, 65, 48, 67, 77]
+    },
+    "system_characteristics": {
+      "csi_features": ["Preamble-based", "Fine-grained subcarrier", "LoS optimal", "Channel estimation"],
+      "pwr_features": ["Entire signal", "Range-Doppler", "NLoS optimal", "Radar processing"],
+      "complementary_strengths": ["Geometric coverage", "Feature types", "Processing approaches", "Application domains"]
+    }
+  },
+
+  "research_impact": {
+    "immediate_applications": [
+      "WiFi sensing system selection guidance",
+      "Geometric deployment optimization",
+      "Comparative benchmarking standards",
+      "Signal processing pipeline reference"
+    ],
+    "long_term_significance": [
+      "Taxonomic foundation for WiFi sensing research",
+      "Hybrid system architecture development",
+      "IEEE 802.11bf standard integration guidance",
+      "Multi-modal sensing fusion frameworks"
+    ],
+    "cross_domain_applicability": [
+      "Other wireless sensing modalities (Bluetooth, ZigBee)",
+      "Passive radar applications (5G, LoRa sensing)",
+      "Multi-system fusion architectures",
+      "Edge computing wireless sensing"
+    ]
+  },
+
+  "editorial_appeal": {
+    "importance": 5,
+    "rigor": 4,
+    "innovation": 4,
+    "clarity": 4,
+    "impact": 5,
+    "timeliness": 4,
+    "overall_score": 4.3,
+
+    "strengths": [
+      "First comprehensive comparative study addressing critical research gap",
+      "Foundational taxonomic contribution with immediate practical value",
+      "Rigorous multi-layout experimental validation",
+      "Clear deployment guidance for WiFi sensing practitioners",
+      "Essential reference for upcoming IEEE 802.11bf sensing standards"
+    ]
+  }
+}

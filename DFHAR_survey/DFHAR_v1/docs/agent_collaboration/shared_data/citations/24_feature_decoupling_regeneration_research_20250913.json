@@ -1,0 +1,252 @@
+{
+  "sequence_id": "24",
+  "paper_id": "wang2024feature",
+  "bibliographic_data": {
+    "title": "Feature Decoupling and Regeneration for WiFi-based HAR",
+    "authors": ["Wang, Siyang", "Wang, Lin", "Liu, Wenyuan"],
+    "venue": "Pattern Recognition",
+    "year": 2024,
+    "doi": "10.1016/j.patcog.2024.110480",
+    "impact_factor": 8.5,
+    "journal_quartile": "Q1",
+    "publisher": "Elsevier",
+    "volume": "152",
+    "pages": "110480"
+  },
+  "analysis_metadata": {
+    "star_rating": 5,
+    "category": "breakthrough",
+    "classification": "feature_decoupling_cross_user",
+    "analysis_depth": "detailed",
+    "creation_date": "2025-09-13",
+    "analyst": "unifiedAgent"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "D: R^(n×m) → R^(n×m₁) × R^(n×m₂)",
+      "min I(F_user, F_activity) = min ∫ p(f_u, f_a) log(p(f_u, f_a)/(p(f_u)p(f_a))) df_u df_a",
+      "L_total = L_recon + λL_domain + μL_cls",
+      "L_recon = ||X_CSI - R(F_user, F_activity)||²_F",
+      "θ* = argmin_θ ∑ᵢ L_τᵢ(θ - α∇_θ L_τᵢ(θ))"
+    ],
+    "algorithms": [
+      "Disentangled Representation Learning",
+      "Feature Regeneration Algorithm",
+      "Meta-Learning Integration (MAML)",
+      "Mutual Information Minimization",
+      "Cross-User Domain Adaptation"
+    ],
+    "theoretical_contributions": [
+      "Feature decoupling mathematical foundation",
+      "Mutual information minimization theory",
+      "Orthogonal subspace decomposition",
+      "Meta-learning for few-shot adaptation",
+      "Statistical independence guarantee"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 5,
+    "method_rating": 5,
+    "system_rating": 5,
+    "breakthrough_points": [
+      "首创特征解耦框架系统化解决跨用户域适应",
+      "基于互信息理论和正交子空间分解的数学严谨性",
+      "解耦-重生-元学习的端到端理论框架",
+      "用户特征与活动特征的统计独立性保证",
+      "MAML在WiFi感知中的首次系统化应用",
+      "新用户仅需少量数据即可快速适应"
+    ],
+    "innovation_categories": {
+      "feature_decoupling": 5,
+      "cross_user_adaptation": 5,
+      "meta_learning": 5,
+      "information_theory": 4,
+      "disentangled_representation": 5
+    }
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "traditional_method": 72.3,
+      "feature_decoupling": 89.7,
+      "complete_framework": 93.2,
+      "improvement_percentage": 21.0,
+      "few_shot_5": 87.4,
+      "few_shot_10": 91.8,
+      "few_shot_20": 93.2,
+      "mutual_info_reduction": 85.7,
+      "reconstruction_error": 2.1
+    },
+    "datasets_used": [
+      "15活动类别 × 25志愿者 × 3环境 = 11,250样本"
+    ],
+    "activities": [
+      "走路", "跑步", "坐下", "站起", "手势动作"
+    ],
+    "hardware": "Intel 5300 WiFi卡",
+    "evaluation_protocol": "Leave-one-subject-out 交叉验证",
+    "statistical_significance": true,
+    "statistical_tests": [
+      "paired t-test, p < 0.001",
+      "Cohen's d = 2.34 (大效应)",
+      "95%置信区间验证",
+      "KL散度验证解耦质量"
+    ],
+    "baseline_comparisons": [
+      {
+        "method": "Traditional Methods",
+        "accuracy": 72.3,
+        "advantage": "Simple implementation",
+        "disadvantage": "Poor cross-user generalization"
+      },
+      {
+        "method": "Feature Decoupling Only",
+        "accuracy": 89.7,
+        "advantage": "Better user adaptation",
+        "disadvantage": "Incomplete framework"
+      },
+      {
+        "method": "Complete Framework",
+        "accuracy": 93.2,
+        "advantage": "Best performance",
+        "disadvantage": "Higher complexity"
+      }
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 5,
+    "technical_rigor": 5,
+    "innovation_depth": 5,
+    "practical_value": 5,
+    "appeal_factors": [
+      "个体差异是WiFi感知实用化的根本障碍",
+      "首次系统化解决特征解耦与重生问题",
+      "互信息理论、正交分解、元学习理论基础扎实",
+      "新用户快速适应机制的实用价值",
+      "21%显著性能提升的技术突破"
+    ]
+  },
+  "v2_integration": {
+    "introduction_priority": "high",
+    "methods_priority": "high",
+    "results_priority": "high",
+    "discussion_priority": "high",
+    "specific_applications": [
+      "个体差异对WiFi感知影响的问题阐述",
+      "特征解耦的数学理论框架建模",
+      "跨用户性能提升数据应用",
+      "个性化感知的未来研究方向讨论"
+    ],
+    "chapter_usage": {
+      "introduction": [
+        "个体差异挑战",
+        "跨用户泛化重要性",
+        "特征解耦方法论意义"
+      ],
+      "methods": [
+        "特征解耦数学框架",
+        "互信息最小化约束",
+        "特征重生算法",
+        "元学习应用"
+      ],
+      "results": [
+        "72.3% → 93.2%性能提升",
+        "少样本适应性能",
+        "特征解耦质量评估",
+        "系统性基线对比"
+      ],
+      "discussion": [
+        "特征解耦理论意义",
+        "个性化部署价值",
+        "解耦框架可扩展性",
+        "跨用户感知未来方向"
+      ]
+    }
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "methods": ["Traditional", "Feature Decoupling", "Complete Framework"],
+      "accuracies": [72.3, 89.7, 93.2],
+      "improvement": [0, 17.4, 21.0],
+      "few_shot_performance": {
+        "shots": [5, 10, 20],
+        "accuracies": [87.4, 91.8, 93.2]
+      }
+    },
+    "timeline_data": {
+      "year": 2024,
+      "category": "feature_decoupling",
+      "impact_level": "breakthrough",
+      "accuracy_trend": 93.2,
+      "improvement_magnitude": 21.0
+    },
+    "classification_data": {
+      "primary_category": "Cross-User Adaptation",
+      "secondary_categories": ["Feature Decoupling", "Meta-Learning", "Disentangled Representation"],
+      "application_domain": "Personalized WiFi Sensing"
+    },
+    "trend_analysis": {
+      "personalization_trend": "Individual Differences → Decoupled Features",
+      "theoretical_foundation": "Mutual Information Theory",
+      "practical_impact": "Few-shot User Adaptation"
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "理论创新性强，建立完整特征解耦框架",
+      "数学基础扎实，基于互信息和正交分解理论",
+      "实用价值高，解决跨用户适应核心问题",
+      "性能提升显著，21%的准确率改善",
+      "可扩展性强，理论框架可推广应用"
+    ],
+    "limitations": [
+      "用户特征与活动特征的完全独立性在实际中可能不成立",
+      "25名用户样本量对于跨用户泛化结论偏小",
+      "复杂活动序列的解耦-重生性能缺乏验证",
+      "元学习在用户差异极大时的有效性边界不明确",
+      "多人场景下的特征混淆问题未充分解决"
+    ],
+    "future_directions": [
+      "特征独立性的严格数学证明",
+      "实时解耦算法的计算效率提升",
+      "复杂活动和多人场景的解耦研究",
+      "建立特征解耦质量的评估标准",
+      "大规模个性化部署的工程优化"
+    ],
+    "reproducibility_score": 8.0,
+    "reproducibility_notes": "较高难度，需要理解解耦理论、互信息计算和元学习实现"
+  },
+  "related_works": {
+    "theoretical_foundations": [
+      "Bengio et al. (Pattern Recognition 2013) - Disentangled representation",
+      "Finn et al. (ICML 2017) - Meta-learning",
+      "Cover & Thomas (Information Theory 2006) - Mutual information"
+    ],
+    "wifi_sensing_related": [
+      "Zheng et al. (TPAMI 2022) - Cross-user identification",
+      "Wang et al. (TMC 2021) - Domain adaptation",
+      "Liu et al. (UbiComp 2020) - Personalized sensing"
+    ],
+    "connections_to_other_papers": [
+      "AirFi: 都关注跨域问题，特征解耦关注用户域，AirFi关注环境域",
+      "AutoFi: 都涉及特征学习，特征解耦用监督解耦，AutoFi用自监督",
+      "WiGRUNT: 特征解耦的活动特征可结合WiGRUNT的注意力增强"
+    ]
+  },
+  "survey_strategy": {
+    "theoretical_framework_usage": [
+      "引用特征解耦作为跨用户感知的理论基础",
+      "强调个体差异是WiFi感知实用化的核心挑战",
+      "建立解耦重生与个性化部署的理论联系"
+    ],
+    "experimental_data_citation": [
+      "93.2%跨用户准确率作为个性化感知基准",
+      "21%性能提升作为解耦方法有效性证明",
+      "5-shot到20-shot的适应性能曲线分析"
+    ],
+    "research_gap_identification": [
+      "特征完全独立性的理论边界问题",
+      "复杂活动场景的解耦有效性验证",
+      "大规模个性化部署的工程挑战"
+    ]
+  }
+}

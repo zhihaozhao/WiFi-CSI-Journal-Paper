@@ -1,0 +1,60 @@
+{
+  "paper_id": "wang2022airfi",
+  "citation_key": "wang2022airfi",
+  "title": "AirFi: Empowering WiFi-based Passive Human Gesture Recognition to Unseen Environment via Domain Generalization",
+  "authors": ["Wang, Dazhuo", "Yang, Jianfei", "Cui, Wei", "Xie, Lihua", "Sun, Sumei"],
+  "publication_info": {
+    "journal": "IEEE Transactions on Mobile Computing",
+    "conference": "",
+    "year": 2024,
+    "volume": "23",
+    "pages": "1156-1168",
+    "doi": "10.1109/TMC.2022.3230665",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 9.2,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "PDF available in references",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "Domain Generalization for WiFi Gesture Recognition",
+    "methodology": "Domain generalization techniques for environment adaptation",
+    "key_contributions": [
+      "Novel domain generalization framework for WiFi sensing",
+      "Environment-invariant gesture recognition",
+      "Unseen environment adaptation capability",
+      "Cross-domain robustness enhancement"
+    ],
+    "experimental_setup": "Multi-environment gesture recognition validation",
+    "datasets_used": ["Multi-environment WiFi gesture datasets"],
+    "performance_metrics": {},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 5,
+    "chapter_mapping": ["domain_generalization", "cross_environment", "gesture_recognition", "robustness"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Domain generalization framework", "Environment adaptation method"],
+    "mathematical_models": [],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": ["Cross-environment generalization", "Domain shift robustness"],
+    "proposed_solutions": ["Advanced domain generalization", "Environment-invariant features"],
+    "research_gaps": ["Limited multi-domain validation", "Real-world scalability"],
+    "potential_experiments": ["Multi-domain generalization", "Real-world deployment validation"]
+  },
+  "notes": "Key domain generalization work - directly relevant to cross-environment challenges identified in coordination framework",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

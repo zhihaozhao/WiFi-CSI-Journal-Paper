@@ -1,0 +1,103 @@
+{
+  "paper_id": "029",
+  "title": "Towards Anti-Interference Human Activity Recognition Based on WiFi Subcarrier Correlation Selection",
+  "authors": ["Zheng Yang", "Yi Zhao", "Guidong Zhang", "Yue Zhang", "Xuanzhi Wang", "Yunhao Liu"],
+  "publication_year": 2021,
+  "venue": "IEEE Transactions on Vehicular Technology",
+  "star_rating": 4,
+  "technical_category": "Anti-Interference Systems",
+  "research_focus": "Interference-Robust WiFi Activity Recognition",
+
+  "key_metrics": {
+    "constant_cci_accuracy": 95.165,
+    "varying_cci_accuracy": 94.125,
+    "baseline_improvement_range": [8.0, 14.0],
+    "processing_time_overhead": 0.3,
+    "non_cci_baseline_accuracy": 96.1,
+    "dataset_samples_per_scenario": 1620,
+    "activity_types": 4,
+    "participants": 6
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "WiAnti - First systematic anti-interference approach for WiFi HAR",
+    "cci_detection": "Packet-based detection: |Pm - Pm-1|/Pm-1 < σ (σ = 0.1)",
+    "cci_classification": "Variability assessment: |Pm - P̄|/P̄ < ξ (ξ = 0.07)",
+    "correlation_algorithms": [
+      "Pearson-based subcarrier selection for constant CCI",
+      "DTW-based subcarrier selection for varying CCI"
+    ],
+    "information_theory_foundation": "Joint entropy maximization: E(q,w) = E(q) + E(w) - ψ(q;w)",
+    "computational_complexity": "O(N²L) for Pearson-based approach"
+  },
+
+  "experimental_setup": {
+    "scenarios": 3,
+    "scenario_types": ["Non-CCI", "Constant CCI", "Varying CCI"],
+    "participants": 6,
+    "activities": 4,
+    "repetitions_per_activity": 54,
+    "total_samples_per_scenario": 1620,
+    "hardware_platforms": ["Intel 5300 NIC", "Atheros 9580 NIC"],
+    "environment_size": "6.1m × 4m controlled laboratory"
+  },
+
+  "performance_comparison": {
+    "constant_cci_improvement": 13.675,
+    "varying_cci_improvement": 8.0,
+    "baseline_methods": ["WiFall-2", "WiHear", "E-eyes"],
+    "cross_hardware_consistency": "Similar performance across WiFi chipsets",
+    "processing_efficiency": "Sub-second recognition with 0.3s overhead"
+  },
+
+  "reproducibility": {
+    "score": 7.8,
+    "methodology_documentation": "detailed three-stage architecture",
+    "algorithm_specifications": "complete mathematical formulations",
+    "threshold_parameters": "empirically validated (σ = 0.1, ξ = 0.07)",
+    "missing_elements": ["source code", "interference dataset"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "First systematic approach to WiFi HAR interference handling",
+    "practical_significance": "Addresses critical real-world deployment challenge",
+    "technical_advancement": "Correlation-based selection over traditional fusion",
+    "citation_importance": "High - fundamental interference mitigation work"
+  },
+
+  "limitations": [
+    "Limited to 4 basic activities",
+    "Single controlled laboratory environment",
+    "Hardware dependency on CSI extraction capabilities",
+    "Computational overhead with DTW algorithm"
+  ],
+
+  "future_directions": [
+    "Extended activity recognition to complex gestures",
+    "Multi-environment validation",
+    "Deep learning integration",
+    "Real-time optimization",
+    "Adaptive correlation metrics",
+    "Machine learning-driven interference recognition",
+    "Multi-modal sensing integration",
+    "Edge computing deployment"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Interference Mitigation Techniques",
+      "Subcarrier Analysis Methods",
+      "Real-World Deployment Challenges",
+      "Performance Optimization Strategies"
+    ],
+    "citation_context": "Anti-interference WiFi HAR benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "agents_involved": ["literature-analuzerAgent", "experimentAgent", "technicalAgent"],
+    "analysis_completeness": "comprehensive 4-star analysis",
+    "validation_level": "extensive experimental validation"
+  }
+}

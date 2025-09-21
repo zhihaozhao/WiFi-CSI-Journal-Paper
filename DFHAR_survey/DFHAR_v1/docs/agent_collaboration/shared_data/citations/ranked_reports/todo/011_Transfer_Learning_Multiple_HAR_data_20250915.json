@@ -1,0 +1,99 @@
+{
+  "paper_id": "011",
+  "title": "Leveraging Transfer Learning in Multiple Human Activity Recognition Using WiFi Signal",
+  "authors": ["Arshad, Sheheryar", "Feng, Chunhai", "Yu, Ruiyun", "Liu, Yonghe"],
+  "venue": "IEEE International Conference on Communications (ICC)",
+  "year": 2019,
+  "doi": "10.1109/ICC.2019.8761270",
+  "star_rating": "★★★★★",
+  "category": "technical_innovation",
+  "key_contributions": {
+    "technical_innovations": [
+      "First-time combination of packet-level classification and image transformation with transfer learning for multi-person HAR",
+      "Novel Abnormal Environment Detection (AED) algorithm using MIMO subcarrier variance",
+      "CSI-to-image transformation methodology for spatial-temporal correlation capture",
+      "Deep CNN (d-CNN) and Inferred CNN (i-CNN) architectures for WiFi sensing"
+    ],
+    "algorithmic_advances": [
+      "Aggregated subcarrier variance algorithm for activity detection",
+      "Multi-stage filtering for false alarm reduction",
+      "Transfer learning from Inception V3 to WiFi sensing domain",
+      "15-layer deep CNN architecture with batch normalization"
+    ],
+    "performance_improvements": {
+      "single_link_accuracy": "96.7%",
+      "multiple_link_accuracy": "99.1%",
+      "training_epochs_reduction": "80%",
+      "false_alarm_reduction": "97% AED accuracy"
+    }
+  },
+  "experimental_data": {
+    "datasets": ["Custom multi-person dataset (1764 total samples)", "9 activity combinations", "Single and multiple person scenarios"],
+    "performance_metrics": {
+      "accuracy_single_link": "96.7% (i-CNN), 91.9% (d-CNN)",
+      "accuracy_multiple_link": "99.1% (i-CNN), 95.0% (d-CNN)",
+      "precision": "Activity-specific: 86.5%-100%",
+      "recall": "Activity-specific: 77.4%-100%",
+      "f1_score": "Not explicitly reported"
+    },
+    "computational_metrics": {
+      "training_epochs": "300 epochs (i-CNN), 300 epochs (d-CNN)",
+      "model_architecture": "15-layer d-CNN, Inception V3 transfer learning",
+      "sampling_rate": "80 packets/s",
+      "image_size": "32×32×3"
+    }
+  },
+  "mathematical_models": {
+    "equations": [
+      "Y(i,j) = H(i,j) * X(i,j) + N(i,j)",
+      "H̃(i,j) = Y(i,j)/X(i,j) = |H̃(i,j)|e^(jH̃(i,j))",
+      "ωp = (νp - μp)/σp",
+      "zp = {1 if ωp ≥ τth, 0 otherwise}",
+      "sp = Σ(p+ε to p-ε) zp",
+      "ΔWi(t+1) = -λWi/r - x/n * ∂c/∂Wi + mΔWi(t)",
+      "Δbi(t+1) = -x/n * ∂c/∂bi + mΔbi(t)"
+    ],
+    "algorithms": ["Abnormal Environment Detection (AED)", "CSI-to-Image transformation", "Transfer learning fine-tuning", "Deep CNN optimization"],
+    "optimization_methods": ["Nadam optimizer", "Batch normalization", "Transfer learning", "Multi-stage filtering"]
+  },
+  "architectural_details": {
+    "network_architecture": "15-layer deep CNN with transfer learning from Inception V3",
+    "system_components": ["CSI Collection Module", "CSI-to-Image Transformation", "Deep Learning Module", "Transfer Learning Module", "Activity Classification Module"],
+    "integration_methods": ["Packet-level processing", "Image transformation", "Fine-tuning", "Multi-link aggregation"]
+  },
+  "plotting_data": {
+    "performance_comparison": {
+      "method": "TL-HAR (i-CNN)",
+      "accuracy": 96.7,
+      "baseline_d_cnn": 91.9,
+      "baseline_machine_learning": 93.7,
+      "improvement": 4.8
+    },
+    "timeline_data": {
+      "year": 2019,
+      "venue": "IEEE ICC",
+      "impact_factor": 5.2
+    },
+    "category_distribution": {
+      "type": "Transfer Learning + Deep Learning",
+      "subfield": "Multi-person Activity Recognition"
+    },
+    "venue_analysis": {
+      "venue": "IEEE ICC",
+      "tier": "Q1",
+      "acceptance_rate": "Low"
+    }
+  },
+  "v2_paper_relevance": {
+    "applicable_chapters": ["Transfer Learning Methods", "Multi-person Recognition", "Deep Learning Architectures", "CSI Processing Techniques"],
+    "figure_generation_notes": "Excellent for transfer learning performance comparison, multi-person recognition accuracy analysis, and training efficiency comparison",
+    "comparison_baseline": true
+  },
+  "technical_significance": {
+    "novelty_score": 9,
+    "impact_potential": "High",
+    "reproducibility": "Good - detailed experimental setup",
+    "limitations": ["Limited to 9 activity types", "Indoor environment only", "Requires significant training data"],
+    "future_directions": ["Real-time implementation", "Larger scale multi-person scenarios", "Cross-domain generalization"]
+  }
+}

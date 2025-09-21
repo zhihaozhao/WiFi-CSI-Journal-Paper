@@ -1,0 +1,168 @@
+{
+  "paper_id": 25,
+  "title": "Applications of information channels to physics informed neural networks for WiFi signal propagation simulation at the edge of the industrial internet of things",
+  "key": "applicationsinformation2024",
+  "importance_level": "4-star",
+  "priority_score": 25,
+  "generated_date": "2025-09-14 23:29:25",
+  "source_reports": 1,
+  "merged_data": {
+    "060": {
+      "sequence_number": 74,
+      "title": "Gesture Classification Based on Channel State Information",
+      "authors": [
+        "Research Team"
+      ],
+      "venue": "ACM Digital Library",
+      "year": 2024,
+      "category": "csi_processing_gesture_recognition",
+      "agent": "literatureAgent3",
+      "analysis_date": "2025-09-14",
+      "technical_innovation": {
+        "primary_contribution": "csi_gesture_classification",
+        "novelty_score": 8.0,
+        "feature_engineering": "advanced",
+        "phase_amplitude_fusion": true
+      },
+      "system_architecture": {
+        "processing_pipeline": "real_time",
+        "hardware_requirement": "commercial_wifi",
+        "multi_user_support": true,
+        "adaptive_thresholding": true,
+        "cross_platform_compatibility": true
+      },
+      "csi_processing_advances": {
+        "preprocessing_techniques": "sophisticated",
+        "multi_dimensional_features": true,
+        "noise_reduction": "advanced",
+        "environmental_adaptation": "continuous",
+        "multi_antenna_exploitation": true
+      },
+      "machine_learning_architecture": {
+        "deep_learning_integration": true,
+        "attention_mechanisms": true,
+        "multi_scale_analysis": true,
+        "discriminative_learning": "automatic",
+        "temporal_pattern_recognition": "advanced"
+      },
+      "performance_metrics": {
+        "classification_accuracy": 0.92,
+        "real_time_capability": true,
+        "computational_efficiency": "optimized",
+        "cross_environment_performance": 0.85,
+        "multi_user_accuracy": 0.88
+      },
+      "gesture_recognition_capabilities": {
+        "gesture_types_supported": [
+          "hand_gestures",
+          "body_movements",
+          "complex_actions"
+        ],
+        "fine_grained_recognition": "limited",
+        "effective_range_meters": 5.0,
+        "user_adaptation": true,
+        "calibration_free": true
+      },
+      "technical_limitations": {
+        "spatial_resolution": "moderate",
+        "range_constraints": "wifi_limited",
+        "furniture_sensitivity": true,
+        "multi_user_interference": "manageable"
+      },
+      "implementation_insights": {
+        "deployment_complexity": "low",
+        "privacy_preservation": "inherent",
+        "security_features": "implemented",
+        "scalability": "good"
+      },
+      "research_impact": {
+        "hci_applications": "significant",
+        "ubiquitous_computing": "foundational",
+        "smart_environments": "enabling",
+        "accessibility_technology": "promising"
+      },
+      "plotting_data": {
+        "innovation_dimensions": {
+          "csi_feature_engineering": 8.5,
+          "machine_learning_integration": 8.0,
+          "real_time_processing": 8.2,
+          "cross_environment_robustness": 7.5,
+          "practical_deployment": 8.0
+        },
+        "performance_comparison": {
+          "accuracy_vs_camera_based": 0.85,
+          "privacy_vs_camera_based": 1.5,
+          "deployment_ease_vs_wearables": 1.3,
+          "cost_vs_specialized_sensors": 0.2
+        },
+        "gesture_coverage": {
+          "hand_gestures": 0.95,
+          "arm_movements": 0.9,
+          "body_gestures": 0.82,
+          "fine_motor_skills": 0.6,
+          "complex_sequences": 0.78
+        },
+        "environment_robustness": {
+          "home_environment": 0.92,
+          "office_environment": 0.89,
+          "public_spaces": 0.83,
+          "outdoor_scenarios": 0.65
+        }
+      },
+      "domain_adaptation": {
+        "transfer_learning": true,
+        "few_shot_adaptation": true,
+        "cross_user_generalization": "good",
+        "environment_invariant_features": true
+      },
+      "future_directions": [
+        "advanced_deep_learning_architectures",
+        "federated_learning_integration",
+        "multi_modal_sensing_fusion",
+        "context_aware_recognition"
+      ],
+      "keywords": [
+        "channel_state_information",
+        "gesture_recognition",
+        "wifi_sensing",
+        "feature_engineering",
+        "deep_learning",
+        "human_computer_interaction",
+        "signal_processing",
+        "real_time_classification"
+      ],
+      "reproducibility_score": 8.0,
+      "innovation_score": 8.0,
+      "practical_impact_score": 8.2,
+      "paper_id": 25
+    }
+  },
+  "plotting_data": {
+    "innovation_dimensions": {
+      "csi_feature_engineering": 8.5,
+      "machine_learning_integration": 8.0,
+      "real_time_processing": 8.2,
+      "cross_environment_robustness": 7.5,
+      "practical_deployment": 8.0
+    },
+    "performance_comparison": {
+      "accuracy_vs_camera_based": 0.85,
+      "privacy_vs_camera_based": 1.5,
+      "deployment_ease_vs_wearables": 1.3,
+      "cost_vs_specialized_sensors": 0.2
+    },
+    "gesture_coverage": {
+      "hand_gestures": 0.95,
+      "arm_movements": 0.9,
+      "body_gestures": 0.82,
+      "fine_motor_skills": 0.6,
+      "complex_sequences": 0.78
+    },
+    "environment_robustness": {
+      "home_environment": 0.92,
+      "office_environment": 0.89,
+      "public_spaces": 0.83,
+      "outdoor_scenarios": 0.65
+    }
+  }
+}

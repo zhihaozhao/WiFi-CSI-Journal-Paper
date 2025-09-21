@@ -1,0 +1,24 @@
+{
+  "paper_number": 9,
+  "pdf_file": "D:\\workspace_PHD\\WiFi-CSI-Project\\Journal-Paper\\DFHAR_survey\\DFHAR_v1\\docs\\refs\\external\\Enabling fine-grained finger gesture recognition on commodity wifi devices.pdf",
+  "pdf_name": "Enabling fine-grained finger gesture recognition on commodity wifi devices.pdf",
+  "safe_name": "Enabling_fine_grained_finger_gesture_recognition_on_commodit",
+  "file_size_mb": 4.327055931091309,
+  "technical_focus": "WiFi CSI-based Human Activity Recognition",
+  "segments": [
+    {
+      "part": 1,
+      "sections": "Abstract + Introduction + Methodology",
+      "expected_content": "Problem, approach, technical details",
+      "output_file": "044_009_Enabling_fine_grained_finger_gesture_recognition_on_commodit_front_half_20250916.md"
+    },
+    {
+      "part": 2,
+      "sections": "Results + Discussion + Conclusion",
+      "expected_content": "Experiments, results, analysis, conclusion",
+      "output_file": "044_009_Enabling_fine_grained_finger_gesture_recognition_on_commodit_back_half_20250916.md"
+    }
+  ],
+  "total_parts": 2,
+  "analysis_strategy": "simplified"
+}

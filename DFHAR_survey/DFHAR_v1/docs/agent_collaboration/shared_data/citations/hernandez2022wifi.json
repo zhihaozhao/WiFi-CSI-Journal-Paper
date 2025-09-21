@@ -1,0 +1,60 @@
+{
+  "paper_id": "hernandez2022wifi",
+  "citation_key": "hernandez2022wifi",
+  "title": "Wifi sensing on the edge: Signal processing techniques and challenges for real-world systems",
+  "authors": ["Hernandez, Steven M", "Bulut, Eyuphan"],
+  "publication_info": {
+    "journal": "IEEE Communications Surveys & Tutorials",
+    "conference": "",
+    "year": 2022,
+    "volume": "24",
+    "pages": "999-1026",
+    "doi": "10.1109/COMST.2022.3150392",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 54.52,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified via IEEE",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "WiFi Sensing Signal Processing",
+    "methodology": "Comprehensive survey on edge processing and real-world challenges",
+    "key_contributions": [
+      "Systematic analysis of WiFi sensing signal processing",
+      "Edge computing integration strategies",
+      "Real-world deployment challenges identification",
+      "Future research directions for practical systems"
+    ],
+    "experimental_setup": "Survey methodology with focus on practical implementation",
+    "datasets_used": ["Analysis of multiple WiFi sensing studies"],
+    "performance_metrics": {},
+    "limitations": ["Survey nature - no original experimental validation"]
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 4,
+    "chapter_mapping": ["signal_processing", "edge_computing", "real_world_challenges", "practical_deployment"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Edge processing techniques", "Real-world optimization methods"],
+    "mathematical_models": [],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": ["Real-world deployment complexity", "Edge computing constraints", "Signal processing optimization"],
+    "proposed_solutions": ["Advanced edge algorithms", "Efficient processing techniques"],
+    "research_gaps": ["Limited practical validation", "Edge-cloud integration"],
+    "potential_experiments": ["Real-world edge deployment", "Edge-cloud hybrid systems"]
+  },
+  "notes": "Highest impact factor paper (54.52) in collection - critical for understanding practical deployment challenges and signal processing innovations",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

@@ -1,0 +1,212 @@
+{
+  "sequence_number": 52,
+  "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+  "authors": ["W. Li", "M. J. Bocus", "C. Tang", "S. Vishwakarma", "R. J. Piechocki", "K. Woodbridge", "K. Chetty"],
+  "venue": "IEEE GLOBECOM Workshops (GC Wkshps)",
+  "year": 2020,
+  "pages": "1-6",
+  "doi": "10.1109/GCWkshps50303.2020.9367546",
+  "paper_type": "Workshop Conference Paper",
+  "domain": "Device-Free Human Activity Recognition (DFHAR), WiFi Sensing, Comparative Analysis",
+  "star_rating": 4,
+  "rating_justification": "IEEE workshop providing first comprehensive CSI vs PWR comparison, rigorous synchronized measurements, valuable system selection insights",
+
+  "innovation_scores": {
+    "comparative_analysis": 9,
+    "multi_geometric_evaluation": 8,
+    "system_mechanism_clarification": 7,
+    "experimental_methodology": 8,
+    "practical_deployment_insights": 8
+  },
+
+  "technical_contributions": [
+    "First comprehensive CSI vs Passive WiFi Radar comparison study",
+    "Synchronized dual-system measurement methodology",
+    "Multi-layout geometric performance analysis (LoS, bistatic, monostatic)",
+    "Comprehensive WiFi sensing system taxonomy framework",
+    "Geometry-dependent performance insights for practical deployment"
+  ],
+
+  "key_algorithms": [
+    "CSI processing: DWT denoising + PCA + STFT",
+    "PWR processing: Cross Ambiguity Function (CAF)",
+    "CLEAN algorithm for direct signal cancellation",
+    "Constant False Alarm Rate (CFAR) for noise reduction",
+    "2D Convolutional Neural Network for classification"
+  ],
+
+  "performance_metrics": {
+    "csi_overall_accuracy": 0.673,
+    "pwr_overall_accuracy": 0.667,
+    "csi_best_layout_accuracy": 0.90,
+    "pwr_best_layout_accuracy": 0.913,
+    "walking_activity_accuracy": ">0.90",
+    "picking_activity_accuracy": ">0.70",
+    "total_data_samples": 1122
+  },
+
+  "experimental_setup": {
+    "monitoring_area": "3m x 3m",
+    "frequency_band": "2.4 GHz",
+    "csi_hardware": "Intel 5300 Network Interface Card",
+    "pwr_hardware": "USRP-2921 Software-Defined Radio",
+    "participants": 5,
+    "age_groups": "Different age groups",
+    "positions_tested": 9,
+    "position_separation": "1.5m"
+  },
+
+  "activity_classes": [
+    "Walking",
+    "Sitting",
+    "Standing from chair",
+    "Laying down",
+    "Standing from floor",
+    "Picking up small items"
+  ],
+
+  "geometric_layouts": [
+    {
+      "layout": 1,
+      "type": "Forward scatter (Line-of-Sight)",
+      "angle": "~180 degrees",
+      "csi_accuracy": 0.90,
+      "pwr_accuracy": 0.60,
+      "description": "Transmitter-object-receiver alignment"
+    },
+    {
+      "layout": 2,
+      "type": "Bistatic",
+      "angle": "~90 degrees",
+      "csi_accuracy": 0.70,
+      "pwr_accuracy": 0.70,
+      "description": "Spatially separated transmitter and receiver"
+    },
+    {
+      "layout": 3,
+      "type": "Monostatic",
+      "angle": "<45 degrees",
+      "csi_accuracy": 0.62,
+      "pwr_accuracy": 0.913,
+      "description": "Co-located transmitter and receiver"
+    }
+  ],
+
+  "mathematical_framework": {
+    "ofdm_signal": "x(t) = (1/√N) Σ an*e^(j2π/Ts*nt)",
+    "csi_calculation": "H(fc,t) = Y(fc,t)/X(fc,t)",
+    "caf_function": "CAF(τ,fd) = ∫ x(t)*y*(t-τ)*e^(j2πfd*t)dt",
+    "stft_transform": "X(t,k) = Σ x[n]*w[n-t]*e^(-jkn)"
+  },
+
+  "system_differences": {
+    "csi_characteristics": {
+      "signal_usage": "Preamble only",
+      "processing_level": "Subcarrier level (30 subcarriers)",
+      "data_rate": "90k complex values per second",
+      "direction_detection": "No",
+      "best_geometry": "Line-of-Sight"
+    },
+    "pwr_characteristics": {
+      "signal_usage": "Entire WiFi signal",
+      "processing_level": "Whole OFDM symbol",
+      "integration_time": "1 second",
+      "direction_detection": "Yes",
+      "best_geometry": "Monostatic"
+    }
+  },
+
+  "strengths": [
+    "First comprehensive comparison between CSI and PWR systems",
+    "Rigorous synchronized dual-system measurement methodology",
+    "Multi-geometric configuration analysis",
+    "Detailed working mechanism explanations",
+    "Clear practical deployment guidelines",
+    "Comprehensive activity class evaluation"
+  ],
+
+  "limitations": [
+    "Limited to six activity classes",
+    "Controlled indoor environment only",
+    "Small participant group (5 volunteers)",
+    "Both systems achieve <70% combined accuracy",
+    "Limited computational complexity analysis",
+    "No hybrid system evaluation"
+  ],
+
+  "survey_relevance": {
+    "comparative_analysis_framework": "High",
+    "geometric_performance_analysis": "High",
+    "system_taxonomy": "High",
+    "hybrid_system_foundation": "High",
+    "practical_deployment_guidelines": "High"
+  },
+
+  "spectrogram_analysis": {
+    "csi_characteristics": [
+      "Similar Doppler signatures across activities",
+      "Strong pulses across entire frequency range",
+      "High frequency = fast torso movements",
+      "Low frequency = limb movements",
+      "Cannot determine direction"
+    ],
+    "pwr_characteristics": [
+      "Varied Doppler profiles (sinusoidal waves)",
+      "Can show velocity and direction",
+      "Positive Doppler = upward movement",
+      "Negative Doppler = downward movement",
+      "Clear activity differentiation"
+    ]
+  },
+
+  "future_research_directions": [
+    "Development of multiple channel systems",
+    "Hybrid CSI+PWR system evaluation",
+    "Expanded activity recognition classes",
+    "Cross-environment validation",
+    "Real-time processing optimization",
+    "Computational complexity analysis"
+  ],
+
+  "plotting_data": {
+    "accuracy_by_layout": {
+      "layouts": ["Layout 1 (LoS)", "Layout 2 (Bistatic)", "Layout 3 (Monostatic)", "Combined"],
+      "csi_accuracy": [0.90, 0.70, 0.62, 0.673],
+      "pwr_accuracy": [0.60, 0.70, 0.913, 0.667]
+    },
+    "activity_performance": {
+      "activities": ["Walking", "Sitting", "Standing Chair", "Laying", "Standing Floor", "Picking"],
+      "csi_accuracy": [0.94, 0.67, 0.45, 0.77, 0.50, 0.71],
+      "pwr_accuracy": [0.91, 0.52, 0.65, 0.48, 0.67, 0.77]
+    },
+    "system_characteristics": {
+      "metrics": ["Data Rate", "Processing Complexity", "Direction Detection", "Range Resolution"],
+      "csi_values": [90000, "High", 0, "N/A"],
+      "pwr_values": [20000000, "Medium", 1, "7.5m-1.875m"]
+    }
+  },
+
+  "key_insights": [
+    "CSI excels in Line-of-Sight configurations",
+    "PWR performs better in bistatic/monostatic setups",
+    "Both systems achieve similar overall accuracy",
+    "Walking activity achieves highest recognition rates",
+    "Geometry significantly impacts system performance",
+    "Hybrid approaches could leverage complementary strengths"
+  ],
+
+  "impact_assessment": {
+    "immediate_impact": "High - essential guidance for WiFi sensing system selection",
+    "long_term_significance": "High - foundation for hybrid sensing systems",
+    "reproducibility": "High - detailed experimental methodology provided",
+    "citation_potential": "High - addresses fundamental comparative question"
+  },
+
+  "agent_metadata": {
+    "analyzed_by": "literatureAgent1",
+    "analysis_date": "2025-09-14",
+    "analysis_depth": "Comprehensive",
+    "confidence_level": "High",
+    "word_count": 1398
+  }
+}

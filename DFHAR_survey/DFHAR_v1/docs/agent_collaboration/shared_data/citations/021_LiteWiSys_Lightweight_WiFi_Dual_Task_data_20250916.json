@@ -1,0 +1,188 @@
+{
+  "paper_id": "021",
+  "paper_title": "LiteWiSys: A Lightweight System for WiFi-based Dual-task Action Perception",
+  "star_rating": 4,
+  "venue": "ACM Transactions on Sensor Networks",
+  "publication_year": 2024,
+  "doi": "10.1145/3632177",
+
+  "algorithmic_innovations": {
+    "primary_contributions": [
+      {
+        "innovation": "Dynamic Sub-carrier Compression Algorithm",
+        "novelty_level": "high",
+        "technical_details": {
+          "attention_mechanism": "Modified SENet with channel-wise relationships",
+          "mathematical_formulation": "W = Sigmoid(ReLU(FC(MEAN(D, 2)))) · ones(1,T)",
+          "compression_ratio": "C to C/n reduction",
+          "advantage": "Eliminates empirical threshold dependency"
+        }
+      },
+      {
+        "innovation": "Lightweight Multi-scale Backbone",
+        "novelty_level": "moderate-high",
+        "technical_details": {
+          "architecture": "Depthwise separable convolution + channel shuffle",
+          "parameter_reduction": "45% (2.2M to 1.2M parameters)",
+          "flops_reduction": "30% (27.4M to 19.3M FLOPs)",
+          "multi_scale_kernels": [3, 5, 7]
+        }
+      },
+      {
+        "innovation": "Dual-task Learning Framework",
+        "novelty_level": "high",
+        "technical_details": {
+          "architecture": "Shared backbone with split branches",
+          "joint_loss": "L = L1 + λL2 (regression + classification)",
+          "first_approach": "First end-to-end dual-task WiFi sensing system"
+        }
+      }
+    ]
+  },
+
+  "experimental_validation": {
+    "datasets": {
+      "S1": {
+        "samples": 1080,
+        "activities": 12,
+        "volunteers": 6,
+        "orientations": "multiple",
+        "accuracy": "94%",
+        "iou": "84%"
+      },
+      "S2": {
+        "samples": 360,
+        "activities": 12,
+        "volunteers": 6,
+        "orientations": "single",
+        "accuracy": "94%",
+        "iou": "88%"
+      },
+      "S3": {
+        "samples": 1394,
+        "activities": 6,
+        "source": "public dataset",
+        "accuracy": "93%",
+        "iou": "87%"
+      }
+    },
+
+    "performance_metrics": {
+      "parameters": "1.2M",
+      "flops": "19.3M (average)",
+      "accuracy_range": "93-94%",
+      "iou_range": "84-88%",
+      "training_test_split": "8:2"
+    },
+
+    "comparative_analysis": {
+      "vs_sliding_window": {
+        "accuracy_improvement": "15-29%",
+        "iou_improvement": "5-23%"
+      },
+      "vs_unet": {
+        "accuracy_improvement": "6-25%",
+        "parameter_reduction": "77%",
+        "flops_reduction": "87%"
+      },
+      "vs_deepseg": {
+        "accuracy_improvement": "1-7%",
+        "iou_improvement": "5-15%",
+        "parameter_reduction": "55%",
+        "flops_reduction": "99%"
+      },
+      "vs_lightweight_models": {
+        "shufflenetv2": "Comparable accuracy, 48% fewer parameters",
+        "mobilenetv3": "Superior performance, 52% fewer parameters",
+        "ghostnet": "Better accuracy, 69% fewer parameters"
+      }
+    }
+  },
+
+  "ablation_studies": {
+    "multi_scale_kernels": {
+      "kernel_3_only": "Lower performance than multi-scale",
+      "kernel_5_only": "Lower performance than multi-scale",
+      "kernel_7_only": "Lower performance than multi-scale",
+      "multi_scale": "Superior performance across all datasets"
+    },
+
+    "lightweight_design": {
+      "baseline": {"accuracy": "95%", "iou": "85%", "params": "2.2M", "flops": "27.4M"},
+      "separable_conv": {"accuracy": "92%", "iou": "82%", "params": "1.2M", "flops": "19.3M"},
+      "channel_shuffle": {"accuracy": "94%", "iou": "84%", "params": "1.2M", "flops": "19.3M"}
+    },
+
+    "dual_task_impact": {
+      "without_detection_branch": {"accuracy": "92%", "iou": "N/A"},
+      "without_classification_branch": {"accuracy": "N/A", "iou": "85%"},
+      "full_dual_task": {"accuracy": "94%", "iou": "84%"}
+    },
+
+    "sub_carrier_compression": {
+      "top_30_correlation": "Lower performance than proposed method",
+      "pca_30_components": "Lower performance than proposed method",
+      "proposed_attention": "Superior performance on all datasets"
+    }
+  },
+
+  "technical_breakthrough_assessment": {
+    "paradigm_shift": "significant_advance",
+    "innovation_category": "architectural_and_methodological",
+    "practical_impact": "high",
+    "computational_efficiency": {
+      "parameter_efficiency": "1.2M parameters (77% reduction vs UNet)",
+      "computational_efficiency": "19.3M FLOPs (87% reduction vs UNet)",
+      "real_time_capability": "Yes"
+    }
+  },
+
+  "experimental_robustness": {
+    "orientation_invariance": "Tested across 3 orientations, minimal performance impact",
+    "user_diversity": "6 volunteers, consistent performance across users",
+    "parameter_sensitivity": {
+      "balance_factor_lambda": "Robust across λ = [0.5, 1.0, 2.0]",
+      "channel_split_ratio": "Minimal impact across different ratios"
+    },
+    "environmental_testing": "Multiple indoor scenarios (lab, meeting room)"
+  },
+
+  "limitations_identified": [
+    "Limited to IEEE 802.11n standard (3×30 sub-carriers)",
+    "User diversity limited to 6 volunteers",
+    "Environmental testing restricted to indoor scenarios",
+    "Fixed multi-scale kernel sizes (3, 5, 7) without adaptive selection",
+    "Manual balance factor tuning despite claimed robustness"
+  ],
+
+  "reproducibility_assessment": {
+    "implementation_details": "comprehensive",
+    "experimental_setup": "well_documented",
+    "statistical_significance": "not_reported",
+    "code_availability": "not_mentioned",
+    "dataset_availability": "partial (S3 public, S1/S2 private)"
+  },
+
+  "technical_validation": {
+    "mathematical_soundness": "verified",
+    "architectural_novelty": "confirmed",
+    "experimental_rigor": "adequate",
+    "performance_claims": "validated",
+    "efficiency_gains": "substantial"
+  },
+
+  "future_research_implications": [
+    "Establishes dual-task paradigm for WiFi sensing",
+    "Demonstrates feasibility of lightweight WiFi sensing systems",
+    "Provides framework for attention-based sub-carrier selection",
+    "Opens path for real-time WiFi-based action recognition"
+  ],
+
+  "overall_assessment": {
+    "technical_contribution": "high",
+    "experimental_validation": "adequate",
+    "practical_significance": "high",
+    "innovation_level": "significant",
+    "reproducibility": "moderate"
+  }
+}

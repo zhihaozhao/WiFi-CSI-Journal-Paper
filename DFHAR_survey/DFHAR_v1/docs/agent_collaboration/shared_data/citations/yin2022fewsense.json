@@ -1,0 +1,60 @@
+{
+  "paper_id": "yin2022fewsense",
+  "citation_key": "yin2022fewsense",
+  "title": "FewSense: Towards a Scalable and Cross-Domain Wi-Fi Sensing System Using Few-Shot Learning",
+  "authors": ["Yin, Guolin", "Zhang, Junqing", "Shen, Guanxiong", "Chen, Yingying"],
+  "publication_info": {
+    "journal": "IEEE Transactions on Mobile Computing",
+    "conference": "",
+    "year": 2024,
+    "volume": "23",
+    "pages": "180-194",
+    "doi": "10.1109/TMC.2022.3221902",
+    "publisher": "IEEE"
+  },
+  "quality_metrics": {
+    "impact_factor": 9.2,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "PDF available in references",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "Few-Shot Cross-Domain WiFi Sensing",
+    "methodology": "Few-shot learning framework for cross-domain adaptation",
+    "key_contributions": [
+      "Scalable few-shot learning framework",
+      "Cross-domain WiFi sensing capability",
+      "93.9% accuracy on SignFi dataset",
+      "Reduced labeled data requirements"
+    ],
+    "experimental_setup": "Few-shot learning validation across multiple domains",
+    "datasets_used": ["SignFi", "Widar", "Wiar datasets"],
+    "performance_metrics": {"signfi_accuracy": 0.939},
+    "limitations": []
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 5,
+    "chapter_mapping": ["few_shot_learning", "cross_domain", "scalability", "data_efficiency"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Few-shot learning framework", "Cross-domain adaptation"],
+    "mathematical_models": [],
+    "experimental_results": {"signfi_accuracy": 93.9, "cross_domain_validated": true}
+  },
+  "future_directions": {
+    "identified_challenges": ["Limited labeled data", "Cross-domain generalization", "Scalability"],
+    "proposed_solutions": ["Few-shot learning", "Domain adaptation", "Efficient learning"],
+    "research_gaps": ["Real-world few-shot validation", "Multi-modal few-shot learning"],
+    "potential_experiments": ["Enhanced few-shot methods", "Multi-domain few-shot validation"]
+  },
+  "notes": "Critical few-shot learning work achieving 93.9% accuracy - directly aligned with data-efficient learning experimental directions",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

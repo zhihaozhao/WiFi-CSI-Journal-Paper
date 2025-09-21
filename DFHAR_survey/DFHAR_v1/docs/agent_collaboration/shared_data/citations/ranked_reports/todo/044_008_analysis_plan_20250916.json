@@ -1,0 +1,36 @@
+{
+  "paper_number": 8,
+  "pdf_file": "D:\\workspace_PHD\\WiFi-CSI-Project\\Journal-Paper\\DFHAR_survey\\DFHAR_v1\\docs\\refs\\external\\DeepCSI- Rethinking Wi-Fi Radio Fingerprinting Through MU-MIMO CSI Feedback Deep Learning.pdf",
+  "pdf_name": "DeepCSI- Rethinking Wi-Fi Radio Fingerprinting Through MU-MIMO CSI Feedback Deep Learning.pdf",
+  "safe_name": "DeepCSI__Rethinking_Wi_Fi_Radio_Fingerprinting_Through_MU_MI",
+  "file_size_mb": 9.203991889953613,
+  "technical_focus": "WiFi Signal Processing",
+  "segments": [
+    {
+      "part": 1,
+      "sections": "Abstract + Introduction",
+      "expected_content": "Problem statement, motivation, contributions, related work",
+      "output_file": "044_008_DeepCSI__Rethinking_Wi_Fi_Radio_Fingerprinting_Through_MU_MI_abstract_intro_20250916.md"
+    },
+    {
+      "part": 2,
+      "sections": "Methodology + System Design",
+      "expected_content": "Technical approach, architecture, algorithms, implementation",
+      "output_file": "044_008_DeepCSI__Rethinking_Wi_Fi_Radio_Fingerprinting_Through_MU_MI_methodology_20250916.md"
+    },
+    {
+      "part": 3,
+      "sections": "Experiments + Results",
+      "expected_content": "Experimental setup, datasets, performance evaluation, results",
+      "output_file": "044_008_DeepCSI__Rethinking_Wi_Fi_Radio_Fingerprinting_Through_MU_MI_experiments_results_20250916.md"
+    },
+    {
+      "part": 4,
+      "sections": "Discussion + Conclusion",
+      "expected_content": "Analysis, limitations, future work, conclusion, references",
+      "output_file": "044_008_DeepCSI__Rethinking_Wi_Fi_Radio_Fingerprinting_Through_MU_MI_discussion_conclusion_20250916.md"
+    }
+  ],
+  "total_parts": 4,
+  "analysis_strategy": "segmented"
+}

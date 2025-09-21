@@ -1,0 +1,72 @@
+{
+  "paper_id": "chen2023crossdomain",
+  "citation_key": "chen2023crossdomain",
+  "title": "Cross-Domain WiFi Sensing with Channel State Information: A Survey",
+  "authors": ["Chen, Chen", "Zhou, Gang", "Lin, Youfang"],
+  "publication_info": {
+    "journal": "ACM Computing Surveys",
+    "conference": "",
+    "year": 2023,
+    "volume": "56",
+    "pages": "1-37",
+    "doi": "10.1145/3570325",
+    "publisher": "ACM"
+  },
+  "quality_metrics": {
+    "impact_factor": 16.6,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified via ACM DL",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "Cross-Domain WiFi CSI Sensing",
+    "methodology": "Comprehensive survey of cross-domain challenges and solutions",
+    "key_contributions": [
+      "Systematic categorization of cross-domain challenges",
+      "Comprehensive analysis of domain adaptation techniques",
+      "Survey of generalization methods in WiFi sensing",
+      "Future research directions identification"
+    ],
+    "experimental_setup": "Survey methodology with systematic literature review",
+    "datasets_used": ["Analysis of multiple WiFi CSI datasets"],
+    "performance_metrics": {},
+    "limitations": ["Survey nature - no original experimental results"]
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 4,
+    "chapter_mapping": ["cross_domain_adaptation", "generalization", "survey_methodology", "future_directions"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Domain adaptation methods", "Generalization techniques"],
+    "mathematical_models": [],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": ["Cross-environment generalization", "Domain shift problems", "Limited labeled data"],
+    "proposed_solutions": ["Advanced domain adaptation", "Few-shot learning", "Self-supervised approaches"],
+    "research_gaps": ["Real-world deployment challenges", "Multi-domain scenarios"],
+    "potential_experiments": ["Cross-environment validation", "Domain generalization benchmarks"]
+  },
+  "journal_specific_analysis": {
+    "pattern_recognition_relevance": 8,
+    "mathematical_rigor": 8,
+    "experimental_standard": 7,
+    "novelty_contribution": 7,
+    "reproducibility": true
+  },
+  "target_journal_fit": {
+    "pattern_recognition": 0.85,
+    "ieee_sensors": 0.7,
+    "computer_networks": 0.8
+  },
+  "notes": "Critical survey paper from top-tier journal - essential reference for cross-domain analysis in DFHAR framework. HIGH Pattern Recognition fit due to systematic theoretical framework for domain adaptation.",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

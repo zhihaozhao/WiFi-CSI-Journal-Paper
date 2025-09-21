@@ -1,0 +1,17 @@
+literature_name,paper_id,priority_level,dfhar_relevance,year,journal,impact_factor,verification_status,analysis_status
+chen2024wiphase.json,chen2024wiphase,5,5,2024,IEEE Transactions on Mobile Computing,9.2,verified,completed
+yang2023sensefi.json,yang2023sensefi,5,5,2023,Patterns,1.527,verified,completed
+chen2023crossdomain.json,chen2023crossdomain,5,5,2023,ACM Computing Surveys,16.6,verified,completed
+zhang2023imgfi.json,zhang2023imgfi,5,5,2023,IEEE Sensors Journal,4.3,verified,completed
+yang2022efficientfi.json,yang2022efficientfi,5,5,2022,IEEE Internet of Things Journal,10.6,verified,completed
+hernandez2022wifi.json,hernandez2022wifi,5,5,2022,IEEE Communications Surveys & Tutorials,54.52,verified,completed
+wang2022airfi.json,wang2022airfi,5,5,2024,IEEE Transactions on Mobile Computing,9.2,verified,completed
+yin2022fewsense.json,yin2022fewsense,5,5,2024,IEEE Transactions on Mobile Computing,9.2,verified,completed
+chen2024wisor.json,chen2024wisor,5,5,2024,IEEE Transactions on Human-Machine Systems,3.5,verified,completed
+xu2025evaluating.json,xu2025evaluating,5,5,2025,ACM Transactions on Sensor Networks,4.1,verified,completed
+alrashdi2024efficient.json,alrashdi2024efficient,4,4,2024,ACM Conference,0.0,pending,pending
+dang2023human.json,dang2023human,4,4,2023,Sensors,3.9,pending,pending
+malekzadeh2023human.json,malekzadeh2023human,4,4,2023,Digital Signal Processing,2.9,pending,pending
+damodaran2022device.json,damodaran2022device,3,3,2022,Smart Cities,0.0,pending,pending
+lee2021csi.json,lee2021csi,4,4,2021,Sensors,3.9,pending,pending
+yang2021framework.json,yang2021framework,3,3,2021,International Journal of Antennas and Propagation,0.0,pending,pending

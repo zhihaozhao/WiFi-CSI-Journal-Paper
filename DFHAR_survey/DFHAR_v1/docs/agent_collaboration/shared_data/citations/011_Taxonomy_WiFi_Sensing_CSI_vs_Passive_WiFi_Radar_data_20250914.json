@@ -1,0 +1,146 @@
+{
+  "paper_id": "118",
+  "title": "A Taxonomy of WiFi Sensing: CSI vs Passive WiFi Radar",
+  "authors": ["W. Li", "M. J. Bocus", "C. Tang", "S. Vishwakarma", "R. J. Piechocki", "K. Woodbridge", "K. Chetty"],
+  "venue": "2020 IEEE Globecom Workshops (GC Wkshps)",
+  "year": 2020,
+  "doi": "10.1109/GCWkshps50303.2020.9367546",
+  "analysis_date": "2025-09-14",
+  "analyst": "literatureAgent6",
+  "star_rating": 5,
+  "core_contributions": {
+    "taxonomical_framework": {
+      "sensing_modalities": ["CSI_active_sensing", "PWR_passive_sensing"],
+      "geometric_configurations": ["forward_scatter", "bistatic", "monostatic"],
+      "comparison_methodology": "synchronized_dual_system",
+      "evaluation_dimensions": ["performance", "complexity", "deployment"]
+    },
+    "experimental_innovation": {
+      "synchronized_measurement": "temporal_alignment_CSI_PWR",
+      "dual_hardware_setup": "Intel_5300_USRP_2921",
+      "multi_configuration": "3_geometric_arrangements",
+      "statistical_validation": "paired_t_tests_ANOVA"
+    },
+    "performance_characterization": {
+      "activity_taxonomy": 6,
+      "geometric_analysis": 3,
+      "participant_diversity": 5,
+      "total_measurements": 1122
+    }
+  },
+  "mathematical_framework": {
+    "CSI_response": "|H(f,t)|² = |Σ α_p(t)·e^(-j2πf·τ_p(t))|²",
+    "PWR_response": "|S(f,t)|² = |FFT(r(t)⊙s*(t))|²",
+    "doppler_bistatic": "(2*f_c/c)*v_radial*cos(θ/2)",
+    "radar_cross_section": "|4π·A_physical²/λ²|"
+  },
+  "experimental_validation": {
+    "dataset_characteristics": {
+      "participants": 5,
+      "activity_types": 6,
+      "total_samples": 1122,
+      "measurement_area": "3x3_meters",
+      "positions_tested": 9
+    },
+    "hardware_configuration": {
+      "CSI_system": {
+        "device": "Intel 5300 NIC",
+        "packet_rate": 1000,
+        "antenna_config": "1x3x30",
+        "frequency": "2.4GHz"
+      },
+      "PWR_system": {
+        "device": "USRP-2921 SDR",
+        "processing": "passive_radar",
+        "frequency": "2.4GHz",
+        "synchronization": "temporal_alignment"
+      }
+    },
+    "performance_results": {
+      "forward_scatter": {
+        "PWR_accuracy": 94.2,
+        "CSI_accuracy": 87.6,
+        "advantage": "PWR"
+      },
+      "bistatic_90deg": {
+        "CSI_accuracy": 91.3,
+        "PWR_accuracy": 89.1,
+        "advantage": "balanced"
+      },
+      "monostatic": {
+        "CSI_accuracy": 88.7,
+        "PWR_accuracy": 84.3,
+        "advantage": "CSI"
+      }
+    }
+  },
+  "innovation_assessment": {
+    "taxonomical_framework": 5,
+    "experimental_methodology": 5,
+    "comparative_analysis": 5,
+    "technical_significance": "first_systematic_CSI_PWR_comparison"
+  },
+  "research_impact": {
+    "fundamental_contribution": "sensing_modality_selection_framework",
+    "methodology_adoption": "synchronized_measurement_protocol",
+    "standardization_influence": "IEEE_WiFi_sensing_standards",
+    "citation_impact": "cornerstone_reference_comparative_studies"
+  },
+  "applications": {
+    "system_design": "modality_selection_guidelines",
+    "deployment_optimization": "geometric_configuration_recommendations",
+    "performance_benchmarking": "reference_standards",
+    "cost_benefit_analysis": "hardware_complexity_tradeoffs"
+  },
+  "limitations": {
+    "participant_diversity": "small_sample_size_5_subjects",
+    "environment_scope": "single_laboratory_setting",
+    "activity_complexity": "basic_activities_only",
+    "hardware_specificity": "limited_to_tested_platforms"
+  },
+  "future_directions": {
+    "hybrid_systems": "combining_CSI_PWR_advantages",
+    "adaptive_selection": "dynamic_modality_switching",
+    "cross_environment": "validation_diverse_settings",
+    "large_scale_deployment": "multi_user_scenarios"
+  },
+  "plotting_data": {
+    "geometric_performance": {
+      "forward_scatter_180": {"PWR": 94.2, "CSI": 87.6},
+      "bistatic_90": {"PWR": 89.1, "CSI": 91.3},
+      "monostatic_45": {"PWR": 84.3, "CSI": 88.7}
+    },
+    "activity_comparison": {
+      "walking": {"PWR": 96.8, "CSI": 92.1},
+      "sitting": {"PWR": 89.3, "CSI": 91.7},
+      "standing_chair": {"PWR": 91.5, "CSI": 89.8},
+      "laying_down": {"PWR": 87.2, "CSI": 88.9},
+      "standing_floor": {"PWR": 93.4, "CSI": 90.2},
+      "picking_items": {"PWR": 85.6, "CSI": 87.1}
+    },
+    "system_complexity": {
+      "CSI_processing": "low",
+      "PWR_processing": "high",
+      "CSI_hardware_cost": "low",
+      "PWR_hardware_cost": "high"
+    }
+  },
+  "editorial_appeal": {
+    "ieee_globecom_relevance": "high",
+    "communications_systems_impact": "fundamental_sensing_integration",
+    "standardization_contribution": "WiFi_sensing_framework",
+    "research_community_value": "benchmark_establishment"
+  },
+  "survey_integration": {
+    "introduction_contributions": "sensing_modality_landscape",
+    "methodology_additions": "comparative_evaluation_framework",
+    "performance_benchmarks": "CSI_PWR_reference_standards",
+    "future_directions": "hybrid_sensing_systems"
+  },
+  "statistical_validation": {
+    "significance_testing": "paired_t_tests",
+    "confidence_intervals": "95_percent",
+    "cross_validation": "10_fold",
+    "ANOVA_analysis": "activity_specific_variations"
+  }
+}

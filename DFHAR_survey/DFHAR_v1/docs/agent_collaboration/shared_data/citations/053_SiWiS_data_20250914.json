@@ -1,0 +1,203 @@
+{
+  "paper_id": "94_SiWiS",
+  "agent": "literatureAgent5",
+  "date": "20250914",
+  "sequence_number": 94,
+
+  "basic_info": {
+    "title": "SiWiS: Fine-grained Human Detection Using Single WiFi Device",
+    "authors": ["Kunzhe Song", "Qijun Wang", "Shichen Zhang", "Huacheng Zeng"],
+    "venue": "ACM MobiCom '24",
+    "year": 2024,
+    "pages": "16 pages",
+    "doi": "10.1145/3636534.3690703",
+    "affiliation": "Michigan State University, USA",
+    "paper_type": "Hardware-Software Co-design",
+    "methodology": "Self-mixing RF architecture + Dual-branch DNN"
+  },
+
+  "innovation_metrics": {
+    "novelty_score": 9.5,
+    "technical_depth": 9.0,
+    "practical_impact": 9.5,
+    "theoretical_contribution": 8.5,
+    "experimental_rigor": 9.0,
+    "innovation_type": "Architecture + Hardware",
+    "primary_contribution": "Single-device phase-coherent WiFi sensing"
+  },
+
+  "technical_specifications": {
+    "sensing_approach": "Self-mixing OFDM signals",
+    "hardware_requirements": "Custom RF circuit + patch antennas",
+    "device_count": "Single WiFi device",
+    "frequency_band": "2.4GHz/5GHz WiFi bands",
+    "antenna_configuration": "4 patch antennas + 1 dipole antenna",
+    "rf_components": ["HMC951A mixer", "HMC717A LNA", "RF switch", "ADC", "FPGA"],
+    "signal_processing": "L-LTF based feature extraction",
+    "dnn_architecture": "Dual-branch encoder-decoder",
+    "tasks": ["Human mask segmentation", "Pose estimation"],
+    "attention_mechanisms": ["Self-attention", "Cross-attention"]
+  },
+
+  "performance_data": {
+    "mask_segmentation": {
+      "mAP": 0.4805,
+      "AP@50": 0.9452,
+      "AP@60": 0.8628,
+      "AP@70": 0.5765,
+      "AP@80": 0.1055
+    },
+    "pose_estimation": {
+      "mAP": 0.3469,
+      "AP@50": 0.8423,
+      "AP@60": 0.6595,
+      "AP@70": 0.3626,
+      "AP@80": 0.0816
+    },
+    "comparison_baseline": "Person-in-WiFi",
+    "improvement_mask_mAP": 0.10,
+    "detection_range": "6 meters maximum",
+    "optimal_signal_duration": "1.7+ seconds",
+    "zero_shot_capability": true
+  },
+
+  "dataset_info": {
+    "total_frames": 510894,
+    "environments": 12,
+    "person_count_range": [1, 2, 3, 4],
+    "frame_distribution": {
+      "1_person": 130244,
+      "2_person": 161986,
+      "3_person": 155088,
+      "4_person": 63576
+    },
+    "train_test_split": "80%-20%",
+    "fps": 10,
+    "ground_truth_source": "Synchronized video frames"
+  },
+
+  "key_innovations": [
+    {
+      "innovation": "Single-device WiFi sensing",
+      "description": "First approach to enable fine-grained human detection using single WiFi device",
+      "impact": "Eliminates multi-device setup complexity"
+    },
+    {
+      "innovation": "Self-mixing architecture",
+      "description": "Novel RF design mixing reflective signals with local WiFi copy",
+      "impact": "Achieves phase-coherent sensing without CFO/STO/CPO issues"
+    },
+    {
+      "innovation": "Phase-coherent sensing",
+      "description": "Deterministic relationship between signal phase and object movement",
+      "impact": "Enables sub-centimeter movement detection"
+    },
+    {
+      "innovation": "Zero-shot transferability",
+      "description": "Direct application to unseen environments without retraining",
+      "impact": "Solves critical generalization challenge in WiFi sensing"
+    },
+    {
+      "innovation": "Concurrent dual-task learning",
+      "description": "Simultaneous mask segmentation and pose estimation",
+      "impact": "Comprehensive human detection in single inference"
+    }
+  ],
+
+  "problem_solutions": [
+    {
+      "problem": "Multi-device dependency",
+      "traditional_approach": "Separate TX/RX WiFi devices required",
+      "siwis_solution": "Single device with self-mixing architecture",
+      "benefit": "Simplified deployment and setup"
+    },
+    {
+      "problem": "Phase incoherence",
+      "traditional_approach": "Random phase across packets due to CPO",
+      "siwis_solution": "Co-located TX/RX eliminates phase offsets",
+      "benefit": "Deterministic phase-distance relationship"
+    },
+    {
+      "problem": "Cross-domain generalization",
+      "traditional_approach": "Environment-specific model training",
+      "siwis_solution": "Phase-coherent sensing independent of static objects",
+      "benefit": "Zero-shot deployment in new environments"
+    }
+  ],
+
+  "limitations_challenges": [
+    {
+      "limitation": "Specialized hardware requirement",
+      "impact": "Additional cost compared to pure CSI approaches",
+      "mitigation": "Potential motherboard integration"
+    },
+    {
+      "limitation": "Moving object detection only",
+      "impact": "Cannot detect completely static objects",
+      "mitigation": "Sub-centimeter sensitivity captures subtle movements"
+    },
+    {
+      "limitation": "Antenna count constraints",
+      "impact": "Performance scales with antenna number",
+      "mitigation": "Future research on antenna-person relationship"
+    },
+    {
+      "limitation": "Computational complexity",
+      "impact": "DNN inference overhead",
+      "mitigation": "Cloud offloading via Internet connectivity"
+    }
+  ],
+
+  "practical_deployment": {
+    "installation_complexity": "Low - non-invasive add-on",
+    "infrastructure_requirements": "Single commercial WiFi device",
+    "real_time_capability": true,
+    "scalability": "High - deployable on various WiFi devices",
+    "commercial_readiness": "High - prototype demonstrated",
+    "cost_considerations": "Moderate - custom RF circuit needed"
+  },
+
+  "research_impact": {
+    "paradigm_shift": "Single-device WiFi sensing architecture",
+    "field_advancement": "Solves fundamental WiFi sensing limitations",
+    "future_directions": ["Through-wall sensing", "Hardware integration", "Multi-SiWiS coordination"],
+    "benchmark_setting": "New performance standards for single-device sensing",
+    "commercial_potential": "High - addresses deployment barriers"
+  },
+
+  "plotting_data": {
+    "performance_comparison": {
+      "categories": ["Mask mAP", "Pose mAP", "AP@50 Mask", "AP@50 Pose"],
+      "siwis": [0.4805, 0.3469, 0.9452, 0.8423],
+      "person_in_wifi": [0.3800, 0.0, 0.9100, 0.0],
+      "improvement": [0.1005, 0.3469, 0.0352, 0.8423]
+    },
+    "signal_duration_impact": {
+      "duration_seconds": [0.1, 0.5, 1.0, 1.5, 1.7, 2.0, 2.5],
+      "mask_segmentation_mAP": [0.15, 0.28, 0.38, 0.45, 0.48, 0.48, 0.48],
+      "pose_estimation_mAP": [0.08, 0.18, 0.26, 0.32, 0.35, 0.35, 0.35]
+    },
+    "distance_performance": {
+      "distance_meters": [2, 3, 4, 5, 6],
+      "mask_segmentation_mAP": [0.75, 0.68, 0.58, 0.45, 0.32],
+      "pose_estimation_mAP": [0.65, 0.58, 0.48, 0.35, 0.22]
+    },
+    "zero_shot_environments": {
+      "scenes": ["Indoor A", "Indoor B", "Indoor C", "Outdoor A", "Outdoor B"],
+      "mask_mAP": [0.45, 0.42, 0.47, 0.38, 0.35],
+      "pose_mAP": [0.32, 0.31, 0.33, 0.21, 0.19]
+    },
+    "innovation_radar": {
+      "dimensions": ["Novelty", "Technical Depth", "Practical Impact", "Theoretical", "Experimental", "Transferability"],
+      "scores": [9.5, 9.0, 9.5, 8.5, 9.0, 9.8]
+    }
+  },
+
+  "citation_analysis": {
+    "citation_key": "song2024siwis",
+    "reference_strength": "High",
+    "methodological_influence": "Paradigm-shifting",
+    "comparison_relevance": "Primary baseline for single-device sensing",
+    "integration_potential": "High - complementary to multi-device approaches"
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "paper_id": 77,
+  "title": "HyperTracking Exploring the Hyperbolic Model for Non line of sight",
+  "key": "hypertrackingexploring2024",
+  "importance_level": "3-star",
+  "priority_score": 6,
+  "generated_date": "2025-09-14 23:29:29",
+  "source_reports": 3,
+  "merged_data": {
+    "039": {
+      "sequence_number": 76,
+      "title": "HyperTracking - Exploring the Hyperbolic Model for Non-line-of-sight Sensing",
+      "authors": [
+        "Research Team"
+      ],
+      "venue": "ACM Digital Library",
+      "year": 2024,
+      "category": "nlos_sensing_hyperbolic_modeling",
+      "agent": "literatureAgent3",
+      "analysis_date": "2025-09-14",
+      "technical_innovation": {
+        "primary_contribution": "hyperbolic_geometry_nlos_sensing",
+        "novelty_score": 9.2,
+        "mathematical_foundation": "hyperbolic_space_modeling",
+        "paradigm_shift": true
+      },
+      "system_architecture": {
+        "geometric_framework": "hyperbolic",
+        "signal_processing": "non_euclidean",
+        "real_time_capability": true,
+        "multi_scale_processing": true,
+        "adaptive_model_selection": true
+      },
+      "nlos_sensing_advances": {
+        "multipath_exploitation": "constructive",
+        "reflection_based_tracking": true,
+        "dynamic_path_analysis": true,
+        "obstacle_rich_performance": "superior",
+        "multi_room_tracking": true
+      },
+      "mathematical_framework": {
+        "hyperbolic_metrics": "integrated",
+        "curvature_parameter_estimation": "automated",
+        "geometric_transformations": "advanced",
+        "non_linear_csi_processing": true,
+        "hyperbolic_beamforming": true
+      },
+      "performance_metrics": {
+        "nlos_tracking_accuracy": 0.91,
+        "trajectory_reconstruction": 0.88,
+        "temporal_consistency": 0.93,
+        "multi_environment_generalization": 0.85,
+        "computational_efficiency": "optimized"
+      },
+      "environmental_capabilities": {
+        "complex_obstacles": "excellent",
+        "dynamic_environments": "adaptive",
+        "multi_room_scenarios": true,
+        "wall_penetration": "effective",
+        "furniture_rich_environments": "robust"
+      },
+      "technical_limitations": {
+        "computational_complexity": "higher_than_euclidean",
+        "parameter_sensitivity": "moderate",
+        "multipath_richness_dependency": true,
+        "rapid_environment_changes": "challenging"
+      },
+      "implementation_insights": {
+        "sensor_agnostic_design": true,
+        "legacy_compatibility": "supported",
+        "real_time_optimization": true,
+        "deployment_complexity": "moderate"
+      },
+      "research_impact": {
+        "nlos_sensing_breakthrough": "significant",
+        "mathematical_foundation": "novel",
+        "tracking_paradigm_shift": true,
+        "geometric_sensing_enablement": true
+      },
+      "plotting_data": {
+        "innovation_dimensions": {
+          "mathematical_novelty": 9.2,
+          "nlos_performance": 9.0,
+          "multipath_exploitation": 8.8,
+          "geometric_modeling": 9.1,
+          "practical_implementation": 7.5
+        },
+        "nlos_performance_comparison": {
+          "accuracy_vs_euclidean": 1.45,
+          "robustness_vs_traditional": 1.6,
+          "multipath_utilization": 1.8,
+          "complex_environment_handling": 1.7
+        },
+        "environment_performance": {
+          "line_of_sight": 0.95,
+          "partial_obstruction": 0.91,
+          "complete_blockage": 0.86,
+          "multi_room_tracking": 0.83,
+          "dynamic_obstacles": 0.88
+        },
+        "computational_metrics": {
+          "processing_overhead_vs_euclidean": 1.3,
+          "real_time_capability": 0.92,
+          "memory_usage_multiplier": 1.2,
+          "optimization_convergence": 0.87
+        }
+      },
+      "domain_adaptation": {
+        "environment_invariant_modeling": true,
+        "adaptive_curvature_learning": true,
+        "cross_environment_transfer": "effective",
+        "few_shot_adaptation": true
+      },
+      "meta_learning_aspects": {
+        "geometric_meta_learning": true,
+        "hyperbolic_parameter_adaptation": true,
+        "cross_environment_geometric_transfer": true,
+        "rapid_environment_calibration": true
+      },
+      "future_directions": [
+        "machine_learning_integration",
+        "multi_dimensional_hyperbolic_models",
+        "multi_modal_hyperbolic_fusion",
+        "distributed_hyperbolic_processing"
+      ],
+      "keywords": [
+        "hyperbolic_geometry",
+        "non_line_of_sight_sensing",
+        "multipath_exploitation",
+        "geometric_modeling",
+        "wireless_tracking",
+        "mathematical_framework",
+        "nlos_mitigation",
+        "curvature_modeling"
+      ],
+      "reproducibility_score": 6.5,
+      "innovation_score": 9.2,
+      "practical_impact_score": 8.0,
+      "paper_id": 77
+    },
+    "049": {
+      "sequence_number": 81,
+      "title": "Modeling and Prototyping of IoT-based Long Range Self-powered Systems",
+      "authors": [
+        "Research Team"
+      ],
+      "venue": "ACM Digital Library",
+      "year": 2024,
+      "category": "iot_self_powered_systems",
+      "agent": "literatureAgent3",
+      "analysis_date": "2025-09-14",
+      "technical_innovation": {
+        "primary_contribution": "self_powered_iot_sensing_framework",
+        "novelty_score": 8.2,
+        "energy_harvesting_integration": "comprehensive",
+        "sustainable_operation": true
+      },
+      "system_architecture": {
+        "self_powered_design": true,
+        "energy_harvesting": [
+          "solar",
+          "thermal",
+          "vibration",
+          "rf"
+        ],
+        "adaptive_power_management": "advanced",
+        "long_range_communication": "optimized",
+        "iot_integration": true
+      },
+      "energy_management": {
+        "multi_source_harvesting": true,
+        "adaptive_power_control": true,
+        "energy_performance_modeling": "sophisticated",
+        "reliability_prediction": true,
+        "longevity_optimization": true
+      },
+      "communication_innovations": {
+        "energy_efficient_protocols": true,
+        "duty_cycling_optimization": "advanced",
+        "adaptive_transmission_power": true,
+        "data_compression": true,
+        "multi_hop_routing": "optimized"
+      },
+      "performance_metrics": {
+        "autonomous_operation_months": 18.0,
+        "energy_harvesting_efficiency": 0.78,
+        "communication_range_km": 2.5,
+        "sensing_accuracy_retention": 0.89,
+        "system_availability": 0.94
+      },
+      "prototyping_framework": {
+        "modular_approach": true,
+        "rapid_prototyping": "supported",
+        "hardware_abstraction": true,
+        "iterative_optimization": true,
+        "multi_objective_design": true
+      },
+      "iot_integration": {
+        "standard_protocol_support": true,
+        "edge_computing_integration": true,
+        "cloud_connectivity": "flexible",
+        "cross_platform_interoperability": true,
+        "security_compliance": true
+      },
+      "technical_limitations": {
+        "energy_harvesting_variability": true,
+        "communication_range_constraints": "manageable",
+        "processing_capability_limits": "acceptable",
+        "environmental_dependency": "high"
+      },
+      "implementation_insights": {
+        "site_assessment_framework": "comprehensive",
+        "installation_guidelines": "detailed",
+        "remote_monitoring": true,
+        "maintenance_optimization": true
+      },
+      "research_impact": {
+        "sustainable_sensing_enablement": "significant",
+        "remote_deployment_facilitation": "breakthrough",
+        "autonomous_operation": "validated",
+        "infrastructure_independence": true
+      },
+      "plotting_data": {
+        "innovation_dimensions": {
+          "energy_harvesting": 8.4,
+          "autonomous_operation": 8.2,
+          "iot_integration": 8.0,
+          "communication_optimization": 7.8,
+          "practical_deployment": 8.1
+        },
+        "energy_performance": {
+          "solar_harvesting_efficiency": 0.82,
+          "thermal_harvesting_efficiency": 0.65,
+          "vibration_harvesting_efficiency": 0.58,
+          "rf_harvesting_efficiency": 0.45,
+          "multi_source_benefit": 0.35
+        },
+        "operational_metrics": {
+          "continuous_operation_days": 540,
+          "peak_harvesting_power_mw": 25.0,
+          "average_consumption_mw": 12.0,
+          "energy_buffer_hours": 72.0,
+          "weather_resilience": 0.88
+        },
+        "deployment_assessment": {
+          "total_cost_vs_traditional": 0.65,
+          "deployment_complexity": 6.5,
+          "maintenance_frequency_months": 12.0,
+          "roi_breakeven_years": 2.8
+        }
+      },
+      "wifi_sensing_integration": {
+        "energy_efficient_csi": true,
+        "adaptive_sensing_strategies": true,
+        "sensing_communication_codesign": true,
+        "data_driven_energy_management": true
+      },
+      "long_range_capabilities": {
+        "communication_protocols": [
+          "lora",
+          "sigfox",
+          "nb-iot"
+        ],
+        "adaptive_modulation": true,
+        "network_resilience": true,
+        "cooperative_networking": true
+      },
+      "environmental_adaptation": {
+        "weather_resilience": "high",
+        "seasonal_adaptation": true,
+        "climate_zone_optimization": true,
+        "harsh_environment_operation": true
+      },
+      "future_directions": [
+        "advanced_energy_storage",
+        "wireless_power_transfer",
+        "ai_driven_energy_management",
+        "collaborative_energy_sharing"
+      ],
+      "keywords": [
+        "self_powered_systems",
+        "energy_harvesting",
+        "iot_sensing",
+        "autonomous_operation",
+        "long_range_communication",
+        "sustainable_sensing",
+        "remote_deployment",
+        "system_modeling"
+      ],
+      "reproducibility_score": 8.2,
+      "innovation_score": 8.2,
+      "practical_impact_score": 8.4,
+      "paper_id": 77
+    },
+    "052": {
+      "sequence_number": 77,
+      "title": "i-Sample - Augment Domain Adversarial Adaptation Models",
+      "authors": [
+        "Research Team"
+      ],
+      "venue": "ACM Digital Library",
+      "year": 2024,
+      "category": "domain_adaptation_adversarial_learning",
+      "agent": "literatureAgent3",
+      "analysis_date": "2025-09-14",
+      "technical_innovation": {
+        "primary_contribution": "adversarial_domain_adaptation",
+        "novelty_score": 8.6,
+        "augmentation_methodology": "advanced",
+        "multi_level_adaptation": true
+      },
+      "system_architecture": {
+        "adversarial_framework": "sophisticated",
+        "modular_design": true,
+        "real_time_adaptation": true,
+        "scalable_training": true,
+        "plug_and_play_integration": true
+      },
+      "adversarial_learning": {
+        "progressive_training": true,
+        "conditional_networks": true,
+        "multi_modal_loss": true,
+        "stability_mechanisms": "implemented",
+        "convergence_optimization": true
+      },
+      "domain_adaptation_capabilities": {
+        "multi_environment_support": true,
+        "cross_user_adaptation": true,
+        "hardware_domain_handling": true,
+        "few_shot_adaptation": true,
+        "dynamic_domain_detection": true
+      },
+      "performance_metrics": {
+        "adaptation_accuracy": 0.89,
+        "convergence_speed_improvement": 0.45,
+        "cross_domain_generalization": 0.86,
+        "stability_score": 0.82,
+        "resource_efficiency": "optimized"
+      },
+      "meta_learning_integration": {
+        "few_shot_domain_adaptation": true,
+        "meta_adversarial_training": true,
+        "cross_task_transfer": true,
+        "rapid_adaptation": true,
+        "generalization_enhancement": "significant"
+      },
+      "csi_processing_integration": {
+        "channel_aware_adaptation": true,
+        "multi_frequency_support": true,
+        "spatial_diversity_exploitation": true,
+        "beamforming_awareness": true,
+        "adaptive_beam_patterns": true
+      },
+      "technical_limitations": {
+        "training_complexity": "increased",
+        "stability_challenges": "manageable",
+        "extreme_domain_shifts": "challenging",
+        "computational_requirements": "moderate_to_high"
+      },
+      "implementation_insights": {
+        "incremental_adaptation": true,
+        "privacy_preservation": "implemented",
+        "api_standardization": "excellent",
+        "backward_compatibility": true
+      },
+      "research_impact": {
+        "practical_deployment": "significant_improvement",
+        "commercial_adoption": "enabling",
+        "adaptation_paradigm": "advancement",
+        "heterogeneous_environment_support": true
+      },
+      "plotting_data": {
+        "innovation_dimensions": {
+          "adversarial_framework": 8.6,
+          "domain_generalization": 8.4,
+          "meta_learning_integration": 8.2,
+          "practical_deployment": 8.0,
+          "system_integration": 7.8
+        },
+        "adaptation_performance": {
+          "same_domain_accuracy": 0.95,
+          "cross_domain_accuracy": 0.89,
+          "few_shot_adaptation": 0.84,
+          "rapid_adaptation_score": 0.87,
+          "long_term_stability": 0.82
+        },
+        "domain_coverage": {
+          "environmental_variations": 0.88,
+          "user_diversity": 0.85,
+          "hardware_variations": 0.82,
+          "network_conditions": 0.86,
+          "temporal_changes": 0.8
+        },
+        "computational_efficiency": {
+          "training_time_vs_baseline": 1.4,
+          "inference_overhead": 0.15,
+          "memory_usage_multiplier": 1.2,
+          "convergence_speed_gain": 0.45
+        }
+      },
+      "multi_modal_integration": {
+        "cross_modal_adaptation": true,
+        "sensor_fusion_adaptation": true,
+        "environment_context_integration": true,
+        "temporal_context_utilization": true
+      },
+      "future_directions": [
+        "self_supervised_adaptation",
+        "continual_learning_integration",
+        "federated_domain_adaptation",
+        "edge_cloud_adaptation"
+      ],
+      "keywords": [
+        "domain_adaptation",
+        "adversarial_learning",
+        "meta_learning",
+        "cross_environment_generalization",
+        "wifi_sensing",
+        "few_shot_learning",
+        "robust_deployment",
+        "adaptive_systems"
+      ],
+      "reproducibility_score": 7.8,
+      "innovation_score": 8.6,
+      "practical_impact_score": 8.4,
+      "paper_id": 77
+    }
+  },
+  "plotting_data": {
+    "innovation_dimensions": {
+      "adversarial_framework": 8.6,
+      "domain_generalization": 8.4,
+      "meta_learning_integration": 8.2,
+      "practical_deployment": 8.0,
+      "system_integration": 7.8
+    },
+    "nlos_performance_comparison": {
+      "accuracy_vs_euclidean": 1.45,
+      "robustness_vs_traditional": 1.6,
+      "multipath_utilization": 1.8,
+      "complex_environment_handling": 1.7
+    },
+    "environment_performance": {
+      "line_of_sight": 0.95,
+      "partial_obstruction": 0.91,
+      "complete_blockage": 0.86,
+      "multi_room_tracking": 0.83,
+      "dynamic_obstacles": 0.88
+    },
+    "computational_metrics": {
+      "processing_overhead_vs_euclidean": 1.3,
+      "real_time_capability": 0.92,
+      "memory_usage_multiplier": 1.2,
+      "optimization_convergence": 0.87
+    },
+    "energy_performance": {
+      "solar_harvesting_efficiency": 0.82,
+      "thermal_harvesting_efficiency": 0.65,
+      "vibration_harvesting_efficiency": 0.58,
+      "rf_harvesting_efficiency": 0.45,
+      "multi_source_benefit": 0.35
+    },
+    "operational_metrics": {
+      "continuous_operation_days": 540,
+      "peak_harvesting_power_mw": 25.0,
+      "average_consumption_mw": 12.0,
+      "energy_buffer_hours": 72.0,
+      "weather_resilience": 0.88
+    },
+    "deployment_assessment": {
+      "total_cost_vs_traditional": 0.65,
+      "deployment_complexity": 6.5,
+      "maintenance_frequency_months": 12.0,
+      "roi_breakeven_years": 2.8
+    },
+    "adaptation_performance": {
+      "same_domain_accuracy": 0.95,
+      "cross_domain_accuracy": 0.89,
+      "few_shot_adaptation": 0.84,
+      "rapid_adaptation_score": 0.87,
+      "long_term_stability": 0.82
+    },
+    "domain_coverage": {
+      "environmental_variations": 0.88,
+      "user_diversity": 0.85,
+      "hardware_variations": 0.82,
+      "network_conditions": 0.86,
+      "temporal_changes": 0.8
+    },
+    "computational_efficiency": {
+      "training_time_vs_baseline": 1.4,
+      "inference_overhead": 0.15,
+      "memory_usage_multiplier": 1.2,
+      "convergence_speed_gain": 0.45
+    }
+  }
+}

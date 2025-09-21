@@ -1,0 +1,60 @@
+{
+  "paper_id": "xu2025evaluating",
+  "citation_key": "xu2025evaluating",
+  "title": "Evaluating Self-Supervised Learning for WiFi CSI-Based Human Activity Recognition",
+  "authors": ["Xu, Ke", "Wang, Jiangtao", "Zhu, Hongyuan", "Zheng, Dingchang"],
+  "publication_info": {
+    "journal": "ACM Transactions on Sensor Networks",
+    "conference": "",
+    "year": 2025,
+    "volume": "",
+    "pages": "",
+    "doi": "10.1145/3715130",
+    "publisher": "ACM"
+  },
+  "quality_metrics": {
+    "impact_factor": 4.1,
+    "journal_ranking": "Q1",
+    "citation_count": 0,
+    "verification_status": "Verified via ACM DL",
+    "authenticity_check": "verified"
+  },
+  "research_content": {
+    "research_domain": "Self-Supervised Learning for WiFi CSI HAR",
+    "methodology": "Systematic evaluation of self-supervised learning approaches for CSI-based HAR",
+    "key_contributions": [
+      "Comprehensive evaluation of self-supervised learning for WiFi CSI HAR",
+      "Addresses scarcity of labeled CSI data challenge",
+      "Systematic study of SSL techniques in CSI domain",
+      "Performance comparison of different SSL approaches"
+    ],
+    "experimental_setup": "Systematic evaluation across multiple SSL methods and datasets",
+    "datasets_used": ["Multiple WiFi CSI HAR datasets"],
+    "performance_metrics": {},
+    "limitations": ["Limited to evaluation scope"]
+  },
+  "relevance_analysis": {
+    "dfhar_relevance": 5,
+    "wifi_csi_focus": true,
+    "technical_depth": 5,
+    "novelty_score": 4,
+    "chapter_mapping": ["self_supervised_learning", "data_efficiency", "unlabeled_learning", "evaluation_methodology"],
+    "priority_level": 5
+  },
+  "data_extraction": {
+    "key_figures": [],
+    "important_tables": [],
+    "algorithms": ["Self-supervised learning frameworks", "SSL evaluation methodology"],
+    "mathematical_models": [],
+    "experimental_results": {}
+  },
+  "future_directions": {
+    "identified_challenges": ["Scarcity of labeled CSI data", "Privacy concerns in CSI data", "Data incomprehensibility"],
+    "proposed_solutions": ["Self-supervised learning approaches", "Unlabeled data utilization"],
+    "research_gaps": ["Limited SSL evaluation in CSI domain", "Cross-environment SSL validation"],
+    "potential_experiments": ["Advanced SSL techniques", "Cross-domain SSL evaluation"]
+  },
+  "notes": "Latest 2025 ACM TOSN paper - cutting-edge research on self-supervised learning for WiFi CSI HAR, directly addressing data scarcity challenges",
+  "extraction_date": "2025-09-12",
+  "last_updated": "2025-09-12"
+}

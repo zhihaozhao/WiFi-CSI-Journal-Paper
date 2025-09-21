@@ -1,0 +1,98 @@
+{
+  "paper_id": "037",
+  "title": "WiFi CSI-based sparse recovery for robust gesture recognition using the modified attention-based BiGRU",
+  "authors": ["Jian Wang", "Kai Niu", "Xuanzhi Wang", "Zheng Yang", "Fusang Zhang", "Daqing Zhang"],
+  "publication_year": 2022,
+  "venue": "IEEE Internet of Things Journal",
+  "star_rating": 4,
+  "technical_category": "Sparse Recovery and Attention Mechanisms",
+  "research_focus": "Robust Gesture Recognition with Attention BiGRU",
+
+  "key_metrics": {
+    "overall_accuracy": 95.3,
+    "sparse_recovery_improvement": 12.8,
+    "attention_mechanism_gain": 8.5,
+    "bigru_performance": 95.3,
+    "robustness_improvement": 22.0,
+    "gesture_types": 12,
+    "participants": 10,
+    "noise_resilience": 89.5
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "Modified attention-based BiGRU with sparse recovery for robust WiFi gesture recognition",
+    "sparse_recovery": "Advanced sparse signal recovery techniques for CSI denoising",
+    "attention_mechanism": "Modified attention mechanism for temporal feature importance",
+    "bidirectional_gru": "BiGRU architecture for forward-backward temporal modeling",
+    "robustness_enhancement": "Systematic approach to noise-resilient gesture recognition"
+  },
+
+  "experimental_setup": {
+    "participants": 10,
+    "gesture_types": 12,
+    "environments": 3,
+    "noise_conditions": "Multiple noise levels and types tested",
+    "hardware": "Intel 5300 NIC with CSI Tool",
+    "validation_method": "Robustness evaluation under various interference conditions",
+    "network_architecture": "Modified attention-based BiGRU with sparse recovery"
+  },
+
+  "performance_comparison": {
+    "overall_accuracy": 95.3,
+    "sparse_recovery_baseline": "12.8% improvement over non-sparse methods",
+    "attention_improvement": "8.5% gain from attention mechanism",
+    "standard_bigru": "7.2% improvement over standard BiGRU",
+    "noise_resilience": 89.5,
+    "robustness_gain": 22.0
+  },
+
+  "reproducibility": {
+    "score": 8.0,
+    "sparse_recovery_method": "detailed mathematical formulations",
+    "attention_mechanism": "clear attention weight computation",
+    "network_architecture": "comprehensive BiGRU modification specifications",
+    "missing_elements": ["source code", "noise-corrupted dataset"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "Novel integration of sparse recovery with attention-based deep learning",
+    "practical_significance": "Addresses critical robustness challenges in real-world deployment",
+    "technical_advancement": "Advancement in noise-resilient WiFi gesture recognition",
+    "citation_importance": "High - robustness and attention mechanism innovation"
+  },
+
+  "limitations": [
+    "Computational complexity increased by sparse recovery operations",
+    "Limited to 12 gesture types",
+    "Requires parameter tuning for different noise conditions",
+    "Indoor environment evaluation primarily"
+  ],
+
+  "future_directions": [
+    "Adaptive sparse recovery parameters",
+    "Extended gesture vocabulary support",
+    "Real-time optimization for edge deployment",
+    "Cross-environment robustness validation",
+    "Advanced attention mechanisms",
+    "Multi-modal sparse recovery"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Robust Recognition Systems",
+      "Attention Mechanisms",
+      "Sparse Signal Processing",
+      "Noise-Resilient Methods"
+    ],
+    "citation_context": "Robust gesture recognition with attention benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "source_language": "Chinese",
+    "extracted_from": "037_WiFi_CSI_Based_Sparse_Recovery_Robust_Gesture_Recognition_Modified_Attention_BGRU_20250916.md",
+    "analysis_completeness": "comprehensive data extraction",
+    "validation_level": "4-star analysis protocol"
+  }
+}

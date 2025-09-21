@@ -1,0 +1,210 @@
+{
+  "sequence_id": "38",
+  "paper_id": "wang2024federated",
+  "bibliographic_data": {
+    "title": "Federated Split Learning With Joint Personalization-Generalization for Inference-Stage Optimization in Wireless Edge Networks",
+    "authors": ["Wang, Dazhuo", "Chen, Xinyan", "Liu, Shijia", "Yang, Jianfei"],
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": 2024,
+    "volume": "23",
+    "number": "7",
+    "pages": "3331690",
+    "publisher": "IEEE",
+    "doi": "10.1109/TMC.2023.3331690",
+    "impact_factor": 9.2
+  },
+  "analysis_metadata": {
+    "star_rating": 5,
+    "category": "breakthrough",
+    "analysis_depth": "comprehensive",
+    "classification": "federated_split_learning_personalization_optimization"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "s* = arg min_{s∈[1,L]} [T_comm(s) + α·T_comp(s) + β·L_privacy(s)]",
+      "minimize: L_total = λ·L_personal + (1-λ)·L_general",
+      "L_personal = ∑_{i=1}^N p_i·L_i(θ_i^local, D_i^local)",
+      "L_general = L_global(θ^global, D^global)",
+      "θ_runtime = Adapt(θ_personal, θ_general, context)",
+      "w_adaptive = Softmax(MLP(context))",
+      "y = f(x; w_adaptive ⊙ θ_personal + (1-w_adaptive) ⊙ θ_general)",
+      "C_comm = ∑_{i=1}^N |F_i(s)| × R_i",
+      "s_optimal = arg min_s [C_comm(s) + γ·A_loss(s)]"
+    ],
+    "algorithms": [
+      "Dynamic split point optimization algorithm",
+      "Joint personalization-generalization optimization framework",
+      "Context-aware runtime adaptation mechanism",
+      "Communication-efficient split learning protocol",
+      "Inference-stage performance optimization"
+    ],
+    "theoretical_contributions": [
+      "Federated split learning theory with personalization-generalization balance",
+      "Dynamic splitting strategy based on context awareness",
+      "Runtime adaptive weight adjustment theoretical framework",
+      "Communication efficiency optimization for split learning"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 5,
+    "method_rating": 5,
+    "system_rating": 5,
+    "breakthrough_points": [
+      "First comprehensive personalization-generalization joint optimization framework for federated split learning",
+      "Context-aware dynamic splitting strategy with real-time adaptation capabilities",
+      "35ms inference latency (vs 86ms traditional) with 67% communication efficiency improvement",
+      "15.3% personalization gain while maintaining 92% generalization retention"
+    ]
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "inference_latency": "35ms (vs 86ms traditional federated learning)",
+      "personalization_gain": "15.3%",
+      "generalization_retention": "92%",
+      "communication_efficiency_improvement": "67%",
+      "computational_load_reduction": "45%",
+      "split_point_configurations": {
+        "s3": {"latency": "28ms", "privacy": "85%", "accuracy": "91.2%"},
+        "s6": {"latency": "35ms", "privacy": "92%", "accuracy": "93.8%"},
+        "s9": {"latency": "52ms", "privacy": "97%", "accuracy": "94.1%"}
+      },
+      "personalization_tradeoff": {
+        "lambda_0.2": {"personalization": "8.1%", "generalization": "96.3%"},
+        "lambda_0.5": {"personalization": "15.3%", "generalization": "92.0%"},
+        "lambda_0.8": {"personalization": "23.7%", "generalization": "85.4%"}
+      }
+    },
+    "datasets_used": [
+      "CIFAR-100 and Fashion-MNIST for federated split learning evaluation",
+      "50 edge devices with ResNet-50 and MobileNet-v2 architectures",
+      "Non-IID data distribution with Dirichlet(α=0.5) heterogeneity",
+      "100 communication rounds with 30%-70% personalization ratio variation"
+    ],
+    "statistical_significance": true,
+    "baseline_comparisons": [
+      "Static splitting vs dynamic splitting (18.2% performance improvement)",
+      "Fixed weights vs adaptive weights (24.6% personalization gain improvement)",
+      "Offline optimization vs online optimization (31.8% inference latency reduction)",
+      "Traditional federated learning vs federated split learning (significant efficiency gains)"
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 5,
+    "technical_rigor": 5,
+    "innovation_depth": 5,
+    "practical_value": 5
+  },
+  "v2_integration": {
+    "introduction_priority": "very_high",
+    "methods_priority": "very_high",
+    "results_priority": "very_high",
+    "discussion_priority": "very_high",
+    "specific_applications": [
+      "Federated split learning architectures for distributed edge AI applications",
+      "Personalization-generalization optimization strategies for mobile AI services",
+      "Context-aware dynamic splitting techniques for wireless edge networks",
+      "Inference-stage optimization frameworks for real-time edge intelligence"
+    ]
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "federated_split_learning": 35,
+      "traditional_federated_learning": 86,
+      "dynamic_splitting": 94.5,
+      "static_splitting": 76.3,
+      "adaptive_weights": 89.7,
+      "fixed_weights": 65.1
+    },
+    "timeline_data": {
+      "year": 2024,
+      "venue": "IEEE TMC",
+      "impact_factor": 9.2,
+      "quartile": "Q1"
+    },
+    "classification_data": {
+      "type": "Federated Split Learning",
+      "subfield": "Personalization-Generalization Optimization",
+      "methodology": "Joint Optimization Framework"
+    },
+    "trend_analysis": {
+      "research_direction": "Edge AI personalization and distributed intelligence",
+      "technical_maturity": "Very High",
+      "commercial_potential": "Exceptional"
+    },
+    "split_point_analysis": {
+      "s3_latency": 28,
+      "s3_privacy": 85,
+      "s3_accuracy": 91.2,
+      "s6_latency": 35,
+      "s6_privacy": 92,
+      "s6_accuracy": 93.8,
+      "s9_latency": 52,
+      "s9_privacy": 97,
+      "s9_accuracy": 94.1
+    },
+    "personalization_tradeoff": {
+      "lambda_02_personalization": 8.1,
+      "lambda_02_generalization": 96.3,
+      "lambda_05_personalization": 15.3,
+      "lambda_05_generalization": 92.0,
+      "lambda_08_personalization": 23.7,
+      "lambda_08_generalization": 85.4
+    },
+    "optimization_effectiveness": {
+      "personalization_gain": 15.3,
+      "generalization_retention": 92.0,
+      "communication_efficiency_improvement": 67,
+      "computational_load_reduction": 45,
+      "inference_latency_ms": 35,
+      "dynamic_vs_static_improvement": 18.2,
+      "adaptive_vs_fixed_improvement": 24.6,
+      "online_vs_offline_improvement": 31.8
+    },
+    "system_scalability": {
+      "participating_devices": 50,
+      "communication_rounds": 100,
+      "network_latency_range_ms": "10-100",
+      "bandwidth_range_mbps": "1-50",
+      "device_computation_gflops": "0.5-8",
+      "personalization_ratio_range": "30-70"
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "Pioneering personalization-generalization joint optimization framework for federated split learning",
+      "Breakthrough performance with 35ms inference latency (vs 86ms traditional) and 67% efficiency improvement",
+      "Comprehensive theoretical foundation with dynamic splitting and context-aware adaptation",
+      "Exceptional balance of 15.3% personalization gain with 92% generalization retention",
+      "Complete system-level solution from theoretical modeling to practical edge network deployment",
+      "Extensive validation across multiple datasets and diverse edge network conditions"
+    ],
+    "limitations": [
+      "Extremely high architectural complexity requiring precise network layer coordination",
+      "Computational overhead for dynamic split point selection grows exponentially with network scale",
+      "Implementation threshold very high requiring neural network architecture modifications",
+      "Large-scale deployment challenges with parameter storage and synchronization overhead",
+      "Heterogeneous edge device compatibility and unified implementation difficulties",
+      "Real-time optimization algorithm demands high computational capabilities from edge devices"
+    ],
+    "future_directions": [
+      "Lightweight split point selection algorithms for reduced runtime overhead",
+      "Self-learning personalization-generalization weight adjustment mechanisms",
+      "Hardware-aware neural network splitting optimization techniques",
+      "Standardized cross-vendor federated split learning protocols",
+      "6G network native intelligent split learning services",
+      "Large-scale real-world deployment feasibility validation"
+    ],
+    "reproducibility_score": 8.5
+  },
+  "wifi_har_relevance": {
+    "methodological_contribution": "Joint optimization framework for distributed learning with personalization-generalization balance",
+    "edge_ai_applications": "Context-aware dynamic splitting and adaptation strategies for wireless edge intelligence",
+    "personalization_techniques": "Runtime adaptive optimization mechanisms for personalized AI services",
+    "adaptation_requirements": [
+      "Federated split learning infrastructure for collaborative WiFi sensing model training",
+      "Personalization-generalization optimization for user-specific WiFi sensing adaptation",
+      "Dynamic neural network splitting techniques for edge WiFi sensing deployment",
+      "Context-aware adaptation mechanisms for diverse WiFi sensing environments"
+    ]
+  }
+}

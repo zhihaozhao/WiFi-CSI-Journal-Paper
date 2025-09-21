@@ -1,0 +1,189 @@
+{
+  "paper_id": "117",
+  "title": "A Real-time Object Detection for WiFi CSI-based Multiple Human Activity Recognition",
+  "authors": ["Israel Elujide", "Jian Li", "Aref Shiran", "Siwang Zhou", "Yonghe Liu"],
+  "journal": "IEEE Consumer Communications & Networking Conference (CCNC)",
+  "year": "2023",
+  "doi": "10.1109/CCNC51644.2023.10059647",
+
+  "experimental_data": {
+    "datasets": [
+      {
+        "name": "Run Activity Dataset",
+        "total_samples": 143,
+        "training": 115,
+        "validation": 16,
+        "testing": 12,
+        "activity_type": "single"
+      },
+      {
+        "name": "Walk Activity Dataset",
+        "total_samples": 455,
+        "training": 312,
+        "validation": 81,
+        "testing": 62,
+        "activity_type": "single"
+      },
+      {
+        "name": "Multiple Activity Dataset (Walk-Wave-Run)",
+        "total_samples": 152,
+        "training": 108,
+        "validation": 22,
+        "testing": 22,
+        "activity_type": "multiple",
+        "activities": ["hand movement", "running", "walking"]
+      }
+    ],
+
+    "hardware_setup": {
+      "transmitter": "Dual-band TP-Link AC1750 (2.4 GHz)",
+      "receiver": "Laptop with Intel NIC5300",
+      "operating_system": "Ubuntu Linux 12.04 LTS with modified kernel",
+      "sampling_rate": "80 packets/second",
+      "data_split": "70% training, 15% validation, 15% testing"
+    },
+
+    "methodology": {
+      "system_name": "Real-time Object Detection Framework",
+      "architecture": "Mask R-CNN",
+      "signal_processing": [
+        "Sliding window capture",
+        "Continuous Wavelet Transform (CWT)",
+        "CSI-to-image transformation",
+        "Power profile exploitation"
+      ],
+      "network_components": {
+        "backbone": "ResNet-50 with Feature Pyramid Network (FPN)",
+        "detection": "Region Proposal Network (RPN)",
+        "segmentation": "RoIAlign + Fully Convolutional Network (FCN)",
+        "loss_function": "Multi-task: classification + bbox regression + mask loss"
+      },
+      "training_params": {
+        "epochs": 1500,
+        "evaluation_frequency": "every 500 steps",
+        "transfer_learning": "Pre-trained ResNet-50 weights",
+        "detection_threshold": "85%"
+      }
+    },
+
+    "performance_results": {
+      "single_activities": {
+        "run_activity": {
+          "validation": {
+            "AP_50": 99.55,
+            "AP_75": 87.45,
+            "AP": 73.65,
+            "mAP": 67.07
+          },
+          "testing": {
+            "AP_50": 100.0,
+            "AP_75": 72.95,
+            "AP": 66.55,
+            "mAP": 63.97
+          }
+        },
+        "walk_activity": {
+          "validation": {
+            "AP_50": 100.0,
+            "AP_75": 60.30,
+            "AP": 60.34,
+            "mAP": 48.31
+          },
+          "testing": {
+            "AP_50": 99.96,
+            "AP_75": 81.48,
+            "AP": 63.00,
+            "mAP": 55.37
+          }
+        }
+      },
+      "multiple_activities": {
+        "walk_wave_run": {
+          "validation": {
+            "AP_50": 96.94,
+            "AP_75": 62.99,
+            "AP": 58.05
+          },
+          "testing": {
+            "AP_50": 93.81,
+            "AP_75": 83.00,
+            "AP": 64.67,
+            "individual_mAP": {
+              "run": 53.27,
+              "walk": 62.77,
+              "wave": 73.37
+            }
+          }
+        }
+      },
+      "real_time_performance": {
+        "average_classification_accuracy": 93.80,
+        "instance_segmentation_accuracy": 90.73
+      }
+    },
+
+    "experimental_quality": {
+      "overall_score": 7.4,
+      "dataset_quality": 7.0,
+      "experimental_design": 8.2,
+      "performance_metrics": 8.0,
+      "statistical_methodology": 7.5,
+      "reproducibility": 6.5,
+      "technical_innovation": 8.0
+    },
+
+    "strengths": [
+      "First real-time WiFi CSI-based multiple activity recognition system",
+      "Novel application of object detection to CSI activity recognition",
+      "Addresses practical real-time streaming data challenges",
+      "Comprehensive evaluation with multiple metrics",
+      "CWT-based time-frequency transformation approach",
+      "Multi-task learning with segmentation capability"
+    ],
+
+    "limitations": [
+      "Very small dataset scale (143-455 total samples per activity)",
+      "Limited to basic activities (walk, run, hand wave)",
+      "Single controlled environment testing only",
+      "No cross-domain generalization evaluation",
+      "Missing statistical significance testing",
+      "Limited number of participants"
+    ],
+
+    "reproducibility_assessment": {
+      "score": 6.5,
+      "available_info": [
+        "Hardware specifications",
+        "Network architecture details",
+        "Training parameters",
+        "Performance metrics",
+        "Data collection protocol"
+      ],
+      "missing_info": [
+        "Source code implementation",
+        "Dataset availability",
+        "Specific CWT parameters",
+        "Sliding window implementation details",
+        "Environmental setup specifics",
+        "Random seed information"
+      ]
+    },
+
+    "technical_innovation": {
+      "novel_contributions": [
+        "Real-time CSI activity recognition using object detection",
+        "CWT-based CSI-to-image transformation for streaming data",
+        "Mask R-CNN application to WiFi CSI activity segmentation",
+        "Multi-activity detection and localization in continuous streams"
+      ],
+      "significance": "First system to address real-time multiple activity recognition in WiFi CSI domain"
+    }
+  },
+
+  "analysis_metadata": {
+    "analyzed_by": "experimentAgent1",
+    "analysis_date": "2025-09-14",
+    "analysis_focus": "Real-time system experimental validation",
+    "confidence_level": "Medium-High - limited by small dataset scale"
+  }
+}

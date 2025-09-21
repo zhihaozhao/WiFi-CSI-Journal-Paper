@@ -1,0 +1,202 @@
+{
+  "paper_id": "117",
+  "title": "A Real-time Object Detection for WiFi CSI-based Multiple Human Activity Recognition",
+  "authors": ["Israel Elujide", "Jian Li", "Aref Shiran", "Siwang Zhou", "Yonghe Liu"],
+  "publication": "2023 IEEE 20th Consumer Communications & Networking Conference (CCNC)",
+  "year": 2023,
+  "doi": "10.1109/CCNC51644.2023.10059647",
+  "analysis_date": "2025-09-14",
+  "analysis_agent": "experimentAgent1",
+
+  "experimental_scores": {
+    "dataset_quality": 7.0,
+    "model_architecture": 8.0,
+    "results_analysis": 6.0,
+    "experimental_design": 6.0,
+    "reproducibility": 4.0,
+    "discussion_quality": 7.0,
+    "overall_score": 6.3
+  },
+
+  "dataset_analysis": {
+    "single_activity_datasets": {
+      "run_activity": {
+        "training_instances": 115,
+        "validation_instances": 16,
+        "test_instances": 12
+      },
+      "walk_activity": {
+        "training_instances": 312,
+        "validation_instances": 81,
+        "test_instances": 62
+      }
+    },
+    "multiple_activity_dataset": {
+      "activities": ["hand_movement", "running", "walking"],
+      "training_instances": 108,
+      "validation_instances": 22,
+      "test_instances": 22,
+      "includes_no_activity_periods": true
+    },
+    "data_collection": {
+      "sampling_rate": "80 packets/second",
+      "data_split": "70% train, 15% validation, 15% test",
+      "hardware": {
+        "transmitter": "TP-Link AC1750 dual-band (2.4 GHz)",
+        "receiver": "Intel NIC5300 laptop",
+        "os": "Ubuntu Linux 12.04 LTS with modified kernel"
+      }
+    },
+    "data_quality_assessment": {
+      "strengths": [
+        "Real-time data collection approach",
+        "Sliding window technique for continuous streams",
+        "Multiple activity scenarios",
+        "Adequate WiFi CSI sampling rate"
+      ],
+      "limitations": [
+        "Very small dataset sizes for deep learning",
+        "Limited activity types (3 activities)",
+        "No demographic information",
+        "Single hardware platform only",
+        "No environmental diversity testing"
+      ]
+    }
+  },
+
+  "model_architecture": {
+    "system_pipeline": [
+      "Real-time CSI Stream",
+      "Sliding Window Capture",
+      "CWT Transformation",
+      "CSI-to-Image Conversion",
+      "Mask R-CNN Object Detection",
+      "Activity Classification + Localization + Instance Segmentation"
+    ],
+    "key_innovations": [
+      "First WiFi CSI-based real-time object detection for HAR",
+      "CWT-based CSI-to-image transformation",
+      "Instance segmentation for multiple concurrent activities",
+      "Power profile-based activity boundary detection"
+    ],
+    "mask_rcnn_components": [
+      "ResNet-50 + FPN backbone",
+      "Region Proposal Network (RPN)",
+      "RoIAlign layer",
+      "Multi-task heads (classification + bbox + segmentation)"
+    ],
+    "mathematical_formulation": {
+      "cwt_equation": "CWT(t,ω) = (ω/ω₀)^(1/2) ∫ s(t')Ψ*[(ω/ω₀)(t'-t)]dt'",
+      "loss_function": "L = L_cls + L_bbox + L_mask",
+      "bbox_regression": "Sum of squares loss with L2 regularization"
+    }
+  },
+
+  "performance_results": {
+    "single_activity_performance": {
+      "run_activity": {
+        "validation": {"AP50": 99.55, "AP75": 87.45, "AP": 73.65},
+        "test": {"AP50": 100.0, "AP75": 72.95, "AP": 66.55},
+        "mAP_test": 63.97
+      },
+      "walk_activity": {
+        "validation": {"AP50": 100.0, "AP75": 60.30, "AP": 60.34},
+        "test": {"AP50": 99.96, "AP75": 81.48, "AP": 63.00},
+        "mAP_test": 55.37
+      }
+    },
+    "multiple_activity_performance": {
+      "validation": {"AP50": 96.94, "AP75": 62.99, "AP": 58.05},
+      "test": {"AP50": 93.81, "AP75": 83.00, "AP": 64.67},
+      "average_classification_accuracy": 93.80,
+      "instance_segmentation_accuracy": 90.73
+    },
+    "real_time_vs_offline_comparison": {
+      "accuracy_reduction": 0.061,
+      "walk_degradation": 0.076,
+      "run_degradation": 0.055,
+      "hand_wave_degradation": 0.061
+    }
+  },
+
+  "experimental_methodology": {
+    "training_configuration": {
+      "epochs": 1500,
+      "evaluation_frequency": "every 500 steps",
+      "transfer_learning": "Pre-trained ResNet-50 weights",
+      "framework": "PyTorch",
+      "platform": "Google Colab with TPU"
+    },
+    "evaluation_metrics": [
+      "Average Precision (AP) at IoU 0.5, 0.75, 0.5-0.95",
+      "mean Average Precision (mAP)",
+      "Recall",
+      "Intersection over Union (IoU)"
+    ],
+    "validation_approach": "Separate train/validation/test splits",
+    "statistical_analysis": "Limited - no confidence intervals or significance testing"
+  },
+
+  "technical_contributions": {
+    "novel_aspects": [
+      "Real-time CSI stream processing with object detection",
+      "CWT-based time-frequency analysis for CSI signals",
+      "Multi-task learning for activity recognition",
+      "Instance segmentation for multiple concurrent activities"
+    ],
+    "practical_applications": [
+      "Contact-free human activity monitoring",
+      "Real-time gesture-based authentication",
+      "Smart home automation systems",
+      "Healthcare monitoring applications"
+    ]
+  },
+
+  "reproducibility_assessment": {
+    "code_availability": false,
+    "implementation_details": "partial",
+    "hardware_specifications": "complete",
+    "hyperparameters": "incomplete",
+    "data_preprocessing": "partially_specified",
+    "reproducibility_score": 4.0,
+    "missing_elements": [
+      "Public code repository",
+      "Complete hyperparameter settings",
+      "Detailed CWT transformation parameters",
+      "Exact network architecture specifications",
+      "Subject instruction protocols"
+    ]
+  },
+
+  "strengths": [
+    "Novel problem formulation for real-time CSI-based HAR",
+    "Innovative CWT-based signal transformation approach",
+    "Multi-task learning framework",
+    "Addresses practical real-time deployment challenges",
+    "Clear motivation for real-time processing"
+  ],
+
+  "limitations": [
+    "Extremely small datasets inadequate for deep learning validation",
+    "Limited experimental scope (single environment, few activities)",
+    "Missing computational performance analysis",
+    "No cross-domain evaluation",
+    "Insufficient baseline comparisons",
+    "Poor reproducibility due to missing implementation details"
+  ],
+
+  "significance": {
+    "technical_contribution": "Moderate - Important problem formulation but limited validation",
+    "practical_impact": "Potential - Addresses real-world needs but experimental validation insufficient",
+    "research_advancement": "First work in real-time object detection for CSI-based HAR"
+  },
+
+  "future_work_recommendations": [
+    "Scale up datasets with more participants and activities",
+    "Cross-domain evaluation across different environments",
+    "Detailed computational complexity and latency analysis",
+    "Comprehensive comparison with existing CSI-based HAR methods",
+    "Open-source implementation release",
+    "Ablation studies on component contributions"
+  ]
+}

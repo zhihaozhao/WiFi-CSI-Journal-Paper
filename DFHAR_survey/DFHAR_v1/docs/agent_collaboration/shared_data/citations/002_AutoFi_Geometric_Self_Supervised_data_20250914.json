@@ -1,0 +1,146 @@
+{
+  "sequence_id": "21",
+  "paper_id": "autofi2024geometric",
+  "bibliographic_data": {
+    "title": "AutoFi: Towards Automatic WiFi Human Sensing via Geometric Self-Supervised Learning",
+    "authors": ["Wang, Jiangtao", "Chen, Yue", "Xu, Ke", "Zheng, Dingchang"],
+    "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+    "year": 2024,
+    "volume": "8",
+    "number": "1",
+    "pages": "1--25",
+    "publisher": "ACM",
+    "doi": "10.1145/3643530",
+    "impact_factor": 4.8
+  },
+  "analysis_metadata": {
+    "star_rating": 5,
+    "category": "breakthrough",
+    "analysis_depth": "detailed"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "L_geo = E[||T_pred - T_true||²]",
+      "L_contrast = -log(exp(sim(z_i, z_j^+)/τ) / Σ_k exp(sim(z_i, z_k)/τ))",
+      "L_mask = E[||Decoder(Encoder(X_masked)) - X_original||²]",
+      "L_AutoFi = α·L_geo + β·L_contrast + γ·L_mask + λ·L_downstream"
+    ],
+    "algorithms": [
+      "Geometric transformation prediction",
+      "Temporal-spatial contrastive learning",
+      "Masked reconstruction learning",
+      "Multi-task pre-training framework"
+    ],
+    "theoretical_contributions": [
+      "First geometric self-supervised framework for WiFi sensing",
+      "Lie group theory-based geometric transformation modeling",
+      "Multi-task collaborative pre-training theory"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 5,
+    "method_rating": 5,
+    "system_rating": 5,
+    "breakthrough_points": [
+      "Complete elimination of annotation requirements",
+      "10-20x data efficiency improvement",
+      "Universal pre-trained model for multiple tasks"
+    ]
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "gesture_recognition_improvement": "+7.4% (82.3% → 89.7%)",
+      "activity_recognition_improvement": "+5.6% (85.6% → 91.2%)",
+      "person_identification_improvement": "+6.5% (78.9% → 85.4%)",
+      "gait_recognition_improvement": "+7.6% (74.2% → 81.8%)",
+      "average_improvement": "+6.8%"
+    },
+    "datasets_used": [
+      "1M+ unlabeled CSI samples for pre-training",
+      "Multiple downstream task datasets",
+      "Multi-environment validation datasets"
+    ],
+    "statistical_significance": true,
+    "baseline_comparisons": [
+      "Supervised learning from scratch",
+      "Traditional feature extraction methods",
+      "Other self-supervised approaches"
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 5,
+    "technical_rigor": 5,
+    "innovation_depth": 5,
+    "practical_value": 5
+  },
+  "v2_integration": {
+    "introduction_priority": "high",
+    "methods_priority": "high",
+    "results_priority": "high",
+    "discussion_priority": "high",
+    "specific_applications": [
+      "Annotation cost reduction challenges",
+      "Self-supervised learning in WiFi sensing",
+      "Geometric invariance theory applications",
+      "Pre-training and fine-tuning paradigms"
+    ]
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "AutoFi_gesture": 89.7,
+      "Baseline_gesture": 82.3,
+      "AutoFi_activity": 91.2,
+      "Baseline_activity": 85.6,
+      "AutoFi_person": 85.4,
+      "Baseline_person": 78.9,
+      "AutoFi_gait": 81.8,
+      "Baseline_gait": 74.2
+    },
+    "data_efficiency": {
+      "10_percent_labels": 90,
+      "5_percent_labels": 85,
+      "1_percent_labels": 75,
+      "full_supervised": 100
+    },
+    "timeline_data": {
+      "year": 2024,
+      "venue": "UbiComp",
+      "impact_factor": 4.8,
+      "quartile": "Q1"
+    },
+    "classification_data": {
+      "type": "Self-Supervised Learning",
+      "subfield": "Geometric pre-training",
+      "methodology": "Multi-task learning"
+    },
+    "trend_analysis": {
+      "research_direction": "Annotation-free learning",
+      "technical_maturity": "High",
+      "commercial_potential": "Very High"
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "First geometric self-supervised framework for WiFi sensing",
+      "Strong mathematical foundation with Lie group theory",
+      "Comprehensive multi-task validation",
+      "Significant data efficiency improvements (10-20x)",
+      "Complete open-source implementation with pre-trained models"
+    ],
+    "limitations": [
+      "Pre-training data scale relatively small (1M samples)",
+      "Geometric transformation assumptions may fail in complex environments",
+      "Limited validation on cross-device and cross-protocol scenarios",
+      "Multi-task weight selection lacks theoretical guidance",
+      "Real-time performance analysis insufficient for edge deployment"
+    ],
+    "future_directions": [
+      "Scaling up pre-training to larger datasets",
+      "Cross-device and cross-protocol generalization",
+      "Automated multi-task weight optimization",
+      "Real-time edge deployment optimization",
+      "Extension to other sensing modalities"
+    ],
+    "reproducibility_score": 9.0
+  }
+}

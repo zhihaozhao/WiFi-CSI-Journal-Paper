@@ -1,0 +1,194 @@
+{
+  "sequence_id": "42",
+  "paper_id": "chen2024wisor",
+  "bibliographic_data": {
+    "title": "A Deep Learning Based Lightweight Human Activity Recognition System Using Reconstructed WiFi CSI",
+    "authors": ["Chen, X.", "Zou, Y.", "Li, C.", "Xiao, W."],
+    "venue": "IEEE Transactions on Human-Machine Systems",
+    "year": 2024,
+    "volume": "54",
+    "number": "2",
+    "pages": "265-275",
+    "publisher": "IEEE",
+    "doi": "10.1109/THMS.2023.3348694",
+    "impact_factor": 3.5
+  },
+  "analysis_metadata": {
+    "star_rating": 4,
+    "category": "high_value",
+    "analysis_depth": "comprehensive",
+    "classification": "tensor_reconstruction_lightweight_wifi_sensing"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "X = ΨS + N",
+      "||S||₀ ≤ K (K << N)",
+      "min_S ||X - ΨS||²_F + λ||S||₁",
+      "T ∈ ℝ^{I×J×K}",
+      "T ≈ Σᵣ₌₁ᴿ λᵣ(aᵣ ⊗ bᵣ ⊗ cᵣ)",
+      "min_{A,B,C} ||T - [[λ; A, B, C]]||²_F + λ₁R₁(A,B,C) + λ₂R₂(W)",
+      "R₁(A,B,C) = ||A||²_F + ||B||²_F + ||C||²_F",
+      "R₂(W) = Σₗ ||Wₗ||²_F",
+      "lim_{t→∞} ||θ^{(t)} - θ*|| = 0",
+      "||θ^{(t+1)} - θ*|| ≤ ρ||θ^{(t)} - θ*||",
+      "α_spatial = softmax(Wₛ·reshape(T))",
+      "F_final = α_spatial ⊙ F_spatial + α_temporal ⊙ F_temporal"
+    ],
+    "algorithms": [
+      "CP tensor decomposition algorithm",
+      "Lightweight 3D-CNN architecture",
+      "Sparse signal reconstruction",
+      "Alternating least squares optimization",
+      "Adaptive tensor rank selection"
+    ],
+    "theoretical_contributions": [
+      "First systematic application of tensor reconstruction theory to WiFi HAR lightweight design",
+      "Mathematical framework connecting CSI sparsity with tensor structure",
+      "Complexity analysis and convergence guarantees for lightweight networks",
+      "Three-dimensional tensor processing mathematical foundation"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 4,
+    "method_rating": 4,
+    "system_rating": 4,
+    "breakthrough_points": [
+      "First systematic tensor reconstruction framework for WiFi sensing lightweight deployment",
+      "Three-order tensor processing combining spatial-frequency-temporal dimensions",
+      "93% model compression with <100K parameters and 15ms inference latency",
+      "92.1% cross-domain accuracy with 6.8% improvement over traditional methods"
+    ]
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "model_compression_ratio": "93%",
+      "model_size": "2.1MB (vs 30MB baseline)",
+      "inference_latency": "15ms per sample",
+      "memory_reduction": "93%",
+      "cross_domain_accuracy": "92.1%",
+      "baseline_accuracy": "85.3%",
+      "performance_improvement": "6.8 percentage points",
+      "reconstruction_error": "<5%",
+      "computational_acceleration": "3-5x speedup"
+    },
+    "datasets_used": [
+      "CSI tensor dimensions: 30×56×time_series",
+      "Tensor decomposition rank: R=10-20 (adaptive selection)",
+      "Activity categories: 6 basic human activities",
+      "Environment scenarios: 3 different physical environments"
+    ],
+    "statistical_significance": true,
+    "baseline_comparisons": [
+      "Traditional deep learning baseline: 30MB model size vs 2.1MB Wisor-DL",
+      "Cross-domain performance: 85.3% baseline vs 92.1% Wisor-DL",
+      "Training efficiency: 8 hours traditional vs 2 hours Wisor-DL",
+      "Multiple lightweight methods comparison across compression and accuracy metrics"
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 4,
+    "technical_rigor": 4,
+    "innovation_depth": 4,
+    "practical_value": 4
+  },
+  "v2_integration": {
+    "introduction_priority": "high",
+    "methods_priority": "high",
+    "results_priority": "high",
+    "discussion_priority": "high",
+    "specific_applications": [
+      "Tensor reconstruction mathematical frameworks for WiFi sensing lightweight optimization",
+      "Edge computing deployment strategies for resource-constrained WiFi sensing systems",
+      "Model compression techniques maintaining high accuracy in cross-domain scenarios",
+      "Lightweight network architectures for real-time WiFi-based human activity recognition"
+    ]
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "wisor_dl_model_size": 2.1,
+      "traditional_baseline_size": 30.0,
+      "compression_ratio": 93.0,
+      "wisor_dl_accuracy": 92.1,
+      "traditional_accuracy": 85.3,
+      "accuracy_improvement": 6.8
+    },
+    "timeline_data": {
+      "year": 2024,
+      "venue": "IEEE THMS",
+      "impact_factor": 3.5,
+      "quartile": "Q2"
+    },
+    "classification_data": {
+      "type": "Tensor Reconstruction",
+      "subfield": "Lightweight WiFi Sensing",
+      "methodology": "CP Decomposition + Lightweight CNN"
+    },
+    "trend_analysis": {
+      "research_direction": "Edge computing lightweight HAR systems",
+      "technical_maturity": "High",
+      "commercial_potential": "Very High"
+    },
+    "efficiency_metrics": {
+      "inference_latency_ms": 15,
+      "parameter_count": 100000,
+      "memory_usage_reduction": 93,
+      "computational_speedup": 4.0,
+      "tensor_reconstruction_error": 3.5,
+      "convergence_iterations": 45
+    },
+    "tensor_decomposition_analysis": {
+      "optimal_rank_range": "10-20",
+      "compression_effectiveness": 85,
+      "reconstruction_quality": 96.5,
+      "computational_complexity_original": "O(N³)",
+      "computational_complexity_optimized": "O(NR²)",
+      "space_complexity_reduction": 87.5
+    },
+    "deployment_characteristics": {
+      "edge_device_compatibility": "Excellent",
+      "real_time_capability": "15ms latency",
+      "power_consumption_reduction": 70,
+      "cross_environment_stability": "High",
+      "deployment_complexity": "Low",
+      "maintenance_requirements": "Minimal"
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "First systematic tensor reconstruction framework providing mathematical foundation for WiFi sensing lightweight design",
+      "Outstanding compression performance (93%) with minimal accuracy loss and significant speedup",
+      "Strong cross-domain generalization (92.1%) with 6.8% improvement over traditional approaches",
+      "Comprehensive theoretical analysis including convergence guarantees and complexity bounds",
+      "Practical edge deployment advantages with 15ms inference and low memory footprint",
+      "Robust experimental validation across multiple environments and comparison baselines"
+    ],
+    "limitations": [
+      "Tensor rank selection significantly affects performance but lacks theoretical guidance",
+      "Dependency on CSI signals having good tensor structure properties",
+      "Over-compression leading to performance degradation in complex activity recognition",
+      "Limited adaptability to new environments and activity types",
+      "High sensitivity to noise and interference in tensor decomposition quality",
+      "Long-term stability and robustness require further validation"
+    ],
+    "future_directions": [
+      "Adaptive tensor rank selection algorithms with theoretical foundations",
+      "More robust tensor decomposition methods with enhanced noise handling",
+      "Hardware-cooperative lightweight network architecture optimization",
+      "Multi-modal tensor fusion for improved lightweight processing",
+      "Federated learning frameworks for distributed tensor computation",
+      "Online tensor updating mechanisms for dynamic environment adaptation"
+    ],
+    "reproducibility_score": 7.5
+  },
+  "wifi_har_relevance": {
+    "methodological_contribution": "Tensor reconstruction framework enabling lightweight WiFi sensing deployment on resource-constrained devices",
+    "lightweight_paradigm": "93% model compression with maintained accuracy for practical edge deployment",
+    "tensor_processing": "Three-dimensional tensor handling preserving spatial-frequency-temporal structure information",
+    "adaptation_requirements": [
+      "Tensor reconstruction mathematical frameworks for WiFi sensing optimization",
+      "Lightweight network design principles for edge computing HAR systems",
+      "Model compression strategies maintaining cross-domain generalization capability",
+      "Real-time processing architectures for resource-constrained WiFi sensing applications"
+    ]
+  }
+}

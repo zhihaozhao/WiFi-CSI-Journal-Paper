@@ -1,0 +1,194 @@
+{
+  "sequence_id": "33",
+  "paper_id": "cui2024wicau",
+  "bibliographic_data": {
+    "title": "WiCAU: Comprehensive partial adaptation with uncertainty-aware for WiFi-based cross-environment activity recognition",
+    "authors": ["Cui, W.", "Wu, K.", "Wu, M.", "Li, X.", "Chen, Z."],
+    "venue": "IEEE Transactions on Instrumentation and Measurement",
+    "year": 2024,
+    "volume": "73",
+    "number": "",
+    "pages": "3351234",
+    "publisher": "IEEE",
+    "doi": "10.1109/TIM.2024.3351234",
+    "impact_factor": 5.6
+  },
+  "analysis_metadata": {
+    "star_rating": 4,
+    "category": "high_value",
+    "analysis_depth": "detailed",
+    "classification": "cross_environment_uncertainty_aware_adaptation"
+  },
+  "mathematical_frameworks": {
+    "equations": [
+      "p(θ|D) ∝ p(D|θ)p(θ)",
+      "U_epi = -∑ p(y|x,D) log p(y|x,D)",
+      "U_ale = E[H(p(y|x,θ))]",
+      "U_total = U_epi + U_ale",
+      "T_selective = arg min_T ∑_{i=1}^n w_i L(f_T(x_i^s), y_i^s) + λR(T)",
+      "w_i = exp(-βU_i) / ∑_{j=1}^n exp(-βU_j)",
+      "L_align = MMD(f_s, f_t) + λ_u ∑ U_i |f_s^i - f_t^i|",
+      "L_adapt = L_cls + α·L_align + γ·L_uncertainty",
+      "P_confident(y|x) = P(y|x) · C(x)",
+      "C(x) = 1 - U_total(x) / U_max"
+    ],
+    "algorithms": [
+      "Bayesian uncertainty estimation for WiFi sensing",
+      "Partial adaptation with selective feature transfer",
+      "Uncertainty-guided sample weighting mechanism",
+      "Cross-environment feature alignment algorithm",
+      "Confidence-aware classification framework"
+    ],
+    "theoretical_contributions": [
+      "Uncertainty-aware cross-environment adaptation theory",
+      "Partial adaptation mechanism for WiFi sensing",
+      "Confidence-aware classification decision framework",
+      "Bayesian inference for WiFi sensing reliability"
+    ]
+  },
+  "technical_innovations": {
+    "theory_rating": 4,
+    "method_rating": 4,
+    "system_rating": 4,
+    "breakthrough_points": [
+      "First application of uncertainty-aware adaptation to WiFi cross-environment sensing",
+      "WiCAU comprehensive partial adaptation architecture design",
+      "91.7% cross-environment accuracy with 7.6-13.4 percentage point improvement",
+      "97.3% uncertainty calibration quality with confidence-guided decision making"
+    ]
+  },
+  "experimental_validation": {
+    "performance_metrics": {
+      "cross_environment_accuracy": "91.7%",
+      "traditional_transfer_learning": "78.3%",
+      "DANN_method": "82.6%",
+      "MMD_alignment": "84.1%",
+      "performance_improvement": "7.6-13.4 percentage points",
+      "environment_specific_accuracy": {
+        "lab_to_office": "93.2%",
+        "office_to_home": "89.4%",
+        "home_to_meeting": "92.8%",
+        "meeting_to_corridor": "90.1%"
+      },
+      "uncertainty_calibration": {
+        "epistemic_error": "2.1%",
+        "aleatoric_error": "3.4%",
+        "overall_calibration": "97.3%"
+      }
+    },
+    "datasets_used": [
+      "Multi-environment dataset with 35,000 samples across 5 environments",
+      "8 daily activity categories with 25 volunteers",
+      "Intel AX210 WiFi card hardware platform",
+      "Cross-environment validation with diverse layouts and materials"
+    ],
+    "statistical_significance": true,
+    "baseline_comparisons": [
+      "Traditional transfer learning (78.3% accuracy)",
+      "DANN domain adversarial (82.6% accuracy)",
+      "MMD feature alignment (84.1% accuracy)",
+      "Source-only baseline (73.5% accuracy)"
+    ]
+  },
+  "editorial_appeal": {
+    "problem_importance": 4,
+    "technical_rigor": 4,
+    "innovation_depth": 4,
+    "practical_value": 4
+  },
+  "v2_integration": {
+    "introduction_priority": "high",
+    "methods_priority": "high",
+    "results_priority": "high",
+    "discussion_priority": "high",
+    "specific_applications": [
+      "Cross-environment adaptation strategies for robust WiFi sensing deployment",
+      "Uncertainty quantification methodologies for trustworthy wireless sensing",
+      "Partial adaptation techniques for practical domain transfer",
+      "Confidence-aware decision making in wireless sensing systems"
+    ]
+  },
+  "plotting_data": {
+    "performance_comparisons": {
+      "WiCAU": 91.7,
+      "traditional_transfer": 78.3,
+      "DANN": 82.6,
+      "MMD_alignment": 84.1,
+      "source_only": 73.5
+    },
+    "timeline_data": {
+      "year": 2024,
+      "venue": "IEEE TIM",
+      "impact_factor": 5.6,
+      "quartile": "Q1"
+    },
+    "classification_data": {
+      "type": "Cross-environment Adaptation",
+      "subfield": "Uncertainty-aware Transfer Learning",
+      "methodology": "Bayesian Partial Adaptation"
+    },
+    "trend_analysis": {
+      "research_direction": "Trustworthy cross-domain wireless sensing",
+      "technical_maturity": "High",
+      "commercial_potential": "Very High"
+    },
+    "cross_environment_performance": {
+      "lab_to_office": 93.2,
+      "office_to_home": 89.4,
+      "home_to_meeting": 92.8,
+      "meeting_to_corridor": 90.1,
+      "average_cross_env": 91.4
+    },
+    "uncertainty_metrics": {
+      "epistemic_calibration_error": 2.1,
+      "aleatoric_calibration_error": 3.4,
+      "total_calibration_quality": 97.3,
+      "high_confidence_accuracy": 96.8,
+      "rejection_rate": 8.2,
+      "confidence_accuracy_correlation": 0.87
+    },
+    "adaptation_effectiveness": {
+      "before_adaptation": 73.5,
+      "after_adaptation": 91.7,
+      "relative_improvement": 24.7
+    }
+  },
+  "critical_assessment": {
+    "strengths": [
+      "Pioneering integration of uncertainty quantification with cross-environment WiFi sensing",
+      "Comprehensive WiCAU architecture with principled Bayesian uncertainty estimation",
+      "Exceptional cross-environment performance (91.7%) with significant improvements over baselines",
+      "High-quality uncertainty calibration (97.3%) enabling trustworthy deployment",
+      "Practical partial adaptation strategy reducing computational and annotation requirements",
+      "Extensive multi-environment validation with rigorous statistical analysis"
+    ],
+    "limitations": [
+      "Significant computational overhead (2-3x) due to Bayesian inference requirements",
+      "Complex hyperparameter tuning with environment-specific optimal configurations",
+      "Limited evaluation on extremely diverse environments or novel activity types",
+      "Dependency on target domain data availability for effective adaptation",
+      "Scalability challenges for large-scale deployment due to computation requirements",
+      "Insufficient analysis of long-term adaptation stability and performance drift"
+    ],
+    "future_directions": [
+      "Lightweight uncertainty estimation methods for edge computing deployment",
+      "Automated hyperparameter optimization for different environment combinations",
+      "Extension to more complex activities and multi-person scenarios",
+      "Integration with causal inference for robust cross-environment adaptation",
+      "Meta-learning approaches for fast adaptation to novel environments",
+      "Long-term deployment studies with adaptive model updating mechanisms"
+    ],
+    "reproducibility_score": 7.5
+  },
+  "wifi_har_relevance": {
+    "methodological_contribution": "Uncertainty-aware cross-environment adaptation framework for robust WiFi sensing deployment",
+    "trustworthiness_enhancement": "Bayesian uncertainty quantification for confidence-aware wireless sensing",
+    "practical_deployment": "Partial adaptation strategy enabling efficient cross-environment transfer",
+    "adaptation_requirements": [
+      "Bayesian neural network implementation for uncertainty estimation",
+      "Multi-environment data collection protocols for adaptation validation",
+      "Confidence calibration techniques for trustworthy wireless sensing",
+      "Selective feature transfer algorithms for efficient domain adaptation"
+    ]
+  }
+}

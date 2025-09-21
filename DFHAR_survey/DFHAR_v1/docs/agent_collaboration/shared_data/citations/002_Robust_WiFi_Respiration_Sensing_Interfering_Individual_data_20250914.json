@@ -1,0 +1,135 @@
+{
+  "paper_id": "123",
+  "title": "Robust WiFi Respiration Sensing in the Presence of Interfering Individual",
+  "authors": ["Xuecheng Xie", "Dongheng Zhang", "Yadong Li", "Yang Hu", "Qibin Sun", "Yan Chen"],
+  "venue": "IEEE Transactions on Mobile Computing",
+  "year": 2024,
+  "volume": 23,
+  "issue": 8,
+  "pages": "8447-8462",
+  "doi": "10.1109/TMC.2023.3348879",
+  "impact_factor": 7.9,
+  "analysis_date": "2025-09-14",
+  "analyst": "literatureAgent6",
+  "star_rating": 5,
+  "core_contributions": {
+    "spatial_beamforming": {
+      "technique": "directional_beamforming_interference_suppression",
+      "optimization": "SINR_maximization",
+      "adaptation": "real_time_interference_aware",
+      "innovation": "first_robust_multi_occupancy_respiration_sensing"
+    },
+    "signal_processing": {
+      "respiration_isolation": "0.1_0.5_Hz_band_filtering",
+      "motion_artifact_removal": "advanced_temporal_processing",
+      "temporal_consistency": "adaptive_smoothing_algorithms",
+      "enhancement_pipeline": "multi_stage_CSI_processing"
+    },
+    "interference_modeling": {
+      "multi_subject_environment": "mathematical_activity_superposition",
+      "activity_classification": "interference_type_recognition",
+      "intensity_assessment": "quantitative_interference_impact",
+      "adaptive_processing": "dynamic_algorithm_selection"
+    }
+  },
+  "mathematical_framework": {
+    "beamforming_optimization": "w = arg max (Signal_target / Signal_interference)",
+    "spatial_covariance": "R = E[H·H^H] = R_respiration + R_interference + R_noise",
+    "environment_model": "Σ α_i·Activity_i(t) + β·Respiration(t) + Noise(t)",
+    "sinr_maximization": "w^H·R_respiration·w / w^H·(R_interference+R_noise)·w"
+  },
+  "experimental_validation": {
+    "dataset_characteristics": {
+      "participants": 15,
+      "age_range": "22-65",
+      "interference_scenarios": 8,
+      "environments": 3,
+      "monitoring_duration_hours": 120
+    },
+    "hardware_setup": {
+      "wifi_device": "Intel AC 9260",
+      "antenna_configuration": "2x2 MIMO",
+      "frequency_band": "5GHz",
+      "sampling_rate": 1000,
+      "antenna_separation": "10cm"
+    },
+    "performance_results": {
+      "no_interference_accuracy": 98.3,
+      "light_interference_accuracy": 96.1,
+      "moderate_interference_accuracy": 94.7,
+      "heavy_interference_accuracy": 91.4,
+      "processing_latency_seconds": 2.3,
+      "cpu_utilization_percent": 15
+    }
+  },
+  "innovation_assessment": {
+    "algorithmic_novelty": 5,
+    "clinical_relevance": 5,
+    "technical_rigor": 5,
+    "practical_impact": 5,
+    "breakthrough_significance": "interference_resilient_vital_sign_monitoring"
+  },
+  "healthcare_applications": {
+    "hospital_monitoring": "multi_bed_non_contact_respiration",
+    "elderly_care": "assisted_living_continuous_monitoring",
+    "sleep_studies": "shared_bedroom_respiration_analysis",
+    "emergency_response": "crowded_scenario_rapid_assessment"
+  },
+  "technical_advantages": {
+    "commercial_hardware": "standard_wifi_equipment_compatibility",
+    "real_time_performance": "edge_computing_device_deployment",
+    "scalable_monitoring": "multiple_simultaneous_targets",
+    "privacy_preservation": "no_visual_audio_data_collection"
+  },
+  "limitations": {
+    "clinical_validation": "limited_controlled_research_environments",
+    "demographic_scope": "restricted_age_health_diversity",
+    "processing_complexity": "high_computational_requirements",
+    "range_constraints": "performance_degrades_beyond_3m"
+  },
+  "future_directions": {
+    "clinical_trials": "large_scale_hospital_validation",
+    "multi_vital_signs": "heart_rate_blood_pressure_integration",
+    "federated_networks": "distributed_population_health_monitoring",
+    "edge_optimization": "mobile_iot_algorithm_optimization"
+  },
+  "plotting_data": {
+    "interference_performance": {
+      "no_interference": 98.3,
+      "light_interference": 96.1,
+      "moderate_interference": 94.7,
+      "heavy_interference": 91.4
+    },
+    "method_comparison": {
+      "traditional_CSI": 65.0,
+      "single_antenna": 55.0,
+      "contact_sensors": 99.0,
+      "computer_vision": 85.0,
+      "proposed_beamforming": 94.7
+    },
+    "system_metrics": {
+      "processing_latency": 2.3,
+      "update_frequency": 10,
+      "cpu_utilization": 15,
+      "memory_footprint": 128
+    }
+  },
+  "editorial_appeal": {
+    "ieee_tmc_relevance": "high",
+    "mobile_computing_impact": "pervasive_healthcare_edge_computing",
+    "clinical_translation": "fda_approval_pathway_potential",
+    "research_community_value": "interference_resilient_sensing_standards"
+  },
+  "survey_integration": {
+    "introduction_contributions": "multi_occupancy_challenges_healthcare_motivation",
+    "methodology_additions": "spatial_beamforming_interference_suppression",
+    "performance_benchmarks": "robustness_metrics_clinical_validation",
+    "future_directions": "healthcare_deployment_regulatory_approval"
+  },
+  "clinical_significance": {
+    "fda_pathway": "medical_device_regulatory_approval_potential",
+    "hospital_deployment": "multi_bed_monitoring_systems",
+    "population_health": "large_scale_vital_sign_surveillance",
+    "privacy_compliant": "gdpr_hipaa_compatible_monitoring"
+  }
+}

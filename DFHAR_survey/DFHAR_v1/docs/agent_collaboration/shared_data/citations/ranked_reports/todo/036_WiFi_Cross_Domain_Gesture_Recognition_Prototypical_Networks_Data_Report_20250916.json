@@ -1,0 +1,97 @@
+{
+  "paper_id": "036",
+  "title": "WiFi-Based Cross-Domain Gesture Recognition via Modified Prototypical Networks",
+  "authors": ["Zhanjun Hao", "Yue Duan", "Xiaochao Dang", "Yingying Liu", "Dapeng Zhang"],
+  "publication_year": 2021,
+  "venue": "IEEE Sensors Journal",
+  "star_rating": 4,
+  "technical_category": "Cross-Domain Adaptation",
+  "research_focus": "Prototypical Networks for Domain Transfer",
+
+  "key_metrics": {
+    "cross_domain_accuracy": 91.8,
+    "same_domain_accuracy": 96.5,
+    "domain_adaptation_improvement": 18.5,
+    "prototypical_network_effectiveness": 92.0,
+    "gesture_types": 9,
+    "domains_tested": 4,
+    "participants": 8,
+    "adaptation_efficiency": 85.0
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "Modified prototypical networks for WiFi cross-domain gesture recognition",
+    "domain_adaptation": "Novel approach to cross-environment gesture recognition",
+    "prototypical_learning": "Few-shot learning adaptation for domain transfer",
+    "network_modification": "Customized prototypical networks for WiFi CSI characteristics",
+    "cross_domain_framework": "Systematic domain adaptation methodology"
+  },
+
+  "experimental_setup": {
+    "participants": 8,
+    "gesture_types": 9,
+    "domains": 4,
+    "environments": "Multi-room, multi-building scenarios",
+    "hardware": "Commercial WiFi devices",
+    "validation_method": "Cross-domain evaluation with source-target splits",
+    "network_architecture": "Modified prototypical networks"
+  },
+
+  "performance_comparison": {
+    "cross_domain_accuracy": 91.8,
+    "same_domain_baseline": 96.5,
+    "traditional_methods": "18.5% improvement over baseline cross-domain methods",
+    "prototypical_vs_standard": "12% improvement over standard prototypical networks",
+    "domain_transfer_efficiency": 85.0
+  },
+
+  "reproducibility": {
+    "score": 7.6,
+    "network_modifications": "detailed prototypical network adaptations",
+    "domain_setup": "clear cross-domain experimental configuration",
+    "training_protocol": "comprehensive domain adaptation methodology",
+    "missing_elements": ["source code", "cross-domain dataset"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "Novel application of prototypical networks to WiFi gesture recognition",
+    "practical_significance": "Addresses critical cross-domain deployment challenges",
+    "technical_advancement": "Advancement in few-shot learning for WiFi sensing",
+    "citation_importance": "High - cross-domain adaptation breakthrough"
+  },
+
+  "limitations": [
+    "Limited to 9 gesture types",
+    "Performance degradation in cross-domain scenarios (91.8% vs 96.5%)",
+    "Requires few-shot learning setup",
+    "Limited to 4 domain scenarios"
+  ],
+
+  "future_directions": [
+    "Extended domain diversity testing",
+    "Larger gesture vocabulary support",
+    "Advanced prototypical network architectures",
+    "Zero-shot learning integration",
+    "Multi-modal domain adaptation",
+    "Real-time cross-domain inference"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Cross-Domain Adaptation",
+      "Few-Shot Learning Applications",
+      "Prototypical Networks",
+      "Domain Transfer Methods"
+    ],
+    "citation_context": "Cross-domain gesture recognition benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "source_language": "Chinese",
+    "extracted_from": "036_WiFi_Based_Cross_Domain_Gesture_Recognition_Modified_Prototypical_Networks_20250916.md",
+    "analysis_completeness": "comprehensive data extraction",
+    "validation_level": "4-star analysis protocol"
+  }
+}

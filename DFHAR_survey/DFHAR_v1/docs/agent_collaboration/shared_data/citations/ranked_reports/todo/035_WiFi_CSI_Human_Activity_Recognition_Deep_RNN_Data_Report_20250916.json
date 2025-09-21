@@ -1,0 +1,98 @@
+{
+  "paper_id": "035",
+  "title": "WiFi CSI-Based Human Activity Recognition Using Deep Recurrent Neural Network",
+  "authors": ["Siamak Yousefi", "Hirokazu Narui", "Sankalp Dayal", "Stefan Ermon", "Shahrokh Valaee"],
+  "publication_year": 2017,
+  "venue": "IEEE Sensors Journal",
+  "star_rating": 4,
+  "technical_category": "Deep Recurrent Networks",
+  "research_focus": "RNN-based Activity Recognition",
+
+  "key_metrics": {
+    "overall_accuracy": 96.0,
+    "lstm_performance": 96.0,
+    "gru_performance": 94.5,
+    "rnn_performance": 91.2,
+    "activity_types": 7,
+    "participants": 5,
+    "data_collection_hours": 40,
+    "cross_user_accuracy": 89.5
+  },
+
+  "technical_contributions": {
+    "primary_innovation": "First comprehensive deep RNN evaluation for WiFi CSI activity recognition",
+    "network_architectures": "Systematic comparison of RNN, LSTM, and GRU",
+    "temporal_modeling": "Advanced temporal sequence modeling for activity recognition",
+    "feature_learning": "End-to-end feature learning from raw CSI data",
+    "comparative_analysis": "Comprehensive evaluation of recurrent architectures"
+  },
+
+  "experimental_setup": {
+    "participants": 5,
+    "activity_types": 7,
+    "data_hours": 40,
+    "environments": 2,
+    "hardware": "Intel 5300 NIC",
+    "validation_method": "Cross-user and within-user evaluation",
+    "network_variants": "RNN, LSTM, GRU comparison"
+  },
+
+  "performance_comparison": {
+    "lstm_accuracy": 96.0,
+    "gru_accuracy": 94.5,
+    "basic_rnn_accuracy": 91.2,
+    "traditional_ml_improvement": 20.0,
+    "cross_user_performance": 89.5,
+    "within_user_performance": 96.0
+  },
+
+  "reproducibility": {
+    "score": 7.8,
+    "network_specifications": "detailed RNN architecture descriptions",
+    "training_protocols": "comprehensive training methodologies",
+    "evaluation_metrics": "clear performance benchmarking",
+    "missing_elements": ["source code", "dataset availability"]
+  },
+
+  "research_impact": {
+    "paradigm_shift": "Pioneering work in deep RNN for WiFi activity recognition",
+    "practical_significance": "Establishes RNN effectiveness for temporal CSI analysis",
+    "technical_advancement": "Comparative analysis foundation for future work",
+    "citation_importance": "High - foundational deep learning work in WiFi sensing"
+  },
+
+  "limitations": [
+    "Limited to 7 activity types",
+    "Small participant pool (5 users)",
+    "Indoor environment evaluation only",
+    "Cross-user performance degradation (89.5% vs 96.0%)"
+  ],
+
+  "future_directions": [
+    "Extended activity vocabulary",
+    "Larger participant validation",
+    "Cross-environment evaluation",
+    "Attention mechanism integration",
+    "Advanced RNN architectures (Transformer)",
+    "Real-time optimization"
+  ],
+
+  "dfhar_survey_relevance": {
+    "section_importance": "High",
+    "recommended_sections": [
+      "Deep Learning Foundations",
+      "Recurrent Neural Networks",
+      "Temporal Sequence Modeling",
+      "Cross-User Generalization"
+    ],
+    "citation_context": "Deep RNN foundational work benchmark"
+  },
+
+  "analysis_metadata": {
+    "analysis_date": "2025-09-16",
+    "source_language": "Chinese",
+    "extracted_from": "035_WiFi_CSI_Human_Activity_Recognition_Deep_RNN_20250916.md",
+    "analysis_completeness": "comprehensive data extraction",
+    "validation_level": "4-star analysis protocol"
+  }
+}
